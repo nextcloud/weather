@@ -1,5 +1,5 @@
 /**
- * ownCloud - ownBoard
+ * ownCloud - Weather
  *
  * This file is licensed under the Affero General Public License version 3 or
  * later. See the COPYING file.
@@ -47,4 +47,5 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 				$scope.fatalError();
 			});
 		};
+	}
 ]);

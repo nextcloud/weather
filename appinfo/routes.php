@@ -1,6 +1,6 @@
 <?php
 /**
- * ownCloud - owncity
+ * ownCloud - Weather
  *
  * This file is licensed under the Affero General Public License version 3 or
  * later. See the COPYING file.
@@ -9,7 +9,7 @@
  * @copyright Loic Blot 2015
  */
 
-namespace OCA\OwnBoard\AppInfo;
+namespace OCA\Weather\AppInfo;
 
 $application = new Application();
 

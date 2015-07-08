@@ -21,7 +21,7 @@ if (class_exists('\OCP\AppFramework\App')) {
 	    'order' => 10,
 
 	    // the route that will be shown on startup
-	    'href' => \OCP\Util::linkToRoute('weather.board.index'),
+	    'href' => \OCP\Util::linkToRoute('weather.city.index'),
 
 	    // the icon that will be shown in the navigation
 	    // this file needs to exist in img/

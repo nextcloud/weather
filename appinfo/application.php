@@ -37,7 +37,7 @@ class Application extends App {
 		 * Database Layer
 		 */
 		$container->registerService('CityMapper', function(IContainer $c) {
-			return new BoardMapper($c->query('ServerContainer')->getDb());
+			return new CityMapper($c->query('ServerContainer')->getDb());
 		});
 
 		/**
