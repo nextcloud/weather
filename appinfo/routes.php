@@ -16,10 +16,10 @@ $application = new Application();
 $application->registerRoutes($this, array('routes' => array(
 	array('name' => 'city#index',		'url' => '/',			'verb' => 'GET'),
 
-	array('name' => 'city#get',		'url' => '/city/get',		'verb' => 'GET'),
 	array('name' => 'city#getall',		'url' => '/city/getall',	'verb' => 'GET'),
-	array('name' => 'city#create',		'url' => '/city/create',	'verb' => 'POST'),
+	array('name' => 'city#add',		'url' => '/city/add',		'verb' => 'POST'),
 	array('name' => 'city#delete',		'url' => '/city/delete',	'verb' => 'POST'),
-	array('name' => 'city#update',		'url' => '/city/update',	'verb' => 'POST'),
+
+	array('name' => 'weather#get',		'url' => '/weather/get',	'verb' => 'GET'),
 )));
 ?>

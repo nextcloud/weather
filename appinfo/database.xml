@@ -21,6 +21,12 @@
 				<notnull>true</notnull>
 				<length>255</length>
 			</field>
+			<field>
+				<name>user_id</name>
+				<type>text</type>
+				<notnull>true</notnull>
+				<length>255</length>
+			</field>
 		</declaration>
 	</table>
 </database>

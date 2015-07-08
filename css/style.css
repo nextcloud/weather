@@ -57,3 +57,33 @@
 	position: absolute;
 	align-items: flex-start;
 }
+
+.city-list hr {
+	border: 0;
+	height: 1px;
+	background: #BBB;
+	background-image: linear-gradient(to right, #CCC, #BBB, #CCC);
+}
+
+#create-city {
+        padding: 10px;
+        background-color: #EEE;
+        border: 1px solid #DDD;
+}
+
+#create-city h1 {
+        color: #444;
+}
+
+#create-city h1 {
+        text-align: center;
+        font-weight: bold;
+}
+
+#create-city h2 {
+        font-weight: bold;
+}
+
+.city-form-error {
+	color: red;
+}

@@ -12,16 +12,16 @@
 				<div class="icon-delete svn delete action" ng-click="deleteCity(city);"></div>
 			</li>
 			<li>
-				<a href="#" ng-click="showCreateCity = true;">Add a city...</a>
-				<div ng-show="showCreateCity == true" id="create-city">
-					<h1>Create city</h1>
+				<a href="#" ng-click="showAddCity = true;">Add a city...</a>
+				<div ng-show="showAddCity == true" id="create-city">
+					<h1>Add city</h1>
 					<hr>
-					<h2>Title</h2>
-					<span class="city-form-error" ng-show="createCityError != ''">{{ createCityError }}</span>
+					<h2>City name</h2>
+					<span class="city-form-error" ng-show="addCityError != ''">{{ addCityError }}</span>
 					<form novalidate>
 						<input type="textbox" ng-model="city.name"/>
-						<input type="submit" value="Add" ng-click="createCity(city);"/>
-						<input type="button" value="Cancel" ng-click="showCreateCity = false;"/>
+						<input type="submit" value="Add" ng-click="addCity(city);"/>
+						<input type="button" value="Cancel" ng-click="showAddCity = false;"/>
 					</form>
 				</div>
 			</li>

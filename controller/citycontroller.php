@@ -37,5 +37,23 @@ class CityController extends Controller {
 	public function index () {
 		return new TemplateResponse($this->appName, 'main');
 	}
+
+	/**
+	 * @NoAdminRequired
+	 * @NoCSRFRequired
+	 */
+	public function add ($name) {
+		if (!$name) {
+			return new JSONResponse(array(), Http::STATUS_BAD_REQUEST);
+		}
+
+		// @TODO: check city is not already registered
+
+		if ($id = $this->mapper->create($this->userId, $name)) {
+			return new JSONResponse(array("id" => $id));
+		}
+
+		return new JSONResponse(array());
+	}
 };
 ?>

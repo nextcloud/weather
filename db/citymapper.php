@@ -19,5 +19,23 @@ class CityMapper extends Mapper {
 	public function __construct (IDb $db) {
 		parent::__construct($db, 'weather_city');
 	}
+
+	public function create ($userId, $name) {
+		\OCP\DB::beginTransaction();
+		$query = \OCP\DB::prepare('INSERT INTO *PREFIX*weather_city ' .
+			'(user_id, name) VALUES (?,?)');
+		$query->execute(array($userId, $name));
+		\OCP\DB::commit();
+
+		$sql = 'SELECT max(id) FROM ' .
+			'*PREFIX*weather_city WHERE user_id = ? and name = ?';
+		$query = \OCP\DB::prepare($sql);
+		$result = $query->execute(array($userId, $name));
+
+		if ($row = $result->fetchRow()) {
+			return $row['max'];
+		}
+		return null;
+	}
 };
 ?>
