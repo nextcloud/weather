@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<database>
+	<name>*dbname*</name>
+	<create>true</create>
+	<overwrite>false</overwrite>
+	<charset>utf8</charset>
+	<table>
+		<name>*dbprefix*weather_city</name>
+		<declaration>
+			<field>
+				<name>id</name>
+				<type>integer</type>
+				<notnull>true</notnull>
+				<length>10</length>
+				<autoincrement>1</autoincrement>
+				<primary>true</primary>
+			</field>
+			<field>
+				<name>name</name>
+				<type>text</type>
+				<notnull>true</notnull>
+				<length>255</length>
+			</field>
+		</declaration>
+	</table>
+</database>

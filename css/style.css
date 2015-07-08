@@ -1,0 +1,59 @@
+#city-list-left {
+	width: 250px;
+	height: 100%;
+	float: left;
+	-moz-box-sizing: border-box; box-sizing: border-box;
+	background-color: #f5f5f5;
+	padding-bottom: 44px;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#city-list-left > ul {
+	position: relative;
+	height: 100%;
+	overflow: auto;
+	-moz-box-sizing: border-box; box-sizing: border-box;
+}
+#city-list-left li {
+	position: relative;
+	width: 100%;
+	-moz-box-sizing: border-box; box-sizing: border-box;
+}
+
+#city-list-left li:hover > a,
+#city-list-left li:hover,
+#city-list-left .selected,
+#city-list-left .selected a {
+	background-color: #ccc;
+}
+
+#city-list-left li > a {
+	line-height: 44px;
+	padding: 0 12px;
+	display: block;
+	overflow: hidden;
+	-moz-box-sizing: border-box; box-sizing: border-box;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: #333;
+}
+
+#city-right {
+	padding: 15px;
+	height: 100%;
+	overflow-y: hidden;
+	overflow-x: auto;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 250px;
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	align-items: flex-start;
+}
