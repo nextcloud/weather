@@ -20,6 +20,31 @@ class CityMapper extends Mapper {
 		parent::__construct($db, 'weather_city');
 	}
 
+	public function load ($id) {
+		$sql = 'SELECT id, name, user_id FROM ' .
+			'*PREFIX*weather_city WHERE id = ?';
+		$query = \OCP\DB::prepare($sql);
+		$result = $query->execute(array($id));
+
+		if ($row = $result->fetchRow()) {
+			return $row;
+		}
+		return null;
+	}
+
+	public function getAll ($userId) {
+		$sql = 'SELECT id, name FROM ' .
+			'*PREFIX*weather_city WHERE user_id = ?';
+		$query = \OCP\DB::prepare($sql);
+		$result = $query->execute(array($userId));
+
+		$cities = array();
+		while ($row = $result->fetchRow()) {
+			$cities[] = $row;
+		}
+		return $cities;
+	}
+
 	public function create ($userId, $name) {
 		\OCP\DB::beginTransaction();
 		$query = \OCP\DB::prepare('INSERT INTO *PREFIX*weather_city ' .
@@ -36,6 +61,14 @@ class CityMapper extends Mapper {
 			return $row['max'];
 		}
 		return null;
+	}
+
+	public function delete ($id) {
+		\OCP\DB::beginTransaction();
+		$query = \OCP\DB::prepare('DELETE FROM *PREFIX*weather_city ' .
+			'WHERE id = ?');
+		$query->execute(array($id));
+		\OCP\DB::commit();
 	}
 };
 ?>

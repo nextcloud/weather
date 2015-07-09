@@ -58,7 +58,7 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 			$http.post(OC.generateUrl('/apps/weather/city/add'), {'name': city.name}).
 			success(function (data, status, headers, config) {
 				if (data != null && !undef(data['id'])) {
-					$scope.boards.push({"name": city.name, "id": data['id']})
+					$scope.cities.push({"name": city.name, "id": data['id']})
 					$scope.showAddCity = false;
 				}
 				else {
@@ -67,6 +67,35 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 			}).
 			fail(function (data, status, headers, config) {
 				$scope.addCityError = g_error500;
+			});
+		};
+
+		$scope.deleteCity = function(city) {
+			if (undef(city)) {
+				alert(g_error500);
+				return;
+			}
+
+			$http.post(OC.generateUrl('/apps/weather/city/delete'), {'id': city.id}).
+			success(function (data, status, headers, config) {
+				if (data != null && !undef(data['deleted'])) {
+					for (var i = 0; i < $scope.cities.length; i++) {
+                                                if ($scope.cities[i].id === city.id) {
+                                                        $scope.cities.splice(i, 1);
+                                                        // If current city is the removed city, close it
+                                                        if ($scope.selectedCityId === city.id) {
+                                                                $scope.selectedCityId = 0;
+                                                        }
+                                                        return;
+                                                }
+                                        }
+				}
+				else {
+					alert('Failed to remove city. Please contact your administrator');
+				}
+			}).
+			fail(function (data, status, headers, config) {
+				alert(g_error500);
 			});
 		};
 	}

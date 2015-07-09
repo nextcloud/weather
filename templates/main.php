@@ -7,7 +7,7 @@
 <div class="ng-scope" id="app" ng-app="Weather" ng-controller="WeatherController">
 	<div id="city-list-left">
 		<ul class="city-list">
-			<li class=city-list-item" ng-repeat="city in citys" class="{{ city.id == selectedCityId ? 'selected' : ''}}">
+			<li class=city-list-item" ng-repeat="city in cities" class="{{ city.id == selectedCityId ? 'selected' : ''}}">
 				<a href="#" ng-click="loadCity(city.id);">{{ city.name }}</a>
 				<div class="icon-delete svn delete action" ng-click="deleteCity(city);"></div>
 			</li>

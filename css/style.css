@@ -43,6 +43,21 @@
 	color: #333;
 }
 
+#city-list-left li .icon-delete {
+	width: 30px;
+	height: 18px;
+	top: 0;
+	right: 0;
+	position: absolute;
+	cursor: pointer;
+	height: 100%;
+	display: none;
+}
+
+#city-list-left li:hover .icon-delete {
+	display: inline;
+}
+
 #city-right {
 	padding: 15px;
 	height: 100%;
