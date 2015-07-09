@@ -56,8 +56,19 @@ class CityController extends Controller {
 			return new JSONResponse(array(), Http::STATUS_BAD_REQUEST);
 		}
 
-		// @TODO: check city is not already registered
-		// @TODO: check there is an answer for the city http://api.openweathermap.org/data/2.5/forecast?q=Orsay&mode=xml
+		// Trim city name to remove unneeded spaces
+		$name = trim($name);
+
+		$cities = $this->mapper->getAll($this->userId);
+		for ($i = 0; $i < count($cities); $i++) {
+			if (strtolower($cities[$i]['name']) == strtolower($name)) {
+				return new JSONResponse(array(), 409);
+			}
+		}
+
+		if (!$this->getCityInformations($name)) {
+			return new JSONResponse(array(), Http::STATUS_NOT_FOUND);
+		}
 
 		if ($id = $this->mapper->create($this->userId, $name)) {
 			return new JSONResponse(array("id" => $id));
@@ -83,6 +94,15 @@ class CityController extends Controller {
 		$this->mapper->delete($id);
 
 		return new JSONResponse(array("deleted" => true));
+	}
+
+	private function getCityInformations ($name) {
+		$cityDatas = json_decode(file_get_contents("http://api.openweathermap.org/data/2.5/forecast?q=$name&mode=json"), true);
+		if ($cityDatas['cod'] != '200') {
+			return null;
+		}
+
+		return $cityDatas;
 	}
 };
 ?>

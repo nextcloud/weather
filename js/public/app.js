@@ -11,7 +11,7 @@
 
 var app = angular.module('Weather', []);
 
-var g_error500 = 'Fatal Error: please check your owncloud.log and sent a bug report here: https://github.com/nerzhul/weather/issues';
+var g_error500 = 'Fatal Error: please check your owncloud.log and send a bug report here: https://github.com/nerzhul/weather/issues';
 
 function undef (obj) {
 	return typeof obj === undefined || obj === undefined;
@@ -28,6 +28,8 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 		$scope.selectedCityId = 0;
 		$scope.showAddCity = false;
 		$scope.addCityError = '';
+
+		$scope.cityLoadError = '';
 
 		$timeout(function () {
 			$scope.loadCities();
@@ -49,6 +51,33 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 			});
 		};
 
+		$scope.loadCity = function(city) {
+			if (undef(city) || emptyStr(city.name)) {
+				alert(g_error500);
+				return;
+			}
+
+			$http.get(OC.generateUrl('/apps/weather/weather/get'), {'name': city.name}).
+			success(function (data, status, headers, config) {
+				if (data != null && !undef(data['id'])) {
+				}
+				else {
+					$scope.cityLoadError = 'Failed to get city weather informations. Please contact your administrator';
+				}
+			}).
+			error(function (data, status, headers, config) {
+				if (status == 404) {
+					$scope.cityLoadError = "No city with this name found.";
+				}
+				else if (status == 500) {
+					$scope.cityLoadError = g_error500;
+				}
+			}).
+			fail(function (data, status, headers, config) {
+				$scope.cityLoadError = g_error500;
+			});
+		}
+
 		$scope.addCity = function(city) {
 			if (undef(city) || emptyStr(city.name)) {
 				$scope.addCityError = 'Empty city name !';
@@ -63,6 +92,14 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 				}
 				else {
 					$scope.addCityError = 'Failed to add city. Please contact your administrator';
+				}
+			}).
+			error(function (data, status, headers, config) {
+				if (status == 404) {
+					$scope.addCityError = "No city with this name found.";
+				}
+				else if (status == 409) {
+					$scope.addCityError = "This city is already registered for your account.";
 				}
 			}).
 			fail(function (data, status, headers, config) {

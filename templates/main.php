@@ -8,7 +8,7 @@
 	<div id="city-list-left">
 		<ul class="city-list">
 			<li class=city-list-item" ng-repeat="city in cities" class="{{ city.id == selectedCityId ? 'selected' : ''}}">
-				<a href="#" ng-click="loadCity(city.id);">{{ city.name }}</a>
+				<a href="#" ng-click="loadCity(city);">{{ city.name }}</a>
 				<div class="icon-delete svn delete action" ng-click="deleteCity(city);"></div>
 			</li>
 			<li>
@@ -26,6 +26,9 @@
 				</div>
 			</li>
 		</ul>
+	</div>
+	<div id="city-right" ng-show="cityLoadError != ''">
+		<span class="city-load-error">{{ cityLoadError }}</span>
 	</div>
 	<div id="city-right" ng-show="selectedCityId != 0">
 	</div>
