@@ -32,9 +32,12 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 		$scope.currentCity = null;
 
 		$scope.imageMapper = {
-			"Clear": "sun_clear.jpg",
-			"Clouds": "clouds.jpg",
+			"Clear": "sun.png",
+			"Clouds": "clouds.png",
+			"Mist": "mist.png",
 			"Rain": "rain.jpg",
+			"Snow": "snow.png",
+			"Thunderstorm": "thunderstorm.png",
 		}
 
 		$timeout(function () {
