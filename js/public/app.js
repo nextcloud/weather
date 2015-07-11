@@ -25,11 +25,11 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 	function ($scope, $interval, $timeout, $compile, $http) {
 		$scope.userId = '';
 		$scope.cities = [];
-		$scope.selectedCityId = 0;
 		$scope.showAddCity = false;
 		$scope.addCityError = '';
 
 		$scope.cityLoadError = '';
+		$scope.currentCity = null;
 
 		$timeout(function () {
 			$scope.loadCities();
@@ -57,9 +57,10 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 				return;
 			}
 
-			$http.get(OC.generateUrl('/apps/weather/weather/get'), {'name': city.name}).
+			$http.get(OC.generateUrl('/apps/weather/weather/get?name=' + city.name)).
 			success(function (data, status, headers, config) {
-				if (data != null && !undef(data['id'])) {
+				if (data != null) {
+					$scope.currentCity = data;
 				}
 				else {
 					$scope.cityLoadError = 'Failed to get city weather informations. Please contact your administrator';

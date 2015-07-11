@@ -59,7 +59,7 @@
 }
 
 #city-right {
-	padding: 15px;
+	padding: 45px;
 	height: 100%;
 	overflow-y: hidden;
 	overflow-x: auto;
@@ -67,10 +67,39 @@
 	bottom: 0;
 	right: 0;
 	left: 250px;
-	display: flex;
-	flex-direction: row;
-	position: absolute;
-	align-items: flex-start;
+	background: black;
+	color: #EEE;
+}
+
+#city-right .city-name {
+	font-size: 6em;
+	line-height: 1em;
+}
+
+
+#city-right .city-current-temp {
+	font-size: 4em;
+	line-height: 1em;
+}
+
+#city-right .city-current-pressure, #city-right .city-current-wind {
+	font-size: 3em;
+	line-height: 1em;
+}
+
+#city-right .city-current-humidity {
+	font-size: 3em;
+	line-height: 1em;
+}
+
+#city-right .city-current-weather {
+	font-size: 3em;
+	line-height: 1em;
+}
+
+#city-right .city-current-sunrise {
+	font-size: 3em;
+	line-height: 1em;
 }
 
 .city-list hr {
