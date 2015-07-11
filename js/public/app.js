@@ -34,6 +34,7 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 		$scope.imageMapper = {
 			"Clear": "sun.png",
 			"Clouds": "clouds.png",
+			"Haze": "mist.png",
 			"Mist": "mist.png",
 			"Rain": "rain.jpg",
 			"Snow": "snow.png",
