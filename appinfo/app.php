@@ -25,7 +25,7 @@ if (class_exists('\OCP\AppFramework\App')) {
 
 	    // the icon that will be shown in the navigation
 	    // this file needs to exist in img/
-	    'icon' => \OCP\Util::imagePath('weather', 'app.svg'),
+	    'icon' => \OCP\Util::imagePath('weather', 'images/app-icon.png'),
 
 	    // the title of your application. This will be used in the
 	    // navigation or on the settings page of your app
