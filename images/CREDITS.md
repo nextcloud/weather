@@ -1,0 +1,2 @@
+- snow.png (Public domain): Gareth Patterson => https://www.flickr.com/photos/gareth_patterson/6858690131/
+- clouds.png (Public domain): Joe deSousa => https://www.flickr.com/photos/mustangjoe/14639363196/
