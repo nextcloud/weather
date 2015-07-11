@@ -5,12 +5,12 @@
     <description>Watch the weather directly on your ownCloud</description>
     <licence>AGPL</licence>
     <author>Loic Blot</author>
-    <version>0.0.3</version>
+    <version>1.0.0</version>
     <requiremin>7</requiremin>
 
-    <ocsid>170501</ocsid>
-    
-    <website>https://apps.owncloud.com/content/show.php/ownBoard?content=170501</website>
+    <ocsid>170605</ocsid>
+
+    <website>https://apps.owncloud.com/content/show.php?content=170605</website>
     <bugs>https://github.com/nerzhul/owncloud-weather/issues</bugs>
     <repository type="git">https://github.com/nerzhul/owncloud-weather</repository>
 </info>
