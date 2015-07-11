@@ -30,6 +30,7 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 
 		$scope.cityLoadError = '';
 		$scope.currentCity = null;
+		$scope.domCity = null;
 
 		$scope.imageMapper = {
 			"Clear": "sun.png",
@@ -40,6 +41,13 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 			"Snow": "snow.png",
 			"Thunderstorm": "thunderstorm.png",
 		}
+
+		// Reload weather information each minute
+		$interval(function () {
+			if ($scope.currentCity != null) {
+				$scope.loadCity($scope.domCity);
+			}
+		}, 60000);
 
 		$timeout(function () {
 			$scope.loadCities();
@@ -70,6 +78,7 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 			$http.get(OC.generateUrl('/apps/weather/weather/get?name=' + city.name)).
 			success(function (data, status, headers, config) {
 				if (data != null) {
+					$scope.domCity = city;
 					$scope.currentCity = data;
 					$scope.currentCity.image = $scope.imageMapper[$scope.currentCity.weather[0].main];
 					$scope.currentCity.wind.desc = "";
