@@ -31,6 +31,11 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 		$scope.cityLoadError = '';
 		$scope.currentCity = null;
 
+		$scope.imageMapper = {
+			"Clear": "sun_clear.jpg",
+			"Clouds": "clouds.jpg",
+		}
+
 		$timeout(function () {
 			$scope.loadCities();
 		});
@@ -61,6 +66,7 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 			success(function (data, status, headers, config) {
 				if (data != null) {
 					$scope.currentCity = data;
+					$scope.currentCity.image = $scope.imageMapper[$scope.currentCity.weather[0].main];
 				}
 				else {
 					$scope.cityLoadError = 'Failed to get city weather informations. Please contact your administrator';
