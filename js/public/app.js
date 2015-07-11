@@ -34,6 +34,7 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 		$scope.imageMapper = {
 			"Clear": "sun_clear.jpg",
 			"Clouds": "clouds.jpg",
+			"Rain": "rain.jpg",
 		}
 
 		$timeout(function () {
@@ -67,6 +68,32 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 				if (data != null) {
 					$scope.currentCity = data;
 					$scope.currentCity.image = $scope.imageMapper[$scope.currentCity.weather[0].main];
+					$scope.currentCity.wind.desc = "";
+					if ($scope.currentCity.wind.deg > 0 && $scope.currentCity.wind.deg < 23 ||
+						$scope.currentCity.wind.deg > 333) {
+						$scope.currentCity.wind.desc = "North";
+					}
+					else if ($scope.currentCity.wind.deg > 22 && $scope.currentCity.wind.deg < 67) {
+						$scope.currentCity.wind.desc = "North-East";
+					}
+					else if ($scope.currentCity.wind.deg > 66 && $scope.currentCity.wind.deg < 113) {
+						$scope.currentCity.wind.desc = "East";
+					}
+					else if ($scope.currentCity.wind.deg > 112 && $scope.currentCity.wind.deg < 157) {
+						$scope.currentCity.wind.desc = "South-East";
+					}
+					else if ($scope.currentCity.wind.deg > 156 && $scope.currentCity.wind.deg < 201) {
+						$scope.currentCity.wind.desc = "South";
+					}
+					else if ($scope.currentCity.wind.deg > 200 && $scope.currentCity.wind.deg < 245) {
+						$scope.currentCity.wind.desc = "South-West";
+					}
+					else if ($scope.currentCity.wind.deg > 244 && $scope.currentCity.wind.deg < 289) {
+						$scope.currentCity.wind.desc = "West";
+					}
+					else if ($scope.currentCity.wind.deg > 288 && $scope.currentCity.wind.deg < 334) {
+						$scope.currentCity.wind.desc = "North-West";
+					}
 				}
 				else {
 					$scope.cityLoadError = 'Failed to get city weather informations. Please contact your administrator';

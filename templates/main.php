@@ -31,12 +31,14 @@
 		<span class="city-load-error">{{ cityLoadError }}</span>
 	</div>
 	<div id="city-right" ng-show="currentCity != null" style="background-image: url('/apps/weather/images/{{ currentCity.image }}');">
-		<div class="city-name">{{ currentCity.name }}, {{ currentCity.sys.country }}</div>
-		<div class="city-current-temp">{{ currentCity.main.temp }}°C</div>
-		<div class="city-current-pressure">Pressure: {{ currentCity.main.pressure }} hpa</div>
-		<div class="city-current-humidity">Humidity: {{ currentCity.main.humidity}}%</div>
-		<div class="city-current-weather">Cloudiness: {{ currentCity.weather[0].description }}</div>
-		<div class="city-current-wind">Wind: {{ currentCity.wind.speed }} {{ currentCity.wind.deg }}</div>
-		<div class="city-current-sunrise">Sunrise: {{ currentCity.sys.sunrise * 1000 | date:'HH:mm' }} Sunset: {{ currentCity.sys.sunset * 1000 | date:'HH:mm' }}</div>
+		<div id="city-weather-panel">
+			<div class="city-name">{{ currentCity.name }}, {{ currentCity.sys.country }}</div>
+			<div class="city-current-temp">{{ currentCity.main.temp }}°C</div>
+			<div class="city-current-pressure">Pressure: {{ currentCity.main.pressure }} hpa</div>
+			<div class="city-current-humidity">Humidity: {{ currentCity.main.humidity}}%</div>
+			<div class="city-current-weather">Cloudiness: {{ currentCity.weather[0].description }}</div>
+			<div class="city-current-wind">Wind: {{ currentCity.wind.speed }} m/s - {{ currentCity.wind.desc }}</div>
+			<div class="city-current-sunrise">Sunrise: {{ currentCity.sys.sunrise * 1000 | date:'HH:mm' }} Sunset: {{ currentCity.sys.sunset * 1000 | date:'HH:mm' }}</div>
+		</div>
 	</div>
 </div>
