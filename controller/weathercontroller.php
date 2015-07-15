@@ -49,7 +49,56 @@ class WeatherController extends Controller {
 			return null;
 		}
 
+		$cityDatas["forecast"] = array(); 
+		$forecast = json_decode(file_get_contents("http://api.openweathermap.org/data/2.5/forecast?q=$name&mode=json&units=metric"), true);
+		if ($forecast['cod'] == '200' && isset($forecast['cnt']) && is_numeric($forecast['cnt'])) {
+			// Show only 8 values max
+			// @TODO: setting ?
+			$maxFC = $forecast['cnt'] > 8 ? 8 : $forecast['cnt'];
+			for ($i = 0; $i < $maxFC; $i++) {
+				$cityDatas['forecast'][] = array(
+					'hour' => $forecast['list'][$i]['dt'],
+					'weather' => $forecast['list'][$i]['weather'][0]['description'],
+					'temperature' => $forecast['list'][$i]['main']['temp'],
+					'pressure' => $forecast['list'][$i]['main']['pressure'],
+					'wind' => array(
+						'speed' => $forecast['list'][$i]['wind']['speed'],
+						'desc' => $this->windDegToString($forecast['list'][$i]['wind']['deg'])
+					)
+				);
+			}
+		}
+
+
 		return $cityDatas;
+	}
+
+	private function windDegToString($deg) {
+		if ($deg > 0 && $deg < 23 ||
+			$deg > 333) {
+			return "North";
+		}
+		else if ($deg > 22 && $deg < 67) {
+			return "North-East";
+		}
+		else if ($deg > 66 && $deg < 113) {
+			return "East";
+		}
+		else if ($deg > 112 && $deg < 157) {
+			return "South-East";
+		}
+		else if ($deg > 156 && $deg < 201) {
+			return "South";
+		}
+		else if ($deg > 200 && $deg < 245) {
+			return "South-West";
+		}
+		else if ($deg > 244 && $deg < 289) {
+			return "West";
+		}
+		else if ($deg > 288 && $deg < 334) {
+			return "North-West";
+		}
 	}
 };
 ?>

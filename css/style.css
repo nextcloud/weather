@@ -124,7 +124,7 @@
         font-weight: bold;
 }
 
-#create-city h2 {
+#create-city h2, #city-forecast-panel th {
         font-weight: bold;
 }
 
@@ -142,10 +142,19 @@
 	font-size: 1.5em;
 }
 
-#city-weather-panel {
+#city-weather-panel, #city-forecast-panel {
 	border-radius: 3px;
 	padding: 30px;
 	padding-top: 20px;
 	background-color: rgba(50, 50, 50, 0.5);
 	display: inline-block;
+}
+
+#city-forecast-panel {
+	float: right;
+	font-size: 1.3em;
+}
+
+#city-forecast-panel td, #city-forecast-panel th {
+	padding: 10px;
 }

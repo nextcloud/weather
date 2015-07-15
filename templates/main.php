@@ -40,5 +40,17 @@
 			<div class="city-current-wind">Wind: {{ currentCity.wind.speed }} m/s - {{ currentCity.wind.desc }}</div>
 			<div class="city-current-sunrise">Sunrise: {{ currentCity.sys.sunrise * 1000 | date:'HH:mm' }} Sunset: {{ currentCity.sys.sunset * 1000 | date:'HH:mm' }}</div>
 		</div>
+		<div id="city-forecast-panel">
+			<table>
+				<tr><th>Hour</th><th>Temperature</th><th>Weather</th><th>Pressure</th><th>Wind</th></tr>
+				<tr ng-repeat="forecast in currentCity.forecast">
+					<td>{{ forecast.hour * 1000 | date:'HH:mm'}}</td>
+					<td>{{ forecast.temperature }}°C</td>
+					<td>{{ forecast.weather }}</td>
+					<td>{{ forecast.pressure }}</td>
+					<td>{{ forecast.wind.speed }} m/s - {{ forecast.wind.desc }}</td>
+				</tr>
+			</table>
+		</div>
 	</div>
 </div>
