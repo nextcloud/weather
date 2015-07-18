@@ -32,7 +32,10 @@
 	</div>
 	<div id="city-right" ng-show="currentCity != null" style="background-image: url('{{ owncloudAppImgPath }}/img/{{ currentCity.image }}');">
 		<div id="city-weather-panel">
-			<div class="city-name">{{ currentCity.name }}, {{ currentCity.sys.country }}</div>
+			<div class="city-name">
+				{{ currentCity.name }}, {{ currentCity.sys.country }}
+				<img class="home-icon" src="{{ owncloudAppImgPath }}/img/home-{{ selectedCityId == homeCity ? 'no' : '' }}pick.png" />
+			</div>
 			<div class="city-current-temp">{{ currentCity.main.temp }}°C</div>
 			<div class="city-current-pressure">Pressure: {{ currentCity.main.pressure }} hpa</div>
 			<div class="city-current-humidity">Humidity: {{ currentCity.main.humidity}}%</div>

@@ -31,6 +31,7 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 
 		$scope.cityLoadError = '';
 		$scope.currentCity = null;
+		$scope.selectedCityId = 0;
 		$scope.domCity = null;
 		$scope.homeCity = '';
 
@@ -84,6 +85,7 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 				if (data != null) {
 					$scope.domCity = city;
 					$scope.currentCity = data;
+					$scope.selectedCityId = city.id;
 					$scope.currentCity.image = $scope.imageMapper[$scope.currentCity.weather[0].main];
 					$scope.currentCity.wind.desc = "";
 					if ($scope.currentCity.wind.deg > 0 && $scope.currentCity.wind.deg < 23 ||
@@ -172,6 +174,7 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
                                                         $scope.cities.splice(i, 1);
                                                         // If current city is the removed city, close it
                                                         if ($scope.selectedCityId === city.id) {
+								$scope.currentCity = null;
                                                                 $scope.selectedCityId = 0;
                                                         }
                                                         return;
