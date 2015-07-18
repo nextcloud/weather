@@ -34,7 +34,7 @@
 		<div id="city-weather-panel">
 			<div class="city-name">
 				{{ currentCity.name }}, {{ currentCity.sys.country }}
-				<img class="home-icon" src="{{ owncloudAppImgPath }}/img/home-{{ selectedCityId == homeCity ? 'no' : '' }}pick.png" />
+				<img class="home-icon" src="{{ owncloudAppImgPath }}/img/home-{{ selectedCityId == homeCity ? '' : 'no' }}pick.png" />
 			</div>
 			<div class="city-current-temp">{{ currentCity.main.temp }}°C</div>
 			<div class="city-current-pressure">Pressure: {{ currentCity.main.pressure }} hpa</div>
