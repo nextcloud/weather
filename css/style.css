@@ -102,6 +102,10 @@
 	line-height: 1em;
 }
 
+#city-right tr:hover {
+	background-color: rgba(100, 100, 100, 0.5);
+}
+
 .city-list hr {
 	border: 0;
 	height: 1px;
