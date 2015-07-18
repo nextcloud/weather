@@ -68,6 +68,18 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 				if (!undef(data['userid'])) {
 					$scope.userId = data['userid'];
 				}
+
+				if (!undef(data['home'])) {
+					$scope.homeCity = data['home'];
+					if ($scope.homeCity) {
+						for (i = 0; i < $scope.cities.length; i++) {
+							if ($scope.cities[i].id == $scope.homeCity) {
+								$scope.loadCity($scope.cities[i]);
+								return;
+							}
+						}
+					}
+				}
 			}).
 			fail(function (data, status, headers, config) {
 				$scope.fatalError();
@@ -189,5 +201,25 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 				alert(g_error500);
 			});
 		};
+
+		$scope.setHome = function(cityId) {
+			if (undef(cityId)) {
+				alert(g_error500);
+				return;
+			}
+
+			$http.post(OC.generateUrl('/apps/weather/settings/home/set'), {'city': cityId}).
+			success(function (data, status, headers, config) {
+				if (data != null && !undef(data['set'])) {
+					$scope.homeCity = cityId;
+				}
+				else {
+					alert('Failed to set home. Please contact your administrator');
+				}
+			}).
+			fail(function (data, status, headers, config) {
+				alert(g_error500);
+			});
+		}
 	}
 ]);

@@ -23,11 +23,13 @@ class CityController extends Controller {
 
 	private $userId;
 	private $mapper;
+	private $settingsMapper;
 
-	public function __construct ($appName, IRequest $request, $userId, CityMapper $mapper) {
+	public function __construct ($appName, IRequest $request, $userId, CityMapper $mapper, SettingsMapper $settingsMapper) {
 		parent::__construct($appName, $request);
 		$this->userId = $userId;
 		$this->mapper = $mapper;
+		$this->settingsMapper = $settingsMapper;
 	}
 
 	/**
@@ -44,7 +46,12 @@ class CityController extends Controller {
 	 */
 	public function getAll() {
 		$cities = $this->mapper->getAll($this->userId);
-		return new JSONResponse(array("cities" => $cities, "userid" => $this->userId));
+		$home = $this->settingsMapper->getHome($this->userId);
+		return new JSONResponse(array(
+			"cities" => $cities,
+			"userid" => $this->userId,
+			"home" => $home
+		));
 	}
 
 	/**

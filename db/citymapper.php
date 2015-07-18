@@ -32,6 +32,10 @@ class CityMapper extends Mapper {
 		return null;
 	}
 
+	public function exists ($id) {
+		return ($this->load($id));
+	}
+
 	public function getAll ($userId) {
 		$sql = 'SELECT id, name FROM ' .
 			'*PREFIX*weather_city WHERE user_id = ?';

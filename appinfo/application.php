@@ -16,9 +16,11 @@ use \OCP\AppFramework\App;
 use \OCP\IContainer;
 
 use \OCA\Weather\Controller\CityController;
+use \OCA\Weather\Controller\SettingsController;
 use \OCA\Weather\Controller\WeatherController;
 
 use \OCA\Weather\Db\CityMapper;
+use \OCA\Weather\Db\SettingsMapper;
 
 class Application extends App {
 
@@ -41,6 +43,10 @@ class Application extends App {
 			return new CityMapper($c->query('ServerContainer')->getDb());
 		});
 
+		$container->registerService('SettingsMapper', function(IContainer $c) {
+			return new SettingsMapper($c->query('ServerContainer')->getDb());
+		});
+
 		/**
 		 * Controllers
 		 */
@@ -49,6 +55,17 @@ class Application extends App {
 				$c->query('AppName'),
 				$c->query('Request'),
 				$c->query('UserId'),
+				$c->query('CityMapper'),
+				$c->query('SettingsMapper')
+			);
+		});
+
+		$container->registerService('SettingsController', function(IContainer $c) {
+			return new SettingsController(
+				$c->query('AppName'),
+				$c->query('Request'),
+				$c->query('UserId'),
+				$c->query('SettingsMapper'),
 				$c->query('CityMapper')
 			);
 		});

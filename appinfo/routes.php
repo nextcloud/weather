@@ -21,5 +21,7 @@ $application->registerRoutes($this, array('routes' => array(
 	array('name' => 'city#delete',		'url' => '/city/delete',	'verb' => 'POST'),
 
 	array('name' => 'weather#get',		'url' => '/weather/get',	'verb' => 'GET'),
+
+	array('name' => 'settings#homeset',	'url' => '/settings/home/set',	'verb' => 'POST'),
 )));
 ?>
