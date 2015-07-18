@@ -162,3 +162,7 @@
 #city-forecast-panel td, #city-forecast-panel th {
 	padding: 10px;
 }
+
+.home-icon:hover {
+	cursor: pointer;
+}
