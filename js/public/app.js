@@ -23,6 +23,7 @@ function emptyStr (obj) {
 
 app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compile', '$http',
 	function ($scope, $interval, $timeout, $compile, $http) {
+		$scope.owncloudAppImgPath = '';
 		$scope.userId = '';
 		$scope.cities = [];
 		$scope.showAddCity = false;
@@ -31,6 +32,7 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 		$scope.cityLoadError = '';
 		$scope.currentCity = null;
 		$scope.domCity = null;
+		$scope.homeCity = '';
 
 		$scope.imageMapper = {
 			"Clear": "sun.png",
@@ -50,6 +52,8 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 		}, 60000);
 
 		$timeout(function () {
+			var imgPath = OC.generateUrl('/apps/weather').replace('index.php/','');
+			$scope.owncloudAppImgPath = imgPath;
 			$scope.loadCities();
 		});
 

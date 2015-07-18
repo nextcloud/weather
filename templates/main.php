@@ -30,7 +30,7 @@
 	<div id="city-right" ng-show="cityLoadError != ''">
 		<span class="city-load-error">{{ cityLoadError }}</span>
 	</div>
-	<div id="city-right" ng-show="currentCity != null" style="background-image: url('/apps/weather/img/{{ currentCity.image }}');">
+	<div id="city-right" ng-show="currentCity != null" style="background-image: url('{{ owncloudAppImgPath }}/img/{{ currentCity.image }}');">
 		<div id="city-weather-panel">
 			<div class="city-name">{{ currentCity.name }}, {{ currentCity.sys.country }}</div>
 			<div class="city-current-temp">{{ currentCity.main.temp }}°C</div>
