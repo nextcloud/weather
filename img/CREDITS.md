@@ -4,3 +4,4 @@
 - sun.png (CC by 2.0): Shanna S => https://www.flickr.com/photos/pineappleandcoconut/16265018786/
 - rain.jpg (Public domain): George Hodan => http://www.publicdomainpictures.net/view-image.php?image=23191&picture=pluie
 - mist.png (CC by SA 2.0): Montgomery County Plan => https://www.flickr.com/photos/75012107@N05/8609938706/
+- home.png: http://uxrepo.com/icon/home-by-typicons
