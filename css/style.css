@@ -166,3 +166,59 @@
 .home-icon:hover {
 	cursor: pointer;
 }
+
+/* Responsive */
+@media (max-width: 1620px) {
+#city-right .city-name {
+	font-size: 5em;
+}
+
+#city-right .city-current-pressure, #city-right .city-current-wind,
+#city-right .city-current-weather, #city-right .city-current-humidity,
+#city-right .city-current-sunrise {
+	font-size: 3em;
+}
+#city-forecast-panel {
+	font-size: 1.2em;
+}
+}
+
+@media (max-width: 1560px) {
+#city-right .city-name {
+	font-size: 4em;
+}
+
+#city-right .city-current-temp {
+	font-size: 3.5em;
+}
+
+#city-right .city-current-pressure, #city-right .city-current-wind,
+#city-right .city-current-weather, #city-right .city-current-humidity,
+#city-right .city-current-sunrise {
+	font-size: 2.2em;
+}
+#city-forecast-panel {
+	font-size: 1.2em;
+}
+}
+
+@media (max-width: 1400px) {
+#city-forecast-panel {
+	font-size: 1em;
+}
+}
+@media (max-width: 1350px) {
+#city-right .city-name {
+	font-size: 3em;
+}
+
+#city-right .city-current-temp {
+	font-size: 2.5em;
+}
+
+#city-right .city-current-pressure, #city-right .city-current-wind,
+#city-right .city-current-weather, #city-right .city-current-humidity,
+#city-right .city-current-sunrise {
+	font-size: 1.6em;
+}
+}
