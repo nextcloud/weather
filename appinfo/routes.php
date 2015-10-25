@@ -23,5 +23,7 @@ $application->registerRoutes($this, array('routes' => array(
 	array('name' => 'weather#get',		'url' => '/weather/get',	'verb' => 'GET'),
 
 	array('name' => 'settings#homeset',	'url' => '/settings/home/set',	'verb' => 'POST'),
+	array('name' => 'settings#apikeyset',	'url' => '/settings/apikey/set','verb' => 'POST'),
+	array('name' => 'settings#apikeyget',	'url' => '/settings/apikey/get','verb' => 'GET'),
 )));
 ?>

@@ -26,6 +26,15 @@
 				</div>
 			</li>
 		</ul>
+		<div id="app-settings" class="ng-scope">
+			<div id="app-settings-header">
+				<button name="app settings" class="settings-button" data-apps-slide-toggle="#app-settings-content">Settings</button>
+			</div>
+			<div style="display: none;" id="app-settings-content">
+				<h2>API Key</h2>
+				<input type="text" name="apikey" ng-change="modifyAPIKey()" ng-model="apiKey" ng-model-options="{debounce:1000}" />
+			</div>
+		</div>
 	</div>
 	<div id="city-right" ng-show="cityLoadError != ''">
 		<span class="city-load-error">{{ cityLoadError }}</span>

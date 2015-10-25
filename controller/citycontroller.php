@@ -24,12 +24,14 @@ class CityController extends Controller {
 	private $userId;
 	private $mapper;
 	private $settingsMapper;
+	private $apiKey;
 
 	public function __construct ($appName, IRequest $request, $userId, CityMapper $mapper, SettingsMapper $settingsMapper) {
 		parent::__construct($appName, $request);
 		$this->userId = $userId;
 		$this->mapper = $mapper;
 		$this->settingsMapper = $settingsMapper;
+		$this->apiKey = $settingsMapper->getApiKey($this->userId);
 	}
 
 	/**
@@ -104,7 +106,7 @@ class CityController extends Controller {
 	}
 
 	private function getCityInformations ($name) {
-		$cityDatas = json_decode(file_get_contents("http://api.openweathermap.org/data/2.5/forecast?q=$name&mode=json"), true);
+		$cityDatas = json_decode(file_get_contents("http://api.openweathermap.org/data/2.5/forecast?q=$name&mode=json&APPID=".$this->apiKey), true);
 		if ($cityDatas['cod'] != '200') {
 			return null;
 		}

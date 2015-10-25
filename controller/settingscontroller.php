@@ -48,5 +48,23 @@ class SettingsController extends Controller {
 		$this->mapper->setHome($this->userId, $city);
 		return new JSONResponse(array("set" => true));
 	}
+
+	/**
+	 * @NoAdminRequired
+	 * @NoCSRFRequired
+	 */
+	public function apiKeySet ($apikey) {
+		$this->mapper->setApiKey($this->userId, $apikey);
+		return new JSONResponse(array("set" => true));
+	}
+
+	/**
+	 * @NoAdminRequired
+	 * @NoCSRFRequired
+	 */
+	public function apiKeyGet () {
+		return new JSONResponse(array("apikey" => $this->mapper->getApiKey($this->userId)));
+		
+	}
 };
 ?>

@@ -21,27 +21,44 @@ class SettingsMapper extends Mapper {
 	}
 
 	public function setHome ($userId, $cityId) {
-		\OCP\DB::beginTransaction();
-		$query = \OCP\DB::prepare('DELETE FROM *PREFIX*weather_config ' .
-			'WHERE `user` = ? and `key` = ?');
-		$query->execute(array($userId, "home"));
-
-		$query = \OCP\DB::prepare('INSERT INTO *PREFIX*weather_config ' .
-			'(`user`,`key`,`value`) VALUES (?,?,?)');
-		$query->execute(array($userId, "home", $cityId));
-		\OCP\DB::commit();
+		$this->setSetting("home", $userId, $cityId);
 	}
 
 	public function getHome ($userId) {
+		return $this->getSetting($userId, "home");
+	}
+
+	public function setApiKey ($userId, $apiKey) {
+		$this->setSetting("apikey", $userId, $apiKey);
+	}
+
+	public function getApiKey($userId) {
+		return $this->getSetting($userId, "apikey");
+	}
+
+	public function setSetting ($settingName, $userId, $settingValue) {
+		\OCP\DB::beginTransaction();
+		$query = \OCP\DB::prepare('DELETE FROM *PREFIX*weather_config ' .
+			'WHERE `user` = ? and `key` = ?');
+		$query->execute(array($userId, $settingName));
+
+		$query = \OCP\DB::prepare('INSERT INTO *PREFIX*weather_config ' .
+			'(`user`,`key`,`value`) VALUES (?,?,?)');
+		$query->execute(array($userId, $settingName, $settingValue));
+		\OCP\DB::commit();
+	}
+
+	public function getSetting ($userId, $settingName) {
 		$sql = 'SELECT value FROM ' .
 			'*PREFIX*weather_config WHERE `user` = ? and `key` = ?';
 		$query = \OCP\DB::prepare($sql);
-		$result = $query->execute(array($userId, "home"));
+		$result = $query->execute(array($userId, $settingName));
 
 		if ($row = $result->fetchRow()) {
 			return $row["value"];
 		}
 		return 0;
 	}
+
 };
 ?>

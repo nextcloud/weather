@@ -24,6 +24,7 @@ function emptyStr (obj) {
 app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compile', '$http',
 	function ($scope, $interval, $timeout, $compile, $http) {
 		$scope.owncloudAppImgPath = '';
+		$scope.apiKey = '';
 		$scope.userId = '';
 		$scope.cities = [];
 		$scope.showAddCity = false;
@@ -52,17 +53,54 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 			}
 		}, 60000);
 
+		// timeout functions internal calls cannot be serialized
 		$timeout(function () {
 			var imgPath = OC.generateUrl('/apps/weather').replace('index.php/','');
 			$scope.owncloudAppImgPath = imgPath;
 			$scope.loadCities();
 		});
 
+		$timeout(function () {
+			$scope.loadApiKey();
+		});
+
+		$scope.modifyAPIKey = function () {
+			$http.post(OC.generateUrl('/apps/weather/settings/apikey/set'), {'apikey': $scope.apiKey}).
+			success(function (data, status, headers, config) {
+				if (data != null && !undef(data['set'])) {
+					// @TODO
+				}
+				else {
+					$scope.setApiKeyError = 'Failed to set API key. Please contact your administrator';
+				}
+			}).
+			error(function (data, status, headers, config) {
+				if (status == 403) {
+					$scope.setApiKeyError = "This key doesn't work. Please provide a valid OpenWeatherMap API key";
+				}
+			}).
+			fail(function (data, status, headers, config) {
+				$scope.setApiKeyError = g_error500;
+			});
+		}
+
+		$scope.loadApiKey = function () {
+			$http.get(OC.generateUrl('/apps/weather/settings/apikey/get')).
+			success(function (data, status, headers, config) {
+				if (!undef(data['apikey'])) {
+					$scope.apiKey = data['apikey'];
+				}
+			}).
+			fail(function (data, status, headers, config) {
+				$scope.fatalError();
+			});
+		};
+
 		$scope.loadCities = function () {
 			$http.get(OC.generateUrl('/apps/weather/city/getall')).
 			success(function (data, status, headers, config) {
 				if (!undef(data['cities'])) {
-					$scope.cities = data['cities']
+					$scope.cities = data['cities'];
 				}
 
 				if (!undef(data['userid'])) {
