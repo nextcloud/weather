@@ -211,6 +211,7 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 					else if ($scope.currentCity.wind.deg > 288 && $scope.currentCity.wind.deg < 334) {
 						$scope.currentCity.wind.desc = "North-West";
 					}
+					$scope.cityLoadError = '';
 				}
 				else {
 					$scope.cityLoadError = 'Failed to get city weather informations. Please contact your administrator';
