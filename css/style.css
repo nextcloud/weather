@@ -146,6 +146,11 @@
 	font-size: 1.5em;
 }
 
+.city-load-error a {
+	color: #FF3333;
+        text-align: center;
+}
+
 #city-weather-panel, #city-forecast-panel {
 	border-radius: 3px;
 	padding: 30px;

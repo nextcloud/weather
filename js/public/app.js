@@ -33,6 +33,7 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 		$scope.addCityError = '';
 
 		$scope.cityLoadError = '';
+		$scope.cityLoadNeedsAPIKey = false;
 		$scope.currentCity = null;
 		$scope.selectedCityId = 0;
 		$scope.domCity = null;
@@ -216,17 +217,25 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 				else {
 					$scope.cityLoadError = 'Failed to get city weather informations. Please contact your administrator';
 				}
+				$scope.cityLoadNeedsAPIKey = false;
 			}).
 			error(function (data, status, headers, config) {
 				if (status == 404) {
 					$scope.cityLoadError = "No city with this name found.";
+					$scope.cityLoadNeedsAPIKey = false;
+				}
+				else if (status == 401) {
+					$scope.cityLoadError = "Your OpenWeatherMap API key is invalid. Please provide a working API Key.";
+					$scope.cityLoadNeedsAPIKey = true;
 				}
 				else if (status == 500) {
 					$scope.cityLoadError = g_error500;
+					$scope.cityLoadNeedsAPIKey = false;
 				}
 			}).
 			fail(function (data, status, headers, config) {
 				$scope.cityLoadError = g_error500;
+				$scope.cityLoadNeedsAPIKey = false;
 			});
 		}
 

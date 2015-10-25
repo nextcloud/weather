@@ -27,6 +27,7 @@ class WeatherController extends Controller {
 	private $settingsMapper;
 	private $apiKey;
 	private $metric;
+	private $curl;
 	private static $apiWeatherURL = "http://api.openweathermap.org/data/2.5/weather?mode=json&q=";
 	private static $apiForecastURL = "http://api.openweathermap.org/data/2.5/forecast?mode=json&q=";
 
@@ -37,6 +38,11 @@ class WeatherController extends Controller {
 		$this->settingsMapper = $settingsMapper;
 		$this->apiKey = $settingsMapper->getApiKey($this->userId);
 		$this->metric = $settingsMapper->getMetric($this->userId);
+		$this->curl = curl_init();
+	}
+
+	public function __destruct () {
+		curl_close($this->curl);
 	}
 
 	/**
@@ -46,18 +52,19 @@ class WeatherController extends Controller {
 	public function get($name) {
 		$cityInfos = $this->getCityInformations($name);
 		if (!$cityInfos) {
-			return new JSONResponse(array(), Http::STATUS_NOT_FOUND);
+			return new JSONResponse(array(), $this->errorCode);
 		}
 		return new JSONResponse($cityInfos);
 	}
 
 	private function getCityInformations ($name) {
-		// @TODO setting for metric
-		$cityDatas = json_decode(file_get_contents(WeatherController::$apiWeatherURL.$name."&APPID=".$this->apiKey."&units=".$this->metric), true);
-		if ($cityDatas['cod'] != '200') {
+		$reqContent = $this->curlGET(WeatherController::$apiWeatherURL.$name."&APPID=".$this->apiKey."&units=".$this->metric);
+		if ($reqContent[0] != Http::STATUS_OK) {
+			$this->errorCode = $reqContent[0];
 			return null;
 		}
 
+		$cityDatas = json_decode($reqContent[1], true);
 		$cityDatas["forecast"] = array(); 
 		$forecast = json_decode(file_get_contents(WeatherController::$apiForecastURL.$name."&APPID=".$this->apiKey."&units=".$this->metric), true);
 		if ($forecast['cod'] == '200' && isset($forecast['cnt']) && is_numeric($forecast['cnt'])) {
@@ -80,6 +87,13 @@ class WeatherController extends Controller {
 
 
 		return $cityDatas;
+	}
+
+	private function curlGET ($URL) {
+		curl_setopt($this->curl, CURLOPT_URL, $URL);
+		curl_setopt($this->curl, CURLOPT_RETURNTRANSFER, 1);
+		$output = curl_exec($this->curl);
+		return array(curl_getinfo($this->curl, CURLINFO_HTTP_CODE), $output);
 	}
 
 	private function windDegToString($deg) {

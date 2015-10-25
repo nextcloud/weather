@@ -43,7 +43,10 @@
 		</div>
 	</div>
 	<div id="city-right" ng-show="cityLoadError != ''">
-		<span class="city-load-error">{{ cityLoadError }}</span>
+		<span class="city-load-error">
+			{{ cityLoadError }}<br /><br />
+			<a href="http://home.openweathermap.org/users/sign_in" ng-show="cityLoadNeedsAPIKey == true">Click here to get an API key</a>
+		</span>
 	</div>
 	<div id="city-right" ng-show="cityLoadError == '' && currentCity != null" style="background-image: url('{{ owncloudAppImgPath }}/img/{{ currentCity.image }}');">
 		<div id="city-weather-panel">
