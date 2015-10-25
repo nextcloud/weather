@@ -26,8 +26,9 @@ class WeatherController extends Controller {
 	private $mapper;
 	private $settingsMapper;
 	private $apiKey;
-	private static $apiWeatherURL = "http://api.openweathermap.org/data/2.5/weather?mode=json&units=metric&q=";
-	private static $apiForecastURL = "http://api.openweathermap.org/data/2.5/forecast?mode=json&units=metric&q=";
+	private $metric;
+	private static $apiWeatherURL = "http://api.openweathermap.org/data/2.5/weather?mode=json&q=";
+	private static $apiForecastURL = "http://api.openweathermap.org/data/2.5/forecast?mode=json&q=";
 
 	public function __construct ($appName, IRequest $request, $userId, CityMapper $mapper, SettingsMapper $settingsMapper) {
 		parent::__construct($appName, $request);
@@ -35,6 +36,7 @@ class WeatherController extends Controller {
 		$this->mapper = $mapper;
 		$this->settingsMapper = $settingsMapper;
 		$this->apiKey = $settingsMapper->getApiKey($this->userId);
+		$this->metric = $settingsMapper->getMetric($this->userId);
 	}
 
 	/**
@@ -51,13 +53,13 @@ class WeatherController extends Controller {
 
 	private function getCityInformations ($name) {
 		// @TODO setting for metric
-		$cityDatas = json_decode(file_get_contents(WeatherController::$apiWeatherURL.$name."&APPID=".$this->apiKey), true);
+		$cityDatas = json_decode(file_get_contents(WeatherController::$apiWeatherURL.$name."&APPID=".$this->apiKey."&units=".$this->metric), true);
 		if ($cityDatas['cod'] != '200') {
 			return null;
 		}
 
 		$cityDatas["forecast"] = array(); 
-		$forecast = json_decode(file_get_contents(WeatherController::$apiForecastURL.$name."&APPID=".$this->apiKey), true);
+		$forecast = json_decode(file_get_contents(WeatherController::$apiForecastURL.$name."&APPID=".$this->apiKey."&units=".$this->metric), true);
 		if ($forecast['cod'] == '200' && isset($forecast['cnt']) && is_numeric($forecast['cnt'])) {
 			// Show only 8 values max
 			// @TODO: setting ?

@@ -66,5 +66,27 @@ class SettingsController extends Controller {
 		return new JSONResponse(array("apikey" => $this->mapper->getApiKey($this->userId)));
 		
 	}
+
+	/**
+	 * @NoAdminRequired
+	 * @NoCSRFRequired
+	 */
+	public function metricSet ($metric) {
+		$this->mapper->setMetric($this->userId, $metric);
+		return new JSONResponse(array("set" => true));
+	}
+
+	/**
+	 * @NoAdminRequired
+	 * @NoCSRFRequired
+	 */
+	public function metricGet () {
+		$metric = $this->mapper->getMetric($this->userId);
+		if ($metric === 0) {
+			$this->mapper->setMetric($this->userId, "metric");
+			$metric = "metric";
+		}
+		return new JSONResponse(array("metric" => $metric));
+	}
 };
 ?>

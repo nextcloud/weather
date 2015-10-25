@@ -31,8 +31,14 @@
 				<button name="app settings" class="settings-button" data-apps-slide-toggle="#app-settings-content">Settings</button>
 			</div>
 			<div style="display: none;" id="app-settings-content">
-				<h2>API Key</h2>
+				<h2>OpenWeatherMap API Key</h2>
 				<input type="text" name="apikey" ng-change="modifyAPIKey()" ng-model="apiKey" ng-model-options="{debounce:1000}" />
+				<h2>Metric</h2>
+				<select name="metric" ng-change="modifyMetric()" ng-model="metric">
+					<option value="metric">°C</option>
+					<option value="kelvin">°K</option>
+					<option value="imperial">°F</option>
+				</select>
 			</div>
 		</div>
 	</div>
@@ -46,7 +52,7 @@
 				<img ng-show="selectedCityId == homeCity" src="{{ owncloudAppImgPath }}/img/home-pick.png" />
 				<img class="home-icon" ng-click="setHome(selectedCityId);" ng-show="selectedCityId != homeCity" src="{{ owncloudAppImgPath }}/img/home-nopick.png" />
 			</div>
-			<div class="city-current-temp">{{ currentCity.main.temp }}°C</div>
+			<div class="city-current-temp">{{ currentCity.main.temp }}{{ metricRepresentation }}</div>
 			<div class="city-current-pressure">Pressure: {{ currentCity.main.pressure }} hpa</div>
 			<div class="city-current-humidity">Humidity: {{ currentCity.main.humidity}}%</div>
 			<div class="city-current-weather">Cloudiness: {{ currentCity.weather[0].description }}</div>
@@ -58,7 +64,7 @@
 				<tr><th>Hour</th><th>Temperature</th><th>Weather</th><th>Pressure</th><th>Wind</th></tr>
 				<tr ng-repeat="forecast in currentCity.forecast">
 					<td>{{ forecast.hour * 1000 | date:'HH:mm'}}</td>
-					<td>{{ forecast.temperature }}°C</td>
+					<td>{{ forecast.temperature }}{{ metricRepresentation }}</td>
 					<td>{{ forecast.weather }}</td>
 					<td>{{ forecast.pressure }}</td>
 					<td>{{ forecast.wind.speed }} m/s - {{ forecast.wind.desc }}</td>

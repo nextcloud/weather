@@ -25,5 +25,7 @@ $application->registerRoutes($this, array('routes' => array(
 	array('name' => 'settings#homeset',	'url' => '/settings/home/set',	'verb' => 'POST'),
 	array('name' => 'settings#apikeyset',	'url' => '/settings/apikey/set','verb' => 'POST'),
 	array('name' => 'settings#apikeyget',	'url' => '/settings/apikey/get','verb' => 'GET'),
+	array('name' => 'settings#metricset',	'url' => '/settings/metric/set','verb' => 'POST'),
+	array('name' => 'settings#metricget',	'url' => '/settings/metric/get','verb' => 'GET'),
 )));
 ?>

@@ -26,6 +26,8 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 		$scope.owncloudAppImgPath = '';
 		$scope.apiKey = '';
 		$scope.userId = '';
+		$scope.metric = 'metric';
+		$scope.metricRepresentation = '°C';
 		$scope.cities = [];
 		$scope.showAddCity = false;
 		$scope.addCityError = '';
@@ -60,27 +62,26 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 			$scope.loadCities();
 		});
 
-		$timeout(function () {
-			$scope.loadApiKey();
-		});
+		$timeout(function () { $scope.loadApiKey(); });
+		$timeout(function () { $scope.loadMetric(); });
 
 		$scope.modifyAPIKey = function () {
 			$http.post(OC.generateUrl('/apps/weather/settings/apikey/set'), {'apikey': $scope.apiKey}).
 			success(function (data, status, headers, config) {
 				if (data != null && !undef(data['set'])) {
-					// @TODO
+					$scope.loadCity($scope.domCity);
 				}
 				else {
-					$scope.setApiKeyError = 'Failed to set API key. Please contact your administrator';
+					$scope.settingError = 'Failed to set API key. Please contact your administrator';
 				}
 			}).
 			error(function (data, status, headers, config) {
 				if (status == 403) {
-					$scope.setApiKeyError = "This key doesn't work. Please provide a valid OpenWeatherMap API key";
+					$scope.settingError = "This key doesn't work. Please provide a valid OpenWeatherMap API key";
 				}
 			}).
 			fail(function (data, status, headers, config) {
-				$scope.setApiKeyError = g_error500;
+				$scope.settingError = g_error500;
 			});
 		}
 
@@ -89,6 +90,53 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 			success(function (data, status, headers, config) {
 				if (!undef(data['apikey'])) {
 					$scope.apiKey = data['apikey'];
+				}
+			}).
+			fail(function (data, status, headers, config) {
+				$scope.fatalError();
+			});
+		};
+
+		$scope.mapMetric = function () {
+			if ($scope.metric == 'kelvin') {
+				$scope.metricRepresentation = '°K';
+			}
+			else if ($scope.metric == 'imperial') {
+				$scope.metricRepresentation = '°F';
+			}
+			else {
+				$scope.metric = 'metric';
+				$scope.metricRepresentation = '°C';
+			}
+		};
+
+		$scope.modifyMetric = function () {
+			$http.post(OC.generateUrl('/apps/weather/settings/metric/set'), {'metric': $scope.metric}).
+			success(function (data, status, headers, config) {
+				if (data != null && !undef(data['set'])) {
+					$scope.mapMetric();
+					$scope.loadCity($scope.domCity);
+				}
+				else {
+					$scope.settingError = 'Failed to set metric. Please contact your administrator';
+				}
+			}).
+			error(function (data, status, headers, config) {
+				if (status == 404) {
+					$scope.settingError = "This metric is not known.";
+				}
+			}).
+			fail(function (data, status, headers, config) {
+				$scope.settingError = g_error500;
+			});
+		}
+
+		$scope.loadMetric = function () {
+			$http.get(OC.generateUrl('/apps/weather/settings/metric/get')).
+			success(function (data, status, headers, config) {
+				if (!undef(data['metric'])) {
+					$scope.metric = data['metric'];
+					$scope.mapMetric();
 				}
 			}).
 			fail(function (data, status, headers, config) {
