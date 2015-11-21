@@ -20,14 +20,15 @@ use \OCP\AppFramework\Http;
 use \OCA\Weather\Db\CityMapper;
 use \OCA\Weather\Db\SettingsMapper;
 
-class WeatherController extends Controller {
+use \OCA\Weather\Controller\IntermediateController;
+
+class WeatherController extends IntermediateController {
 
 	private $userId;
 	private $mapper;
 	private $settingsMapper;
 	private $apiKey;
 	private $metric;
-	private $curl;
 	private static $apiWeatherURL = "http://api.openweathermap.org/data/2.5/weather?mode=json&q=";
 	private static $apiForecastURL = "http://api.openweathermap.org/data/2.5/forecast?mode=json&q=";
 
@@ -38,11 +39,6 @@ class WeatherController extends Controller {
 		$this->settingsMapper = $settingsMapper;
 		$this->apiKey = $settingsMapper->getApiKey($this->userId);
 		$this->metric = $settingsMapper->getMetric($this->userId);
-		$this->curl = curl_init();
-	}
-
-	public function __destruct () {
-		curl_close($this->curl);
 	}
 
 	/**
@@ -58,6 +54,7 @@ class WeatherController extends Controller {
 	}
 
 	private function getCityInformations ($name) {
+		$name = preg_replace("[ ]",'%20',$name);
 		$reqContent = $this->curlGET(WeatherController::$apiWeatherURL.$name."&APPID=".$this->apiKey."&units=".$this->metric);
 		if ($reqContent[0] != Http::STATUS_OK) {
 			$this->errorCode = $reqContent[0];
@@ -87,13 +84,6 @@ class WeatherController extends Controller {
 
 
 		return $cityDatas;
-	}
-
-	private function curlGET ($URL) {
-		curl_setopt($this->curl, CURLOPT_URL, $URL);
-		curl_setopt($this->curl, CURLOPT_RETURNTRANSFER, 1);
-		$output = curl_exec($this->curl);
-		return array(curl_getinfo($this->curl, CURLINFO_HTTP_CODE), $output);
 	}
 
 	private function windDegToString($deg) {
