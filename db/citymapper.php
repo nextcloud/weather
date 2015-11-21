@@ -56,13 +56,13 @@ class CityMapper extends Mapper {
 		$query->execute(array($userId, $name));
 		\OCP\DB::commit();
 
-		$sql = 'SELECT max(id) FROM ' .
+		$sql = 'SELECT max(id) as maxid FROM ' .
 			'*PREFIX*weather_city WHERE user_id = ? and name = ?';
 		$query = \OCP\DB::prepare($sql);
 		$result = $query->execute(array($userId, $name));
 
 		if ($row = $result->fetchRow()) {
-			return $row['max'];
+			return $row['maxid'];
 		}
 		return null;
 	}
