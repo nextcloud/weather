@@ -106,6 +106,7 @@ class CityController extends Controller {
 	}
 
 	private function getCityInformations ($name) {
+		$name = preg_replace("[ ]",'%20',$name);
 		$cityDatas = json_decode(file_get_contents("http://api.openweathermap.org/data/2.5/forecast?q=$name&mode=json&APPID=".$this->apiKey), true);
 		if ($cityDatas['cod'] != '200') {
 			return null;
