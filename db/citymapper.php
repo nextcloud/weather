@@ -66,13 +66,5 @@ class CityMapper extends Mapper {
 		}
 		return null;
 	}
-
-	public function delete ($id) {
-		\OCP\DB::beginTransaction();
-		$query = \OCP\DB::prepare('DELETE FROM *PREFIX*weather_city ' .
-			'WHERE id = ?');
-		$query->execute(array($id));
-		\OCP\DB::commit();
-	}
 };
 ?>

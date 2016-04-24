@@ -17,7 +17,9 @@ use \OCP\AppFramework\Controller;
 use \OCP\AppFramework\Http\JSONResponse;
 use \OCP\AppFramework\Http;
 
+use \OCA\Weather\Db\CityEntity;
 use \OCA\Weather\Db\CityMapper;
+use \OCA\Weather\Db\SettingsMapper;
 use \OCA\Weather\Controller\IntermediateController;
 
 class CityController extends IntermediateController {
@@ -101,7 +103,11 @@ class CityController extends IntermediateController {
 			return new JSONResponse(array(), 403);
 		}
 
-		$this->mapper->delete($id);
+		$entity = new CityEntity();
+		$entity->setId($id);
+		$entity->setUser_id($this->userId);
+
+		$this->mapper->delete($entity);
 
 		return new JSONResponse(array("deleted" => true));
 	}
