@@ -58,7 +58,7 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 
 		// timeout functions internal calls cannot be serialized
 		$timeout(function () {
-			var imgPath = OC.generateUrl('/apps/weather').replace('index.php/','');
+			var imgPath = OC.filePath('weather','img','').replace('index.php/','');
 			$scope.owncloudAppImgPath = imgPath;
 			$scope.loadCities();
 		});
