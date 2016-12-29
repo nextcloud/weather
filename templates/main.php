@@ -48,12 +48,12 @@
 			<a href="http://home.openweathermap.org/users/sign_in" ng-show="cityLoadNeedsAPIKey == true">Click here to get an API key</a>
 		</span>
 	</div>
-	<div id="city-right" ng-show="cityLoadError == '' && currentCity != null" style="background-image: url('{{ owncloudAppImgPath }}/img/{{ currentCity.image }}');">
+	<div id="city-right" ng-show="cityLoadError == '' && currentCity != null" style="background-image: url('{{ owncloudAppImgPath }}{{ currentCity.image }}');">
 		<div id="city-weather-panel">
 			<div class="city-name">
 				{{ currentCity.name }}, {{ currentCity.sys.country }}
-				<img ng-show="selectedCityId == homeCity" src="{{ owncloudAppImgPath }}/img/home-pick.png" />
-				<img class="home-icon" ng-click="setHome(selectedCityId);" ng-show="selectedCityId != homeCity" src="{{ owncloudAppImgPath }}/img/home-nopick.png" />
+				<img ng-show="selectedCityId == homeCity" src="{{ owncloudAppImgPath }}home-pick.png" />
+				<img class="home-icon" ng-click="setHome(selectedCityId);" ng-show="selectedCityId != homeCity" src="{{ owncloudAppImgPath }}home-nopick.png" />
 			</div>
 			<div class="city-current-temp">{{ currentCity.main.temp }}{{ metricRepresentation }}</div>
 			<div class="city-current-pressure">Pressure: {{ currentCity.main.pressure }} hpa</div>
