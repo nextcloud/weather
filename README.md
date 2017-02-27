@@ -1,37 +1,25 @@
-## ownCloud Weather
+# Nextcloud Weather
+[![GitHub license](https://img.shields.io/badge/license-AGPLv3-blue.svg)](https://raw.githubusercontent.com/nextcloud/weather/master/COPYING)
 
+**ownCloud Weather provides an application to register cities and show the weather previsions**
 
-### Introduction
-ownCloud Weather provides an application to register cities and show the weather previsions
+![](screenshots/1.png)
 
-### Licence
-ownCloud Weather web application is currently under AGPL licence but this free licence can be modificated to a better free licence.
+## Installation
 
+In your Nextcloud, simply navigate to »Apps«, choose the category »Tools«, find the Weather app and enable it.
+Then open the Weather app from the app menu.
 
-### Requirements
-- An ownCloud instance
+## Maintainers
 
+- [Loïc Blot](https://github.com/nerzhul)
 
-### Installation
-1. Download the [latest release](https://github.com/nerzhul/owncloud-weather/releases)
-2. Place this app in **owncloud/apps/** and unpack it
-3. Rename folder to weather
-3. Activate the app in https://your-owncloud/index.php/settings/apps?installed
+If you’d like to join, just go through the [issue list](https://github.com/nextcloud/weather/issues/) and fix some. :)
 
+## Requirements
 
-### Owncloud SMS core issues
-*Please create your core issues here:*
-https://github.com/nerzhul/owncloud-weather/issues
+- Nextcloud 9+
 
+## Support
 
-### Issue template 
-**Server**
-- ownCloud version: X.X.X
-- PHP version: X.X
-- HTTPd server: <apache|nginx...>
-- HTTPS: <yes|no>
-
-**Content of /owncloud/data/owncloud.log**
-```
-Place content of your owncloud.log here
-```
+If you need assistance or want to ask a question about Weather, you are welcome to [ask for support](https://help.nextcloud.com) in our Forums or the [IRC-Channel](https://webchat.freenode.net/?channels=nextcloud). If you have found a bug, feel free to open a new Issue on GitHub.
