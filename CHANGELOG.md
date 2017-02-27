@@ -1,4 +1,4 @@
-# Owncloud Weather
+# Nextcloud Weather
 
 ## 1.3.0
 * Fix openweathermap API key requirement
