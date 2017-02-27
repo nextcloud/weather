@@ -1,7 +1,7 @@
 # Nextcloud Weather
 [![GitHub license](https://img.shields.io/badge/license-AGPLv3-blue.svg)](https://raw.githubusercontent.com/nextcloud/weather/master/COPYING)
 
-**ownCloud Weather provides an application to register cities and show the weather previsions**
+**Nextcloud Weather provides an application to register cities and show the weather previsions**
 
 ![](screenshots/1.png)
 
