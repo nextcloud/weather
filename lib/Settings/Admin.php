@@ -18,7 +18,7 @@ use OCP\Settings\ISettings;
 
 class Admin implements ISettings {
 	/** @var IL10N */
-	private $l10n;
+	private $l;
 
 	/** @var IURLGenerator */
 	private $urlGenerator;
@@ -27,7 +27,7 @@ class Admin implements ISettings {
 	 * @param IL10N $l10n
 	 */
 	public function __construct(IL10N $l10n, IURLGenerator $urlGenerator) {
-		$this->l10n = $l10n;
+		$this->l = $l10n;
 		$this->urlGenerator = $urlGenerator;
 	}
 

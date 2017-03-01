@@ -11,6 +11,8 @@
 
 namespace OCA\Weather\AppInfo;
 
+OCP\App::registerAdmin('weather', 'settings')
+
 if (class_exists('\OCP\AppFramework\App')) {
 	\OCP\App::addNavigationEntry(array(
 	    // the string under which your app will be referenced in owncloud
