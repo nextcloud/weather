@@ -11,8 +11,7 @@
     <screenshot>https://raw.githubusercontent.com/nextcloud/weather/master/screenshots/1.png</screenshot>
     <screenshot>https://raw.githubusercontent.com/nextcloud/weather/master/screenshots/2.png</screenshot>
     <dependencies>
-        <owncloud min-version="7.0" max-version="9.1" />
-        <nextcloud min-version="9" max-version="11" />
+        <nextcloud min-version="10" max-version="11" />
     </dependencies>
     <website>https://github.com/nextcloud/weather</website>
     <bugs>https://github.com/nextcloud/weather/issues</bugs>
@@ -21,6 +20,5 @@
     <namespace>Weather</namespace>
     <settings>
     	<admin>\OCA\Weather\Settings\Admin</admin>
-	<admin-section>\OCA\Weather\Settings\Section</admin-section>
     </settings>
 </info>
