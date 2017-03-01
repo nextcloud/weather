@@ -11,8 +11,6 @@
 
 namespace OCA\Weather\AppInfo;
 
-OCP\App::registerAdmin('weather', 'settings')
-
 if (class_exists('\OCP\AppFramework\App')) {
 	\OCP\App::addNavigationEntry(array(
 	    // the string under which your app will be referenced in owncloud
@@ -34,6 +32,6 @@ if (class_exists('\OCP\AppFramework\App')) {
 	    'name' => \OCP\Util::getL10N('weather')->t('Weather')
 	));
 } else {
-	$msg = 'Can not enable the OwnBoard app because the App Framework App is disabled';
+	$msg = 'Can not enable Weather app because the App Framework App is disabled';
 	\OCP\Util::writeLog('weather', $msg, \OCP\Util::ERROR);
 }
