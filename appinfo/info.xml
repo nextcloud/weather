@@ -18,4 +18,9 @@
     <bugs>https://github.com/nextcloud/weather/issues</bugs>
     <repository type="git">https://github.com/nextcloud/weather</repository>
     <ocsid>170605</ocsid>
+    <namespace>Weather</namespace>
+    <settings>
+    	<admin>\OCA\Weather\Settings\Admin</admin>
+	<admin-section>\OCA\Weather\Settings\Section</admin-section>
+    </settings>
 </info>
