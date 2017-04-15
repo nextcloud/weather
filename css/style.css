@@ -67,7 +67,11 @@
 	bottom: 0;
 	right: 0;
 	left: 250px;
-	background: black;
+	background: black no-repeat center center fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	color: #EEE;
 }
 
