@@ -1,12 +1,13 @@
 <!--
-Thanks for reporting issues back to Nextcloud Weather!
+Thanks for reporting issues back to Nextcloud! This is the issue tracker of Nextcloud, if you have any support question please check out https://nextcloud.com/support
 
-This is the bug tracker for the Weather component. Find other components at https://github.com/nextcloud/
+This is the bug tracker for the weather app. Find other components at https://github.com/nextcloud/
 
 For reporting potential security issues please see https://nextcloud.com/security/
 
-To make it possible for us to help you please fill out below information carefully.
--->
+To make it possible for us to help you please fill out below information carefully. 
+You can also use the Issue Template application to prefill most of the required information: https://apps.nextcloud.com/apps/issuetemplate
+--> 
 ### Steps to reproduce
 1.
 2.
@@ -19,6 +20,7 @@ Tell us what should happen
 Tell us what happens instead
 
 ### Server configuration
+
 **Operating system**:
 
 **Web server:**
@@ -29,8 +31,6 @@ Tell us what happens instead
 
 **Nextcloud version:** (see Nextcloud admin page)
 
-**Weather app version:** (see App Store page)
-
 **Updated from an older Nextcloud/ownCloud or fresh install:**
 
 **Where did you install Nextcloud from:**
@@ -40,8 +40,8 @@ Tell us what happens instead
 <summary>Signing status</summary>
 
 ```
-Login as admin user into your Nextcloud and access
-http://example.com/index.php/settings/integrity/failed
+Login as admin user into your Nextcloud and access 
+http://example.com/index.php/settings/integrity/failed 
 paste the results here.
 ```
 </details>
@@ -57,7 +57,7 @@ from within your Nextcloud installation folder
 ```
 </details>
 
-**The content of config/config.php:**
+**Nextcloud configuration:**
 <details>
 <summary>Config report</summary>
 
@@ -66,10 +66,34 @@ If you have access to your command line run e.g.:
 sudo -u www-data php occ config:list system
 from within your Nextcloud installation folder
 
-or
+or 
 
-Insert your config.php content here
-(Without the database password, passwordsalt and secret)
+Insert your config.php content here. 
+Make sure to remove all sensitive content such as passwords. (e.g. database password, passwordsalt, secret, smtp password, …)
+```
+</details>
+
+**Are you using external storage, if yes which one:** local/smb/sftp/...
+
+**Are you using encryption:** yes/no
+
+**Are you using an external user-backend, if yes which one:** LDAP/ActiveDirectory/Webdav/...
+
+#### LDAP configuration (delete this part if not used)
+<details>
+<summary>LDAP config</summary>
+
+```
+With access to your command line run e.g.:
+sudo -u www-data php occ ldap:show-config
+from within your Nextcloud installation folder
+
+Without access to your command line download the data/owncloud.db to your local
+computer or access your SQL server remotely and run the select query:
+SELECT * FROM `oc_appconfig` WHERE `appid` = 'user_ldap';
+
+
+Eventually replace sensitive data as the name/IP-address of your LDAP server or groups.
 ```
 </details>
 
@@ -109,3 +133,4 @@ b) The network log
 c) ...
 ```
 </details>
+
