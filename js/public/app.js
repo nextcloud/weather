@@ -167,6 +167,12 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 						}
 					}
 				}
+
+				// If no home found, load first city found
+				if ($scope.cities.length > 0) {
+					$scope.loadCity($scope.cities[0]);
+				}
+
 			},
 			function (r) {
 				$scope.fatalError();
