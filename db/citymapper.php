@@ -32,13 +32,22 @@ class CityMapper extends Mapper {
 		return null;
 	}
 
+	public function count() {
+		$sql = 'SELECT count(*) AS ct FROM *PREFIX*weather_city WHERE user_id = ?';
+		$query = \OCP\DB::prepare($sql);
+		$result = $query->execute(array($userId));
+		if ($row = $result->fetchRow()) {
+			return $row['ct'];
+		}
+		return 0;
+	}
+
 	public function exists ($id) {
 		return ($this->load($id));
 	}
 
 	public function getAll ($userId) {
-		$sql = 'SELECT id, name FROM ' .
-			'*PREFIX*weather_city WHERE user_id = ?';
+		$sql = 'SELECT id, name FROM *PREFIX*weather_city WHERE user_id = ?';
 		$query = \OCP\DB::prepare($sql);
 		$result = $query->execute(array($userId));
 
@@ -51,13 +60,11 @@ class CityMapper extends Mapper {
 
 	public function create ($userId, $name) {
 		\OCP\DB::beginTransaction();
-		$query = \OCP\DB::prepare('INSERT INTO *PREFIX*weather_city ' .
-			'(user_id, name) VALUES (?,?)');
+		$query = \OCP\DB::prepare('INSERT INTO *PREFIX*weather_city(user_id, name) VALUES (?,?)');
 		$query->execute(array($userId, $name));
 		\OCP\DB::commit();
 
-		$sql = 'SELECT max(id) as maxid FROM ' .
-			'*PREFIX*weather_city WHERE user_id = ? and name = ?';
+		$sql = 'SELECT max(id) as maxid FROM *PREFIX*weather_city WHERE user_id = ? and name = ?';
 		$query = \OCP\DB::prepare($sql);
 		$result = $query->execute(array($userId, $name));
 

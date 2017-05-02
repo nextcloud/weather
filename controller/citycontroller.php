@@ -123,10 +123,10 @@ class CityController extends IntermediateController {
 		}
 
 		if ($cityDatas['cod'] != '200') {
-			return array("code" => $cityDatas['cod'], "reponse" =>  null);
+			return array("code" => $cityDatas['cod'], "response" =>  null);
 		}
 
-		return array("code" => 200, "reponse" => $cityDatas);
+		return array("code" => 200, "response" => $cityDatas);
 	}
 };
 ?>

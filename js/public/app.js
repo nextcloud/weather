@@ -68,32 +68,32 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 
 		$scope.modifyAPIKey = function () {
 			$http.post(OC.generateUrl('/apps/weather/settings/apikey/set'), {'apikey': $scope.apiKey}).
-			success(function (data, status, headers, config) {
-				if (data != null && !undef(data['set'])) {
+			then(function (r) {
+				if (r.data != null && !undef(r.data['set'])) {
 					$scope.loadCity($scope.domCity);
 				}
 				else {
 					$scope.settingError = 'Failed to set API key. Please contact your administrator';
 				}
-			}).
-			error(function (data, status, headers, config) {
-				if (status == 403) {
+			},
+			function (r) {
+				if (r.status == 403) {
 					$scope.settingError = "This key doesn't work. Please provide a valid OpenWeatherMap API key";
 				}
-			}).
-			fail(function (data, status, headers, config) {
-				$scope.settingError = g_error500;
+				else {
+					$scope.settingError = g_error500;
+				}
 			});
 		}
 
 		$scope.loadApiKey = function () {
 			$http.get(OC.generateUrl('/apps/weather/settings/apikey/get')).
-			success(function (data, status, headers, config) {
-				if (!undef(data['apikey'])) {
-					$scope.apiKey = data['apikey'];
+			then(function (r) {
+				if (!undef(r.data['apikey'])) {
+					$scope.apiKey = r.data['apikey'];
 				}
-			}).
-			fail(function (data, status, headers, config) {
+			},
+			function (r) {
 				$scope.fatalError();
 			});
 		};
@@ -113,51 +113,51 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 
 		$scope.modifyMetric = function () {
 			$http.post(OC.generateUrl('/apps/weather/settings/metric/set'), {'metric': $scope.metric}).
-			success(function (data, status, headers, config) {
-				if (data != null && !undef(data['set'])) {
+			then(function (r) {
+				if (r.data != null && !undef(r.data['set'])) {
 					$scope.mapMetric();
 					$scope.loadCity($scope.domCity);
 				}
 				else {
 					$scope.settingError = 'Failed to set metric. Please contact your administrator';
 				}
-			}).
-			error(function (data, status, headers, config) {
-				if (status == 404) {
+			},
+			function (r) {
+				if (r.status == 404) {
 					$scope.settingError = "This metric is not known.";
 				}
-			}).
-			fail(function (data, status, headers, config) {
-				$scope.settingError = g_error500;
+				else {
+					$scope.settingError = g_error500;
+				}
 			});
 		}
 
 		$scope.loadMetric = function () {
 			$http.get(OC.generateUrl('/apps/weather/settings/metric/get')).
-			success(function (data, status, headers, config) {
-				if (!undef(data['metric'])) {
-					$scope.metric = data['metric'];
+			then(function (r) {
+				if (!undef(r.data['metric'])) {
+					$scope.metric = r.data['metric'];
 					$scope.mapMetric();
 				}
-			}).
-			fail(function (data, status, headers, config) {
+			},
+			function (r) {
 				$scope.fatalError();
 			});
 		};
 
 		$scope.loadCities = function () {
 			$http.get(OC.generateUrl('/apps/weather/city/getall')).
-			success(function (data, status, headers, config) {
-				if (!undef(data['cities'])) {
-					$scope.cities = data['cities'];
+			then(function (r) {
+				if (!undef(r.data['cities'])) {
+					$scope.cities = r.data['cities'];
 				}
 
-				if (!undef(data['userid'])) {
-					$scope.userId = data['userid'];
+				if (!undef(r.data['userid'])) {
+					$scope.userId = r.data['userid'];
 				}
 
-				if (!undef(data['home'])) {
-					$scope.homeCity = data['home'];
+				if (!undef(r.data['home'])) {
+					$scope.homeCity = r.data['home'];
 					if ($scope.homeCity) {
 						for (i = 0; i < $scope.cities.length; i++) {
 							if ($scope.cities[i].id == $scope.homeCity) {
@@ -167,8 +167,8 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 						}
 					}
 				}
-			}).
-			fail(function (data, status, headers, config) {
+			},
+			function (r) {
 				$scope.fatalError();
 			});
 		};
@@ -180,10 +180,10 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 			}
 
 			$http.get(OC.generateUrl('/apps/weather/weather/get?name=' + city.name)).
-			success(function (data, status, headers, config) {
-				if (data != null) {
+			then(function (r) {
+				if (r.data != null) {
 					$scope.domCity = city;
-					$scope.currentCity = data;
+					$scope.currentCity = r.data;
 					$scope.selectedCityId = city.id;
 					$scope.currentCity.image = $scope.imageMapper[$scope.currentCity.weather[0].main];
 					$scope.currentCity.wind.desc = "";
@@ -218,24 +218,20 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 					$scope.cityLoadError = 'Failed to get city weather informations. Please contact your administrator';
 				}
 				$scope.cityLoadNeedsAPIKey = false;
-			}).
-			error(function (data, status, headers, config) {
-				if (status == 404) {
+			},
+			function (r) {
+				if (r.status == 404) {
 					$scope.cityLoadError = "No city with this name found.";
 					$scope.cityLoadNeedsAPIKey = false;
 				}
-				else if (status == 401) {
+				else if (r.status == 401) {
 					$scope.cityLoadError = "Your OpenWeatherMap API key is invalid. Please provide a working API Key.";
 					$scope.cityLoadNeedsAPIKey = true;
 				}
-				else if (status == 500) {
+				else {
 					$scope.cityLoadError = g_error500;
 					$scope.cityLoadNeedsAPIKey = false;
 				}
-			}).
-			fail(function (data, status, headers, config) {
-				$scope.cityLoadError = g_error500;
-				$scope.cityLoadNeedsAPIKey = false;
 			});
 		}
 
@@ -246,25 +242,25 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 			}
 
 			$http.post(OC.generateUrl('/apps/weather/city/add'), {'name': city.name}).
-			success(function (data, status, headers, config) {
-				if (data != null && !undef(data['id'])) {
-					$scope.cities.push({"name": city.name, "id": data['id']})
+			then(function (r) {
+				if (r.data != null && !undef(r.data['id'])) {
+					$scope.cities.push({"name": city.name, "id": r.data['id']})
 					$scope.showAddCity = false;
 				}
 				else {
 					$scope.addCityError = 'Failed to add city. Please contact your administrator';
 				}
-			}).
-			error(function (data, status, headers, config) {
-				if (status == 404) {
+			},
+			function (r) {
+				if (r.status == 404) {
 					$scope.addCityError = "No city with this name found.";
 				}
-				else if (status == 409) {
+				else if (r.status == 409) {
 					$scope.addCityError = "This city is already registered for your account.";
 				}
-			}).
-			fail(function (data, status, headers, config) {
-				$scope.addCityError = g_error500;
+				else {
+					$scope.addCityError = g_error500;
+				}
 			});
 		};
 
@@ -275,8 +271,8 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 			}
 
 			$http.post(OC.generateUrl('/apps/weather/city/delete'), {'id': city.id}).
-			success(function (data, status, headers, config) {
-				if (data != null && !undef(data['deleted'])) {
+			then(function (r) {
+				if (r.data != null && !undef(r.data['deleted'])) {
 					for (var i = 0; i < $scope.cities.length; i++) {
                                                 if ($scope.cities[i].id === city.id) {
                                                         $scope.cities.splice(i, 1);
@@ -292,8 +288,8 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 				else {
 					alert('Failed to remove city. Please contact your administrator');
 				}
-			}).
-			fail(function (data, status, headers, config) {
+			},
+			function (r) {
 				alert(g_error500);
 			});
 		};
@@ -305,15 +301,15 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 			}
 
 			$http.post(OC.generateUrl('/apps/weather/settings/home/set'), {'city': cityId}).
-			success(function (data, status, headers, config) {
-				if (data != null && !undef(data['set'])) {
+			then(function (r) {
+				if (r.data != null && !undef(r.data['set'])) {
 					$scope.homeCity = cityId;
 				}
 				else {
 					alert('Failed to set home. Please contact your administrator');
 				}
-			}).
-			fail(function (data, status, headers, config) {
+			},
+			function (r) {
 				alert(g_error500);
 			});
 		}
