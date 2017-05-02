@@ -78,8 +78,10 @@ class CityController extends IntermediateController {
 			}
 		}
 
-		if (!$this->getCityInformations($name)) {
-			return new JSONResponse(array(), Http::STATUS_NOT_FOUND);
+		$cityInfos = $this->getCityInformations($name);
+
+		if (!$cityInfos["response"]) {
+			return new JSONResponse($cityInfos, $cityInfos["code"]);
 		}
 
 		if ($id = $this->mapper->create($this->userId, $name)) {
@@ -113,13 +115,18 @@ class CityController extends IntermediateController {
 	}
 
 	private function getCityInformations ($name) {
-		$name = preg_replace("[ ]",'%20',$name);
-		$cityDatas = json_decode($this->curlGET("http://api.openweathermap.org/data/2.5/forecast?q=$name&mode=json&APPID=".$this->apiKey)[1], true);
-		if ($cityDatas['cod'] != '200') {
-			return null;
+		$cityDatas = json_decode($this->curlGET(
+			"http://api.openweathermap.org/data/2.5/forecast?q=".urlencode($name)."&mode=json&APPID=".urlencode($this->apiKey))[1],
+			true);
+		if (in_array('cod', $cityDatas)) {
+			return array("code" => 502, "response" => null);
 		}
 
-		return $cityDatas;
+		if ($cityDatas['cod'] != '200') {
+			return array("code" => $cityDatas['cod'], "reponse" =>  null);
+		}
+
+		return array("code" => 200, "reponse" => $cityDatas);
 	}
 };
 ?>
