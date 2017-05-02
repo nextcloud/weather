@@ -12,7 +12,7 @@
 				<div class="icon-delete svn delete action" ng-click="deleteCity(city);"></div>
 			</li>
 			<li>
-				<a href="#" ng-click="showAddCity = true;">Add a city...</a>
+				<a href="#" ng-click="city.name = ''; addCityError = ''; showAddCity = true;">Add a city...</a>
 				<div ng-show="showAddCity == true" id="create-city">
 					<h1>Add city</h1>
 					<hr>

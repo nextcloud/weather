@@ -246,6 +246,7 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 				if (r.data != null && !undef(r.data['id'])) {
 					$scope.cities.push({"name": city.name, "id": r.data['id']})
 					$scope.showAddCity = false;
+					city.name = "";
 				}
 				else {
 					$scope.addCityError = 'Failed to add city. Please contact your administrator';
