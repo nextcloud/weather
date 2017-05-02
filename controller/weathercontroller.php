@@ -86,7 +86,7 @@ class WeatherController extends IntermediateController {
 		return $cityDatas;
 	}
 
-	private function windDegToString($deg) {
+	private static function windDegToString($deg) {
 		if ($deg > 0 && $deg < 23 ||
 			$deg > 333) {
 			return "North";

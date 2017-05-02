@@ -85,7 +85,12 @@ class CityController extends IntermediateController {
 		}
 
 		if ($id = $this->mapper->create($this->userId, $name)) {
-			return new JSONResponse(array("id" => $id));
+			// Load parameter is set to true if we don't found previous cities.
+			// This permit to trigger loading of the first city in UI
+			return new JSONResponse(array(
+				"id" => $id,
+				"load" => count($cities) == 0)
+			);
 		}
 
 		return new JSONResponse(array());

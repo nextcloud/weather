@@ -11,7 +11,7 @@
 
 var app = angular.module('Weather', []);
 
-var g_error500 = 'Fatal Error: please check your owncloud.log and send a bug report here: https://github.com/nerzhul/weather/issues';
+var g_error500 = 'Fatal Error: please check your owncloud.log and send a bug report here: https://github.com/nextcloud/weather/issues';
 
 function undef (obj) {
 	return typeof obj === undefined || obj === undefined;
@@ -246,6 +246,12 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 				if (r.data != null && !undef(r.data['id'])) {
 					$scope.cities.push({"name": city.name, "id": r.data['id']})
 					$scope.showAddCity = false;
+
+					if (!undef(r.data['load']) && r.data['load']) {
+						loadingCity = angular.copy(city);
+						loadingCity.id = r.data['id'];
+						$scope.loadCity(loadingCity);
+					}
 					city.name = "";
 				}
 				else {
