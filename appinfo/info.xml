@@ -4,14 +4,16 @@
     <id>weather</id>
     <name>Weather</name>
     <description>Watch the weather directly on your Nextcloud.</description>
-    <version>1.4.0</version>
+    <version>1.4.1</version>
     <licence>AGPL</licence>
     <author>Loic Blot</author>
     <category>tools</category>
     <screenshot>https://raw.githubusercontent.com/nextcloud/weather/master/screenshots/1.png</screenshot>
     <screenshot>https://raw.githubusercontent.com/nextcloud/weather/master/screenshots/2.png</screenshot>
     <dependencies>
-        <nextcloud min-version="10" max-version="11" />
+        <php min-version="5.6" min-int-size="32"/>
+        <owncloud min-version="8.1" max-version="9.2" />
+        <nextcloud min-version="10" max-version="12" />
     </dependencies>
     <website>https://github.com/nextcloud/weather</website>
     <bugs>https://github.com/nextcloud/weather/issues</bugs>
