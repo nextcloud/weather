@@ -4,7 +4,7 @@
     <id>weather</id>
     <name>Weather</name>
     <description>Watch the weather directly on your Nextcloud.</description>
-    <version>1.3.5</version>
+    <version>1.4.0</version>
     <licence>AGPL</licence>
     <author>Loic Blot</author>
     <category>tools</category>
