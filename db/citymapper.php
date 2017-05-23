@@ -11,12 +11,12 @@
 
 namespace OCA\Weather\Db;
 
-use \OCP\IDb;
+use \OCP\IDBConnection;
 
 use \OCP\AppFramework\Db\Mapper;
 
 class CityMapper extends Mapper {
-	public function __construct (IDb $db) {
+	public function __construct (IDBConnection $db) {
 		parent::__construct($db, 'weather_city');
 	}
 

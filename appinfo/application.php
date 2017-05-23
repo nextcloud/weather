@@ -40,11 +40,11 @@ class Application extends App {
 		 * Database Layer
 		 */
 		$container->registerService('CityMapper', function(IContainer $c) {
-			return new CityMapper($c->query('ServerContainer')->getDb());
+			return new CityMapper($c->query('ServerContainer')->getDatabaseConnection());
 		});
 
 		$container->registerService('SettingsMapper', function(IContainer $c) {
-			return new SettingsMapper($c->query('ServerContainer')->getDb());
+			return new SettingsMapper($c->query('ServerContainer')->getDatabaseConnection());
 		});
 
 		/**
