@@ -198,7 +198,7 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 					$scope.cityLoadNeedsAPIKey = false;
 				}
 				else if (r.status == 401) {
-					$scope.cityLoadError = "Your OpenWeatherMap API key is invalid. Please provide a working API Key.";
+					$scope.cityLoadError = "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in administration settings";
 					$scope.cityLoadNeedsAPIKey = true;
 				}
 				else {
@@ -232,7 +232,10 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 				}
 			},
 			function (r) {
-				if (r.status == 404) {
+				if (r.status == 401) {
+					$scope.addCityError = "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in administration settings";
+				}
+				else if (r.status == 404) {
 					$scope.addCityError = "No city with this name found.";
 				}
 				else if (r.status == 409) {

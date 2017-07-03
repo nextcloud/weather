@@ -28,14 +28,6 @@ class SettingsMapper extends Mapper {
 		return $this->getSetting($userId, "home");
 	}
 
-	public function setApiKey ($userId, $apiKey) {
-		$this->setSetting("apikey", $userId, $apiKey);
-	}
-
-	public function getApiKey ($userId) {
-		return $this->getSetting($userId, "apikey");
-	}
-
 	public function setMetric ($userId, $metric) {
 		$this->setSetting("metric", $userId, $metric);
 	}

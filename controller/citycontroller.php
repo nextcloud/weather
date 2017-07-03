@@ -34,7 +34,7 @@ class CityController extends IntermediateController {
 		$this->userId = $userId;
 		$this->mapper = $mapper;
 		$this->settingsMapper = $settingsMapper;
-		$this->apiKey = $settingsMapper->getApiKey($this->userId);
+		$this->apiKey = \OC::$server->getConfig()->getAppValue('weather', 'openweathermap_api_key', '');
 	}
 
 	/**
