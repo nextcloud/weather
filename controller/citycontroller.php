@@ -11,6 +11,7 @@
 
 namespace OCA\Weather\Controller;
 
+use \OCP\IConfig;
 use \OCP\IRequest;
 use \OCP\AppFramework\Http\TemplateResponse;
 use \OCP\AppFramework\Controller;
@@ -27,14 +28,14 @@ class CityController extends IntermediateController {
 	private $userId;
 	private $mapper;
 	private $settingsMapper;
-	private $apiKey;
+	private $config;
 
-	public function __construct ($appName, IRequest $request, $userId, CityMapper $mapper, SettingsMapper $settingsMapper) {
+	public function __construct ($appName, IConfig $config, IRequest $request, $userId, CityMapper $mapper, SettingsMapper $settingsMapper) {
 		parent::__construct($appName, $request);
 		$this->userId = $userId;
 		$this->mapper = $mapper;
 		$this->settingsMapper = $settingsMapper;
-		$this->apiKey = \OC::$server->getConfig()->getAppValue('weather', 'openweathermap_api_key', '');
+		$this->config = $config;
 	}
 
 	/**
@@ -120,15 +121,16 @@ class CityController extends IntermediateController {
 	}
 
 	private function getCityInformations ($name) {
+		$apiKey = $this->config->getAppValue($this->appName, 'openweathermap_api_key');
 		$cityDatas = json_decode($this->curlGET(
-			"http://api.openweathermap.org/data/2.5/forecast?q=".urlencode($name)."&mode=json&APPID=".urlencode($this->apiKey))[1],
+			"http://api.openweathermap.org/data/2.5/forecast?q=".urlencode($name)."&mode=json&APPID=".urlencode($apiKey))[1],
 			true);
 		if (in_array('cod', $cityDatas)) {
 			return array("code" => 502, "response" => null);
 		}
 
 		if ($cityDatas['cod'] != '200') {
-			return array("code" => $cityDatas['cod'], "response" =>  null);
+			return array("code" => $cityDatas['cod'], "response" =>  null, "apikey" => $apiKey);
 		}
 
 		return array("code" => 200, "response" => $cityDatas);

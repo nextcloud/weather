@@ -11,6 +11,7 @@
 
 namespace OCA\Weather\Controller;
 
+use \OCP\IConfig;
 use \OCP\IRequest;
 use \OCP\AppFramework\Http\TemplateResponse;
 use \OCP\AppFramework\Controller;
@@ -27,17 +28,15 @@ class WeatherController extends IntermediateController {
 	private $userId;
 	private $mapper;
 	private $settingsMapper;
-	private $apiKey;
 	private $metric;
 	private static $apiWeatherURL = "http://api.openweathermap.org/data/2.5/weather?mode=json&q=";
 	private static $apiForecastURL = "http://api.openweathermap.org/data/2.5/forecast?mode=json&q=";
 
-	public function __construct ($appName, IRequest $request, $userId, CityMapper $mapper, SettingsMapper $settingsMapper) {
+	public function __construct ($appName, IConfig $config, IRequest $request, $userId, CityMapper $mapper, SettingsMapper $settingsMapper) {
 		parent::__construct($appName, $request);
 		$this->userId = $userId;
 		$this->mapper = $mapper;
 		$this->settingsMapper = $settingsMapper;
-		$this->apiKey = \OC::$server->getConfig()->getAppValue('weather', 'openweathermap_api_key', '');
 		$this->metric = $settingsMapper->getMetric($this->userId);
 	}
 
@@ -54,8 +53,9 @@ class WeatherController extends IntermediateController {
 	}
 
 	private function getCityInformations ($name) {
+		$apiKey = $this->config->getAppValue($this->appName, 'openweathermap_api_key');
 		$name = preg_replace("[ ]",'%20',$name);
-		$reqContent = $this->curlGET(WeatherController::$apiWeatherURL.$name."&APPID=".$this->apiKey."&units=".$this->metric);
+		$reqContent = $this->curlGET(WeatherController::$apiWeatherURL.$name."&APPID=".$apiKey."&units=".$this->metric);
 		if ($reqContent[0] != Http::STATUS_OK) {
 			$this->errorCode = $reqContent[0];
 			return null;
@@ -63,7 +63,7 @@ class WeatherController extends IntermediateController {
 
 		$cityDatas = json_decode($reqContent[1], true);
 		$cityDatas["forecast"] = array(); 
-		$forecast = json_decode(file_get_contents(WeatherController::$apiForecastURL.$name."&APPID=".$this->apiKey."&units=".$this->metric), true);
+		$forecast = json_decode(file_get_contents(WeatherController::$apiForecastURL.$name."&APPID=".$apiKey."&units=".$this->metric), true);
 		if ($forecast['cod'] == '200' && isset($forecast['cnt']) && is_numeric($forecast['cnt'])) {
 			// Show only 8 values max
 			// @TODO: setting ?

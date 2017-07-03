@@ -32,12 +32,12 @@
 				url: OC.generateUrl('/apps/weather/settings/apikey'),
 				type: 'POST',
 				data: {
-					apiKey: $('#openweathermap-api-key').val()
+					apikey: $('#openweathermap-api-key').val()
 				}
 			});
 
 			request.done(function (data) {
-				$('#openweathermap-api-key').val(data.apiKey);
+				$('#openweathermap-api-key').val(data.apikey);
 				OC.msg.finishedSuccess('#OWMApiKeySettingsMsg', 'Saved');
 			});
 

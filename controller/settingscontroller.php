@@ -11,6 +11,7 @@
 
 namespace OCA\Weather\Controller;
 
+use \OCP\IConfig;
 use \OCP\IRequest;
 use \OCP\AppFramework\Http\TemplateResponse;
 use \OCP\AppFramework\Controller;
@@ -25,12 +26,14 @@ class SettingsController extends Controller {
 	private $userId;
 	private $mapper;
 	private $cityMapper;
+	private $config;
 
-	public function __construct ($appName, IRequest $request, $userId, SettingsMapper $mapper, CityMapper $cityMapper) {
+	public function __construct ($appName, IConfig $config, IRequest $request, $userId, SettingsMapper $mapper, CityMapper $cityMapper) {
 		parent::__construct($appName, $request);
 		$this->userId = $userId;
 		$this->mapper = $mapper;
 		$this->cityMapper = $cityMapper;
+		$this->config = $config;
 	}
 
 	/**
@@ -50,12 +53,11 @@ class SettingsController extends Controller {
 		return new JSONResponse(array("set" => true));
 	}
 
-	/**
-	 * @NoCSRFRequired
-	 */
 	public function apiKeySet ($apikey) {
-		\OC::$server->getConfig()->setAppValue('weather', 'openweathermap_api_key', $apiKey);
-		return new JSONResponse(array("set" => true));
+		$this->config->setAppValue($this->appName, 'openweathermap_api_key', $apikey);
+		return new JSONResponse(array(
+			"apikey" => $this->config->getAppValue($this->appName, 'openweathermap_api_key', ''),
+		));
 	}
 
 	/**

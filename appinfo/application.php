@@ -36,6 +36,10 @@ class Application extends App {
 			return \OCP\User::getUser();
 		});
 
+		$container->registerService('Config', function($c) {
+			return $c->query('ServerContainer')->getConfig();
+		});
+
 		/**
 		 * Database Layer
 		 */
@@ -53,6 +57,7 @@ class Application extends App {
 		$container->registerService('CityController', function(IContainer $c) {
 			return new CityController(
 				$c->query('AppName'),
+				$c->query('Config'),
 				$c->query('Request'),
 				$c->query('UserId'),
 				$c->query('CityMapper'),
@@ -63,6 +68,7 @@ class Application extends App {
 		$container->registerService('SettingsController', function(IContainer $c) {
 			return new SettingsController(
 				$c->query('AppName'),
+				$c->query('Config'),
 				$c->query('Request'),
 				$c->query('UserId'),
 				$c->query('SettingsMapper'),
@@ -73,6 +79,7 @@ class Application extends App {
 		$container->registerService('WeatherController', function(IContainer $c) {
 			return new WeatherController(
 				$c->query('AppName'),
+				$c->query('Config'),
 				$c->query('Request'),
 				$c->query('UserId'),
 				$c->query('CityMapper'),
