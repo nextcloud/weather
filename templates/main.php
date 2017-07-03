@@ -1,6 +1,6 @@
 <?php
-\OCP\Util::addScript('weather', 'angular/angular.min');
-\OCP\Util::addScript('weather', 'public/app');
+\OCP\Util::addScript('weather', 'angular.min');
+\OCP\Util::addScript('weather', 'app');
 \OCP\Util::addStyle('weather', 'style');
 ?>
 
