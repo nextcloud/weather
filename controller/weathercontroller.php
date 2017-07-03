@@ -29,6 +29,7 @@ class WeatherController extends IntermediateController {
 	private $mapper;
 	private $settingsMapper;
 	private $metric;
+	private $config;
 	private static $apiWeatherURL = "http://api.openweathermap.org/data/2.5/weather?mode=json&q=";
 	private static $apiForecastURL = "http://api.openweathermap.org/data/2.5/forecast?mode=json&q=";
 
@@ -38,6 +39,7 @@ class WeatherController extends IntermediateController {
 		$this->mapper = $mapper;
 		$this->settingsMapper = $settingsMapper;
 		$this->metric = $settingsMapper->getMetric($this->userId);
+		$this->config = $config;
 	}
 
 	/**
