@@ -13,32 +13,34 @@ namespace OCA\Weather\Settings;
 
 use OCP\AppFramework\Http\TemplateResponse;
 use OCP\IL10N;
-use OCP\IURLGenerator;
+use OCP\IConfig;
 use OCP\Settings\ISettings;
 
-class Admin implements ISettings {
+class AdminSettings implements ISettings {
+	/** @var IConfig */
+	private $config;
+
 	/** @var IL10N */
 	private $l;
-
-	/** @var IURLGenerator */
-	private $urlGenerator;
 
 	/**
 	 * @param IL10N $l10n
 	 */
-	public function __construct(IL10N $l10n, IURLGenerator $urlGenerator) {
+	public function __construct(IConfig $config, IL10N $l10n) {
 		$this->l = $l10n;
-		$this->urlGenerator = $urlGenerator;
+		$this->config = $config;
 	}
 
 	/**
 	 * @return TemplateResponse
 	 */
 	public function getForm() {
-		$params = [
+		/*$params = [
+			"openweathermap_api_key" => $this->config->getAppValue('weather', 'openweathermap_api_key', ''),
 		];
 
 		return new TemplateResponse('weather', 'admin', $params);
+	*/	return new TemplateResponse('weather', 'admin', []);
 	}
 
 	/**
@@ -56,7 +58,7 @@ class Admin implements ISettings {
 	 * keep the server setting at the top, right after "server settings"
 	 */
 	public function getPriority() {
-		return 0;
+		return 50;
 	}
 };
 ?>

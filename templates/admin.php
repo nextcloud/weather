@@ -1,3 +1,7 @@
+<?php
+/** @var $l \OCP\IL10N */
+/** @var $_ array */
+?>
 <div id="weather" class="section">
 	<h2><?php p($l->t('Weather')) ?></h2>
 	<p>

@@ -21,6 +21,6 @@
     <ocsid>170605</ocsid>
     <namespace>Weather</namespace>
     <settings>
-    	<admin>\OCA\Weather\Settings\Admin</admin>
+        <admin>OCA\Weather\Settings\AdminSettings</admin>
     </settings>
 </info>
