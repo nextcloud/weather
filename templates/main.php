@@ -31,8 +31,6 @@
 				<button name="app settings" class="settings-button" data-apps-slide-toggle="#app-settings-content">Settings</button>
 			</div>
 			<div style="display: none;" id="app-settings-content">
-				<h2>OpenWeatherMap API Key</h2>
-				<input type="text" name="apikey" ng-change="modifyAPIKey()" ng-model="apiKey" ng-model-options="{debounce:1000}" />
 				<h2>Metric</h2>
 				<select name="metric" ng-change="modifyMetric()" ng-model="metric">
 					<option value="metric">°C</option>

@@ -24,6 +24,7 @@ class SettingsController extends Controller {
 
 	private $userId;
 	private $mapper;
+	private $cityMapper;
 
 	public function __construct ($appName, IRequest $request, $userId, SettingsMapper $mapper, CityMapper $cityMapper) {
 		parent::__construct($appName, $request);
@@ -50,21 +51,11 @@ class SettingsController extends Controller {
 	}
 
 	/**
-	 * @NoAdminRequired
 	 * @NoCSRFRequired
 	 */
 	public function apiKeySet ($apikey) {
-		$this->mapper->setApiKey($this->userId, $apikey);
+		\OC::$server->getConfig()->setAppValue('weather', 'openweathermap_api_key', $apiKey);
 		return new JSONResponse(array("set" => true));
-	}
-
-	/**
-	 * @NoAdminRequired
-	 * @NoCSRFRequired
-	 */
-	public function apiKeyGet () {
-		return new JSONResponse(array("apikey" => $this->mapper->getApiKey($this->userId)));
-		
 	}
 
 	/**

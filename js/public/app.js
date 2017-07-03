@@ -24,7 +24,6 @@ function emptyStr (obj) {
 app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compile', '$http',
 	function ($scope, $interval, $timeout, $compile, $http) {
 		$scope.owncloudAppImgPath = '';
-		$scope.apiKey = '';
 		$scope.userId = '';
 		$scope.metric = 'metric';
 		$scope.metricRepresentation = '°C';
@@ -65,38 +64,6 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 
 		$timeout(function () { $scope.loadApiKey(); });
 		$timeout(function () { $scope.loadMetric(); });
-
-		$scope.modifyAPIKey = function () {
-			$http.post(OC.generateUrl('/apps/weather/settings/apikey/set'), {'apikey': $scope.apiKey}).
-			then(function (r) {
-				if (r.data != null && !undef(r.data['set'])) {
-					$scope.loadCity($scope.domCity);
-				}
-				else {
-					$scope.settingError = 'Failed to set API key. Please contact your administrator';
-				}
-			},
-			function (r) {
-				if (r.status == 403) {
-					$scope.settingError = "This key doesn't work. Please provide a valid OpenWeatherMap API key";
-				}
-				else {
-					$scope.settingError = g_error500;
-				}
-			});
-		}
-
-		$scope.loadApiKey = function () {
-			$http.get(OC.generateUrl('/apps/weather/settings/apikey/get')).
-			then(function (r) {
-				if (!undef(r.data['apikey'])) {
-					$scope.apiKey = r.data['apikey'];
-				}
-			},
-			function (r) {
-				$scope.fatalError();
-			});
-		};
 
 		$scope.mapMetric = function () {
 			if ($scope.metric == 'kelvin') {

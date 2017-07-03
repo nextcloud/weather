@@ -35,12 +35,11 @@ class AdminSettings implements ISettings {
 	 * @return TemplateResponse
 	 */
 	public function getForm() {
-		/*$params = [
+		$params = [
 			"openweathermap_api_key" => $this->config->getAppValue('weather', 'openweathermap_api_key', ''),
 		];
 
 		return new TemplateResponse('weather', 'admin', $params);
-	*/	return new TemplateResponse('weather', 'admin', []);
 	}
 
 	/**
