@@ -62,7 +62,6 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 			$scope.loadCities();
 		});
 
-		$timeout(function () { $scope.loadApiKey(); });
 		$timeout(function () { $scope.loadMetric(); });
 
 		$scope.mapMetric = function () {
