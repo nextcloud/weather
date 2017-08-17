@@ -76,33 +76,20 @@
 }
 
 #city-right .city-name {
-	font-size: 6em;
+	font-size: 5em;
 	line-height: 1em;
 }
 
 
 #city-right .city-current-temp {
-	font-size: 4em;
-	line-height: 1em;
-}
-
-#city-right .city-current-pressure, #city-right .city-current-wind {
 	font-size: 3em;
 	line-height: 1em;
 }
 
-#city-right .city-current-humidity {
-	font-size: 3em;
-	line-height: 1em;
-}
-
-#city-right .city-current-weather {
-	font-size: 3em;
-	line-height: 1em;
-}
-
-#city-right .city-current-sunrise {
-	font-size: 3em;
+#city-right .city-current-pressure, #city-right .city-current-wind,
+	#city-right .city-current-humidity, #city-right .city-current-weather,
+	#city-right .city-current-sunrise {
+	font-size: 2em;
 	line-height: 1em;
 }
 
