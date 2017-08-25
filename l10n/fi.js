@@ -10,12 +10,15 @@ OC.L10N.register(
     "Add" : "Lisää",
     "Cancel" : "Peru",
     "Settings" : "Asetukset",
+    "Metric" : "Asteikko",
+    "Click here to get an API key" : "Klikkaa tästä hankkiaksesi API-avaimen",
     "Pressure" : "Paine",
     "Humidity" : "Kosteus",
     "Cloudiness" : "Pilvisyys",
     "Wind" : "Tuuli",
     "Sunrise" : "Auringonnousu",
     "Sunset" : "Auringonlasku",
+    "Hour" : "Tunti",
     "Temperature" : "Lämpötila"
 },
 "nplurals=2; plural=(n != 1);");
