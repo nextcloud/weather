@@ -1,0 +1,22 @@
+{ "translations": {
+    "Weather" : "Počasie",
+    "OpenWeatherMap API Key" : "API Kľúč OpenWeatherMap",
+    "Save" : "Uložiť",
+    "Add a city" : "Pridať mesto",
+    "Add city" : "Pridať mesto",
+    "City name" : "Názov mesta",
+    "Add" : "Pridať",
+    "Cancel" : "Zrušiť",
+    "Settings" : "Nastavenia",
+    "Metric" : "Metrika",
+    "Click here to get an API key" : "Kliknite sem pre získanie API kľúča",
+    "Pressure" : "Tlak",
+    "Humidity" : "Vlhkosť",
+    "Cloudiness" : "Oblačnosť",
+    "Wind" : "Vietor",
+    "Sunrise" : "Východ slnka",
+    "Sunset" : "Západ slnka",
+    "Hour" : "Hodina",
+    "Temperature" : "Teplota"
+},"pluralForm" :"nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;"
+}
