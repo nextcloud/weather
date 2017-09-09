@@ -1,5 +1,6 @@
 { "translations": {
     "Weather" : "Temps",
+    "OpenWeatherMap API Key" : "Clau per l'API d'OpenWeatherMap",
     "Save" : "Desa",
     "Add a city" : "Afegeix una ciutat",
     "Add city" : "Afegeix ciutat",
