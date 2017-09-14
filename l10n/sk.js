@@ -2,7 +2,7 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "Počasie",
-    "OpenWeatherMap API Key" : "API Kľúč OpenWeatherMap",
+    "OpenWeatherMap API Key" : "Kľúč API OpenWeatherMap",
     "Save" : "Uložiť",
     "Add a city" : "Pridať mesto",
     "Add city" : "Pridať mesto",
