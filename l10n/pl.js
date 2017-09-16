@@ -10,7 +10,7 @@ OC.L10N.register(
     "Add" : "Dodaj",
     "Cancel" : "Anuluj",
     "Settings" : "Ustawienia",
-    "Metric" : "Metryczny",
+    "Metric" : "Jednostka",
     "Click here to get an API key" : "Kliknij tutaj aby zdobyć klucz API",
     "Pressure" : "Ciśnienie",
     "Humidity" : "Wilgotność",
