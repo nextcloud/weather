@@ -11,6 +11,7 @@ OC.L10N.register(
     "Cancel" : "Mégsem",
     "Settings" : "Beállítások",
     "Metric" : "Metrikus",
+    "Click here to get an API key" : "Kattints ide egy API kulcsért",
     "Pressure" : "Légnyomás",
     "Humidity" : "Páratartalom",
     "Cloudiness" : "Felhőzet",
