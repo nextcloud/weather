@@ -2,7 +2,7 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "Vær",
-    "OpenWeatherMap API Key" : "OpenWeatherMap API nøkkel",
+    "OpenWeatherMap API Key" : "OpenWeatherMap API-nøkkel",
     "Save" : "Lagre",
     "Add a city" : "Legg til by",
     "Add city" : "Legg til by",
