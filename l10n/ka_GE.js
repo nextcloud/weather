@@ -17,7 +17,7 @@ OC.L10N.register(
     "Cloudiness" : "ღრუბლიანობა",
     "Wind" : "ქარი",
     "Sunrise" : "მზის ამოსვლა",
-    "Sunset" : "მსის ჩასვლა",
+    "Sunset" : "მზის ჩასვლა",
     "Hour" : "საათი",
     "Temperature" : "ტემპერატურა"
 },
