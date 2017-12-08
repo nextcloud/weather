@@ -1,12 +1,12 @@
 { "translations": {
     "Weather" : "Időjárás",
-    "OpenWeatherMap API Key" : "OpenWeatherMap API Kulcs",
+    "OpenWeatherMap API Key" : "OpenWeatherMap API kulcs",
     "Save" : "Mentés",
-    "Add a city" : "Város hozzáadás",
-    "Add city" : "Város hozzáadás",
+    "Add a city" : "Város hozzáadása",
+    "Add city" : "Város hozzáadása",
     "City name" : "Város neve",
     "Add" : "Hozzáadás",
-    "Cancel" : "Mégsem",
+    "Cancel" : "Mégse",
     "Settings" : "Beállítások",
     "Metric" : "Metrikus",
     "Click here to get an API key" : "Kattints ide egy API kulcsért",
@@ -15,7 +15,7 @@
     "Cloudiness" : "Felhőzet",
     "Wind" : "Szél",
     "Sunrise" : "Napkelte",
-    "Sunset" : "Naplemente",
+    "Sunset" : "Napnyugta",
     "Hour" : "Óra",
     "Temperature" : "Hőmérséklet"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
