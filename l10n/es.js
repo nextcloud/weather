@@ -2,7 +2,7 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "Temperatura",
-    "OpenWeatherMap API Key" : "Llave API OpenWeatherMap",
+    "OpenWeatherMap API Key" : "Clave de la API de OpenWeatherMap",
     "Save" : "Guardar",
     "Add a city" : "Añadir una ciudad",
     "Add city" : "Añadir ciudad",
