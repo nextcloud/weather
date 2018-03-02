@@ -10,6 +10,12 @@
 In your Nextcloud, simply navigate to »Apps«, choose the category »Tools«, find the Weather app and enable it.
 Then open the Weather app from the app menu.
 
+## Configuration (admin)
+
+This app requires an OpenWeatherMap API key. Go to administration panel and enter the key in **Additionnal settings** section.
+
+![](img/weather-admin-settings.png)
+
 ## Maintainers
 
 - [Loïc Blot](https://github.com/nerzhul)
