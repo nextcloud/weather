@@ -37,7 +37,7 @@ class SettingsMapper extends Mapper {
 	}
 
 	public function setSetting ($settingName, $userId, $settingValue) {
-		\OCP\DB::beginTransaction();
+		$this->db->beginTransaction();
 		$query = \OCP\DB::prepare('DELETE FROM *PREFIX*weather_config ' .
 			'WHERE `user` = ? and `key` = ?');
 		$query->execute(array($userId, $settingName));
@@ -45,7 +45,7 @@ class SettingsMapper extends Mapper {
 		$query = \OCP\DB::prepare('INSERT INTO *PREFIX*weather_config ' .
 			'(`user`,`key`,`value`) VALUES (?,?,?)');
 		$query->execute(array($userId, $settingName, $settingValue));
-		\OCP\DB::commit();
+		$this->db->commit();
 	}
 
 	public function getSetting ($userId, $settingName) {

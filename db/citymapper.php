@@ -59,10 +59,10 @@ class CityMapper extends Mapper {
 	}
 
 	public function create ($userId, $name) {
-		\OCP\DB::beginTransaction();
+		$this->db->beginTransaction();
 		$query = \OCP\DB::prepare('INSERT INTO *PREFIX*weather_city(user_id, name) VALUES (?,?)');
 		$query->execute(array($userId, $name));
-		\OCP\DB::commit();
+		$this->db->commit();
 
 		$sql = 'SELECT max(id) as maxid FROM *PREFIX*weather_city WHERE user_id = ? and name = ?';
 		$query = \OCP\DB::prepare($sql);
