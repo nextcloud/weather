@@ -21,4 +21,4 @@ OC.L10N.register(
     "Hour" : "საათი",
     "Temperature" : "ტემპერატურა"
 },
-"nplurals=2; plural=(n==1);");
+"nplurals=2; plural=(n!=1);");

@@ -18,5 +18,5 @@
     "Sunset" : "მზის ჩასვლა",
     "Hour" : "საათი",
     "Temperature" : "ტემპერატურა"
-},"pluralForm" :"nplurals=2; plural=(n==1);"
+},"pluralForm" :"nplurals=2; plural=(n!=1);"
 }
