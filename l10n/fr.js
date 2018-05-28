@@ -2,6 +2,7 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "Météo",
+    "Watch the weather directly on your Nextcloud." : "Consultez la météo directement dans Nextcloud.",
     "OpenWeatherMap API Key" : "Clé d'API OpenWeatherMap",
     "Save" : "Enregistrer",
     "Add a city" : "Ajouter une ville",
