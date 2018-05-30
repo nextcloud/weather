@@ -2,6 +2,7 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "Hava Durumu",
+    "Watch the weather directly on your Nextcloud." : "Hava durumunun Nextcloud üzerinden izlenmesini sağlar.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API Anahtarı",
     "Save" : "Kaydet",
     "Add a city" : "Bir il ekle",
