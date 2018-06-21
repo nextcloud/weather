@@ -1,6 +1,7 @@
 { "translations": {
     "Weather" : "Vreme",
-    "OpenWeatherMap API Key" : "OpenWeatherMap API ključ",
+    "Watch the weather directly on your Nextcloud." : "Spremljanje vremena neposredno s strežnika Nextcloud.",
+    "OpenWeatherMap API Key" : "Ključ API OpenWeatherMap",
     "Save" : "Shrani",
     "Add a city" : "Dodaj kraj",
     "Add city" : "Dodaj kraj",
@@ -10,12 +11,12 @@
     "Settings" : "Nastavitve",
     "Metric" : "Metrično",
     "Click here to get an API key" : "Klikni tukaj, da dobiš API ključ",
-    "Pressure" : "Pritisk",
-    "Humidity" : "Vlažnost",
+    "Pressure" : "Zračni tlak",
+    "Humidity" : "Vlažnost zraka",
     "Cloudiness" : "Oblačnost",
     "Wind" : "Veter",
-    "Sunrise" : "Vzhod",
-    "Sunset" : "Zahod",
+    "Sunrise" : "Sončni vzhod",
+    "Sunset" : "Sončni zahod",
     "Hour" : "Ura",
     "Temperature" : "Temperatura"
 },"pluralForm" :"nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);"
