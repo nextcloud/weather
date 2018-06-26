@@ -1,0 +1,23 @@
+{ "translations": {
+    "Weather" : "Laikapstākļi",
+    "Watch the weather directly on your Nextcloud." : "Redzi laikapstākļus tieši savā Nextcloud.",
+    "OpenWeatherMap API Key" : "OpenWeatherMap API Atslēga",
+    "Save" : "Saglabāt",
+    "Add a city" : "Pievienot pilsētu",
+    "Add city" : "Pievienot pilsētu",
+    "City name" : "Pilsētas nosaukums",
+    "Add" : "Pievienot",
+    "Cancel" : "Atcelt",
+    "Settings" : "Iestatījumi",
+    "Metric" : "Metriskā",
+    "Click here to get an API key" : "Noklikšķini šeit lai saņemtu API atslēgu",
+    "Pressure" : "Spiediens",
+    "Humidity" : "Mitrums",
+    "Cloudiness" : "Mākoņainība",
+    "Wind" : "Vējš",
+    "Sunrise" : "Saullēkts",
+    "Sunset" : "Saulriets",
+    "Hour" : "Stunda",
+    "Temperature" : "Temperatūra"
+},"pluralForm" :"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);"
+}
