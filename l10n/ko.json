@@ -1,5 +1,6 @@
 { "translations": {
     "Weather" : "날씨",
+    "Watch the weather directly on your Nextcloud." : "Nextcloud에서 날씨를 바로 볼 수 있습니다.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API 키",
     "Save" : "저장",
     "Add a city" : "도시 추가",
