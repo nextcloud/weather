@@ -2,6 +2,7 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "Orai",
+    "Watch the weather directly on your Nextcloud." : "Orų prognozės tiesiai Jūsų Nextcloud.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API raktas",
     "Save" : "Įrašyti",
     "Add a city" : "Pridėti miestą",

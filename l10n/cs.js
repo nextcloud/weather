@@ -3,7 +3,7 @@ OC.L10N.register(
     {
     "Weather" : "Počasí",
     "Watch the weather directly on your Nextcloud." : "Sledujte počasí přímo ve svém Nextcloud.",
-    "OpenWeatherMap API Key" : " API klíč OpenWeatherMap",
+    "OpenWeatherMap API Key" : "klíč k aplikačnímu program. rozhraní služby OpenWeatherMap",
     "Save" : "Uložit",
     "Add a city" : "Přidat město",
     "Add city" : "Přidat město",
