@@ -11,8 +11,7 @@
 
 namespace OCA\Weather\AppInfo;
 
-if (class_exists('\OCP\AppFramework\App')) {
-	\OC::$server->getNavigationManager()->add(array(
+\OC::$server->getNavigationManager()->add([
 	    // the string under which your app will be referenced in owncloud
 	    'id' => 'weather',
 
@@ -21,17 +20,13 @@ if (class_exists('\OCP\AppFramework\App')) {
 	    'order' => 10,
 
 	    // the route that will be shown on startup
-	    'href' => \OCP\Util::linkToRoute('weather.city.index'),
+	    'href' => \OC::$server->getURLGenerator()->linkToRoute('weather.city.index'),
 
 	    // the icon that will be shown in the navigation
 	    // this file needs to exist in img/
-	    'icon' => \OCP\Util::imagePath('weather', 'app.svg'),
+	    'icon' => \OC::$server->getURLGenerator()->imagePath('weather', 'app.svg'),
 
 	    // the title of your application. This will be used in the
 	    // navigation or on the settings page of your app
 	    'name' => \OCP\Util::getL10N('weather')->t('Weather')
-	));
-} else {
-	$msg = 'Can not enable Weather app because the App Framework App is disabled';
-	\OCP\Util::writeLog('weather', $msg, \OCP\Util::ERROR);
-}
+]);
