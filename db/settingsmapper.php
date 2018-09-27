@@ -7,6 +7,7 @@
  *
  * @author Loic Blot <loic.blot@unix-experience.fr>
  * @copyright Loic Blot 2015
+ * @copyright Loic Blot 2018
  */
 
 namespace OCA\Weather\Db;
@@ -16,49 +17,43 @@ use \OCP\IDBConnection;
 use \OCP\AppFramework\Db\Mapper;
 
 class SettingsMapper extends Mapper {
-	public function __construct (IDBConnection $db) {
-		parent::__construct($db, 'weather_city');
-	}
+        public function __construct (IDBConnection $db) {
+                parent::__construct($db, 'weather_config');
+        }
 
-	public function setHome ($userId, $cityId) {
-		$this->setSetting("home", $userId, $cityId);
-	}
+        public function setHome ($userId, $cityId) {
+                $this->setSetting("home", $userId, $cityId);
+        }
 
-	public function getHome ($userId) {
-		return $this->getSetting($userId, "home");
-	}
+        public function getHome ($userId) {
+                return $this->getSetting($userId, "home");
+        }
 
-	public function setMetric ($userId, $metric) {
-		$this->setSetting("metric", $userId, $metric);
-	}
+        public function setMetric ($userId, $metric) {
+                $this->setSetting("metric", $userId, $metric);
+        }
 
-	public function getMetric ($userId) {
-		return $this->getSetting($userId, "metric");
-	}
+        public function getMetric ($userId) {
+                return $this->getSetting($userId, "metric");
+        }
 
-	public function setSetting ($settingName, $userId, $settingValue) {
-		$this->db->beginTransaction();
-		$query = \OCP\DB::prepare('DELETE FROM *PREFIX*weather_config ' .
-			'WHERE `user` = ? and `key` = ?');
-		$query->execute(array($userId, $settingName));
+        public function setSetting ($settingName, $userId, $settingValue) {
+                $sql = "DELETE FROM *PREFIX*weather_config  WHERE `user` = '" . $userId . "' and `key` = '" . $settingName . "'";
+                $this->db->executequery($sql);
 
-		$query = \OCP\DB::prepare('INSERT INTO *PREFIX*weather_config ' .
-			'(`user`,`key`,`value`) VALUES (?,?,?)');
-		$query->execute(array($userId, $settingName, $settingValue));
-		$this->db->commit();
-	}
+                $sql = "INSERT INTO *PREFIX*weather_config (`user`,`key`,`value`) VALUES ('" . $userId . "','" . $settingName . "','" . $settingValue . "')";
+                $this->db->executequery($sql);
+        }
 
-	public function getSetting ($userId, $settingName) {
-		$sql = 'SELECT value FROM ' .
-			'*PREFIX*weather_config WHERE `user` = ? and `key` = ?';
-		$query = \OCP\DB::prepare($sql);
-		$result = $query->execute(array($userId, $settingName));
+        public function getSetting ($userId, $settingName) {
+                $sql = "SELECT value FROM *PREFIX*weather_config WHERE `user` ='" . $userId . "' and `key` ='" . $settingName . "'";
+                $result = $this->db->executeQuery($sql);
 
-		if ($row = $result->fetchRow()) {
-			return $row["value"];
-		}
-		return 0;
-	}
+                if ($row = $result->fetch()) {
+                        return $row["value"];
+                }
+                return 0;
+        }
 
 };
 ?>
