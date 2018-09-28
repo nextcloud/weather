@@ -7,6 +7,7 @@
  *
  * @author Loic Blot <loic.blot@unix-experience.fr>
  * @copyright Loic Blot 2015
+ * @copyright e-alfred 2018
  */
 
 namespace OCA\Weather\Db;
@@ -16,62 +17,57 @@ use \OCP\IDBConnection;
 use \OCP\AppFramework\Db\Mapper;
 
 class CityMapper extends Mapper {
-	public function __construct (IDBConnection $db) {
-		parent::__construct($db, 'weather_city');
-	}
+        public function __construct (IDBConnection $db) {
+                parent::__construct($db, 'weather_city');
+        }
 
-	public function load ($id) {
-		$sql = 'SELECT id, name, user_id FROM ' .
-			'*PREFIX*weather_city WHERE id = ?';
-		$query = \OCP\DB::prepare($sql);
-		$result = $query->execute(array($id));
+        public function load ($id) {
+                $sql = "SELECT id, name, user_id FROM *PREFIX*weather_city WHERE `id` ='" . $id . "'";
+                $result = $this->db->executequery($sql);
 
-		if ($row = $result->fetchRow()) {
-			return $row;
-		}
-		return null;
-	}
+                if ($row = $result->fetch()) {
+                        return $row;
+                }
+                return null;
+        }
 
-	public function count() {
-		$sql = 'SELECT count(*) AS ct FROM *PREFIX*weather_city WHERE user_id = ?';
-		$query = \OCP\DB::prepare($sql);
-		$result = $query->execute(array($userId));
-		if ($row = $result->fetchRow()) {
-			return $row['ct'];
-		}
-		return 0;
-	}
+        public function count() {
+                $sql = "SELECT count(*) AS ct FROM *PREFIX*weather_city WHERE `user_id` ='" . $userId . "'";
+                $result = $this->db->executequery($sql);
+                if ($row = $result->fetch()) {
+                        return $row['ct'];
+                }
+                return 0;
+        }
 
-	public function exists ($id) {
-		return ($this->load($id));
-	}
+        public function exists ($id) {
+                return ($this->load($id));
+        }
 
-	public function getAll ($userId) {
-		$sql = 'SELECT id, name FROM *PREFIX*weather_city WHERE user_id = ?';
-		$query = \OCP\DB::prepare($sql);
-		$result = $query->execute(array($userId));
+        public function getAll ($userId) {
+                $sql = "SELECT id, name FROM *PREFIX*weather_city WHERE `user_id` = '" . $userId . "'";
+                $result = $this->db->executequery($sql);
 
-		$cities = array();
-		while ($row = $result->fetchRow()) {
-			$cities[] = $row;
-		}
-		return $cities;
-	}
+                $cities = array();
+                while ($row = $result->fetch()) {
+                        $cities[] = $row;
+                }
+                return $cities;
+        }
 
-	public function create ($userId, $name) {
-		$this->db->beginTransaction();
-		$query = \OCP\DB::prepare('INSERT INTO *PREFIX*weather_city(user_id, name) VALUES (?,?)');
-		$query->execute(array($userId, $name));
-		$this->db->commit();
+        public function create ($userId, $name) {
+                $this->db->beginTransaction();
+                $sql = "INSERT INTO *PREFIX*weather_city(`user_id`, `name`) VALUES ('" . $userId . "','" . $name . "')";
+                $this->db->executequery($sql);
+                $this->db->commit();
 
-		$sql = 'SELECT max(id) as maxid FROM *PREFIX*weather_city WHERE user_id = ? and name = ?';
-		$query = \OCP\DB::prepare($sql);
-		$result = $query->execute(array($userId, $name));
+                $sql = "SELECT max(id) as maxid FROM *PREFIX*weather_city WHERE `user_id` = '" . $userId . "' and `name` = '" . $name . "'";
+                $result = $this->db->executequery($sql);
 
-		if ($row = $result->fetchRow()) {
-			return $row['maxid'];
-		}
-		return null;
-	}
+                if ($row = $result->fetch()) {
+                        return $row['maxid'];
+                }
+                return null;
+        }
 };
 ?>
