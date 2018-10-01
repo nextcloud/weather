@@ -219,6 +219,10 @@
 }
 }
 
+#app {
+	width: 100%;
+}
+
 #app-settings-content h2 {
 	font-weight: bold;
 }
