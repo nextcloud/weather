@@ -2,6 +2,7 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "天気",
+    "Watch the weather directly on your Nextcloud." : "Nextcloudで直接気象をご覧ください。",
     "OpenWeatherMap API Key" : "OpenWeatherMap API キー",
     "Save" : "保存",
     "Add a city" : "都市を追加",
