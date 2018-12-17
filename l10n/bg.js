@@ -2,6 +2,7 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "Време",
+    "Watch the weather directly on your Nextcloud." : "Следете метеорологичните условия от Nextcloud.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API Key",
     "Save" : "Запис",
     "Add a city" : "Добавете град",
