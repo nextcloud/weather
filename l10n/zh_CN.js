@@ -5,7 +5,7 @@ OC.L10N.register(
     "Watch the weather directly on your Nextcloud." : "直接在 Nextcloud 里面查阅天气",
     "OpenWeatherMap API Key" : "开放的天气API接口ID",
     "Save" : "保存",
-    "Add a city" : "新建一个城市",
+    "Add a city" : "添加一个城市",
     "Add city" : "新建城市",
     "City name" : "城市名",
     "Add" : "新建",
