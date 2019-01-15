@@ -1,7 +1,7 @@
 { "translations": {
     "Weather" : "天气",
     "Watch the weather directly on your Nextcloud." : "直接在 Nextcloud 里面查阅天气",
-    "OpenWeatherMap API Key" : "开放的天气API接口ID",
+    "OpenWeatherMap API Key" : "开放的天气 API 接口 ID",
     "Save" : "保存",
     "Add a city" : "添加一个城市",
     "Add city" : "新建城市",
@@ -10,7 +10,7 @@
     "Cancel" : "取消",
     "Settings" : "设置",
     "Metric" : "公制",
-    "Click here to get an API key" : "点这里获取一个API KEY",
+    "Click here to get an API key" : "点这里获取一个 API KEY",
     "Pressure" : "压力",
     "Humidity" : "湿度",
     "Cloudiness" : "云量",
