@@ -9,7 +9,7 @@ OC.L10N.register(
     "City name" : "Nom de la ciutat",
     "Add" : "Afegeix",
     "Cancel" : "Cancel·la",
-    "Settings" : "Configuració",
+    "Settings" : "Paràmetres",
     "Metric" : "Mètric",
     "Click here to get an API key" : "Prem aquí per aconseguir una clau API",
     "Pressure" : "Pressió",
