@@ -2,6 +2,7 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "Vejr",
+    "Watch the weather directly on your Nextcloud." : "Se vejret direkte på din Nextcloud",
     "OpenWeatherMap API Key" : "OpenWeatherMap API nøgle",
     "Save" : "Gem",
     "Add a city" : "Tilføj en by",
