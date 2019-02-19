@@ -2,7 +2,7 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "Időjárás",
-    "Watch the weather directly on your Nextcloud." : "Figyeld az időjárást közvetlenül a Nextcloudodon keresztül.",
+    "Watch the weather directly on your Nextcloud." : "Figyelje az időjárást közvetlenül a Nextcloudjában.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API kulcs",
     "Save" : "Mentés",
     "Add a city" : "Város hozzáadása",
@@ -12,7 +12,7 @@ OC.L10N.register(
     "Cancel" : "Mégse",
     "Settings" : "Beállítások",
     "Metric" : "Metrikus",
-    "Click here to get an API key" : "Kattints ide egy API kulcsért",
+    "Click here to get an API key" : "Kattintson ide egy API kulcs kéréséhez",
     "Pressure" : "Légnyomás",
     "Humidity" : "Páratartalom",
     "Cloudiness" : "Felhőzet",
