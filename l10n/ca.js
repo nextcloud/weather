@@ -2,7 +2,8 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "Temps",
-    "OpenWeatherMap API Key" : "Clau per l'API d'OpenWeatherMap",
+    "Watch the weather directly on your Nextcloud." : "Seguiu el temps directament des del vostre Nextcloud.",
+    "OpenWeatherMap API Key" : "Clau API d'OpenWeatherMap",
     "Save" : "Desa",
     "Add a city" : "Afegeix una ciutat",
     "Add city" : "Afegeix ciutat",
@@ -11,7 +12,7 @@ OC.L10N.register(
     "Cancel" : "Cancel·la",
     "Settings" : "Paràmetres",
     "Metric" : "Mètric",
-    "Click here to get an API key" : "Prem aquí per aconseguir una clau API",
+    "Click here to get an API key" : "Feu clic aquí per aconseguir una clau API",
     "Pressure" : "Pressió",
     "Humidity" : "Humitat",
     "Cloudiness" : "Nuvolositat",
