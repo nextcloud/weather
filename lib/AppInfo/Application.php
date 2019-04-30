@@ -33,7 +33,7 @@ class Application extends App {
 		 * Core
 		 */
 		$container->registerService('UserId', function(IContainer $c) {
-			return \OCP\User::getUser();
+			return \OC::$server->getUserSession()->getUser()->getUID();
 		});
 
 		$container->registerService('Config', function($c) {
