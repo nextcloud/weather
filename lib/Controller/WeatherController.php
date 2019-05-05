@@ -17,6 +17,7 @@ use \OCP\AppFramework\Http\TemplateResponse;
 use \OCP\AppFramework\Controller;
 use \OCP\AppFramework\Http\JSONResponse;
 use \OCP\AppFramework\Http;
+use \OCP\Util;
 
 use \OCA\Weather\Db\CityMapper;
 use \OCA\Weather\Db\SettingsMapper;
@@ -33,7 +34,6 @@ class WeatherController extends IntermediateController {
 	private static $apiWeatherURL = "http://api.openweathermap.org/data/2.5/weather?mode=json&q=";
 	private static $apiForecastURL = "http://api.openweathermap.org/data/2.5/forecast?mode=json&q=";
 
-	public function __construct ($appName, IConfig $config, IRequest $request, $userId, CityMapper $mapper, SettingsMapper $settingsMapper) {
 		parent::__construct($appName, $request);
 		$this->userId = $userId;
 		$this->mapper = $mapper;
@@ -55,17 +55,40 @@ class WeatherController extends IntermediateController {
 	}
 
 	private function getCityInformations ($name) {
+		$l10n = \OCP\Util::getL10N('weather');
+
 		$apiKey = $this->config->getAppValue($this->appName, 'openweathermap_api_key');
 		$name = preg_replace("[ ]",'%20',$name);
-		$reqContent = $this->curlGET(WeatherController::$apiWeatherURL.$name."&APPID=".$apiKey."&units=".$this->metric);
+
+		$openWeatherMapLang = array("ar", "bg", "ca", "cz", "de", "el", "en", "fa", "fi", "fr", "gl", "hr", "hu", "it", "ja", "kr", "la", "lt", "mk", "nl", "pl", "pt", "ro", "ru", "se", "sk", "sl", "es", "tr", "ua", "vi");
+		$currentLang = \OC::$server->getL10N('core')->getLanguageCode();
+
+		if (preg_match("/_/i", $currentLang)) {
+	  $nccurrentLANG = strstr($currentLang, '_', true);
+    }
+
+		if (in_array($currentLang, $openWeatherMapLang)) {
+		  $reqContent = $this->curlGET(WeatherController::$apiWeatherURL.$name."&APPID=".$apiKey."&units=".$this->metric."&lang=".$currentLang);
+		}
+    else {
+			$reqContent = $this->curlGET(WeatherController::$apiWeatherURL.$name."&APPID=".$apiKey."&units=".$this->metric);
+	  }
+
 		if ($reqContent[0] != Http::STATUS_OK) {
 			$this->errorCode = $reqContent[0];
 			return null;
 		}
 
 		$cityDatas = json_decode($reqContent[1], true);
-		$cityDatas["forecast"] = array(); 
-		$forecast = json_decode(file_get_contents(WeatherController::$apiForecastURL.$name."&APPID=".$apiKey."&units=".$this->metric), true);
+		$cityDatas["forecast"] = array();
+
+		if (in_array($currentLang, $openWeatherMapLang)) {
+		  $forecast = json_decode(file_get_contents(WeatherController::$apiForecastURL.$name."&APPID=".$apiKey."&units=".$this->metric."&lang=".$currentLang), true);
+		}
+		else {
+			$forecast = json_decode(file_get_contents(WeatherController::$apiForecastURL.$name."&APPID=".$apiKey."&units=".$this->metric), true);
+		}
+
 		if ($forecast['cod'] == '200' && isset($forecast['cnt']) && is_numeric($forecast['cnt'])) {
 			// Show only 8 values max
 			// @TODO: setting ?
@@ -78,7 +101,7 @@ class WeatherController extends IntermediateController {
 					'pressure' => $forecast['list'][$i]['main']['pressure'],
 					'wind' => array(
 						'speed' => $forecast['list'][$i]['wind']['speed'],
-						'desc' => $this->windDegToString($forecast['list'][$i]['wind']['deg'])
+						'desc' => $l10n->t($this->windDegToString($forecast['list'][$i]['wind']['deg']))
 					)
 				);
 			}
@@ -88,10 +111,9 @@ class WeatherController extends IntermediateController {
 		return $cityDatas;
 	}
 
-	private static function windDegToString($deg) {
+	private function windDegToString($deg): string {
 		if ($deg > 0 && $deg < 23 ||
 			$deg > 333) {
-			return "North";
 		}
 		else if ($deg > 22 && $deg < 67) {
 			return "North-East";
