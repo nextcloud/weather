@@ -11,7 +11,7 @@
 
 var app = angular.module('Weather', []);
 
-var g_error500 = 'Fatal Error: please check your owncloud.log and send a bug report here: https://github.com/nextcloud/weather/issues';
+var g_error500 = t('weather', 'Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues');
 
 function undef (obj) {
 	return typeof obj === undefined || obj === undefined;
@@ -87,12 +87,12 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 					$scope.loadCity($scope.domCity);
 				}
 				else {
-					$scope.settingError = 'Failed to set metric. Please contact your administrator';
+					$scope.settingError = t('weather', 'Failed to set metric. Please contact your administrator');
 				}
 			},
 			function (r) {
 				if (r.status == 404) {
-					$scope.settingError = "This metric is not known.";
+					$scope.settingError = t('weather', 'This metric is not known.');
 				}
 				else {
 					$scope.settingError = g_error500;
@@ -166,40 +166,40 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 						$scope.currentCity.wind.desc = "North";
 					}
 					else if ($scope.currentCity.wind.deg > 22 && $scope.currentCity.wind.deg < 67) {
-						$scope.currentCity.wind.desc = "North-East";
+						$scope.currentCity.wind.desc = t('weather', 'North-East');
 					}
 					else if ($scope.currentCity.wind.deg > 66 && $scope.currentCity.wind.deg < 113) {
-						$scope.currentCity.wind.desc = "East";
+						$scope.currentCity.wind.desc = t('weather', 'East');
 					}
 					else if ($scope.currentCity.wind.deg > 112 && $scope.currentCity.wind.deg < 157) {
-						$scope.currentCity.wind.desc = "South-East";
+						$scope.currentCity.wind.desc = t('weather', 'South-East');
 					}
 					else if ($scope.currentCity.wind.deg > 156 && $scope.currentCity.wind.deg < 201) {
-						$scope.currentCity.wind.desc = "South";
+						$scope.currentCity.wind.desc = t('weather', 'South');
 					}
 					else if ($scope.currentCity.wind.deg > 200 && $scope.currentCity.wind.deg < 245) {
-						$scope.currentCity.wind.desc = "South-West";
+						$scope.currentCity.wind.desc = t('weather', 'South-West');
 					}
 					else if ($scope.currentCity.wind.deg > 244 && $scope.currentCity.wind.deg < 289) {
-						$scope.currentCity.wind.desc = "West";
+						$scope.currentCity.wind.desc = t('weather', 'West');
 					}
 					else if ($scope.currentCity.wind.deg > 288 && $scope.currentCity.wind.deg < 334) {
-						$scope.currentCity.wind.desc = "North-West";
+						$scope.currentCity.wind.desc = t('weather', 'North-West');
 					}
 					$scope.cityLoadError = '';
 				}
 				else {
-					$scope.cityLoadError = 'Failed to get city weather informations. Please contact your administrator';
+					$scope.cityLoadError = t('weather', 'Failed to get city weather informations. Please contact your administrator');
 				}
 				$scope.cityLoadNeedsAPIKey = false;
 			},
 			function (r) {
 				if (r.status == 404) {
-					$scope.cityLoadError = "No city with this name found.";
+					$scope.cityLoadError = t('weather','No city with this name found.');
 					$scope.cityLoadNeedsAPIKey = false;
 				}
 				else if (r.status == 401) {
-					$scope.cityLoadError = "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration";
+					$scope.cityLoadError = t('weather', 'Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration');
 					$scope.cityLoadNeedsAPIKey = true;
 				}
 				else {
@@ -211,7 +211,7 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 
 		$scope.addCity = function(city) {
 			if (undef(city) || emptyStr(city.name)) {
-				$scope.addCityError = 'Empty city name !';
+				$scope.addCityError = t('weather', 'Empty city name !');
 				return;
 			}
 
@@ -229,18 +229,18 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 					city.name = "";
 				}
 				else {
-					$scope.addCityError = 'Failed to add city. Please contact your administrator';
+					$scope.addCityError = t('weather', 'Failed to add city. Please contact your administrator');
 				}
 			},
 			function (r) {
 				if (r.status == 401) {
-					$scope.addCityError = "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration";
+					$scope.addCityError = t('weather', 'Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration');
 				}
 				else if (r.status == 404) {
-					$scope.addCityError = "No city with this name found.";
+					$scope.addCityError = t('weather', 'No city with this name found.');
 				}
 				else if (r.status == 409) {
-					$scope.addCityError = "This city is already registered for your account.";
+					$scope.addCityError = t('weather', 'This city is already registered for your account.');
 				}
 				else {
 					$scope.addCityError = g_error500;
@@ -270,7 +270,7 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
                                         }
 				}
 				else {
-					alert('Failed to remove city. Please contact your administrator');
+					alert(t('weather', 'Failed to remove city. Please contact your administrator'));
 				}
 			},
 			function (r) {
@@ -290,7 +290,7 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 					$scope.homeCity = cityId;
 				}
 				else {
-					alert('Failed to set home. Please contact your administrator');
+					alert(t('weather', 'Failed to set home. Please contact your administrator'));
 				}
 			},
 			function (r) {
