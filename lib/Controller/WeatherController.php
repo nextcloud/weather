@@ -34,6 +34,7 @@ class WeatherController extends IntermediateController {
 	private static $apiWeatherURL = "http://api.openweathermap.org/data/2.5/weather?mode=json&q=";
 	private static $apiForecastURL = "http://api.openweathermap.org/data/2.5/forecast?mode=json&q=";
 
+	public function __construct ($appName, IConfig $config, IRequest $request, $userId, CityMapper $mapper, SettingsMapper $settingsMapper) {
 		parent::__construct($appName, $request);
 		$this->userId = $userId;
 		$this->mapper = $mapper;
@@ -114,6 +115,7 @@ class WeatherController extends IntermediateController {
 	private function windDegToString($deg): string {
 		if ($deg > 0 && $deg < 23 ||
 			$deg > 333) {
+			return "North";
 		}
 		else if ($deg > 22 && $deg < 67) {
 			return "North-East";
