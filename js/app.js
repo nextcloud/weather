@@ -163,7 +163,7 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 					$scope.currentCity.wind.desc = "";
 					if ($scope.currentCity.wind.deg > 0 && $scope.currentCity.wind.deg < 23 ||
 						$scope.currentCity.wind.deg > 333) {
-						$scope.currentCity.wind.desc = "North";
+						$scope.currentCity.wind.desc = t('weather', 'North');
 					}
 					else if ($scope.currentCity.wind.deg > 22 && $scope.currentCity.wind.deg < 67) {
 						$scope.currentCity.wind.desc = t('weather', 'North-East');
