@@ -65,15 +65,15 @@ class WeatherController extends IntermediateController {
 		$currentLang = \OC::$server->getL10N('core')->getLanguageCode();
 
 		if (preg_match("/_/i", $currentLang)) {
-	  $nccurrentLANG = strstr($currentLang, '_', true);
-    }
+		$currentLang = strstr($currentLang, '_', true);
+		}
 
 		if (in_array($currentLang, $openWeatherMapLang)) {
-		  $reqContent = $this->curlGET(WeatherController::$apiWeatherURL.$name."&APPID=".$apiKey."&units=".$this->metric."&lang=".$currentLang);
+			$reqContent = $this->curlGET(WeatherController::$apiWeatherURL.$name."&APPID=".$apiKey."&units=".$this->metric."&lang=".$currentLang);
 		}
-    else {
+		else {
 			$reqContent = $this->curlGET(WeatherController::$apiWeatherURL.$name."&APPID=".$apiKey."&units=".$this->metric);
-	  }
+		}
 
 		if ($reqContent[0] != Http::STATUS_OK) {
 			$this->errorCode = $reqContent[0];
@@ -84,7 +84,7 @@ class WeatherController extends IntermediateController {
 		$cityDatas["forecast"] = array();
 
 		if (in_array($currentLang, $openWeatherMapLang)) {
-		  $forecast = json_decode(file_get_contents(WeatherController::$apiForecastURL.$name."&APPID=".$apiKey."&units=".$this->metric."&lang=".$currentLang), true);
+			$forecast = json_decode(file_get_contents(WeatherController::$apiForecastURL.$name."&APPID=".$apiKey."&units=".$this->metric."&lang=".$currentLang), true);
 		}
 		else {
 			$forecast = json_decode(file_get_contents(WeatherController::$apiForecastURL.$name."&APPID=".$apiKey."&units=".$this->metric), true);
