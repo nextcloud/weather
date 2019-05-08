@@ -32,6 +32,12 @@ class Application extends App {
 		/**
 		 * Core
 		 */
+		
+		$container->registerService('UserId', function(IContainer $c) {
+                	$user = $c->getServer()->getUserSession()->getUser();
+               		return $user ? $user->getUID() : null;
+                });
+
 		$container->registerService('Config', function($c) {
 			return $c->query('ServerContainer')->getConfig();
 		});
