@@ -65,7 +65,7 @@ class WeatherController extends IntermediateController {
 		$currentLang = \OC::$server->getL10N('core')->getLanguageCode();
 
 		if (preg_match("/_/i", $currentLang)) {
-		$currentLang = strstr($currentLang, '_', true);
+			$currentLang = strstr($currentLang, '_', true);
 		}
 
 		if (in_array($currentLang, $openWeatherMapLang)) {
