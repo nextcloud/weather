@@ -35,10 +35,14 @@ class Application extends App {
 		$container->registerService('UserId', function(IContainer $c) {
 			$user = $c->getServer()->getUserSession()->getUser();
 			return $user ? $user->getUID() : null;
-                });
+    });
 
 		$container->registerService('Config', function($c) {
 			return $c->query('ServerContainer')->getConfig();
+		});
+
+		$container->registerService('L10N', function($c) {
+		return $c->query('ServerContainer')->getL10N($c->query('AppName'));
 		});
 
 		/**
@@ -84,7 +88,8 @@ class Application extends App {
 				$c->query('Request'),
 				$c->query('UserId'),
 				$c->query('CityMapper'),
-				$c->query('SettingsMapper')
+				$c->query('SettingsMapper'),
+				$c->query('L10N')
 			);
 		});
 	}

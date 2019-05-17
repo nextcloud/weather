@@ -63,14 +63,14 @@
 		<div id="city-forecast-panel">
 			<table>
 				<tr>
-					<th><?php p($l->t('Hour')); ?></th>
+					<th><?php p($l->t('Date')); ?></th>
 					<th><?php p($l->t('Temperature')); ?></th>
 					<th><?php p($l->t('Weather')); ?></th>
 					<th><?php p($l->t('Pressure')); ?></th>
 					<th><?php p($l->t('Wind')); ?></th>
 				</tr>
 				<tr ng-repeat="forecast in currentCity.forecast">
-					<td>{{ forecast.hour * 1000 | date:'HH:mm'}}</td>
+					<td>{{ forecast.date }}</td>
 					<td>{{ forecast.temperature }}{{ metricRepresentation }}</td>
 					<td>{{ forecast.weather }}</td>
 					<td>{{ forecast.pressure }}</td>
