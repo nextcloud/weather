@@ -19,7 +19,6 @@ OC.L10N.register(
     "Wind" : "風",
     "Sunrise" : "日の出",
     "Sunset" : "日の入り",
-    "Hour" : "時",
     "Temperature" : "気温"
 },
 "nplurals=1; plural=0;");

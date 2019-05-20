@@ -25,7 +25,6 @@
     "Wind" : "Wind",
     "Sunrise" : "Zonsopgang",
     "Sunset" : "Zonsondergang",
-    "Hour" : "Uur",
     "Temperature" : "Temperatuur"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

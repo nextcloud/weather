@@ -17,7 +17,6 @@
     "Wind" : "Vind",
     "Sunrise" : "Solskin",
     "Sunset" : "Solnedgang",
-    "Hour" : "Time",
     "Temperature" : "Temperatur"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

@@ -17,7 +17,6 @@
     "Wind" : "Szél",
     "Sunrise" : "Napkelte",
     "Sunset" : "Napnyugta",
-    "Hour" : "Óra",
     "Temperature" : "Hőmérséklet"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

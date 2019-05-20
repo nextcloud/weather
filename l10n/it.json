@@ -36,7 +36,6 @@
     "Wind" : "Vento",
     "Sunrise" : "Alba",
     "Sunset" : "Tramonto",
-    "Hour" : "Ora",
     "Temperature" : "Temperatura"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

@@ -36,7 +36,6 @@
     "Wind" : "Wind",
     "Sunrise" : "Sonnenaufgang",
     "Sunset" : "Sonnenuntergang",
-    "Hour" : "Stunde",
     "Temperature" : "Temperatur"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

@@ -19,7 +19,6 @@ OC.L10N.register(
     "Wind" : "Era",
     "Sunrise" : "Lindja e diellit",
     "Sunset" : "Perëndimi i diellit",
-    "Hour" : "Orë",
     "Temperature" : "Temperatura"
 },
 "nplurals=2; plural=(n != 1);");

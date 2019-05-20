@@ -18,7 +18,6 @@ OC.L10N.register(
     "Wind" : "Tuul",
     "Sunrise" : "Päikesetõus",
     "Sunset" : "Päikeseloojang",
-    "Hour" : "Tund",
     "Temperature" : "Temperatuur"
 },
 "nplurals=2; plural=(n != 1);");

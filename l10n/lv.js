@@ -19,7 +19,6 @@ OC.L10N.register(
     "Wind" : "Vējš",
     "Sunrise" : "Saullēkts",
     "Sunset" : "Saulriets",
-    "Hour" : "Stunda",
     "Temperature" : "Temperatūra"
 },
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);");

@@ -36,7 +36,6 @@
     "Wind" : "Rüzgar",
     "Sunrise" : "Gün doğumu",
     "Sunset" : "Gün batımı",
-    "Hour" : "Saat",
     "Temperature" : "Sıcaklık"
 },"pluralForm" :"nplurals=2; plural=(n > 1);"
 }

@@ -18,7 +18,6 @@ OC.L10N.register(
     "Wind" : "Άνεμος",
     "Sunrise" : "Ανατολή",
     "Sunset" : "Δύση",
-    "Hour" : "Ώρα",
     "Temperature" : "Θερμοκρασία"
 },
 "nplurals=2; plural=(n != 1);");

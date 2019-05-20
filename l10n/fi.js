@@ -19,7 +19,6 @@ OC.L10N.register(
     "Wind" : "Tuuli",
     "Sunrise" : "Auringonnousu",
     "Sunset" : "Auringonlasku",
-    "Hour" : "Tunti",
     "Temperature" : "Lämpötila"
 },
 "nplurals=2; plural=(n != 1);");

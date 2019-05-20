@@ -17,7 +17,6 @@
     "Wind" : "Vent",
     "Sunrise" : "Sortida del sol",
     "Sunset" : "Posta de sol",
-    "Hour" : "Hora",
     "Temperature" : "Temperatura"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

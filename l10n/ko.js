@@ -19,7 +19,6 @@ OC.L10N.register(
     "Wind" : "바람",
     "Sunrise" : "일출",
     "Sunset" : "일몰",
-    "Hour" : "시간",
     "Temperature" : "기온"
 },
 "nplurals=1; plural=0;");

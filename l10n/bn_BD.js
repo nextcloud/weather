@@ -18,7 +18,6 @@ OC.L10N.register(
     "Wind" : "বাতাস",
     "Sunrise" : "সূর্যোদয়",
     "Sunset" : "সূর্যাস্ত",
-    "Hour" : "ঘন্টা",
     "Temperature" : "তাপমাত্রা"
 },
 "nplurals=2; plural=(n != 1);");

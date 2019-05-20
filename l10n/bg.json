@@ -21,7 +21,6 @@
     "Wind" : "Вятър",
     "Sunrise" : "Изгрев",
     "Sunset" : "Залез",
-    "Hour" : "Час",
     "Temperature" : "Температура"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

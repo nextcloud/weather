@@ -16,7 +16,6 @@
     "Wind" : "Viento",
     "Sunrise" : "Amacer",
     "Sunset" : "Atardecer",
-    "Hour" : "Hora",
     "Temperature" : "Temperatura"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

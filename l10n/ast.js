@@ -18,7 +18,6 @@ OC.L10N.register(
     "Wind" : "Vientu",
     "Sunrise" : "Riscar",
     "Sunset" : "Aséu",
-    "Hour" : "Hora",
     "Temperature" : "Temperatura"
 },
 "nplurals=2; plural=(n != 1);");

@@ -16,7 +16,6 @@
     "Wind" : "Tuul",
     "Sunrise" : "Päikesetõus",
     "Sunset" : "Päikeseloojang",
-    "Hour" : "Tund",
     "Temperature" : "Temperatuur"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

@@ -19,7 +19,6 @@ OC.L10N.register(
     "Wind" : "Vietor",
     "Sunrise" : "Východ slnka",
     "Sunset" : "Západ slnka",
-    "Hour" : "Hodina",
     "Temperature" : "Teplota"
 },
 "nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);");

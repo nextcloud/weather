@@ -17,7 +17,6 @@
     "Wind" : "Tuuli",
     "Sunrise" : "Auringonnousu",
     "Sunset" : "Auringonlasku",
-    "Hour" : "Tunti",
     "Temperature" : "Lämpötila"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

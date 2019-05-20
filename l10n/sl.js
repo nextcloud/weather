@@ -19,7 +19,6 @@ OC.L10N.register(
     "Wind" : "Veter",
     "Sunrise" : "Sončni vzhod",
     "Sunset" : "Sončni zahod",
-    "Hour" : "Ura",
     "Temperature" : "Temperatura"
 },
 "nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);");

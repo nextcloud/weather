@@ -19,7 +19,6 @@ OC.L10N.register(
     "Wind" : "Haizea",
     "Sunrise" : "Egunsentia",
     "Sunset" : "Ilunabarra",
-    "Hour" : "Ordua",
     "Temperature" : "Tenperatura"
 },
 "nplurals=2; plural=(n != 1);");

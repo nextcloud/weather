@@ -23,7 +23,6 @@ OC.L10N.register(
     "Wind" : "Вятър",
     "Sunrise" : "Изгрев",
     "Sunset" : "Залез",
-    "Hour" : "Час",
     "Temperature" : "Температура"
 },
 "nplurals=2; plural=(n != 1);");

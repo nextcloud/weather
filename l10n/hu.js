@@ -19,7 +19,6 @@ OC.L10N.register(
     "Wind" : "Szél",
     "Sunrise" : "Napkelte",
     "Sunset" : "Napnyugta",
-    "Hour" : "Óra",
     "Temperature" : "Hőmérséklet"
 },
 "nplurals=2; plural=(n != 1);");

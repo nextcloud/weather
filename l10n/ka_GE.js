@@ -18,7 +18,6 @@ OC.L10N.register(
     "Wind" : "ქარი",
     "Sunrise" : "მზის ამოსვლა",
     "Sunset" : "მზის ჩასვლა",
-    "Hour" : "საათი",
     "Temperature" : "ტემპერატურა"
 },
 "nplurals=2; plural=(n!=1);");

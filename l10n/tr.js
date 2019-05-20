@@ -38,7 +38,6 @@ OC.L10N.register(
     "Wind" : "Rüzgar",
     "Sunrise" : "Gün doğumu",
     "Sunset" : "Gün batımı",
-    "Hour" : "Saat",
     "Temperature" : "Sıcaklık"
 },
 "nplurals=2; plural=(n > 1);");

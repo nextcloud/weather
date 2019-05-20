@@ -18,7 +18,6 @@ OC.L10N.register(
     "Wind" : "風速",
     "Sunrise" : "日出時間",
     "Sunset" : "日落時間",
-    "Hour" : "整點時間",
     "Temperature" : "氣溫"
 },
 "nplurals=1; plural=0;");
