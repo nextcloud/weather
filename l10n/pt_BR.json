@@ -19,6 +19,13 @@
     "This city is already registered for your account." : "Esta cidade já está registrada para sua conta.",
     "Failed to remove city. Please contact your administrator" : "Erro ao excluir cidade. Contacte o administrador",
     "Failed to set home. Please contact your administrator" : "Erro ao definir sua casa. Contacte o administrador",
+    "Monday" : "Segunda-feira",
+    "Tuesday" : "Terça-feira",
+    "Wednesday" : "Quarta-feira",
+    "Thursday" : "Quinta-feira",
+    "Friday" : "Sexta-feira",
+    "Saturday" : "Sábado",
+    "Sunday" : "Domingo",
     "Watch the weather directly on your Nextcloud." : "Veja o tempo diretamente em seu Nextcloud.",
     "OpenWeatherMap API Key" : "Chave API do OpenWeatherMap",
     "Save" : "Salvar",
@@ -36,6 +43,7 @@
     "Wind" : "Vento",
     "Sunrise" : "Nascer do sol",
     "Sunset" : "Pôr do sol",
+    "Date" : "Data",
     "Temperature" : "Temperatura"
 },"pluralForm" :"nplurals=2; plural=(n > 1);"
 }

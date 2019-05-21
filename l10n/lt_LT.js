@@ -21,6 +21,13 @@ OC.L10N.register(
     "This city is already registered for your account." : "Šis miestas jau yra priregistruotas jūsų paskyrai.",
     "Failed to remove city. Please contact your administrator" : "Nepavyko pašalinti miesto. Susisiekite su savo administratoriumi",
     "Failed to set home. Please contact your administrator" : "Nepavyko nustatyti namų. Susisiekite su savo administratoriumi",
+    "Monday" : "Pirmadienis",
+    "Tuesday" : "Antradienis",
+    "Wednesday" : "Trečiadienis",
+    "Thursday" : "Ketvirtadienis",
+    "Friday" : "Penktadienis",
+    "Saturday" : "Šeštadienis",
+    "Sunday" : "Sekmadienis",
     "Watch the weather directly on your Nextcloud." : "Stebėkite orus tiesiai savo Nextcloud.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API raktas",
     "Save" : "Įrašyti",
@@ -38,6 +45,7 @@ OC.L10N.register(
     "Wind" : "Vėjas",
     "Sunrise" : "Saulėtekis",
     "Sunset" : "Saulėlydis",
+    "Date" : "Data",
     "Temperature" : "Temperatūra"
 },
 "nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < 11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? 1 : n % 1 != 0 ? 2: 3);");

@@ -21,6 +21,13 @@ OC.L10N.register(
     "This city is already registered for your account." : "Bu il hesabınıza zaten eklenmiş.",
     "Failed to remove city. Please contact your administrator" : "İl kaldırılamadı. Lütfen sistem yöneticiniz ile görüşün",
     "Failed to set home. Please contact your administrator" : "Yaşanan yer ayarlanamadı. Lütfen sistem yöneticiniz ile görüşün",
+    "Monday" : "Pazartesi",
+    "Tuesday" : "Salı",
+    "Wednesday" : "Çarşamba",
+    "Thursday" : "Perşembe",
+    "Friday" : "Cuma",
+    "Saturday" : "Cumartesi",
+    "Sunday" : "Pazar",
     "Watch the weather directly on your Nextcloud." : "Hava durumunun Nextcloud üzerinden izlenmesini sağlar.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API Anahtarı",
     "Save" : "Kaydet",
@@ -38,6 +45,7 @@ OC.L10N.register(
     "Wind" : "Rüzgar",
     "Sunrise" : "Gün doğumu",
     "Sunset" : "Gün batımı",
+    "Date" : "Tarih",
     "Temperature" : "Sıcaklık"
 },
 "nplurals=2; plural=(n > 1);");

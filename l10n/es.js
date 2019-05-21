@@ -21,6 +21,13 @@ OC.L10N.register(
     "This city is already registered for your account." : "Esta ciudad ya está registrada para tu cuenta.",
     "Failed to remove city. Please contact your administrator" : "Fallo al eliminar la ciudad. Por favor, contacta con tu administrador",
     "Failed to set home. Please contact your administrator" : "Fallo al configurar tu casa. Por favor, contacta con tu administrador.",
+    "Monday" : "Lunes",
+    "Tuesday" : "Martes",
+    "Wednesday" : "Miércoles",
+    "Thursday" : "Jueves",
+    "Friday" : "Viernes",
+    "Saturday" : "Sábado",
+    "Sunday" : "Domingo",
     "Watch the weather directly on your Nextcloud." : "Comprueba el tiempo directamente en tu Nextcloud.",
     "OpenWeatherMap API Key" : "Clave de la API de OpenWeatherMap",
     "Save" : "Guardar",
@@ -38,6 +45,7 @@ OC.L10N.register(
     "Wind" : "Viento",
     "Sunrise" : "Amanecer",
     "Sunset" : "Atardecer",
+    "Date" : "Fecha",
     "Temperature" : "Temperatura"
 },
 "nplurals=2; plural=(n != 1);");
