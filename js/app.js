@@ -14,7 +14,7 @@ var app = angular.module('Weather', []);
 var g_error500 = t('weather', 'Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues');
 
 function undef (obj) {
-	return typeof obj === undefined || obj === undefined;
+	return typeof obj === 'undefined' || obj === undefined;
 }
 
 function emptyStr (obj) {
@@ -127,7 +127,7 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 				if (!undef(r.data['home'])) {
 					$scope.homeCity = r.data['home'];
 					if ($scope.homeCity) {
-						for (i = 0; i < $scope.cities.length; i++) {
+						for (var i = 0; i < $scope.cities.length; i++) {
 							if ($scope.cities[i].id == $scope.homeCity) {
 								$scope.loadCity($scope.cities[i]);
 								return;
@@ -183,7 +183,7 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 					else if ($scope.currentCity.wind.deg > 244 && $scope.currentCity.wind.deg < 289) {
 						$scope.currentCity.wind.desc = t('weather', 'West');
 					}
-					else if ($scope.currentCity.wind.deg > 288 && $scope.currentCity.wind.deg < 334) {
+					else if ($scope.currentCity.wind.deg > 288) {
 						$scope.currentCity.wind.desc = t('weather', 'North-West');
 					}
 					$scope.cityLoadError = '';
