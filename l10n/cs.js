@@ -21,6 +21,13 @@ OC.L10N.register(
     "This city is already registered for your account." : "Toto město je již přidáno ve vašem účtu.",
     "Failed to remove city. Please contact your administrator" : "Selhalo odstranění města. Prosím, kontaktujte svého administrátora",
     "Failed to set home. Please contact your administrator" : "Selhalo nastavení domu. Prosím, kontaktujte svého administrátora",
+    "Monday" : "Pondělí",
+    "Tuesday" : "Úterý",
+    "Wednesday" : "Středa",
+    "Thursday" : "Čtvrtek",
+    "Friday" : "Pátek",
+    "Saturday" : "Sobota",
+    "Sunday" : "Neděle",
     "Watch the weather directly on your Nextcloud." : "Sledujte počasí přímo ve svém Nextcloud.",
     "OpenWeatherMap API Key" : "klíč k aplikačnímu program. rozhraní služby OpenWeatherMap",
     "Save" : "Uložit",
@@ -38,6 +45,7 @@ OC.L10N.register(
     "Wind" : "Vítr",
     "Sunrise" : "Východ slunce",
     "Sunset" : "Západ slunce",
+    "Date" : "Datum",
     "Temperature" : "Teplota"
 },
 "nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;");

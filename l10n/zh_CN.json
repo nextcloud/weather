@@ -19,6 +19,13 @@
     "This city is already registered for your account." : "此城市已在您的账号中注册。",
     "Failed to remove city. Please contact your administrator" : "无法移除城市。请联系您的管理员。",
     "Failed to set home. Please contact your administrator" : "无法设置家的位置。请联系您的管理员。",
+    "Monday" : "星期一",
+    "Tuesday" : "星期二",
+    "Wednesday" : "星期三",
+    "Thursday" : "星期四",
+    "Friday" : "星期五",
+    "Saturday" : "星期六",
+    "Sunday" : "星期日",
     "Watch the weather directly on your Nextcloud." : "直接在 Nextcloud 里面查阅天气",
     "OpenWeatherMap API Key" : "开放的天气 API 接口 ID",
     "Save" : "保存",
@@ -36,6 +43,7 @@
     "Wind" : "风速",
     "Sunrise" : "日出",
     "Sunset" : "日落",
+    "Date" : "日期",
     "Temperature" : "温度"
 },"pluralForm" :"nplurals=1; plural=0;"
 }
