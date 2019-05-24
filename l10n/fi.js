@@ -2,6 +2,20 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "Sää",
+    "North" : "Pohjoinen",
+    "East" : "Itä",
+    "South" : "Etelä",
+    "West" : "Länsi",
+    "No city with this name found." : "Tällä nimellä ei löytynyt kaupunkia.",
+    "Empty city name !" : "Tyhjän kaupungin nimi!",
+    "This city is already registered for your account." : "Tämä kaupunki on jo rekisteröity tilillesi.",
+    "Monday" : "Maanantai",
+    "Tuesday" : "Tiistai",
+    "Wednesday" : "Keskiviikko",
+    "Thursday" : "Torstai",
+    "Friday" : "Perjantai",
+    "Saturday" : "Lauantai",
+    "Sunday" : "Sunnuntai",
     "Watch the weather directly on your Nextcloud." : "Seuraa säätä suoraan Nextcloudista.",
     "OpenWeatherMap API Key" : "OpenWeatherMapin API-avain",
     "Save" : "Tallenna",
@@ -19,6 +33,7 @@ OC.L10N.register(
     "Wind" : "Tuuli",
     "Sunrise" : "Auringonnousu",
     "Sunset" : "Auringonlasku",
+    "Date" : "Päiväys",
     "Temperature" : "Lämpötila"
 },
 "nplurals=2; plural=(n != 1);");
