@@ -3,6 +3,8 @@ OC.L10N.register(
     {
     "Weather" : "Météo",
     "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Erreur fatale : veuillez vérifier le fichier nextcloud.log et signaler l’anomalie sur https://github.com/nextcloud/weather/issues.",
+    "Failed to set metric. Please contact your administrator" : "Échec lors du réglage de la mesure. Veuillez contacter votre administrateur",
+    "This metric is not known." : "Cette mesure est inconnue.",
     "North" : "Nord",
     "North-East" : "Nord-Est",
     "East" : "Est",
@@ -13,6 +15,7 @@ OC.L10N.register(
     "North-West" : "Nord-Ouest",
     "Failed to get city weather informations. Please contact your administrator" : "Impossible d'obtenir la météo de la ville. Veuillez contacter votre administrateur.",
     "No city with this name found." : "Aucune ville trouvée avec ce nom.",
+    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "Votre clé API OpenWeatherMap n'est pas valide. Contactez votre administrateur pour configurer une clé API valide dans Paramètres supplémentaires de l'administration.",
     "Empty city name !" : "Ville vide !",
     "Failed to add city. Please contact your administrator" : "Impossible d'ajouter cette ville. Veuillez contacter votre administrateur.",
     "This city is already registered for your account." : "Cette ville est déjà associée à votre compte.",
