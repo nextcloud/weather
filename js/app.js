@@ -262,7 +262,7 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
                                                         $scope.cities.splice(i, 1);
                                                         // If current city is the removed city, close it
                                                         if ($scope.selectedCityId === city.id) {
-								$scope.currentCity = null;
+								                                                $scope.currentCity = null;
                                                                 $scope.selectedCityId = 0;
                                                         }
                                                         return;
