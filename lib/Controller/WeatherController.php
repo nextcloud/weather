@@ -105,6 +105,7 @@ class WeatherController extends IntermediateController {
 					'weather' => $forecast['list'][$i]['weather'][0]['description'],
 					'temperature' => $forecast['list'][$i]['main']['temp'],
 					'pressure' => $forecast['list'][$i]['main']['pressure'],
+					'humidity' => $forecast['list'][$i]['main']['humidity'],
 					'wind' => array(
 						'speed' => $forecast['list'][$i]['wind']['speed'],
 						'desc' => $this->windDegToString($forecast['list'][$i]['wind']['deg'])
