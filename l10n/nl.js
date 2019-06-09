@@ -2,6 +2,7 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "Weer",
+    "This metric is not known." : "Deze eenheid is onbekend.",
     "North" : "Noord",
     "North-East" : "Noord-oost",
     "East" : "Oost",
