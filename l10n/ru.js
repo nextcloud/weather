@@ -19,6 +19,13 @@ OC.L10N.register(
     "This city is already registered for your account." : "Этот город уже зарегистрирован для вашего аккаунта.",
     "Failed to remove city. Please contact your administrator" : "Ошибка при удалении города. Пожалуйста, обратитесь к вашему администратору",
     "Failed to set home. Please contact your administrator" : "Ошибка при определении дома. Пожалуйста, обратитесь к вашему администратору",
+    "Monday" : "Понедельник",
+    "Tuesday" : "Вторник",
+    "Wednesday" : "Среда",
+    "Thursday" : "Четверг",
+    "Friday" : "Пятница",
+    "Saturday" : "Суббота",
+    "Sunday" : "Воскресенье",
     "Watch the weather directly on your Nextcloud." : "Смотри погоду прямо в твоем Nextcloud.",
     "OpenWeatherMap API Key" : "Ключ API OpenWeatherMap ",
     "Save" : "Сохранить",
@@ -36,6 +43,7 @@ OC.L10N.register(
     "Wind" : "Ветер",
     "Sunrise" : "Рассвет",
     "Sunset" : "Закат",
+    "Date" : "Дата",
     "Temperature" : "Температура"
 },
 "nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);");
