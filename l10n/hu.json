@@ -1,5 +1,22 @@
 { "translations": {
     "Weather" : "Időjárás",
+    "North" : "Észak",
+    "North-East" : "Északkelet",
+    "East" : "Kelet",
+    "South-East" : "Délkelet",
+    "South" : "Dél",
+    "South-West" : "Délnyugat",
+    "West" : "Nyugat",
+    "North-West" : "Északnyugat",
+    "No city with this name found." : "Nem található ilyen nevű város.",
+    "Empty city name !" : "Üres városnév!",
+    "Monday" : "Hétfő",
+    "Tuesday" : "Kedd",
+    "Wednesday" : "Szerda",
+    "Thursday" : "Csütörtök",
+    "Friday" : "Péntek",
+    "Saturday" : "Szombat",
+    "Sunday" : "Vasárnap",
     "Watch the weather directly on your Nextcloud." : "Figyelje az időjárást közvetlenül a Nextcloudjában.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API kulcs",
     "Save" : "Mentés",
@@ -17,6 +34,7 @@
     "Wind" : "Szél",
     "Sunrise" : "Napkelte",
     "Sunset" : "Napnyugta",
+    "Date" : "Dátum",
     "Temperature" : "Hőmérséklet"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
