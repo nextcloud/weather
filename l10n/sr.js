@@ -21,6 +21,13 @@ OC.L10N.register(
     "This city is already registered for your account." : "Овај град је већ регистрован са Вашим налогом.",
     "Failed to remove city. Please contact your administrator" : "Грешка при уклањању града. Контактирајте администратора",
     "Failed to set home. Please contact your administrator" : "Грешка при постављању куће. Контактирајте администратора",
+    "Monday" : "Понедељак",
+    "Tuesday" : "Уторак",
+    "Wednesday" : "Среда",
+    "Thursday" : "Четвртак",
+    "Friday" : "Петак",
+    "Saturday" : "Субота",
+    "Sunday" : "Недеља",
     "Watch the weather directly on your Nextcloud." : "Пратите време директно из Вашег Некстклауда.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API кључ",
     "Save" : "Сачувај",
@@ -38,6 +45,7 @@ OC.L10N.register(
     "Wind" : "Ветар",
     "Sunrise" : "Излазак сунца",
     "Sunset" : "Залазак сунца",
+    "Date" : "Датум",
     "Temperature" : "Температура"
 },
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);");
