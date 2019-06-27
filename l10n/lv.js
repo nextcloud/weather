@@ -2,6 +2,7 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "Laikapstākļi",
+    "Monday" : "Pirmdiena",
     "Watch the weather directly on your Nextcloud." : "Redzi laikapstākļus tieši savā Nextcloud.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API Atslēga",
     "Save" : "Saglabāt",
@@ -19,6 +20,7 @@ OC.L10N.register(
     "Wind" : "Vējš",
     "Sunrise" : "Saullēkts",
     "Sunset" : "Saulriets",
+    "Date" : "Datums",
     "Temperature" : "Temperatūra"
 },
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);");
