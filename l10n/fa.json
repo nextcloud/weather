@@ -1,0 +1,8 @@
+{ "translations": {
+    "Weather" : "آب و هوا",
+    "Save" : "ذخیره",
+    "Add a city" : "افزودن یک شهر",
+    "Cancel" : "لغو",
+    "Settings" : "تنظیمات"
+},"pluralForm" :"nplurals=2; plural=(n > 1);"
+}
