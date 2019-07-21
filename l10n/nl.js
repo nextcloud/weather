@@ -2,6 +2,8 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "Weer",
+    "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Fatale Fout: controleer je nextcloud.log en stuur een bugmelding in naar: https://github.com/nextcloud/weather/issues",
+    "Failed to set metric. Please contact your administrator" : "Kon de metriek niet instellen. Neem contact op met je systeembeheerder.",
     "This metric is not known." : "Deze eenheid is onbekend.",
     "North" : "Noord",
     "North-East" : "Noord-oost",
@@ -18,6 +20,7 @@ OC.L10N.register(
     "Failed to add city. Please contact your administrator" : "Kon de stad niet toevoegen. Neem contact op met je systeembeheerder.",
     "This city is already registered for your account." : "Deze stad is al geregistreerd voor jouw account.",
     "Failed to remove city. Please contact your administrator" : "Kon de stad niet verwijderen. Neem contact op met je systeembeheerder.",
+    "Failed to set home. Please contact your administrator" : "Kon thuislocatie niet instellen. Neem contact op met je systeembeheerder",
     "Monday" : "Maandag",
     "Tuesday" : "Dinsdag",
     "Wednesday" : "Woensdag",
