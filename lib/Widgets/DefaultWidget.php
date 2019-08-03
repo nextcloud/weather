@@ -8,6 +8,12 @@ namespace OCA\Weather\Widgets;
 use \OCP\AppFramework\App;
 use \OCP\IContainer;
 
+use OCP\Dashboard\Model\WidgetSetup;
+use OCP\Dashboard\Model\WidgetTemplate;
+use OCP\Dashboard\IDashboardWidget;
+use OCP\Dashboard\Model\IWidgetRequest;
+use OCP\Dashboard\Model\IWidgetConfig;
+
 use \OCA\Weather\AppInfo\Application;
 use \OCA\Weather\Controller\WeatherController;
 
@@ -18,26 +24,26 @@ class DefaultWidget implements IDashboardWidget {
 	requestWidget(WidgetRequest $request) is called after the loadWidget() after a new.requestWidget(object, callback) from JavaScript
 */
 	
-	const WIDGET_ID = 'defaultweatherwidget';
+	const WIDGET_ID = 'weather';
 
 	/**
 	 * @return string
 	 */
-	public function getId() {
+	public function getId(): string {
 		return self::WIDGET_ID;
 	}
 	
 	/**
 	 * @return string
 	 */
-	public function getName() {
+	public function getName(): string {
 		return 'Weather Widget';
 	}
 
 	/**
 	 * @return string
 	 */
-	public function getDescription() {
+	public function getDescription(): string {
 		return 'Get current weather conditions';
 	}
 
@@ -50,7 +56,7 @@ class DefaultWidget implements IDashboardWidget {
 				 ->addJs('widget')
 				 ->setIcon('app')
 				 ->setContent('widget')
-				 ->setInitFunction('OCA.Weather.widget.init');
+				 ->setInitFunction('OCA.DashBoard.weather.getWeather');
 		return $template;
 	}
 
@@ -60,8 +66,7 @@ class DefaultWidget implements IDashboardWidget {
 	public function getWidgetSetup(): WidgetSetup {
 		$setup = new WidgetSetup();
 		$setup->addSize(WidgetSetup::SIZE_TYPE_DEFAULT, 3, 2);
-		$setup->addDelayedJob('OCA.Weather.widget.getWeather', 600);
-		$setup->setPush('OCA.Weather.widget.push');
+		$setup->addDelayedJob('OCA.DashBoard.weather.getWeather', 600);
 		return $setup;
 	}
 
@@ -81,12 +86,17 @@ class DefaultWidget implements IDashboardWidget {
 			$app = new Application();
 			$container = $app->getContainer();
 			$weatherController = $container->query('OCA\Weather\Controller\WeatherController');
+			$cityController = $container->query('OCA\Weather\Controller\CityController');
 
-			$request->addResult('location', $this->weatherService->getWeather());
-			$request->addResult('temperature', $this->weatherService->getWeather());
-			$request->addResult('weather', $this->weatherService->getWeather());
-			$request->addResult('humidity', $this->weatherService->getWeather());
-			$request->addResult('wind', $this->weatherService->getWeather());
+			$allCities = json_decode($cityController->getAll()->render(), true);
+			$firstCity = $allCities['cities'][$allCities['home']]['name'];
+			$result = json_decode($weatherController->get($firstCity)->render(), true);
+
+			$request->addResult('location', $result['name']);
+			$request->addResult('temperature', $result['main']['temp']);
+			$request->addResult('weather', $result['weather'][0]['main']);
+			$request->addResult('humidity', $result['main']['humidity']);
+			$request->addResult('wind', $result['wind']['speed']);
 		}
 	}
 

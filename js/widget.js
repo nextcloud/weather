@@ -3,7 +3,7 @@
 /** global: net */
 
 (function () {
-	
+console.log("OCA", OCA, "net", net)	
 	/**
 	 * @constructs Weather
 	 */
@@ -12,31 +12,30 @@
 
 	Weather.prototype.divWeather = null;
 	Weather.prototype.init = function() {
-		this.divWeather = document.querySelector("#widget-weather");
 		this.getWeather();
 
 	}
 	Weather.prototype.getWeather = function() {
 		console.log("Requesting update...");
-		this.divWeather.textContent = "Update requested at " + Date();
 
 		var request = {
 			widget: 'weather',
 			request: 'getWeather'
 		};
 
-		net.requestWidget(request, weather.updateWeather);
+		net.requestWidget(request, this.updateWeather);
 
 	}
 
 	Weather.prototype.updateWeather = function(result) {
 		console.info("updateWeather result", result);
+		var divWeather = document.querySelector("#widget-weather");
 
-		this.divWeather.querySelector(".locationValue").innerHTML = result.value.location;
-		this.divWeather.querySelector(".temperatureValue").innerHTML = result.value.temperature;
-		this.divWeather.querySelector(".weatherValue").innerHTML = result.value.weather;
-		this.divWeather.querySelector(".humidityValue").innerHTML = result.value.humidity;
-		this.divWeather.querySelector(".windValue").innerHTML = result.value.wind;
+		divWeather.querySelector(".locationValue").innerHTML = result.value.location;
+		divWeather.querySelector(".temperatureValue").innerHTML = result.value.temperature;
+		divWeather.querySelector(".weatherValue").innerHTML = result.value.weather;
+		divWeather.querySelector(".humidityValue").innerHTML = result.value.humidity;
+		divWeather.querySelector(".windValue").innerHTML = result.value.wind;
 	}
 
 	// TODO rewrite the above with JQuery
