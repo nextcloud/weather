@@ -87,13 +87,24 @@ class DefaultWidget implements IDashboardWidget {
 			$container = $app->getContainer();
 			$weatherController = $container->query('OCA\Weather\Controller\WeatherController');
 			$cityController = $container->query('OCA\Weather\Controller\CityController');
+			$settingsController = $container->query('OCA\Weather\Controller\SettingsController');
 
 			$allCities = json_decode($cityController->getAll()->render(), true);
-			$firstCity = $allCities['cities'][$allCities['home']]['name'];
-			$result = json_decode($weatherController->get($firstCity)->render(), true);
 
-			$request->addResult('location', $result['name']);
+			$homeCityId = $allCities['home'];
+			$firstCity = array_filter(
+				$allCities['cities'],
+				function($city) use ($homeCityId) { 
+					return $city['id'] === $homeCityId; 
+				}
+			)[0]['name'];
+	
+			$result = json_decode($weatherController->get($firstCity)->render(), true);
+			$metric = json_decode($settingsController->metricGet()->render(), true)['metric'];
+
+			$request->addResult('location', $firstCity);
 			$request->addResult('temperature', $result['main']['temp']);
+			$request->addResult('metric', $metric);
 			$request->addResult('weather', $result['weather'][0]['main']);
 			$request->addResult('humidity', $result['main']['humidity']);
 			$request->addResult('wind', $result['wind']['speed']);

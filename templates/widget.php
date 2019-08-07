@@ -2,19 +2,19 @@
 
 ?>
 
-<div id="widget-weather">
-	<div class="locationValue"></div>
-	<dl>
-		<dt><?php p($l->t('Temperature')); ?></dt>
-		<dd><span class="temperatureValue"></span>&nbsp;<span class="temperatureRepresentation"></span></dd>
+<div id="widget-weather" class="weatherWidgetContents">
+	<h3 class="locationValue"></h3>
+	<dl class="weatherWidgetList">
+		<dt class="measurement"><?php p($l->t('Temperature')); ?></dt>
+		<dd class="value"><span class="temperatureValue"></span>&nbsp;<span class="temperatureRepresentation"></span></dd>
 
-		<dt><?php p($l->t('Cloudiness')); ?></dt>
-		<dd><span class="weatherValue"></span></dd>
+		<dt class="measurement"><?php p($l->t('Cloudiness')); ?></dt>
+		<dd class="value"><span class="weatherValue"></span></dd>
 		
-		<dt><?php p($l->t('Humidity')); ?></dt>
-		<dd><span class="humidityValue"></span>&nbsp;%</dd>
+		<dt class="measurement"><?php p($l->t('Humidity')); ?></dt>
+		<dd class="value"><span class="humidityValue"></span>&nbsp;%</dd>
 		
-		<dt><?php p($l->t('Wind')); ?></dt>
-		<dd><span class="windValue"></span>&nbsp;m/s</dd>
+		<dt class="measurement"><?php p($l->t('Wind')); ?></dt>
+		<dd class="value"><span class="windValue"></span>&nbsp;m/s</dd>
 	</dl>
 </div>

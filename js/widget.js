@@ -30,9 +30,15 @@ console.log("OCA", OCA, "net", net)
 	Weather.prototype.updateWeather = function(result) {
 		console.info("updateWeather result", result);
 		var divWeather = document.querySelector("#widget-weather");
+		var temperatureRepresentationLookup = {
+			"kelvin":  "°K",
+			"imperial":"°F",
+			"metric":  "°C"
+		}
 
 		divWeather.querySelector(".locationValue").innerHTML = result.value.location;
 		divWeather.querySelector(".temperatureValue").innerHTML = result.value.temperature;
+		divWeather.querySelector(".temperatureRepresentation").innerHTML = temperatureRepresentationLookup[result.value.metric]|| "ERROR";
 		divWeather.querySelector(".weatherValue").innerHTML = result.value.weather;
 		divWeather.querySelector(".humidityValue").innerHTML = result.value.humidity;
 		divWeather.querySelector(".windValue").innerHTML = result.value.wind;
