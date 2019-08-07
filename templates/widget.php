@@ -5,9 +5,16 @@
 <div id="widget-weather">
 	<div class="locationValue"></div>
 	<dl>
-		<dt>Temperature</dt>	<dd class="temperatureValue"></dd>
-		<dt>Weather</dt>			<dd class="weatherValue"></dd>
-		<dt>Humidity</dt>			<dd class="humidityValue"></dd>
-		<dt>Wind</dt>					<dd class="windValue"></dd>
+		<dt><?php p($l->t('Temperature')); ?></dt>
+		<dd><span class="temperatureValue"></span>&nbsp;<span class="temperatureRepresentation"></span></dd>
+
+		<dt><?php p($l->t('Cloudiness')); ?></dt>
+		<dd><span class="weatherValue"></span></dd>
+		
+		<dt><?php p($l->t('Humidity')); ?></dt>
+		<dd><span class="humidityValue"></span>&nbsp;%</dd>
+		
+		<dt><?php p($l->t('Wind')); ?></dt>
+		<dd><span class="windValue"></span>&nbsp;m/s</dd>
 	</dl>
 </div>
