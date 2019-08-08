@@ -3,9 +3,13 @@ OC.L10N.register(
     {
     "Weather" : "Sää",
     "North" : "Pohjoinen",
+    "North-East" : "Koillinen",
     "East" : "Itä",
+    "South-East" : "Kaakko",
     "South" : "Etelä",
+    "South-West" : "Lounas",
     "West" : "Länsi",
+    "North-West" : "Luode",
     "No city with this name found." : "Tällä nimellä ei löytynyt kaupunkia.",
     "Empty city name !" : "Tyhjän kaupungin nimi!",
     "This city is already registered for your account." : "Tämä kaupunki on jo rekisteröity tilillesi.",
