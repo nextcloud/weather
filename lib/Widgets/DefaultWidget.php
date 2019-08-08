@@ -82,7 +82,9 @@ class DefaultWidget implements IDashboardWidget {
 	 */
 	public function getWidgetSetup(): WidgetSetup {
 		$setup = new WidgetSetup();
-		$setup->addSize(WidgetSetup::SIZE_TYPE_DEFAULT, 3, 2);
+		$setup->addSize(WidgetSetup::SIZE_TYPE_MIN, 2, 1);
+		$setup->addSize(WidgetSetup::SIZE_TYPE_MAX, 4, 5);
+		$setup->addSize(WidgetSetup::SIZE_TYPE_DEFAULT, 2, 3);
 		$setup->addDelayedJob('OCA.DashBoard.weather.getWeather', 600);
 		return $setup;
 	}
