@@ -34,15 +34,25 @@ use OCP\Dashboard\Model\IWidgetConfig;
 use \OCA\Weather\AppInfo\Application;
 use \OCA\Weather\Controller\WeatherController;
 
+use \OCP\IL10N;
+
 class DefaultWidget implements IDashboardWidget {
-/*
-	widgetSetup() returns optional information like size of the widget, additional menu entries and background jobs:
-	loadWidget($config) is called on external request (cf. requestWidget()). $config is an array that contains the current setup of the widget
-	requestWidget(WidgetRequest $request) is called after the loadWidget() after a new.requestWidget(object, callback) from JavaScript
-*/
 	
 	const WIDGET_ID = 'weather';
 
+
+	/** @var IL19N */
+	private $l10n;
+
+
+	/**
+	 * DefaultWidget constructor
+	 * @param IL10N $l10n
+	 */
+	public function __construct(IL10N $l10n) {
+		$this->l10n = $l10n;
+	}
+	
 	/**
 	 * @return string
 	 */
@@ -54,14 +64,14 @@ class DefaultWidget implements IDashboardWidget {
 	 * @return string
 	 */
 	public function getName(): string {
-		return 'Weather Widget';
+		return $this->l10n->t('Weather');
 	}
 
 	/**
 	 * @return string
 	 */
 	public function getDescription(): string {
-		return 'Get current weather conditions';
+		return $this->l10n->t('Watch the weather directly on your Nextcloud.');
 	}
 
 	/**
