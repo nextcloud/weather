@@ -71,7 +71,7 @@ class DefaultWidget implements IDashboardWidget {
 		$template = new WidgetTemplate();
 		$template->addCss('widget')
 				 ->addJs('widget')
-				 ->setIcon('app')
+				 ->setIcon('icon-weather')
 				 ->setContent('widget')
 				 ->setInitFunction('OCA.DashBoard.weather.getWeather');
 		return $template;
