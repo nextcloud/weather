@@ -1,8 +1,8 @@
 .icon-weather {
-	background-image: url('../../img/app-dark.svg');
+	background-image: url('../img/app-dark.svg');
 }
 .icon-weather-light {
-	background-image: url('../../img/app.svg');
+	background-image: url('../img/app.svg');
 }
 
 .weatherWidgetContents {
