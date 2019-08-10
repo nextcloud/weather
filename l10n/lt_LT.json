@@ -1,6 +1,6 @@
 { "translations": {
     "Weather" : "Orai",
-    "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Lemtingoji klaida: patikrinkite savo nextcloud.log ir išsiųskite mums pranešimą apie klaidą, apsilankę: https://github.com/nextcloud/weather/issues",
+    "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Kritinė klaida: patikrinkite savo nextcloud.log ir išsiųskite mums pranešimą apie klaidą, apsilankę: https://github.com/nextcloud/weather/issues",
     "Failed to set metric. Please contact your administrator" : "Nepavyko nustatyti matų sistemos. Susisiekite su savo administratoriumi",
     "This metric is not known." : "Ši matų sistema yra nežinoma.",
     "North" : "Šiaurės",
@@ -26,7 +26,7 @@
     "Friday" : "Penktadienis",
     "Saturday" : "Šeštadienis",
     "Sunday" : "Sekmadienis",
-    "Watch the weather directly on your Nextcloud." : "Stebėkite orus tiesiai savo Nextcloud.",
+    "Watch the weather directly on your Nextcloud." : "Stebėkite orus per Nextcloud.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API raktas",
     "Save" : "Įrašyti",
     "Add a city" : "Pridėti miestą",
