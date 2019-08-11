@@ -134,7 +134,7 @@ class DefaultWidget implements IDashboardWidget {
 			$request->addResult('location', $firstCity);
 			$request->addResult('temperature', $result['main']['temp']);
 			$request->addResult('metric', $metric);
-			$request->addResult('weather', $result['weather'][0]['main']);
+			$request->addResult('weather', $result['weather'][0]['description']);
 			$request->addResult('humidity', $result['main']['humidity']);
 			$request->addResult('wind', $result['wind']['speed']);
 		}
