@@ -47,18 +47,29 @@
 
 	Weather.prototype.updateWeather = function(result) {
 		var divWeather = document.querySelector("#widget-weather");
+		var divInfo = divWeather.querySelector(".info");
 		var temperatureRepresentationLookup = {
 			"kelvin":  "°K",
 			"imperial":"°F",
 			"metric":  "°C"
 		}
-
-		divWeather.querySelector(".locationValue").innerHTML = result.value.location;
-		divWeather.querySelector(".temperatureValue").innerHTML = result.value.temperature;
-		divWeather.querySelector(".temperatureRepresentation").innerHTML = temperatureRepresentationLookup[result.value.metric]|| "ERROR";
-		divWeather.querySelector(".weatherValue").innerHTML = result.value.weather;
-		divWeather.querySelector(".humidityValue").innerHTML = result.value.humidity;
-		divWeather.querySelector(".windValue").innerHTML = result.value.wind;
+		if (result.value.error) {
+			divInfo.classList.add("error");
+			divInfo.innerHTML = "Failed to update: " + result.value.error;
+			return;
+		}
+		try {
+			divInfo.innerHTML = "";
+			divWeather.querySelector(".locationValue").innerHTML = result.value.location;
+			divWeather.querySelector(".temperatureValue").innerHTML = result.value.temperature;
+			divWeather.querySelector(".temperatureRepresentation").innerHTML = temperatureRepresentationLookup[result.value.metric]|| "ERROR";
+			divWeather.querySelector(".weatherValue").innerHTML = result.value.weather;
+			divWeather.querySelector(".humidityValue").innerHTML = result.value.humidity;
+			divWeather.querySelector(".windValue").innerHTML = result.value.wind;
+		} catch {
+			divInfo.classList.add("error");
+			divInfo.innerHTML = "Failed to update some data.";
+		}
 	}
 
 	OCA.DashBoard.Weather = Weather;

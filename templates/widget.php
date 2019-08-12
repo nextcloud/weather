@@ -4,6 +4,7 @@
 
 <div id="widget-weather" class="weatherWidgetContents">
 	<h3 class="locationValue"></h3>
+	<div class="info">Updating widget…</div>
 	<dl class="weatherWidgetList">
 		<dt class="measurement"><?php p($l->t('Temperature')); ?></dt>
 		<dd class="value"><span class="temperatureValue"></span>&nbsp;<span class="temperatureRepresentation"></span></dd>

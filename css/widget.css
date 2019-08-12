@@ -33,3 +33,15 @@
 .weatherWidgetContents .weaterWidgetList .measurement::after {
 	content:":";
 }
+
+.weatherWidgetContents .info {
+	position: absolute;
+	bottom: 11px;
+	left: 0;
+	margin: 22px;
+}
+
+.weatherWidgetContents .info.error {
+	color: red;
+	color: var(--color-error);
+}
