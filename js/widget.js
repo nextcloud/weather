@@ -23,7 +23,7 @@
 /** global: net */
 
 (function () {
-console.log("OCA", OCA, "net", net)	
+
 	/**
 	 * @constructs Weather
 	 */
@@ -35,20 +35,17 @@ console.log("OCA", OCA, "net", net)
 		this.getWeather();
 
 	}
-	Weather.prototype.getWeather = function() {
-		console.log("Requesting update...");
 
+	Weather.prototype.getWeather = function() {
 		var request = {
-			widget: 'weather',
-			request: 'getWeather'
+			widget: "weather",
+			request: "getWeather"
 		};
 
 		net.requestWidget(request, this.updateWeather);
-
 	}
 
 	Weather.prototype.updateWeather = function(result) {
-		console.info("updateWeather result", result);
 		var divWeather = document.querySelector("#widget-weather");
 		var temperatureRepresentationLookup = {
 			"kelvin":  "°K",
@@ -64,8 +61,6 @@ console.log("OCA", OCA, "net", net)
 		divWeather.querySelector(".windValue").innerHTML = result.value.wind;
 	}
 
-
 	OCA.DashBoard.Weather = Weather;
 	OCA.DashBoard.weather = new Weather();
-
 })()
