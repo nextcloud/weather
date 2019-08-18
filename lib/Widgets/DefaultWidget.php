@@ -35,6 +35,7 @@ use \OCA\Weather\AppInfo\Application;
 use \OCA\Weather\Controller\WeatherController;
 
 use \OCP\IL10N;
+use \OCP\ILogger;
 
 class DefaultWidget implements IDashboardWidget {
 	
@@ -43,14 +44,16 @@ class DefaultWidget implements IDashboardWidget {
 
 	/** @var IL19N */
 	private $l10n;
+	private $logger;
 
 
 	/**
 	 * DefaultWidget constructor
 	 * @param IL10N $l10n
 	 */
-	public function __construct(IL10N $l10n) {
+	public function __construct(ILogger $logger, IL10N $l10n) {
 		$this->l10n = $l10n;
+		$this->logger = $logger;
 	}
 	
 	/**
@@ -111,32 +114,36 @@ class DefaultWidget implements IDashboardWidget {
 	 */
 	public function requestWidget(IWidgetRequest $request) {
 		if ($request->getRequest() === 'getWeather') {
+			try {
+				$app = new Application();
+				$container = $app->getContainer();
+				$weatherController = $container->query('OCA\Weather\Controller\WeatherController');
+				$cityController = $container->query('OCA\Weather\Controller\CityController');
+				$settingsController = $container->query('OCA\Weather\Controller\SettingsController');
 
-			$app = new Application();
-			$container = $app->getContainer();
-			$weatherController = $container->query('OCA\Weather\Controller\WeatherController');
-			$cityController = $container->query('OCA\Weather\Controller\CityController');
-			$settingsController = $container->query('OCA\Weather\Controller\SettingsController');
+				$allCities = json_decode($cityController->getAll()->render(), true);
 
-			$allCities = json_decode($cityController->getAll()->render(), true);
+				$homeCityId = $allCities['home'];
+				$firstCity = array_filter(
+					$allCities['cities'],
+					function($city) use ($homeCityId) { 
+						return $city['id'] === $homeCityId; 
+					}
+				)[0]['name'];
+		
+				$result = json_decode($weatherController->get($firstCity)->render(), true);
+				$metric = json_decode($settingsController->metricGet()->render(), true)['metric'];
 
-			$homeCityId = $allCities['home'];
-			$firstCity = array_filter(
-				$allCities['cities'],
-				function($city) use ($homeCityId) { 
-					return $city['id'] === $homeCityId; 
-				}
-			)[0]['name'];
-	
-			$result = json_decode($weatherController->get($firstCity)->render(), true);
-			$metric = json_decode($settingsController->metricGet()->render(), true)['metric'];
-
-			$request->addResult('location', $firstCity);
-			$request->addResult('temperature', $result['main']['temp']);
-			$request->addResult('metric', $metric);
-			$request->addResult('weather', $result['weather'][0]['description']);
-			$request->addResult('humidity', $result['main']['humidity']);
-			$request->addResult('wind', $result['wind']['speed']);
+				$request->addResult('location', $firstCity);
+				$request->addResult('temperature', $result['main']['temp']);
+				$request->addResult('metric', $metric);
+				$request->addResult('weather', $result['weather'][0]['description']);
+				$request->addResult('humidity', $result['main']['humidity']);
+				$request->addResult('wind', $result['wind']['speed']);
+			} catch (\Exception $ex) {
+				$request->addResult('error',  $this->l10n->t('Failed to get city weather informations. Please contact your administrator'));
+				$this->logger->error($ex->getMessage());
+			}
 		}
 	}
 

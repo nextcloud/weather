@@ -59,6 +59,7 @@
 			return;
 		}
 		try {
+			divInfo.classList.remove("error");
 			divInfo.innerHTML = "";
 			divWeather.querySelector(".locationValue").innerHTML = result.value.location;
 			divWeather.querySelector(".temperatureValue").innerHTML = result.value.temperature;
