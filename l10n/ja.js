@@ -3,7 +3,7 @@ OC.L10N.register(
     {
     "Weather" : "天気",
     "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "致命的なエラー：nextcloud.logをチェックして、ここにバグレポートを送ってください：https://github.com/nextcloud/weather/issues",
-    "Failed to set metric. Please contact your administrator" : "メトリックの設定に失敗しました。 管理者に連絡してください",
+    "Failed to set metric. Please contact your administrator" : "メトリックを設定できませんでした。 管理者に連絡してください",
     "This metric is not known." : "このメトリックは不明です",
     "North" : "北",
     "North-East" : "北東",
@@ -19,7 +19,7 @@ OC.L10N.register(
     "Empty city name !" : "都市名が空です！",
     "Failed to add city. Please contact your administrator" : "都市を追加できませんでした。 管理者に連絡してください",
     "This city is already registered for your account." : "この都市はすでにあなたのアカウントに登録済です。",
-    "Failed to remove city. Please contact your administrator" : "都市の削除に失敗しました。 管理者に連絡してください",
+    "Failed to remove city. Please contact your administrator" : "都市を削除できませんでした。 管理者に連絡してください",
     "Failed to set home. Please contact your administrator" : "家を設定できませんでした。 管理者に連絡してください",
     "Monday" : "月曜日",
     "Tuesday" : "火曜日",
