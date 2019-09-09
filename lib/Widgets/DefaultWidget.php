@@ -23,6 +23,8 @@
 namespace OCA\Weather\Widgets;
 
 use \OCP\AppFramework\App;
+use \OCP\AppFramework\Http;
+
 use \OCP\IContainer;
 
 use OCP\Dashboard\Model\WidgetSetup;
@@ -114,36 +116,44 @@ class DefaultWidget implements IDashboardWidget {
 	 */
 	public function requestWidget(IWidgetRequest $request) {
 		if ($request->getRequest() === 'getWeather') {
-			try {
-				$app = new Application();
-				$container = $app->getContainer();
-				$weatherController = $container->query('OCA\Weather\Controller\WeatherController');
-				$cityController = $container->query('OCA\Weather\Controller\CityController');
-				$settingsController = $container->query('OCA\Weather\Controller\SettingsController');
+			$app = new Application();
+			$container = $app->getContainer();
+			$weatherController = $container->query('OCA\Weather\Controller\WeatherController');
+			$cityController = $container->query('OCA\Weather\Controller\CityController');
+			$settingsController = $container->query('OCA\Weather\Controller\SettingsController');
 
-				$allCities = json_decode($cityController->getAll()->render(), true);
+			$allCities = json_decode($cityController->getAll()->render(), true);
 
-				$homeCityId = $allCities['home'];
-				$firstCity = array_filter(
-					$allCities['cities'],
-					function($city) use ($homeCityId) { 
-						return $city['id'] === $homeCityId; 
-					}
-				)[0]['name'];
-		
-				$result = json_decode($weatherController->get($firstCity)->render(), true);
-				$metric = json_decode($settingsController->metricGet()->render(), true)['metric'];
+			$homeCityId = $allCities['home'];
+			$homeCityArray = array_filter(
+				$allCities['cities'],
+				function($city) use ($homeCityId) { 
+					return $city['id'] === $homeCityId; 
+				}
+			);
 
-				$request->addResult('location', $firstCity);
-				$request->addResult('temperature', $result['main']['temp']);
-				$request->addResult('metric', $metric);
-				$request->addResult('weather', $result['weather'][0]['description']);
-				$request->addResult('humidity', $result['main']['humidity']);
-				$request->addResult('wind', $result['wind']['speed']);
-			} catch (\Exception $ex) {
+			if (count($homeCityArray) != 1) {
 				$request->addResult('error',  $this->l10n->t('Failed to get city weather informations. Please contact your administrator'));
-				$this->logger->error($ex->getMessage());
+				return;
 			}
+
+			$homeCity = $homeCityArray[0]['name'];
+
+			$resultJSONResponse = $weatherController->get($homeCity);
+			if ($resultJSONResponse->getStatus() != Http::STATUS_OK) {
+				$request->addResult('error',  $this->l10n->t('Failed to get city weather informations. Please contact your administrator'));
+				return;
+			}
+
+			$result = json_decode($resultJSONResponse->render(), true);
+			$metric = json_decode($settingsController->metricGet()->render(), true)['metric'];
+
+			$request->addResult('location', $homeCity);
+			$request->addResult('temperature', $result['main']['temp']);
+			$request->addResult('metric', $metric);
+			$request->addResult('weather', $result['weather'][0]['description']);
+			$request->addResult('humidity', $result['main']['humidity']);
+			$request->addResult('wind', $result['wind']['speed']);
 		}
 	}
 
