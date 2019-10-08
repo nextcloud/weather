@@ -2,6 +2,7 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "Sää",
+    "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Vakava virhe: Tarkista nextcloud.log ja lähetä bugiraportti täällä: https://github.com/nextcloud/weather/issues",
     "North" : "Pohjoinen",
     "North-East" : "Koillinen",
     "East" : "Itä",
@@ -12,7 +13,9 @@ OC.L10N.register(
     "North-West" : "Luode",
     "No city with this name found." : "Tällä nimellä ei löytynyt kaupunkia.",
     "Empty city name !" : "Tyhjän kaupungin nimi!",
+    "Failed to add city. Please contact your administrator" : "Kaupungin lisääminen epäonnistui. Ota yhteyttä järjestelmänvalvojaan",
     "This city is already registered for your account." : "Tämä kaupunki on jo rekisteröity tilillesi.",
+    "Failed to remove city. Please contact your administrator" : "Kaupungin poistaminen epäonnistui. Ota yhteyttä järjestelmänvalvojaan",
     "Monday" : "Maanantai",
     "Tuesday" : "Tiistai",
     "Wednesday" : "Keskiviikko",
