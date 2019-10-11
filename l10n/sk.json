@@ -1,5 +1,20 @@
 { "translations": {
     "Weather" : "Počasie",
+    "North" : "Sever",
+    "North-East" : "Severovýchod",
+    "East" : "Východ",
+    "South-East" : "Juhovýchod",
+    "South" : "Juh",
+    "South-West" : "Juhozápad",
+    "West" : "Západ",
+    "North-West" : "Severozápad",
+    "Monday" : "Pondelok",
+    "Tuesday" : "Utorok",
+    "Wednesday" : "Streda",
+    "Thursday" : "Štvrtok",
+    "Friday" : "Piatok",
+    "Saturday" : "Sobota",
+    "Sunday" : "Nedeľa",
     "Watch the weather directly on your Nextcloud." : "Sledujte počasie priamo na Vašom Nextcloud.",
     "OpenWeatherMap API Key" : "Kľúč API OpenWeatherMap",
     "Save" : "Uložiť",
@@ -17,6 +32,7 @@
     "Wind" : "Vietor",
     "Sunrise" : "Východ slnka",
     "Sunset" : "Západ slnka",
+    "Date" : "Dátum",
     "Temperature" : "Teplota"
 },"pluralForm" :"nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);"
 }
