@@ -44,7 +44,7 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 			"Drizzle": "drizzle.jpg",
 			"Smoke": "todo.png",
       "Dust": "todo.png",
-      "Sand": "todo.png",
+      "Sand": "sand.jpg",
       "Ash": "todo.png",
       "Squall": "todo.png",
       "Tornado": "tornado.jpg",
