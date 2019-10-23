@@ -42,12 +42,18 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 			"Clear": "sun.png",
 			"Clouds": "clouds.png",
 			"Drizzle": "drizzle.jpg",
-			"Extreme": "todo.png",
+			"Smoke": "todo.png",
+      "Dust": "todo.png",
+      "Sand": "todo.png",
+      "Ash": "todo.png",
+      "Squall": "todo.png",
+      "Tornado": "tornado.jpg",
 			"Haze": "mist.png",
 			"Mist": "mist.png",
 			"Rain": "rain.jpg",
 			"Snow": "snow.png",
 			"Thunderstorm": "thunderstorm.png",
+      "Fog": "fog.png",
 		}
 
 		// Reload weather information each minute
