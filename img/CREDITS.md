@@ -5,6 +5,6 @@
 - rain.jpg (Public domain): George Hodan => http://www.publicdomainpictures.net/view-image.php?image=23191&picture=pluie
 - mist.png (CC by SA 2.0): Montgomery County Plan => https://www.flickr.com/photos/75012107@N05/8609938706/
 - home.png: http://uxrepo.com/icon/home-by-typicons
-- fox.png (Public domain): Adam Schoales => https://flickr.com/photos/adamschoales/20062355286/
+- fog.png (Public domain): Adam Schoales => https://flickr.com/photos/adamschoales/20062355286/
 - tornado.png (CC by 2.0): NOAA Photo Library => https://flickr.com/photos/noaaphotolib/5054533468/in/album-72157625053846454/
 - sand.png (CC by 2.0): Florin Chelaru => https://flickr.com/photos/fchelaru/3737318635/
