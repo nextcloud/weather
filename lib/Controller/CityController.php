@@ -43,7 +43,15 @@ class CityController extends IntermediateController {
 	 * @NoCSRFRequired
 	 */
 	public function index () {
-		return new TemplateResponse($this->appName, 'main');
+		$response = new TemplateResponse($this->appName, 'main');  // templates/main.php
+
+		$csp = new StrictContentSecurityPolicy();
+		$csp->allowEvalScript();
+		$csp->allowInlineStyle();
+
+		$response->setContentSecurityPolicy($csp);
+
+		return $response;
 	}
 
 	/**
