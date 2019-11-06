@@ -17,6 +17,7 @@ use \OCP\AppFramework\Http\TemplateResponse;
 use \OCP\AppFramework\Controller;
 use \OCP\AppFramework\Http\JSONResponse;
 use \OCP\AppFramework\Http;
+use \OCP\AppFramework\Http\StrictContentSecurityPolicy;
 
 use \OCA\Weather\Db\CityEntity;
 use \OCA\Weather\Db\CityMapper;

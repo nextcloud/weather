@@ -14,7 +14,6 @@ namespace OCA\Weather\AppInfo;
 
 use \OCP\AppFramework\App;
 use \OCP\IContainer;
-use \OCP\AppFramework\Http\StrictContentSecurityPolicy;
 
 use \OCA\Weather\Controller\CityController;
 use \OCA\Weather\Controller\SettingsController;
