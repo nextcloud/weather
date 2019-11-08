@@ -135,6 +135,11 @@ class CityController extends IntermediateController {
 			"http://api.openweathermap.org/data/2.5/forecast?q=".urlencode($name)."&mode=json&APPID=".urlencode($apiKey))[1],
 			true);
 
+		// If no cod we just return a 502 as the API is not responding properly
+		if (!in_array('cod', $cityDatas)) {
+			return array("code" => 502, "response" => null);
+		}
+		
 		if ($cityDatas['cod'] != '200') {
 			return array("code" => $cityDatas['cod'], "response" =>  null, "apikey" => $apiKey);
 		}
