@@ -134,9 +134,6 @@ class CityController extends IntermediateController {
 		$cityDatas = json_decode($this->curlGET(
 			"http://api.openweathermap.org/data/2.5/forecast?q=".urlencode($name)."&mode=json&APPID=".urlencode($apiKey))[1],
 			true);
-		if (in_array('cod', $cityDatas)) {
-			return array("code" => 502, "response" => null);
-		}
 
 		if ($cityDatas['cod'] != '200') {
 			return array("code" => $cityDatas['cod'], "response" =>  null, "apikey" => $apiKey);
