@@ -34,7 +34,8 @@ rm -Rf \
 	weather/package.json \
 	weather/.ci \
 	weather/.tx \
-	weather/doc
+	weather/doc \
+	weather/screenshots
 
 tar cfz weather-${RELEASE_VERSION}.tar.gz weather
 echo "Release version "${RELEASE_VERSION}" is now ready."
