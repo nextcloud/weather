@@ -124,6 +124,11 @@ class DefaultWidget implements IDashboardWidget {
 
 			$allCities = json_decode($cityController->getAll()->render(), true);
 
+			if (count($allCities) == 0) {
+				$request->addResult('error',  $this->l10n->t('Please make sure you select cities in the Weather app.'));
+				return;
+			}
+
 			$homeCityId = $allCities['home'];
 			$homeCityArray = array_filter(
 				$allCities['cities'],
@@ -133,7 +138,7 @@ class DefaultWidget implements IDashboardWidget {
 			);
 
 			if (count($homeCityArray) != 1) {
-				$request->addResult('error',  $this->l10n->t('Failed to get city weather informations. Please contact your administrator'));
+				$request->addResult('error',  $this->l10n->t('Please make sure you select a home city in the Weather app.'));
 				return;
 			}
 
