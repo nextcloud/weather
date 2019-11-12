@@ -142,7 +142,7 @@ class DefaultWidget implements IDashboardWidget {
 				return;
 			}
 
-			$homeCity = $homeCityArray[0]['name'];
+			$homeCity = array_pop($homeCityArray)['name'];
 
 			$resultJSONResponse = $weatherController->get($homeCity);
 			if ($resultJSONResponse->getStatus() != Http::STATUS_OK) {
