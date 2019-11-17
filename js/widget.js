@@ -67,7 +67,7 @@
 			divWeather.querySelector(".weatherValue").innerHTML = result.value.weather;
 			divWeather.querySelector(".humidityValue").innerHTML = result.value.humidity;
 			divWeather.querySelector(".windValue").innerHTML = result.value.wind;
-		} catch {
+		} catch (e) {
 			divInfo.classList.add("error");
 			divInfo.innerHTML = "Failed to update some data.";
 		}
