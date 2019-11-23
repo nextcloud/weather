@@ -28,7 +28,7 @@ OC.L10N.register(
     "Friday" : "Freitag",
     "Saturday" : "Samstag",
     "Sunday" : "Sonntag",
-    "Watch the weather directly on your Nextcloud." : "Sehe den Wetterbericht direkt in Deiner Nextcloud",
+    "Watch the weather directly on your Nextcloud." : "Sieh den Wetterbericht direkt in Deiner Nextcloud",
     "OpenWeatherMap API Key" : "OpenWeatherMap-API-Schlüssel",
     "Save" : "Speichern",
     "Add a city" : "Eine Stadt hinzufügen",
