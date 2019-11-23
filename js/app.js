@@ -217,7 +217,7 @@ app.controller('WeatherController', ['$scope', '$interval', '$timeout', '$compil
 
 		$scope.addCity = function(city) {
 			if (undef(city) || emptyStr(city.name)) {
-				$scope.addCityError = t('weather', 'Empty city name !');
+				$scope.addCityError = t('weather', 'Empty city name!');
 				return;
 			}
 
