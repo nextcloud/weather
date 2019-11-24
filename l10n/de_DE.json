@@ -14,7 +14,6 @@
     "Failed to get city weather informations. Please contact your administrator" : "Konnte Wetter für diese Stadt nicht abrufen. Bitte kontaktieren Sie Ihren Administrator",
     "No city with this name found." : "Keine Stadt mit diesem Namen gefunden",
     "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "Ihr OpenWeatherMap-API-Schlüssel ist ungültig. Bitten Sie Ihren Administrator, einen gültigen API-Schlüssel unter Einstellungen / Zusätzliche Einstellungen zu konfigurieren",
-    "Empty city name !" : "Leerer Städtename!",
     "Failed to add city. Please contact your administrator" : "Konnte Stadt nicht hinzufügen. Bitte kontaktieren Sie den Administrator",
     "This city is already registered for your account." : "Diese Stadt ist bereits für Ihre Konto registriert.",
     "Failed to remove city. Please contact your administrator" : "Konnte Stadt nicht löschen. Bitte kontaktieren Sie den Administrator",
@@ -27,6 +26,8 @@
     "Saturday" : "Samstag",
     "Sunday" : "Sonntag",
     "Watch the weather directly on your Nextcloud." : "Sehen Sie den Wetterbericht direkt in Ihrer Nextcloud",
+    "Please make sure you select cities in the Weather app." : "Bitte sicherstellen dass Sie Städte in der Wetter-App ausgewählt haben.",
+    "Please make sure you select a home city in the Weather app." : "Bitte Sicherstellen, dass Sie eine Heimatstadt in der Wetter-App ausgewählt haben.",
     "OpenWeatherMap API Key" : "OpenWeatherMap-API-Schlüssel",
     "Save" : "Speichern",
     "Add a city" : "Eine Stadt hinzufügen",
@@ -44,6 +45,7 @@
     "Sunrise" : "Sonnenaufgang",
     "Sunset" : "Sonnenuntergang",
     "Date" : "Datum",
-    "Temperature" : "Temperatur"
+    "Temperature" : "Temperatur",
+    "Updating widget…" : "Aktualisiere Widget…"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

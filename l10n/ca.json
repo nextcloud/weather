@@ -14,7 +14,6 @@
     "Failed to get city weather informations. Please contact your administrator" : "Ha fallat la recuperació d'informació sobre el temps d'aquesta ciutat. Contacteu el vostre administrador.",
     "No city with this name found." : "No s'ha trobat cap ciutat amb aquest nom.",
     "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "La vostra clau de l'API de OpenWeatherMap no és vàlida. Contacteu el vostre administrador per configurar una clau vàlida a la secció Paràmetres addicionals al panell d'administrador.",
-    "Empty city name !" : "El nom de la ciutat és buit!",
     "Failed to add city. Please contact your administrator" : "Ha fallat l'addició de la ciutat. Contacteu l'administrador.",
     "This city is already registered for your account." : "Aquesta ciutat ja estava afegida al vostre compte.",
     "Failed to remove city. Please contact your administrator" : "Ha fallat l'eliminació de la ciutat. Contacteu l'administrador.",

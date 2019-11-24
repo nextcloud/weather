@@ -14,7 +14,6 @@ OC.L10N.register(
     "North-West" : "Norðvestan",
     "Failed to get city weather informations. Please contact your administrator" : "Mistókst að ná í veðurupplýsingar fyrir borg, endilega hafðu samband við kerfisstjóra",
     "No city with this name found." : "Engin borg með þessu heiti fannst.",
-    "Empty city name !" : "Autt borgarheiti !",
     "Failed to add city. Please contact your administrator" : "Mistókst að bæta við borg, endilega hafðu samband við kerfisstjóra",
     "This city is already registered for your account." : "Þessi borg er nú þegar skráð á aðganginn þinn.",
     "Failed to remove city. Please contact your administrator" : "Mistókst að fjarlægja borg, endilega hafðu samband við kerfisstjóra",

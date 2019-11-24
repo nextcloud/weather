@@ -12,7 +12,6 @@ OC.L10N.register(
     "West" : "Länsi",
     "North-West" : "Luode",
     "No city with this name found." : "Tällä nimellä ei löytynyt kaupunkia.",
-    "Empty city name !" : "Tyhjän kaupungin nimi!",
     "Failed to add city. Please contact your administrator" : "Kaupungin lisääminen epäonnistui. Ota yhteyttä järjestelmänvalvojaan",
     "This city is already registered for your account." : "Tämä kaupunki on jo rekisteröity tilillesi.",
     "Failed to remove city. Please contact your administrator" : "Kaupungin poistaminen epäonnistui. Ota yhteyttä järjestelmänvalvojaan",

@@ -16,7 +16,6 @@ OC.L10N.register(
     "Failed to get city weather informations. Please contact your administrator" : "Erro ao obter informações meteorológicas da cidade. Contacte o administrador",
     "No city with this name found." : "Nenhuma cidade com este nome foi encontrada",
     "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "Sua chave de API do OpenWeatherMap é inválida. Contacte o administrador para configurar uma válida em Configurações Adicionais da Administração.",
-    "Empty city name !" : "Nome da cidade em branco!",
     "Failed to add city. Please contact your administrator" : "Erro ao adicionar cidade. Contacte o administrador",
     "This city is already registered for your account." : "Esta cidade já está registrada para sua conta.",
     "Failed to remove city. Please contact your administrator" : "Erro ao excluir cidade. Contacte o administrador",
@@ -29,6 +28,8 @@ OC.L10N.register(
     "Saturday" : "Sábado",
     "Sunday" : "Domingo",
     "Watch the weather directly on your Nextcloud." : "Veja o tempo diretamente em seu Nextcloud.",
+    "Please make sure you select cities in the Weather app." : "Certifique-se de selecionar cidades no aplicativo Weather.",
+    "Please make sure you select a home city in the Weather app." : "Certifique-se de selecionar uma cidade base no aplicativo Weather.",
     "OpenWeatherMap API Key" : "Chave API do OpenWeatherMap",
     "Save" : "Salvar",
     "Add a city" : "Adicionar uma cidade",
@@ -46,6 +47,7 @@ OC.L10N.register(
     "Sunrise" : "Nascer do sol",
     "Sunset" : "Pôr do sol",
     "Date" : "Data",
-    "Temperature" : "Temperatura"
+    "Temperature" : "Temperatura",
+    "Updating widget…" : "Atualizando widget…"
 },
 "nplurals=2; plural=(n > 1);");

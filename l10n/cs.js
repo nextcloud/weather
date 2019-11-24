@@ -16,7 +16,6 @@ OC.L10N.register(
     "Failed to get city weather informations. Please contact your administrator" : "Selhalo získávání informací o počasí ve vašem městě. Prosím, kontaktujte svého administrátora",
     "No city with this name found." : "Nenalezeno žádné město s tímto názvem.",
     "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "Váš OpenWeatherMap API klíč je neplatný. Kontaktujte stého administrátora pro nastavení validního API klíče v rozšířeném nastavení administrace.",
-    "Empty city name !" : "Nevyplněný název města!",
     "Failed to add city. Please contact your administrator" : "Selhalo přidání města. Prosím, kontaktujte svého administrátora",
     "This city is already registered for your account." : "Toto město je již přidáno ve vašem účtu.",
     "Failed to remove city. Please contact your administrator" : "Selhalo odstranění města. Prosím, kontaktujte svého administrátora",
@@ -29,6 +28,8 @@ OC.L10N.register(
     "Saturday" : "sobota",
     "Sunday" : "neděle",
     "Watch the weather directly on your Nextcloud." : "Sledujte počasí přímo ve svém Nextcloud.",
+    "Please make sure you select cities in the Weather app." : "Ujistěte se, že jste v aplikaci Počasí vybrali města.",
+    "Please make sure you select a home city in the Weather app." : "Ujistěte se, že jste v aplikaci Počasí vybrali domovské město.",
     "OpenWeatherMap API Key" : "klíč k aplikačnímu program. rozhraní služby OpenWeatherMap",
     "Save" : "Uložit",
     "Add a city" : "Přidat město",
@@ -46,6 +47,7 @@ OC.L10N.register(
     "Sunrise" : "Východ slunce",
     "Sunset" : "Západ slunce",
     "Date" : "Datum",
-    "Temperature" : "Teplota"
+    "Temperature" : "Teplota",
+    "Updating widget…" : "Aktualizace ovládacího prvku…"
 },
 "nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;");

@@ -16,7 +16,6 @@ OC.L10N.register(
     "Failed to get city weather informations. Please contact your administrator" : "无法获取城市天气信息。请联系您的管理员。",
     "No city with this name found." : "没有找到以此为名的城市。",
     "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "您的OpenWeatherMap API key是非法的。请联系您的管理员在“管理”的“附加设置”里配置一个合法的API key。",
-    "Empty city name !" : "空的城市名！",
     "Failed to add city. Please contact your administrator" : "无法添加城市。请联系您的管理员。",
     "This city is already registered for your account." : "此城市已在您的账号中注册。",
     "Failed to remove city. Please contact your administrator" : "无法移除城市。请联系您的管理员。",

@@ -14,7 +14,6 @@ OC.L10N.register(
     "West" : "Oeste",
     "North-West" : "Noroeste",
     "No city with this name found." : "Não foi encontrada nenhuma cidade com este nome.",
-    "Empty city name !" : "O nome da cidade está em branco !",
     "Monday" : "Segunda",
     "Tuesday" : "Terça",
     "Wednesday" : "Quarta",

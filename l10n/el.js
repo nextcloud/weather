@@ -12,7 +12,6 @@ OC.L10N.register(
     "North-West" : "Βόρειο-Δυτικά",
     "Failed to get city weather informations. Please contact your administrator" : "Αδυναμία λήψης πληροφοριών για τις καιρικές συνθήκες της πόλης. Παρακαλούμε επικοινωνήστε με τον διαχειριστή σας",
     "No city with this name found." : "Δεν βρέθηκε κάποια πόλη με αυτό το όνομα.",
-    "Empty city name !" : "Κενό όνομα πόλης!",
     "Failed to add city. Please contact your administrator" : "Αδυναμία προσθήκης πόλης. Παρακαλούμε επικοινωνήστε με τον διαχειριστή",
     "Failed to remove city. Please contact your administrator" : "Αδυναμία αφαίρεσης της πόλης. Παρακαλούμε επικοινωνήστε με τον διαχειριστή",
     "Monday" : "Δευτέρα",

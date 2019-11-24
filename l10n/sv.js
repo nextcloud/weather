@@ -14,7 +14,6 @@ OC.L10N.register(
     "Failed to get city weather informations. Please contact your administrator" : "Det gick inte att få information om stadens väder. Vänligen kontakta din administratör",
     "No city with this name found." : "Ingen stad med det här namnet hittades.",
     "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "Din OpenWeatherMap API-nyckel är ogiltig. Kontakta din administratör för att konfigurera en giltig API-nyckel i Administrationens ytterligare inställningar",
-    "Empty city name !" : "Tomt stadsnamn !",
     "Failed to add city. Please contact your administrator" : "Det gick inte att lägga till stad. Vänligen kontakta din administratör",
     "This city is already registered for your account." : "Den här staden är redan registrerad för ditt konto.",
     "Failed to remove city. Please contact your administrator" : "Det gick inte att ta bort staden. Vänligen kontakta din administratör",
@@ -27,6 +26,8 @@ OC.L10N.register(
     "Saturday" : "Lördag",
     "Sunday" : "Söndag",
     "Watch the weather directly on your Nextcloud." : "Visa vädret direkt i din Nextcloud.",
+    "Please make sure you select cities in the Weather app." : "Se till att du väljer städer i appen Weather.",
+    "Please make sure you select a home city in the Weather app." : "Se till att du väljer en hemstad i appen Weather.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API Nyckel",
     "Save" : "Spara",
     "Add a city" : "Lägg till stad",
@@ -44,6 +45,7 @@ OC.L10N.register(
     "Sunrise" : "Soluppgång",
     "Sunset" : "Solnedgång",
     "Date" : "Datum",
-    "Temperature" : "Temperatur"
+    "Temperature" : "Temperatur",
+    "Updating widget…" : "Uppdaterar gränssnittskomponent..."
 },
 "nplurals=2; plural=(n != 1);");
