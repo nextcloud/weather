@@ -16,6 +16,7 @@ OC.L10N.register(
     "Failed to get city weather informations. Please contact your administrator" : "Produciuse un fallo ao obter información meteorolóxica da cidade. Contacte co seu administrador",
     "No city with this name found." : "Non se atopa unha cidade con este nome.",
     "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "A súa chave ds a APi der OpenWeatherMap é incorrecta. Contacte co seu administrador para configurar unha chave de API válida nos Axustes adicionais de Administración",
+    "Empty city name!" : "Nome da cidade baleiro!",
     "Failed to add city. Please contact your administrator" : "Produciuse un fallo ao engadir a cidade. Contacte co seu administrador",
     "This city is already registered for your account." : "Esta cidade xa está rexistrada para a súa conta.",
     "Failed to remove city. Please contact your administrator" : "Produciuse un fallo ao retirar a cidade. Contacte co seu administrador",
@@ -28,6 +29,8 @@ OC.L10N.register(
     "Saturday" : "sábado",
     "Sunday" : "domingo",
     "Watch the weather directly on your Nextcloud." : "Vexa o clima directamente no seu Nextcloud.",
+    "Please make sure you select cities in the Weather app." : "Asegúrese de seleccionar cidades na aplicación Meteoroloxía.",
+    "Please make sure you select a home city in the Weather app." : "Asegúrese de seleccionar a súa cidade na aplicación Meteoroloxía.",
     "OpenWeatherMap API Key" : "Chave para a API de OpenWeatherMap",
     "Save" : "Gardar",
     "Add a city" : "Engadir unha cidade",
@@ -45,6 +48,7 @@ OC.L10N.register(
     "Sunrise" : "Abrente",
     "Sunset" : "Solpor",
     "Date" : "Data",
-    "Temperature" : "Temperatura"
+    "Temperature" : "Temperatura",
+    "Updating widget…" : "Actualizando o trebello…"
 },
 "nplurals=2; plural=(n != 1);");

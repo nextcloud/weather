@@ -14,6 +14,7 @@
     "Failed to get city weather informations. Please contact your administrator" : "Selhalo získávání informací o počasí ve vašem městě. Prosím, kontaktujte svého administrátora",
     "No city with this name found." : "Nenalezeno žádné město s tímto názvem.",
     "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "Váš OpenWeatherMap API klíč je neplatný. Kontaktujte stého administrátora pro nastavení validního API klíče v rozšířeném nastavení administrace.",
+    "Empty city name!" : "Nevyplněn název města!",
     "Failed to add city. Please contact your administrator" : "Selhalo přidání města. Prosím, kontaktujte svého administrátora",
     "This city is already registered for your account." : "Toto město je již přidáno ve vašem účtu.",
     "Failed to remove city. Please contact your administrator" : "Selhalo odstranění města. Prosím, kontaktujte svého administrátora",

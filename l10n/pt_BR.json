@@ -14,6 +14,7 @@
     "Failed to get city weather informations. Please contact your administrator" : "Erro ao obter informações meteorológicas da cidade. Contacte o administrador",
     "No city with this name found." : "Nenhuma cidade com este nome foi encontrada",
     "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "Sua chave de API do OpenWeatherMap é inválida. Contacte o administrador para configurar uma válida em Configurações Adicionais da Administração.",
+    "Empty city name!" : "Nome da cidade em branco!",
     "Failed to add city. Please contact your administrator" : "Erro ao adicionar cidade. Contacte o administrador",
     "This city is already registered for your account." : "Esta cidade já está registrada para sua conta.",
     "Failed to remove city. Please contact your administrator" : "Erro ao excluir cidade. Contacte o administrador",
