@@ -16,6 +16,7 @@ OC.L10N.register(
     "Failed to get city weather informations. Please contact your administrator" : "İlin hava durumu alınamadı. Lütfen sistem yöneticiniz ile görüşün",
     "No city with this name found." : "Bu ada uyan bir il bulunamadı.",
     "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "OpenWeatherMap API anahtarınız geçersiz. Sistem yöneticiniz ile görüşerek, Yönetici Ek Ayarları bölümünden geçerli bir API anahtarı yapılandırmasını isteyin",
+    "Empty city name!" : "İl adı boş!",
     "Failed to add city. Please contact your administrator" : "İl eklenemedi. Lütfen sistem yöneticiniz ile görüşün",
     "This city is already registered for your account." : "Bu il hesabınıza zaten eklenmiş.",
     "Failed to remove city. Please contact your administrator" : "İl kaldırılamadı. Lütfen sistem yöneticiniz ile görüşün",
@@ -28,6 +29,8 @@ OC.L10N.register(
     "Saturday" : "Cumartesi",
     "Sunday" : "Pazar",
     "Watch the weather directly on your Nextcloud." : "Hava durumunun Nextcloud üzerinden izlenmesini sağlar.",
+    "Please make sure you select cities in the Weather app." : "Lütfen Hava Durumu uygulamasında illeri seçtiğinizden emin olun.",
+    "Please make sure you select a home city in the Weather app." : "Lütfen Hava Durumu uygulamasında bir ev ili seçtiğinizden emin olun.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API Anahtarı",
     "Save" : "Kaydet",
     "Add a city" : "Bir il ekle",
@@ -45,6 +48,7 @@ OC.L10N.register(
     "Sunrise" : "Gün doğumu",
     "Sunset" : "Gün batımı",
     "Date" : "Tarih",
-    "Temperature" : "Sıcaklık"
+    "Temperature" : "Sıcaklık",
+    "Updating widget…" : "Pano bileşeni güncelleniyor…"
 },
 "nplurals=2; plural=(n > 1);");

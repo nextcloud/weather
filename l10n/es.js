@@ -16,6 +16,7 @@ OC.L10N.register(
     "Failed to get city weather informations. Please contact your administrator" : "Fallo al conseguir la información meteorológica de la ciudad. Por favor, contacta con tu administrador.",
     "No city with this name found." : "No se ha encontrado ninguna ciudad con este nombre.",
     "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "Tu clave API de OpenWeatherMap es inválida. Contacta con tu administrador para configurar una clave API válida en la Configuración adicional de la Administración",
+    "Empty city name!" : "¡Nombre de ciudad vacío!",
     "Failed to add city. Please contact your administrator" : "Fallo al añadir ciudad. Por favor, contacta con tu administrador",
     "This city is already registered for your account." : "Esta ciudad ya está registrada para tu cuenta.",
     "Failed to remove city. Please contact your administrator" : "Fallo al eliminar la ciudad. Por favor, contacta con tu administrador",
@@ -28,6 +29,8 @@ OC.L10N.register(
     "Saturday" : "Sábado",
     "Sunday" : "Domingo",
     "Watch the weather directly on your Nextcloud." : "Comprueba el tiempo directamente en tu Nextcloud.",
+    "Please make sure you select cities in the Weather app." : "Por favor, asegúrate de que seleccionas ciudades en la app Tiempo.",
+    "Please make sure you select a home city in the Weather app." : "Por favor, asegúrate de que seleccionas una ciudad de origen en la app Tiempo.",
     "OpenWeatherMap API Key" : "Clave de la API de OpenWeatherMap",
     "Save" : "Guardar",
     "Add a city" : "Añadir una ciudad",
@@ -45,6 +48,7 @@ OC.L10N.register(
     "Sunrise" : "Amanecer",
     "Sunset" : "Atardecer",
     "Date" : "Fecha",
-    "Temperature" : "Temperatura"
+    "Temperature" : "Temperatura",
+    "Updating widget…" : "Actualizando widget…"
 },
 "nplurals=2; plural=(n != 1);");

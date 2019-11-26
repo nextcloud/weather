@@ -14,6 +14,7 @@
     "Failed to get city weather informations. Please contact your administrator" : "Грешка при дохватању информације о времену у граду. Контактирајте администратора",
     "No city with this name found." : "Није нађен град са тим именом.",
     "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "Ваш OpenWeatherMap API кључ није исправан. Контактирајте администратора да подеси исправан API кључ у Додатним Поставкама у Администрацији",
+    "Empty city name!" : "Празно име града!",
     "Failed to add city. Please contact your administrator" : "Грешка при додавању града. Контактирајте администратора",
     "This city is already registered for your account." : "Овај град је већ регистрован са Вашим налогом.",
     "Failed to remove city. Please contact your administrator" : "Грешка при уклањању града. Контактирајте администратора",
@@ -26,6 +27,8 @@
     "Saturday" : "Субота",
     "Sunday" : "Недеља",
     "Watch the weather directly on your Nextcloud." : "Пратите време директно из Вашег Некстклауда.",
+    "Please make sure you select cities in the Weather app." : "Пазите да сте одабрали градове у апликацији Време.",
+    "Please make sure you select a home city in the Weather app." : "Пазите да сте одабрали град становања у апликацији Време.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API кључ",
     "Save" : "Сачувај",
     "Add a city" : "Додај град",
@@ -43,6 +46,7 @@
     "Sunrise" : "Излазак сунца",
     "Sunset" : "Залазак сунца",
     "Date" : "Датум",
-    "Temperature" : "Температура"
+    "Temperature" : "Температура",
+    "Updating widget…" : "Ажурирам справицу…"
 },"pluralForm" :"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);"
 }
