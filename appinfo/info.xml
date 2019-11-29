@@ -3,7 +3,7 @@
       xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
     <id>weather</id>
     <name>Weather</name>
-    <summary>Watch the weather directly on your Nextcloud.</summary>
+    <description>Watch the weather directly on your Nextcloud.</description>
     <version>1.6.5</version>
     <licence>AGPL</licence>
     <author>Loic Blot</author>
