@@ -14,6 +14,7 @@
     "Failed to get city weather informations. Please contact your administrator" : "无法获取城市天气信息。请联系您的管理员。",
     "No city with this name found." : "没有找到以此为名的城市。",
     "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "您的OpenWeatherMap API key是非法的。请联系您的管理员在“管理”的“附加设置”里配置一个合法的API key。",
+    "Empty city name!" : "空的城市名！",
     "Failed to add city. Please contact your administrator" : "无法添加城市。请联系您的管理员。",
     "This city is already registered for your account." : "此城市已在您的账号中注册。",
     "Failed to remove city. Please contact your administrator" : "无法移除城市。请联系您的管理员。",
@@ -26,6 +27,8 @@
     "Saturday" : "星期六",
     "Sunday" : "星期日",
     "Watch the weather directly on your Nextcloud." : "直接在 Nextcloud 里面查阅天气",
+    "Please make sure you select cities in the Weather app." : "请确保您在天气图应用中选择了城市。",
+    "Please make sure you select a home city in the Weather app." : "请确保您在天气图应用中选择了一个家所在城市。",
     "OpenWeatherMap API Key" : "开放的天气 API 接口 ID",
     "Save" : "保存",
     "Add a city" : "添加一个城市",
@@ -43,6 +46,7 @@
     "Sunrise" : "日出",
     "Sunset" : "日落",
     "Date" : "日期",
-    "Temperature" : "温度"
+    "Temperature" : "温度",
+    "Updating widget…" : "更新小部件..."
 },"pluralForm" :"nplurals=1; plural=0;"
 }
