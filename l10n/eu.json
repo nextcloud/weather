@@ -1,5 +1,13 @@
 { "translations": {
     "Weather" : "Eguraldia",
+    "North" : "Iparra",
+    "North-East" : "Ipar-ekialdea",
+    "East" : "Ekialdea",
+    "South-East" : "Hego-ekialdea",
+    "South" : "Hegoa",
+    "South-West" : "Hego-mendebaldea",
+    "West" : "Mendebaldea",
+    "North-West" : "Ipar-mendebaldea",
     "Watch the weather directly on your Nextcloud." : "Ikusi eguraldia zuzenean zure Nextcloudetik.",
     "OpenWeatherMap API Key" : "OpenWeatherMap aplikazioaren gakoa",
     "Save" : "Gorde",
