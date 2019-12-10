@@ -2,6 +2,7 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "Veður",
+    "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Alvarleg villa: skoðaðu nextcloud.log atvikaskrána og sendu inn villuskýrslu hér: https://github.com/nextcloud/weather/issues",
     "Failed to set metric. Please contact your administrator" : "Mistókst að stilla mælieiningar, endilega hafðu samband við kerfisstjóra",
     "This metric is not known." : "Þessar mælieiningar eru ekki þekktar.",
     "North" : "Norðan",
@@ -14,6 +15,8 @@ OC.L10N.register(
     "North-West" : "Norðvestan",
     "Failed to get city weather informations. Please contact your administrator" : "Mistókst að ná í veðurupplýsingar fyrir borg, endilega hafðu samband við kerfisstjóra",
     "No city with this name found." : "Engin borg með þessu heiti fannst.",
+    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "OpenWeatherMap API-lykillinn er ógildur. Hafðu samband við kerfisstjórann þinn til að setja upp gildan lykil fyrir API-forritsviðmótið í Aukastillingar í kerfisstillingunum",
+    "Empty city name!" : "Autt borgarheiti !",
     "Failed to add city. Please contact your administrator" : "Mistókst að bæta við borg, endilega hafðu samband við kerfisstjóra",
     "This city is already registered for your account." : "Þessi borg er nú þegar skráð á aðganginn þinn.",
     "Failed to remove city. Please contact your administrator" : "Mistókst að fjarlægja borg, endilega hafðu samband við kerfisstjóra",
@@ -26,6 +29,8 @@ OC.L10N.register(
     "Saturday" : "Laugardagur",
     "Sunday" : "Sunnudagur",
     "Watch the weather directly on your Nextcloud." : "Fylgstu með veðrinu á þínu eigin Nextcloud-skýi.",
+    "Please make sure you select cities in the Weather app." : "Gakktu úr skugga um að þú veljir borgir í veðurforritinu.",
+    "Please make sure you select a home city in the Weather app." : "Gakktu úr skugga um að þú veljir heimabæ í veðurforritinu.",
     "OpenWeatherMap API Key" : "API-lykill frá OpenWeatherMap",
     "Save" : "Vista",
     "Add a city" : "Bæta við borg",
@@ -43,6 +48,7 @@ OC.L10N.register(
     "Sunrise" : "Sólris",
     "Sunset" : "Sólsetur",
     "Date" : "Dagsetning",
-    "Temperature" : "Hitastig"
+    "Temperature" : "Hitastig",
+    "Updating widget…" : "Uppfæri viðmótshluta…"
 },
 "nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);");
