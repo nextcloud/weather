@@ -1,10 +1,11 @@
 #city-list-left {
+	display: flex;
+	flex-direction: column;
 	width: 250px;
 	height: 100%;
 	float: left;
 	-moz-box-sizing: border-box; box-sizing: border-box;
 	background-color: #fff;
-	padding-bottom: 44px;
 	border-left: 1px solid #ddd;
 	border-right: 1px solid #ddd;
 	-webkit-user-select: none;
@@ -60,9 +61,8 @@
 
 #city-right {
 	padding: 45px;
-	height: 100%;
-	overflow-y: hidden;
-	overflow-x: auto;
+	height: calc(100vh - 50px); /* substract header */
+	overflow: auto;
 	top: 0;
 	bottom: 0;
 	right: 0;
