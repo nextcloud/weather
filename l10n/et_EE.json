@@ -1,5 +1,12 @@
 { "translations": {
     "Weather" : "Ilm",
+    "Monday" : "Esmaspäev",
+    "Tuesday" : "Teisipäev",
+    "Wednesday" : "Kolmapäev",
+    "Thursday" : "Neljapäev",
+    "Friday" : "Reede",
+    "Saturday" : "Laupäev",
+    "Sunday" : "Pühapäev",
     "OpenWeatherMap API Key" : "OpenWeatherMap API võti",
     "Save" : "Salvesta",
     "Add a city" : "Lisa linn",
@@ -16,6 +23,7 @@
     "Wind" : "Tuul",
     "Sunrise" : "Päikesetõus",
     "Sunset" : "Päikeseloojang",
+    "Date" : "Kuupäev",
     "Temperature" : "Temperatuur"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

@@ -2,6 +2,13 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "আবহাওয়া",
+    "Monday" : "সোমবার",
+    "Tuesday" : "মঙ্গলবার",
+    "Wednesday" : "বুধবার",
+    "Thursday" : "বৃহস্পতিবার",
+    "Friday" : "শুক্রবার",
+    "Saturday" : "শনিবার",
+    "Sunday" : "রবিবার",
     "OpenWeatherMap API Key" : "OpenWeatherMap API Key",
     "Save" : "সংরক্ষণ",
     "Add a city" : "শহর যোগ করুন",
@@ -18,6 +25,7 @@ OC.L10N.register(
     "Wind" : "বাতাস",
     "Sunrise" : "সূর্যোদয়",
     "Sunset" : "সূর্যাস্ত",
+    "Date" : "Date",
     "Temperature" : "তাপমাত্রা"
 },
 "nplurals=2; plural=(n != 1);");

@@ -1,0 +1,15 @@
+{ "translations": {
+    "Monday" : "دۈشەنبە",
+    "Tuesday" : "سەيشەنبە",
+    "Wednesday" : "چارشەنبە",
+    "Thursday" : "پەيشەنبە",
+    "Friday" : "جۈمە",
+    "Saturday" : "شەنبە",
+    "Sunday" : "يەكشەنبە",
+    "Save" : "ساقلا",
+    "Add" : "قوش",
+    "Cancel" : "ۋاز كەچ",
+    "Settings" : "تەڭشەكلەر",
+    "Date" : "Date"
+},"pluralForm" :"nplurals=1; plural=0;"
+}

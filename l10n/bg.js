@@ -6,6 +6,13 @@ OC.L10N.register(
     "East" : "изток",
     "South" : "юг",
     "West" : "запад",
+    "Monday" : "понеделник",
+    "Tuesday" : "вторник",
+    "Wednesday" : "сряда",
+    "Thursday" : "четвъртък",
+    "Friday" : "петък",
+    "Saturday" : "събота",
+    "Sunday" : "неделя",
     "Watch the weather directly on your Nextcloud." : "Следете метеорологичните условия от Nextcloud.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API Key",
     "Save" : "Запис",
@@ -23,6 +30,7 @@ OC.L10N.register(
     "Wind" : "Вятър",
     "Sunrise" : "Изгрев",
     "Sunset" : "Залез",
+    "Date" : "Дата",
     "Temperature" : "Температура"
 },
 "nplurals=2; plural=(n != 1);");

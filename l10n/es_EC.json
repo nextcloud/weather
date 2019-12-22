@@ -1,5 +1,12 @@
 { "translations": {
     "Weather" : "Clima",
+    "Monday" : "Lunes",
+    "Tuesday" : "Martes",
+    "Wednesday" : "Miércoles",
+    "Thursday" : "Jueves",
+    "Friday" : "Viernes",
+    "Saturday" : "Sábado",
+    "Sunday" : "Domingo",
     "OpenWeatherMap API Key" : "Llave del API OpenWeatherMap ",
     "Save" : "Guardar",
     "Add a city" : "Agregar una ciudad",
@@ -16,6 +23,7 @@
     "Wind" : "Viento",
     "Sunrise" : "Salida del sol",
     "Sunset" : "Puesta de sol",
+    "Date" : "Fecha",
     "Temperature" : "Temperatura"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

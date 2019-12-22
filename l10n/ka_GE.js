@@ -2,6 +2,13 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "ამინდი",
+    "Monday" : "ორშაბათი",
+    "Tuesday" : "სამშაბათი",
+    "Wednesday" : "ოთხშაბათი",
+    "Thursday" : "ხუთშაბათი",
+    "Friday" : "პარასკევი",
+    "Saturday" : "შაბათი",
+    "Sunday" : "კვირა",
     "OpenWeatherMap API Key" : "OpenWeatherMap API გასაღები",
     "Save" : "შენახვა",
     "Add a city" : "ქალაქის დამატება",
@@ -18,6 +25,7 @@ OC.L10N.register(
     "Wind" : "ქარი",
     "Sunrise" : "მზის ამოსვლა",
     "Sunset" : "მზის ჩასვლა",
+    "Date" : "თარიღი",
     "Temperature" : "ტემპერატურა"
 },
 "nplurals=2; plural=(n!=1);");

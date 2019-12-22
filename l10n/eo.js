@@ -2,6 +2,13 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "Vetero",
+    "Monday" : "lundo",
+    "Tuesday" : "mardo",
+    "Wednesday" : "merkredo",
+    "Thursday" : "ĵaŭdo",
+    "Friday" : "vendredo",
+    "Saturday" : "sabato",
+    "Sunday" : "dimanĉo",
     "Watch the weather directly on your Nextcloud." : "Vidu la veteron rekte en via Nextcloud",
     "OpenWeatherMap API Key" : "API-ŝlosilo de „OpenWeatherMap“",
     "Save" : "Konservi",
@@ -19,6 +26,7 @@ OC.L10N.register(
     "Wind" : "Vento",
     "Sunrise" : "Sunleviĝo",
     "Sunset" : "Sunsubiro",
+    "Date" : "Date",
     "Temperature" : "Temperaturo"
 },
 "nplurals=2; plural=(n != 1);");

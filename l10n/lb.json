@@ -1,5 +1,12 @@
 { "translations": {
     "Weather" : "Wieder",
+    "Monday" : "Méindeg",
+    "Tuesday" : "Dënschdeg",
+    "Wednesday" : "Mëttwoch",
+    "Thursday" : "Donneschdeg",
+    "Friday" : "Freideg",
+    "Saturday" : "Samschdeg",
+    "Sunday" : "Sonndeg",
     "Save" : "Späicheren",
     "Add a city" : "Eng Stad derbäimaachen",
     "Add city" : "Stad derbäimaachen",
@@ -14,6 +21,7 @@
     "Wind" : "Wand",
     "Sunrise" : "Sonnenopgang",
     "Sunset" : "Sonnenënnergang",
+    "Date" : "Date",
     "Temperature" : "Temperatur"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

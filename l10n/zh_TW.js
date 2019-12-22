@@ -2,6 +2,13 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "天氣",
+    "Monday" : "週一",
+    "Tuesday" : "週二",
+    "Wednesday" : "週三",
+    "Thursday" : "週四",
+    "Friday" : "週五",
+    "Saturday" : "週六",
+    "Sunday" : "週日",
     "OpenWeatherMap API Key" : "OpenWeatherMap的API金鑰",
     "Save" : "儲存",
     "Add a city" : "添加一個城鎮",
@@ -18,6 +25,7 @@ OC.L10N.register(
     "Wind" : "風速",
     "Sunrise" : "日出時間",
     "Sunset" : "日落時間",
+    "Date" : "日期",
     "Temperature" : "氣溫"
 },
 "nplurals=1; plural=0;");

@@ -2,6 +2,13 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "Ilm",
+    "Monday" : "Esmaspäev",
+    "Tuesday" : "Teisipäev",
+    "Wednesday" : "Kolmapäev",
+    "Thursday" : "Neljapäev",
+    "Friday" : "Reede",
+    "Saturday" : "Laupäev",
+    "Sunday" : "Pühapäev",
     "OpenWeatherMap API Key" : "OpenWeatherMap API võti",
     "Save" : "Salvesta",
     "Add a city" : "Lisa linn",
@@ -18,6 +25,7 @@ OC.L10N.register(
     "Wind" : "Tuul",
     "Sunrise" : "Päikesetõus",
     "Sunset" : "Päikeseloojang",
+    "Date" : "Kuupäev",
     "Temperature" : "Temperatuur"
 },
 "nplurals=2; plural=(n != 1);");

@@ -2,6 +2,13 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "Vær",
+    "Monday" : "Måndag",
+    "Tuesday" : "Tysdag",
+    "Wednesday" : "Onsdag",
+    "Thursday" : "Torsdag",
+    "Friday" : "Fredag",
+    "Saturday" : "Laurdag",
+    "Sunday" : "Søndag",
     "Save" : "Lagre",
     "Add a city" : "Legg til ein by",
     "Add city" : "Legg til by",
@@ -13,6 +20,7 @@ OC.L10N.register(
     "Humidity" : "Luftfuktigheit",
     "Wind" : "Vind",
     "Sunrise" : "Soloppgang",
-    "Sunset" : "Solnedgang"
+    "Sunset" : "Solnedgang",
+    "Date" : "Date"
 },
 "nplurals=2; plural=(n != 1);");

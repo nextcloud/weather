@@ -1,5 +1,12 @@
 { "translations": {
     "Weather" : "Weather",
+    "Monday" : "Monday",
+    "Tuesday" : "Tuesday",
+    "Wednesday" : "Wednesday",
+    "Thursday" : "Thursday",
+    "Friday" : "Friday",
+    "Saturday" : "Saturday",
+    "Sunday" : "Sunday",
     "Watch the weather directly on your Nextcloud." : "Watch the weather directly on your Nextcloud.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API Key",
     "Save" : "Save",
@@ -17,6 +24,7 @@
     "Wind" : "Wind",
     "Sunrise" : "Sunrise",
     "Sunset" : "Sunset",
+    "Date" : "Date",
     "Temperature" : "Temperature"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

@@ -2,6 +2,13 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "Clima",
+    "Monday" : "Lunes",
+    "Tuesday" : "Martes",
+    "Wednesday" : "Miércoles",
+    "Thursday" : "Jueves",
+    "Friday" : "Viernes",
+    "Saturday" : "Sábado",
+    "Sunday" : "Domingo",
     "OpenWeatherMap API Key" : "Llave del API OpenWeatherMap ",
     "Save" : "Guardar",
     "Add a city" : "Agregar una ciudad",
@@ -18,6 +25,7 @@ OC.L10N.register(
     "Wind" : "Viento",
     "Sunrise" : "Salida del sol",
     "Sunset" : "Puesta de sol",
+    "Date" : "Fecha",
     "Temperature" : "Temperatura"
 },
 "nplurals=2; plural=(n != 1);");

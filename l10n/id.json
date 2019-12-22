@@ -1,5 +1,12 @@
 { "translations": {
     "Weather" : "Cuaca",
+    "Monday" : "Senin",
+    "Tuesday" : "Selasa",
+    "Wednesday" : "Rabu",
+    "Thursday" : "Kamis",
+    "Friday" : "Jumat",
+    "Saturday" : "Sabtu",
+    "Sunday" : "Minggu",
     "OpenWeatherMap API Key" : "OpenWeatherMap API Key",
     "Save" : "Simpan",
     "Add a city" : "Tambah kota",
@@ -16,6 +23,7 @@
     "Wind" : "Angin",
     "Sunrise" : "Matahari Terbit",
     "Sunset" : "Matahari terbenam",
+    "Date" : "Date",
     "Temperature" : "Suhu"
 },"pluralForm" :"nplurals=1; plural=0;"
 }

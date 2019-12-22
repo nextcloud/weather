@@ -3,6 +3,12 @@ OC.L10N.register(
     {
     "Weather" : "Laikapstākļi",
     "Monday" : "Pirmdiena",
+    "Tuesday" : "Otrdiena",
+    "Wednesday" : "Trešdiena",
+    "Thursday" : "Ceturtdiena",
+    "Friday" : "Piektdiena",
+    "Saturday" : "Sestdiena",
+    "Sunday" : "Svētdiena",
     "Watch the weather directly on your Nextcloud." : "Redzi laikapstākļus tieši savā Nextcloud.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API Atslēga",
     "Save" : "Saglabāt",

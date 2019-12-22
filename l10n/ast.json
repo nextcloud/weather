@@ -1,5 +1,12 @@
 { "translations": {
     "Weather" : "Clima",
+    "Monday" : "Llunes",
+    "Tuesday" : "Martes",
+    "Wednesday" : "Miércoles",
+    "Thursday" : "Xueves",
+    "Friday" : "Vienres",
+    "Saturday" : "Sábadu",
+    "Sunday" : "Domingu",
     "OpenWeatherMap API Key" : "Clave API d'OpenWeatherMap",
     "Save" : "Guardar",
     "Add a city" : "Amiesta una ciudá",
@@ -16,6 +23,7 @@
     "Wind" : "Vientu",
     "Sunrise" : "Riscar",
     "Sunset" : "Aséu",
+    "Date" : "Date",
     "Temperature" : "Temperatura"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

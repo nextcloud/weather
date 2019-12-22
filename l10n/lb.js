@@ -2,6 +2,13 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "Wieder",
+    "Monday" : "Méindeg",
+    "Tuesday" : "Dënschdeg",
+    "Wednesday" : "Mëttwoch",
+    "Thursday" : "Donneschdeg",
+    "Friday" : "Freideg",
+    "Saturday" : "Samschdeg",
+    "Sunday" : "Sonndeg",
     "Save" : "Späicheren",
     "Add a city" : "Eng Stad derbäimaachen",
     "Add city" : "Stad derbäimaachen",
@@ -16,6 +23,7 @@ OC.L10N.register(
     "Wind" : "Wand",
     "Sunrise" : "Sonnenopgang",
     "Sunset" : "Sonnenënnergang",
+    "Date" : "Date",
     "Temperature" : "Temperatur"
 },
 "nplurals=2; plural=(n != 1);");

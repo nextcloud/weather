@@ -10,6 +10,13 @@ OC.L10N.register(
     "South-West" : "Hego-mendebaldea",
     "West" : "Mendebaldea",
     "North-West" : "Ipar-mendebaldea",
+    "Monday" : "Astelehena",
+    "Tuesday" : "Asteartea",
+    "Wednesday" : "Asteazkena",
+    "Thursday" : "Osteguna",
+    "Friday" : "Ostirala",
+    "Saturday" : "Larunbata",
+    "Sunday" : "Igandea",
     "Watch the weather directly on your Nextcloud." : "Ikusi eguraldia zuzenean zure Nextcloudetik.",
     "OpenWeatherMap API Key" : "OpenWeatherMap aplikazioaren gakoa",
     "Save" : "Gorde",
@@ -27,6 +34,7 @@ OC.L10N.register(
     "Wind" : "Haizea",
     "Sunrise" : "Egunsentia",
     "Sunset" : "Ilunabarra",
+    "Date" : "Data",
     "Temperature" : "Tenperatura"
 },
 "nplurals=2; plural=(n != 1);");

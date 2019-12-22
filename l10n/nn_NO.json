@@ -1,5 +1,12 @@
 { "translations": {
     "Weather" : "Vær",
+    "Monday" : "Måndag",
+    "Tuesday" : "Tysdag",
+    "Wednesday" : "Onsdag",
+    "Thursday" : "Torsdag",
+    "Friday" : "Fredag",
+    "Saturday" : "Laurdag",
+    "Sunday" : "Søndag",
     "Save" : "Lagre",
     "Add a city" : "Legg til ein by",
     "Add city" : "Legg til by",
@@ -11,6 +18,7 @@
     "Humidity" : "Luftfuktigheit",
     "Wind" : "Vind",
     "Sunrise" : "Soloppgang",
-    "Sunset" : "Solnedgang"
+    "Sunset" : "Solnedgang",
+    "Date" : "Date"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

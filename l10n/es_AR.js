@@ -2,6 +2,13 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "Clima",
+    "Monday" : "Lunes",
+    "Tuesday" : "Martes",
+    "Wednesday" : "Miércoles",
+    "Thursday" : "Jueves",
+    "Friday" : "Viernes",
+    "Saturday" : "Sábado",
+    "Sunday" : "Domingo",
     "Watch the weather directly on your Nextcloud." : "Mira el clima directamente en tu Nextcloud.",
     "OpenWeatherMap API Key" : "Clave API de OpenWeatherMap",
     "Save" : "Guardar",
@@ -19,6 +26,7 @@ OC.L10N.register(
     "Wind" : "Viento",
     "Sunrise" : "Amanecer",
     "Sunset" : "Puesta de sol",
+    "Date" : "Fecha",
     "Temperature" : "Temperatura"
 },
 "nplurals=2; plural=(n != 1);");

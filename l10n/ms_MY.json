@@ -1,0 +1,15 @@
+{ "translations": {
+    "Monday" : "Isnin",
+    "Tuesday" : "Selasa",
+    "Wednesday" : "Rabu",
+    "Thursday" : "Khamis",
+    "Friday" : "Jumaat",
+    "Saturday" : "Sabtu",
+    "Sunday" : "Ahad",
+    "Save" : "Simpan",
+    "Add" : "Tambah",
+    "Cancel" : "Batal",
+    "Settings" : "Tetapan",
+    "Date" : "Date"
+},"pluralForm" :"nplurals=1; plural=0;"
+}

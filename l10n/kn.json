@@ -1,0 +1,15 @@
+{ "translations": {
+    "Monday" : "﻿ಸೋಮವಾರ",
+    "Tuesday" : "﻿ಮಂಗಳವಾರ",
+    "Wednesday" : "﻿ಬುಧವಾರ",
+    "Thursday" : "﻿ಗುರುವಾರ",
+    "Friday" : "﻿ಶುಕ್ರವಾರ",
+    "Saturday" : "﻿ಶನಿವಾರ",
+    "Sunday" : "﻿ಭಾನುವಾರ",
+    "Save" : "﻿ಉಳಿಸಿ",
+    "Add" : "﻿ಸೇರಿಸಿ",
+    "Cancel" : "﻿ರದ್ದು",
+    "Settings" : "ಆಯ್ಕೆ",
+    "Date" : "Date"
+},"pluralForm" :"nplurals=2; plural=(n > 1);"
+}

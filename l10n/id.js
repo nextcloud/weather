@@ -2,6 +2,13 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "Cuaca",
+    "Monday" : "Senin",
+    "Tuesday" : "Selasa",
+    "Wednesday" : "Rabu",
+    "Thursday" : "Kamis",
+    "Friday" : "Jumat",
+    "Saturday" : "Sabtu",
+    "Sunday" : "Minggu",
     "OpenWeatherMap API Key" : "OpenWeatherMap API Key",
     "Save" : "Simpan",
     "Add a city" : "Tambah kota",
@@ -18,6 +25,7 @@ OC.L10N.register(
     "Wind" : "Angin",
     "Sunrise" : "Matahari Terbit",
     "Sunset" : "Matahari terbenam",
+    "Date" : "Date",
     "Temperature" : "Suhu"
 },
 "nplurals=1; plural=0;");

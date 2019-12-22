@@ -1,0 +1,15 @@
+{ "translations": {
+    "Monday" : "ថ្ងៃចន្ទ",
+    "Tuesday" : "ថ្ងៃអង្គារ",
+    "Wednesday" : "ថ្ងៃពុធ",
+    "Thursday" : "ថ្ងៃព្រហស្បតិ៍",
+    "Friday" : "ថ្ងៃសុក្រ",
+    "Saturday" : "ថ្ងៃសៅរ៍",
+    "Sunday" : "ថ្ងៃអាទិត្យ",
+    "Save" : "រក្សាទុក",
+    "Add" : "បញ្ចូល",
+    "Cancel" : "បោះបង់",
+    "Settings" : "ការកំណត់",
+    "Date" : "Date"
+},"pluralForm" :"nplurals=1; plural=0;"
+}
