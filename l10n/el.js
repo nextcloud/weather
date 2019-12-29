@@ -2,6 +2,7 @@ OC.L10N.register(
     "weather",
     {
     "Weather" : "Καιρός",
+    "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Ανεπανόρθωτο σφάλμα: παρακαλώ ελέξτε το nextcloud.log και στείλτε την αναφορά σφάλματος εδώ: https://github.com/nextcloud/weather/issues",
     "North" : "Βοράς",
     "North-East" : "Βόρειο-Ανατολικά",
     "East" : "Ανατολή",
@@ -12,8 +13,11 @@ OC.L10N.register(
     "North-West" : "Βόρειο-Δυτικά",
     "Failed to get city weather informations. Please contact your administrator" : "Αδυναμία λήψης πληροφοριών για τις καιρικές συνθήκες της πόλης. Παρακαλούμε επικοινωνήστε με τον διαχειριστή σας",
     "No city with this name found." : "Δεν βρέθηκε κάποια πόλη με αυτό το όνομα.",
+    "Empty city name!" : "Κενό όνομα πόλης!",
     "Failed to add city. Please contact your administrator" : "Αδυναμία προσθήκης πόλης. Παρακαλούμε επικοινωνήστε με τον διαχειριστή",
+    "This city is already registered for your account." : "Η πόλη υπάρχει ήδη στον λογαριασμό σας.",
     "Failed to remove city. Please contact your administrator" : "Αδυναμία αφαίρεσης της πόλης. Παρακαλούμε επικοινωνήστε με τον διαχειριστή",
+    "Failed to set home. Please contact your administrator" : "Η επιλογή πόλης απέτυχε. Παρακαλώ επικοινωνήστε με τον διαχειριστή",
     "Monday" : "Δευτέρα",
     "Tuesday" : "Τρίτη",
     "Wednesday" : "Τετάρτη",
@@ -22,6 +26,8 @@ OC.L10N.register(
     "Saturday" : "Σάββατο",
     "Sunday" : "Κυριακή",
     "Watch the weather directly on your Nextcloud." : "Δείτε άμεσα τον καιρό στο Nextcloud σας",
+    "Please make sure you select cities in the Weather app." : "Παρακαλώ σιγουρευτείτε ότι επιλέξατε πόλεις στην εφαρμογή Καιρού.",
+    "Please make sure you select a home city in the Weather app." : "Παρακαλώ σιγουρευτείτε ότι επιλέξατε την πόλη σας στην εφαρμογή Καιρού.",
     "OpenWeatherMap API Key" : "Κλειδί API του OpenWeatherMap",
     "Save" : "Αποθήκευση",
     "Add a city" : "Προσθέστε μια πόλη",
@@ -39,6 +45,7 @@ OC.L10N.register(
     "Sunrise" : "Ανατολή",
     "Sunset" : "Δύση",
     "Date" : "Ημερομηνία",
-    "Temperature" : "Θερμοκρασία"
+    "Temperature" : "Θερμοκρασία",
+    "Updating widget…" : "Ενημέρωση widget…"
 },
 "nplurals=2; plural=(n != 1);");
