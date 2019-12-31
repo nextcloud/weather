@@ -16,6 +16,7 @@ OC.L10N.register(
     "Failed to get city weather informations. Please contact your administrator" : "Kon de weersinformatie voor de stad niet vinden. Neem contact op met je systeembeheerder.",
     "No city with this name found." : "Geen stad met deze naam gevonden.",
     "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "Jouw OpenWeatherMap API key is ongeldig. Neem contact op met je systeembeheerder om een geldige API key te configureren in de Additional Settings onder Administration.",
+    "Empty city name!" : "Lege stadsnaam!",
     "Failed to add city. Please contact your administrator" : "Kon de stad niet toevoegen. Neem contact op met je systeembeheerder.",
     "This city is already registered for your account." : "Deze stad is al geregistreerd voor jouw account.",
     "Failed to remove city. Please contact your administrator" : "Kon de stad niet verwijderen. Neem contact op met je systeembeheerder.",
@@ -45,6 +46,7 @@ OC.L10N.register(
     "Sunrise" : "Zonsopgang",
     "Sunset" : "Zonsondergang",
     "Date" : "Datum",
-    "Temperature" : "Temperatuur"
+    "Temperature" : "Temperatuur",
+    "Updating widget…" : "Bijwerken widget…"
 },
 "nplurals=2; plural=(n != 1);");
