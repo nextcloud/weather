@@ -3,6 +3,8 @@ OC.L10N.register(
     {
     "Weather" : "Väder",
     "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Allvarligt fel: vänligen kontrollera din nextcloud.log och skicka en felrapport här: https://github.com/nextcloud/weather/issues",
+    "Failed to set metric. Please contact your administrator" : "Det gick inte att ställa in mätvärde. Kontakta din administratör",
+    "This metric is not known." : "Detta mätvärde är inte känt.",
     "North" : "Norr",
     "North-East" : "Nordost",
     "East" : "Öst",
