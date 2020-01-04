@@ -234,7 +234,6 @@
 	#city-list-left ul.city-list {
 		flex-direction: row;
 		display: flex;
-		flex-wrap: wrap;
 	}
 	#city-list-left ul.city-list li {
 		flex: min-content;
