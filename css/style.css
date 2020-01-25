@@ -219,8 +219,52 @@
 }
 }
 
+/* tablets */
+@media (max-width: 1000px) {
+	#city-right {
+		padding: 0;
+	}
+	#city-forecast-panel {
+		float: none;
+		width: 100%;
+	}
+}
+@media (max-width: 900px) {
+	#city-right {
+		padding: 0;
+	}
+	#city-forecast-panel {
+		float: none;
+		width: 100%;
+	}
+}
+
+/* breakpoints for horizontal city list and the forecast table */
+@media screen and (max-width: 850px) and (min-width: 600px) {
+	#city-list-left ul.city-list li {
+		min-width: 33%;
+	}
+}
+@media screen and (max-width: 600px) and (min-width: 350px) {
+	#city-list-left ul.city-list li {
+		min-width: 50%;
+	}
+
+	#city-right tr td:nth-of-type(n+4), th:nth-of-type(n+4) {
+		display: none;
+	}
+}
+@media screen and (max-width: 350px) {
+	#city-list-left ul.city-list li {
+		min-width: 100%;
+	}
+	#city-right tr td:nth-of-type(n+5), th:nth-of-type(n+5) {
+		display: none;
+	}
+}
+
 /* smartphones */
-@media screen and (orientation: portrait) and (max-width: 12cm) and (min-height: 10cm) {
+@media screen and (max-width: 850px) and (min-height: 10cm) {
 	#app {
 		display: flex;
 		flex-direction: column;
@@ -237,19 +281,14 @@
 	}
 	#city-list-left ul.city-list li {
 		flex: min-content;
-		min-width: 50%;
 	}
 	#city-list-left ul.city-list li:last-child {
 		flex: auto;
-		min-width: 100%;
 	}
 	#city-right {
 		display: flex;
 		flex-direction: column;
 		padding: 0;
-	}
-	#city-right tr td:nth-of-type(n+4), th:nth-of-type(n+4) {
-		display: none;
 	}
 }
 
