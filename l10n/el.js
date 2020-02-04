@@ -3,6 +3,8 @@ OC.L10N.register(
     {
     "Weather" : "Καιρός",
     "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Ανεπανόρθωτο σφάλμα: παρακαλώ ελέξτε το nextcloud.log και στείλτε την αναφορά σφάλματος εδώ: https://github.com/nextcloud/weather/issues",
+    "Failed to set metric. Please contact your administrator" : "Αποτυχία ορισμού μετρικού συστήματος. Επικοινωνήστε με τον διαχειριστή σας",
+    "This metric is not known." : "Το μετρικό σύστημα δεν αναγνωρίζεται.",
     "North" : "Βοράς",
     "North-East" : "Βόρειο-Ανατολικά",
     "East" : "Ανατολή",
@@ -13,6 +15,7 @@ OC.L10N.register(
     "North-West" : "Βόρειο-Δυτικά",
     "Failed to get city weather informations. Please contact your administrator" : "Αδυναμία λήψης πληροφοριών για τις καιρικές συνθήκες της πόλης. Παρακαλούμε επικοινωνήστε με τον διαχειριστή σας",
     "No city with this name found." : "Δεν βρέθηκε κάποια πόλη με αυτό το όνομα.",
+    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "Το κλειδί ΑΡΙ OpenWeatherMap είναι λάθος. Επικοινωνήστε με τον διαχειριστή για ρύθμιση συμβατού API κλειδιού στις  Πρόσθετες ρυθμίσεις της διαχείρισης",
     "Empty city name!" : "Κενό όνομα πόλης!",
     "Failed to add city. Please contact your administrator" : "Αδυναμία προσθήκης πόλης. Παρακαλούμε επικοινωνήστε με τον διαχειριστή",
     "This city is already registered for your account." : "Η πόλη υπάρχει ήδη στον λογαριασμό σας.",
