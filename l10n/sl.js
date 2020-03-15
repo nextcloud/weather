@@ -16,6 +16,7 @@ OC.L10N.register(
     "Failed to get city weather informations. Please contact your administrator" : "Pridobivanje podatkov vremena je spodletelo. Stopite v stik s skrbnikom sistema.",
     "No city with this name found." : "Mesta s tem imenom ni mogoče najti.",
     "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "Ključ vmesnika API za OpenWeatherMap je neveljaven. Stopite v stik s skrbnikom sistema za spreminjanje nastavitev ključa med dodatnimi skrbniškimi nastavitvami.",
+    "Empty city name!" : "Polje mesta je prazno!",
     "Failed to add city. Please contact your administrator" : "Dodajanje mesta je spodletelo. Stopite v stik s skrbnikom sistema.",
     "This city is already registered for your account." : "Dodano mesto je že vpisano v račun.",
     "Failed to remove city. Please contact your administrator" : "Odstranjevanje mesta je spodletelo. Stopite v stik s skrbnikom sistema.",
@@ -28,6 +29,8 @@ OC.L10N.register(
     "Saturday" : "sobota",
     "Sunday" : "nedelja",
     "Watch the weather directly on your Nextcloud." : "Spremljanje vremena neposredno s strežnika Nextcloud.",
+    "Please make sure you select cities in the Weather app." : "Prepričajte se, da ste izbrali mesta v programu Vreme",
+    "Please make sure you select a home city in the Weather app." : "Prepričajte se, da ste izbrali domače mesto v programu Vreme",
     "OpenWeatherMap API Key" : "Ključ API OpenWeatherMap",
     "Save" : "Shrani",
     "Add a city" : "Dodaj kraj",
@@ -45,6 +48,7 @@ OC.L10N.register(
     "Sunrise" : "Sončni vzhod",
     "Sunset" : "Sončni zahod",
     "Date" : "Datum",
-    "Temperature" : "Temperatura"
+    "Temperature" : "Temperatura",
+    "Updating widget…" : "Poteka posodabljanje gradnika ..."
 },
 "nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);");
