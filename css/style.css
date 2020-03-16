@@ -87,8 +87,8 @@
 }
 
 #city-right .city-current-pressure, #city-right .city-current-wind,
-	#city-right .city-current-humidity, #city-right .city-current-weather,
-	#city-right .city-current-sunrise {
+#city-right .city-current-humidity, #city-right .city-current-weather,
+#city-right .city-current-sunrise, #city-right .city-current-sunset {
 	font-size: 2em;
 	line-height: 1em;
 }
