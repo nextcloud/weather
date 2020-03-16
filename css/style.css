@@ -171,7 +171,7 @@
 
 #city-right .city-current-pressure, #city-right .city-current-wind,
 #city-right .city-current-weather, #city-right .city-current-humidity,
-#city-right .city-current-sunrise {
+#city-right .city-current-sunrise, #city-right .city-current-sunset {
 	font-size: 3em;
 }
 #city-forecast-panel {
@@ -190,7 +190,7 @@
 
 #city-right .city-current-pressure, #city-right .city-current-wind,
 #city-right .city-current-weather, #city-right .city-current-humidity,
-#city-right .city-current-sunrise {
+#city-right .city-current-sunrise, #city-right .city-current-sunset {
 	font-size: 2.2em;
 }
 #city-forecast-panel {
@@ -214,7 +214,7 @@
 
 #city-right .city-current-pressure, #city-right .city-current-wind,
 #city-right .city-current-weather, #city-right .city-current-humidity,
-#city-right .city-current-sunrise {
+#city-right .city-current-sunrise, #city-right .city-current-sunset {
 	font-size: 1.6em;
 }
 }
