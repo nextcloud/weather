@@ -35,7 +35,7 @@ OC.L10N.register(
     "Save" : "Salva",
     "Add a city" : "Aggiungi una città",
     "Add city" : "Aggiungi città",
-    "City name" : "Nome citta",
+    "City name" : "Nome città",
     "Add" : "Aggiungi",
     "Cancel" : "Annulla",
     "Settings" : "Impostazioni",
