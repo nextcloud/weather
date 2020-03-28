@@ -10,6 +10,7 @@ OC.L10N.register(
     "South-West" : "Hego-mendebaldea",
     "West" : "Mendebaldea",
     "North-West" : "Ipar-mendebaldea",
+    "Empty city name!" : "Hiri izena hutsik!",
     "Monday" : "Astelehena",
     "Tuesday" : "Asteartea",
     "Wednesday" : "Asteazkena",
@@ -35,6 +36,7 @@ OC.L10N.register(
     "Sunrise" : "Egunsentia",
     "Sunset" : "Ilunabarra",
     "Date" : "Data",
-    "Temperature" : "Tenperatura"
+    "Temperature" : "Tenperatura",
+    "Updating widget…" : "Trepeta eguneratzen…"
 },
 "nplurals=2; plural=(n != 1);");

@@ -8,6 +8,7 @@
     "South-West" : "Hego-mendebaldea",
     "West" : "Mendebaldea",
     "North-West" : "Ipar-mendebaldea",
+    "Empty city name!" : "Hiri izena hutsik!",
     "Monday" : "Astelehena",
     "Tuesday" : "Asteartea",
     "Wednesday" : "Asteazkena",
@@ -33,6 +34,7 @@
     "Sunrise" : "Egunsentia",
     "Sunset" : "Ilunabarra",
     "Date" : "Data",
-    "Temperature" : "Tenperatura"
+    "Temperature" : "Tenperatura",
+    "Updating widget…" : "Trepeta eguneratzen…"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
