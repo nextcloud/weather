@@ -48,7 +48,7 @@ OC.L10N.register(
     "Sunrise" : "Ανατολή",
     "Sunset" : "Δύση",
     "Date" : "Ημερομηνία",
-    "Temperature" : "Θερμοκρασία",
-    "Updating widget…" : "Ενημέρωση widget…"
+    "Updating widget…" : "Ενημέρωση widget…",
+    "Temperature" : "Θερμοκρασία"
 },
 "nplurals=2; plural=(n != 1);");

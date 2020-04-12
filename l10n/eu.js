@@ -38,7 +38,7 @@ OC.L10N.register(
     "Sunrise" : "Egunsentia",
     "Sunset" : "Ilunabarra",
     "Date" : "Data",
-    "Temperature" : "Tenperatura",
-    "Updating widget…" : "Trepeta eguneratzen…"
+    "Updating widget…" : "Trepeta eguneratzen…",
+    "Temperature" : "Tenperatura"
 },
 "nplurals=2; plural=(n != 1);");

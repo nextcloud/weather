@@ -48,7 +48,7 @@ OC.L10N.register(
     "Sunrise" : "Gün doğumu",
     "Sunset" : "Gün batımı",
     "Date" : "Tarih",
-    "Temperature" : "Sıcaklık",
-    "Updating widget…" : "Pano bileşeni güncelleniyor …"
+    "Updating widget…" : "Pano bileşeni güncelleniyor …",
+    "Temperature" : "Sıcaklık"
 },
 "nplurals=2; plural=(n > 1);");

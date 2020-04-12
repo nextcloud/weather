@@ -46,7 +46,7 @@
     "Sunrise" : "Zonsopgang",
     "Sunset" : "Zonsondergang",
     "Date" : "Datum",
-    "Temperature" : "Temperatuur",
-    "Updating widget…" : "Bijwerken widget…"
+    "Updating widget…" : "Bijwerken widget…",
+    "Temperature" : "Temperatuur"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

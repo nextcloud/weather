@@ -48,7 +48,7 @@ OC.L10N.register(
     "Sunrise" : "Lever du soleil",
     "Sunset" : "Coucher du soleil",
     "Date" : "Date",
-    "Temperature" : "Température",
-    "Updating widget…" : "Mise à jour du widget …"
+    "Updating widget…" : "Mise à jour du widget …",
+    "Temperature" : "Température"
 },
 "nplurals=2; plural=(n > 1);");

@@ -47,7 +47,7 @@ OC.L10N.register(
     "Sunrise" : "Soluppgång",
     "Sunset" : "Solnedgång",
     "Date" : "Datum",
-    "Temperature" : "Temperatur",
-    "Updating widget…" : "Uppdaterar gränssnittskomponent..."
+    "Updating widget…" : "Uppdaterar gränssnittskomponent...",
+    "Temperature" : "Temperatur"
 },
 "nplurals=2; plural=(n != 1);");

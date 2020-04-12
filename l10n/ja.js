@@ -48,7 +48,7 @@ OC.L10N.register(
     "Sunrise" : "日の出",
     "Sunset" : "日の入り",
     "Date" : "日付",
-    "Temperature" : "気温",
-    "Updating widget…" : "ウィジェットを更新中…"
+    "Updating widget…" : "ウィジェットを更新中…",
+    "Temperature" : "気温"
 },
 "nplurals=1; plural=0;");

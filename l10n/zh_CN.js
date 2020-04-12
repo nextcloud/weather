@@ -48,7 +48,7 @@ OC.L10N.register(
     "Sunrise" : "日出",
     "Sunset" : "日落",
     "Date" : "日期",
-    "Temperature" : "温度",
-    "Updating widget…" : "更新小部件..."
+    "Updating widget…" : "更新小部件...",
+    "Temperature" : "温度"
 },
 "nplurals=1; plural=0;");

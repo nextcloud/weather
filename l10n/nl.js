@@ -48,7 +48,7 @@ OC.L10N.register(
     "Sunrise" : "Zonsopgang",
     "Sunset" : "Zonsondergang",
     "Date" : "Datum",
-    "Temperature" : "Temperatuur",
-    "Updating widget…" : "Bijwerken widget…"
+    "Updating widget…" : "Bijwerken widget…",
+    "Temperature" : "Temperatuur"
 },
 "nplurals=2; plural=(n != 1);");

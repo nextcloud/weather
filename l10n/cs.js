@@ -48,7 +48,7 @@ OC.L10N.register(
     "Sunrise" : "Východ slunce",
     "Sunset" : "Západ slunce",
     "Date" : "Datum",
-    "Temperature" : "Teplota",
-    "Updating widget…" : "Aktualizace ovládacího prvku…"
+    "Updating widget…" : "Aktualizace ovládacího prvku…",
+    "Temperature" : "Teplota"
 },
 "nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;");

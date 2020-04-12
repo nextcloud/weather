@@ -48,7 +48,7 @@ OC.L10N.register(
     "Sunrise" : "Sólris",
     "Sunset" : "Sólsetur",
     "Date" : "Dagsetning",
-    "Temperature" : "Hitastig",
-    "Updating widget…" : "Uppfæri viðmótshluta…"
+    "Updating widget…" : "Uppfæri viðmótshluta…",
+    "Temperature" : "Hitastig"
 },
 "nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);");
