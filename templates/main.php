@@ -53,16 +53,16 @@
 				<img ng-show="selectedCityId == homeCity" src="{{ owncloudAppImgPath }}home-pick.png" />
 				<img class="home-icon" ng-click="setHome(selectedCityId);" ng-show="selectedCityId != homeCity" src="{{ owncloudAppImgPath }}home-nopick.png" />
 			</div>
-			<div class="city-current-temp"><?php p($l->t('Current Temperature')); ?>; {{ currentCity.main.temp }}{{ metricRepresentation }}</div>
-			<div class="city-current-temp_feelslike"><?php p($l->t('Apparent Temperature')); ?>; {{ currentCity.main.feels_like }}{{ metricRepresentation }}</div>
-			<div class="city-current-temp_min"><?php p($l->t('Minimum Temperature')); ?>; {{ currentCity.main.temp_min }}{{ metricRepresentation }}</div>
-			<div class="city-current-temp_max"><?php p($l->t('Maximum Temperature')); ?>; {{ currentCity.main.temp_max }}{{ metricRepresentation }}</div>
+			<div class="city-current-temp"><?php p($l->t('Current Temperature')); ?>: {{ currentCity.main.temp }}{{ metricRepresentation }}</div>
+			<div class="city-current-temp_feelslike"><?php p($l->t('Apparent Temperature')); ?>: {{ currentCity.main.feels_like }}{{ metricRepresentation }}</div>
+			<div class="city-current-temp_min"><?php p($l->t('Minimum Temperature')); ?>: {{ currentCity.main.temp_min }}{{ metricRepresentation }}</div>
+			<div class="city-current-temp_max"><?php p($l->t('Maximum Temperature')); ?>: {{ currentCity.main.temp_max }}{{ metricRepresentation }}</div>
 			<div class="city-current-pressure"><?php p($l->t('Pressure')); ?>: {{ currentCity.main.pressure }} hpa</div>
 			<div class="city-current-humidity"><?php p($l->t('Humidity')); ?>: {{ currentCity.main.humidity}}%</div>
 			<div class="city-current-weather"><?php p($l->t('Cloudiness')); ?>: {{ currentCity.weather[0].description }}</div>
 			<div class="city-current-wind"><?php p($l->t('Wind')); ?>: {{ currentCity.wind.speed }} m/s - {{ currentCity.wind.desc }}</div>
 			<div class="city-current-sunrise"><?php p($l->t('Sunrise')); ?>: {{ currentCity.sys.sunrise * 1000 | date:'HH:mm' }}</div>
-			<div class=city-current-sunset"><?php p($l->t('Sunset')); ?>: {{ currentCity.sys.sunset * 1000 | date:'HH:mm' }}</div>
+			<div class="city-current-sunset"><?php p($l->t('Sunset')); ?>: {{ currentCity.sys.sunset * 1000 | date:'HH:mm' }}</div>
 		</div>
 		<div id="city-forecast-panel">
 			<table>
