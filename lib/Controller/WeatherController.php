@@ -104,6 +104,9 @@ class WeatherController extends IntermediateController {
 					'date' => $this->UnixTimeToString($forecast['list'][$i]['dt']),
 					'weather' => $forecast['list'][$i]['weather'][0]['description'],
 					'temperature' => $forecast['list'][$i]['main']['temp'],
+					'temperature_feelslike' => $forecast['list'][$i]['main']['feels_like'],
+					'temperature_min' => $forecast['list'][$i]['main']['temp_min'],
+					'temperature_max' => $forecast['list'][$i]['main']['temp_max'],
 					'pressure' => $forecast['list'][$i]['main']['pressure'],
 					'humidity' => $forecast['list'][$i]['main']['humidity'],
 					'wind' => array(

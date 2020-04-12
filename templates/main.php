@@ -53,7 +53,10 @@
 				<img ng-show="selectedCityId == homeCity" src="{{ owncloudAppImgPath }}home-pick.png" />
 				<img class="home-icon" ng-click="setHome(selectedCityId);" ng-show="selectedCityId != homeCity" src="{{ owncloudAppImgPath }}home-nopick.png" />
 			</div>
-			<div class="city-current-temp">{{ currentCity.main.temp }}{{ metricRepresentation }}</div>
+			<div class="city-current-temp"><?php p($l->t('Current Temperature')); ?>; {{ currentCity.main.temp }}{{ metricRepresentation }}</div>
+			<div class="city-current-temp_feelslike"><?php p($l->t('Apparent Temperature')); ?>; {{ currentCity.main.feels_like }}{{ metricRepresentation }}</div>
+			<div class="city-current-temp_min"><?php p($l->t('Minimum Temperature')); ?>; {{ currentCity.main.temp_min }}{{ metricRepresentation }}</div>
+			<div class="city-current-temp_max"><?php p($l->t('Maximum Temperature')); ?>; {{ currentCity.main.temp_max }}{{ metricRepresentation }}</div>
 			<div class="city-current-pressure"><?php p($l->t('Pressure')); ?>: {{ currentCity.main.pressure }} hpa</div>
 			<div class="city-current-humidity"><?php p($l->t('Humidity')); ?>: {{ currentCity.main.humidity}}%</div>
 			<div class="city-current-weather"><?php p($l->t('Cloudiness')); ?>: {{ currentCity.weather[0].description }}</div>
@@ -65,7 +68,10 @@
 			<table>
 				<tr>
 					<th><?php p($l->t('Date')); ?></th>
-					<th><?php p($l->t('Temperature')); ?></th>
+					<th><?php p($l->t('Current Temperature')); ?></th>
+					<th><?php p($l->t('Apparent Temperature')); ?></th>
+					<th><?php p($l->t('Minimum Temperature')); ?></th>
+					<th><?php p($l->t('Maximum Temperature')); ?></th>
 					<th><?php p($l->t('Weather')); ?></th>
 					<th><?php p($l->t('Pressure')); ?></th>
 					<th><?php p($l->t('Humidity')); ?></th>
@@ -74,6 +80,9 @@
 				<tr ng-repeat="forecast in currentCity.forecast">
 					<td>{{ forecast.date }}</td>
 					<td>{{ forecast.temperature }}{{ metricRepresentation }}</td>
+					<td>{{ forecast.temperature_feelslike }}{{ metricRepresentation }}</td>
+					<td>{{ forecast.temperature_min }}{{ metricRepresentation }}</td>
+					<td>{{ forecast.temperature_max }}{{ metricRepresentation }}</td>
 					<td>{{ forecast.weather }}</td>
 					<td>{{ forecast.pressure }} hpa</td>
 					<td>{{ forecast.humidity }} %</td>
