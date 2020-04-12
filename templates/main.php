@@ -54,7 +54,7 @@
 				<img class="home-icon" ng-click="setHome(selectedCityId);" ng-show="selectedCityId != homeCity" src="{{ owncloudAppImgPath }}home-nopick.png" />
 			</div>
 			<div class="city-current-temp"><?php p($l->t('Current Temperature')); ?>: {{ currentCity.main.temp }}{{ metricRepresentation }}</div>
-			<div class="city-current-temp_feelslike"><?php p($l->t('Apparent Temperature')); ?>: {{ currentCity.main.feels_like }}{{ metricRepresentation }}</div>
+			<div class="city-current-temp_feelslike"><?php p($l->t('Feelslike Temperature')); ?>: {{ currentCity.main.feels_like }}{{ metricRepresentation }}</div>
 			<div class="city-current-temp_min"><?php p($l->t('Minimum Temperature')); ?>: {{ currentCity.main.temp_min }}{{ metricRepresentation }}</div>
 			<div class="city-current-temp_max"><?php p($l->t('Maximum Temperature')); ?>: {{ currentCity.main.temp_max }}{{ metricRepresentation }}</div>
 			<div class="city-current-pressure"><?php p($l->t('Pressure')); ?>: {{ currentCity.main.pressure }} hpa</div>
@@ -69,7 +69,7 @@
 				<tr>
 					<th><?php p($l->t('Date')); ?></th>
 					<th><?php p($l->t('Current Temperature')); ?></th>
-					<th><?php p($l->t('Apparent Temperature')); ?></th>
+					<th><?php p($l->t('Feelslike Temperature')); ?></th>
 					<th><?php p($l->t('Minimum Temperature')); ?></th>
 					<th><?php p($l->t('Maximum Temperature')); ?></th>
 					<th><?php p($l->t('Weather')); ?></th>
