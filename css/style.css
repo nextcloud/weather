@@ -153,8 +153,8 @@
 }
 
 #city-forecast-panel {
-	float: right;
 	font-size: 1.3em;
+	magin: 5px;
 }
 
 #city-forecast-panel td, #city-forecast-panel th {
