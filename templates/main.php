@@ -69,7 +69,7 @@
 				<tr>
 					<th><?php p($l->t('Date')); ?></th>
 					<th><?php p($l->t('Current Temperature')); ?></th>
-					<th><?php p($l->t('Feelslike Temperature')); ?></th>
+					<th><?php p($l->t('Feels like Temperature')); ?></th>
 					<th><?php p($l->t('Minimum Temperature')); ?></th>
 					<th><?php p($l->t('Maximum Temperature')); ?></th>
 					<th><?php p($l->t('Weather')); ?></th>
