@@ -42,6 +42,7 @@ OC.L10N.register(
     "Metric" : "Métrique",
     "Click here to get an API key" : "Cliquez ici pour obtenir une clé d'API",
     "Current Temperature" : "Température actuelle",
+    "Feelslike Temperature" : "Température ressentie",
     "Minimum Temperature" : "Température minimale",
     "Maximum Temperature" : "Température maximale",
     "Pressure" : "Pression",

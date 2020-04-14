@@ -42,6 +42,7 @@ OC.L10N.register(
     "Metric" : "Metrický",
     "Click here to get an API key" : "Klíč k aplikačnímu program. rozhraní (API) získáte kliknutím sem",
     "Current Temperature" : "Stávající teplota",
+    "Feelslike Temperature" : "Pocitová teplota",
     "Minimum Temperature" : "Nejnižší teplota",
     "Maximum Temperature" : "Nejvyšší teplota",
     "Pressure" : "Tlak",

@@ -42,6 +42,7 @@ OC.L10N.register(
     "Metric" : "Μετρικός",
     "Click here to get an API key" : "Κάντε κλικ εδώ για λήψη ενός κλειδιού API",
     "Current Temperature" : "Τρέχουσα θερμοκρασία",
+    "Feelslike Temperature" : "Αίσθηση θερμοκρασίας",
     "Minimum Temperature" : "Ελάχιστη θερμοκρασία",
     "Maximum Temperature" : "Μέγιστη θερμοκρασία",
     "Pressure" : "Πίεση",
