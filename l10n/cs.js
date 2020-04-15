@@ -52,6 +52,7 @@ OC.L10N.register(
     "Sunrise" : "Východ slunce",
     "Sunset" : "Západ slunce",
     "Date" : "Datum",
+    "Perceptible Temperature" : "Pocitová teplota",
     "Updating widget…" : "Aktualizace ovládacího prvku…",
     "Temperature" : "Teplota"
 },

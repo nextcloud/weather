@@ -41,8 +41,8 @@ OC.L10N.register(
     "Settings" : "Ustawienia",
     "Metric" : "Jednostka",
     "Click here to get an API key" : "Kliknij tutaj aby zdobyć klucz API",
-    "Current Temperature" : "Obecna temperatura",
-    "Feelslike Temperature" : "Odczuwalna temperatura",
+    "Current Temperature" : "Aktualna temperatura",
+    "Feelslike Temperature" : "Temperatura odczuwalna",
     "Minimum Temperature" : "Minimalna temperatura",
     "Maximum Temperature" : "Maksymalna temperatura",
     "Pressure" : "Ciśnienie",
@@ -52,6 +52,7 @@ OC.L10N.register(
     "Sunrise" : "Wschód",
     "Sunset" : "Zachód",
     "Date" : "Data",
+    "Perceptible Temperature" : "Temperatura odczuwalna",
     "Updating widget…" : "Aktualizowanie widżetu…",
     "Temperature" : "Temperatura"
 },

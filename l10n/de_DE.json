@@ -50,6 +50,7 @@
     "Sunrise" : "Sonnenaufgang",
     "Sunset" : "Sonnenuntergang",
     "Date" : "Datum",
+    "Perceptible Temperature" : "Gefühlte Temperatur",
     "Updating widget…" : "Aktualisiere Widget…",
     "Temperature" : "Temperatur"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"

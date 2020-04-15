@@ -50,6 +50,7 @@
     "Sunrise" : "Ανατολή",
     "Sunset" : "Δύση",
     "Date" : "Ημερομηνία",
+    "Perceptible Temperature" : "Αισθητή Θερμοκρασία",
     "Updating widget…" : "Ενημέρωση widget…",
     "Temperature" : "Θερμοκρασία"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"

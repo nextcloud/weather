@@ -52,6 +52,7 @@ OC.L10N.register(
     "Sunrise" : "Ανατολή",
     "Sunset" : "Δύση",
     "Date" : "Ημερομηνία",
+    "Perceptible Temperature" : "Αισθητή Θερμοκρασία",
     "Updating widget…" : "Ενημέρωση widget…",
     "Temperature" : "Θερμοκρασία"
 },
