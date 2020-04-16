@@ -41,6 +41,10 @@ OC.L10N.register(
     "Settings" : "Ayarlar",
     "Metric" : "Ölçü Birimi",
     "Click here to get an API key" : "API anahtarı almak için buraya tıklayın",
+    "Current Temperature" : "Güncel Sıcaklık",
+    "Feelslike Temperature" : "Hissedilen Sıcaklık",
+    "Minimum Temperature" : "En Düşük Sıcaklık",
+    "Maximum Temperature" : "En Yüksek Sıcaklık",
     "Pressure" : "Basınç",
     "Humidity" : "Nem",
     "Cloudiness" : "Bulut",
@@ -48,6 +52,7 @@ OC.L10N.register(
     "Sunrise" : "Gün doğumu",
     "Sunset" : "Gün batımı",
     "Date" : "Tarih",
+    "Perceptible Temperature" : "Hissedilen Sıcaklık",
     "Updating widget…" : "Pano bileşeni güncelleniyor …",
     "Temperature" : "Sıcaklık"
 },

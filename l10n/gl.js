@@ -52,6 +52,7 @@ OC.L10N.register(
     "Sunrise" : "Abrente",
     "Sunset" : "Solpor",
     "Date" : "Data",
+    "Perceptible Temperature" : "Temperatura percibida",
     "Updating widget…" : "Actualizando o trebello…",
     "Temperature" : "Temperatura"
 },

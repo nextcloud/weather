@@ -39,6 +39,7 @@ OC.L10N.register(
     "Settings" : "Nustatymai",
     "Metric" : "Metrinė",
     "Click here to get an API key" : "Spustelėkite čia, norėdami gauti API raktą",
+    "Current Temperature" : "Dabartinė temperatūra",
     "Pressure" : "Slėgis",
     "Humidity" : "Drėgnumas",
     "Cloudiness" : "Debesuotumas",
