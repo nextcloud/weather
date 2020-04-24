@@ -52,6 +52,7 @@ OC.L10N.register(
     "Sunrise" : "Lever du soleil",
     "Sunset" : "Coucher du soleil",
     "Date" : "Date",
+    "Perceptible Temperature" : "Température ressentie",
     "Updating widget…" : "Mise à jour du widget …",
     "Temperature" : "Température"
 },
