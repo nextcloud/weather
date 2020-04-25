@@ -42,6 +42,7 @@ OC.L10N.register(
     "Metric" : "Metriek",
     "Click here to get an API key" : "Klik hier voor een API sleutel",
     "Current Temperature" : "Huidige temperatuur",
+    "Feelslike Temperature" : "Gevoelstemperatuur",
     "Minimum Temperature" : "Minimale temperatuur",
     "Maximum Temperature" : "Maximale temperatuur",
     "Pressure" : "Druk",
