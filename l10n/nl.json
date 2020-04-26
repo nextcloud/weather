@@ -50,6 +50,7 @@
     "Sunrise" : "Zonsopgang",
     "Sunset" : "Zonsondergang",
     "Date" : "Datum",
+    "Perceptible Temperature" : "Gevoelstemperatuur",
     "Updating widget…" : "Bijwerken widget…",
     "Temperature" : "Temperatuur"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
