@@ -41,6 +41,10 @@ OC.L10N.register(
     "Settings" : "Postavke",
     "Metric" : "Metrika",
     "Click here to get an API key" : "Kliknite ovdje kako biste dobili ključ API-ja",
+    "Current Temperature" : "Trenutna temperatura",
+    "Feelslike Temperature" : "Prilagođena temperatura",
+    "Minimum Temperature" : "Najniža temperatura",
+    "Maximum Temperature" : "Najviša temperatura",
     "Pressure" : "Tlak",
     "Humidity" : "Vlažnost",
     "Cloudiness" : "Oblačnost",
@@ -48,6 +52,7 @@ OC.L10N.register(
     "Sunrise" : "Izlazak sunca",
     "Sunset" : "Zalazak sunca",
     "Date" : "Datum",
+    "Perceptible Temperature" : "Osjetna temperatura",
     "Updating widget…" : "Ažuriranje widgeta…",
     "Temperature" : "Temperatura"
 },
