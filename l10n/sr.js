@@ -42,6 +42,7 @@ OC.L10N.register(
     "Metric" : "Метрика",
     "Click here to get an API key" : "Кликните овде да добијете API кључ",
     "Current Temperature" : "Тренутна температура",
+    "Feelslike Temperature" : "Осећа се као",
     "Minimum Temperature" : "Минимална температура",
     "Maximum Temperature" : "Максимална температура",
     "Pressure" : "Притисак",
@@ -51,6 +52,7 @@ OC.L10N.register(
     "Sunrise" : "Излазак сунца",
     "Sunset" : "Залазак сунца",
     "Date" : "Датум",
+    "Perceptible Temperature" : "Температура личног осећаја",
     "Updating widget…" : "Ажурирам справицу…",
     "Temperature" : "Температура"
 },
