@@ -41,6 +41,10 @@ OC.L10N.register(
     "Settings" : "Stillingar",
     "Metric" : "Metrakerfi",
     "Click here to get an API key" : "Smelltu hér til að fá API-lykil",
+    "Current Temperature" : "Núverandi hiti",
+    "Feelslike Temperature" : "Hitastig miðað við vindkælingu",
+    "Minimum Temperature" : "Lágmarkshiti",
+    "Maximum Temperature" : "Hámarkshiti",
     "Pressure" : "Loftþrýsingur",
     "Humidity" : "Rakastig",
     "Cloudiness" : "Skýjahula",
@@ -48,6 +52,7 @@ OC.L10N.register(
     "Sunrise" : "Sólris",
     "Sunset" : "Sólsetur",
     "Date" : "Dagsetning",
+    "Perceptible Temperature" : "Skynjanlegt hitastig",
     "Updating widget…" : "Uppfæri viðmótshluta…",
     "Temperature" : "Hitastig"
 },
