@@ -1,6 +1,7 @@
 OC.L10N.register(
     "weather",
     {
+    "Save" : "Entilañ",
     "Add" : "Ouzhpennañ",
     "Cancel" : "Arrest",
     "Settings" : "Arventennoù"
