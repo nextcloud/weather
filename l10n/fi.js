@@ -35,6 +35,10 @@ OC.L10N.register(
     "Settings" : "Asetukset",
     "Metric" : "Asteikko",
     "Click here to get an API key" : "Klikkaa tästä hankkiaksesi API-avaimen",
+    "Current Temperature" : "Nykyinen lämpötila",
+    "Feelslike Temperature" : "Tuntuu kuin -lämpötila",
+    "Minimum Temperature" : "Lämpötila vähintään",
+    "Maximum Temperature" : "Lämpötila enintään",
     "Pressure" : "Paine",
     "Humidity" : "Kosteus",
     "Cloudiness" : "Pilvisyys",
@@ -42,6 +46,8 @@ OC.L10N.register(
     "Sunrise" : "Auringonnousu",
     "Sunset" : "Auringonlasku",
     "Date" : "Päiväys",
+    "Perceptible Temperature" : "Aistittava lämpötila",
+    "Updating widget…" : "Päivitetään widgettiä…",
     "Temperature" : "Lämpötila"
 },
 "nplurals=2; plural=(n != 1);");
