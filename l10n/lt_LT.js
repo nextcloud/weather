@@ -40,6 +40,8 @@ OC.L10N.register(
     "Metric" : "Metrinė",
     "Click here to get an API key" : "Spustelėkite čia, norėdami gauti API raktą",
     "Current Temperature" : "Dabartinė temperatūra",
+    "Minimum Temperature" : "Mažiausia temperatūra",
+    "Maximum Temperature" : "Didžiausia temperatūra",
     "Pressure" : "Slėgis",
     "Humidity" : "Drėgnumas",
     "Cloudiness" : "Debesuotumas",
