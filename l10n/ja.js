@@ -39,7 +39,7 @@ OC.L10N.register(
     "Add" : "追加",
     "Cancel" : "キャンセル",
     "Settings" : "設定",
-    "Metric" : "摂氏",
+    "Metric" : "気温単位",
     "Click here to get an API key" : "API キーを取得するにはこちらをクリック",
     "Current Temperature" : "現在の気温",
     "Feelslike Temperature" : "体感気温",
@@ -52,6 +52,7 @@ OC.L10N.register(
     "Sunrise" : "日の出",
     "Sunset" : "日の入り",
     "Date" : "日付",
+    "Perceptible Temperature" : "体感気温",
     "Updating widget…" : "ウィジェットを更新中…",
     "Temperature" : "気温"
 },
