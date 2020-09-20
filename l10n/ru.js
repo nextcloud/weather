@@ -42,6 +42,7 @@ OC.L10N.register(
     "Metric" : "Метрическая",
     "Click here to get an API key" : "Нажмите для получения ключа API",
     "Current Temperature" : "Текущая температура",
+    "Feelslike Temperature" : "Ощущается как",
     "Minimum Temperature" : "Минимальная температура",
     "Maximum Temperature" : "Максимальная температура",
     "Pressure" : "Давление",
@@ -51,6 +52,7 @@ OC.L10N.register(
     "Sunrise" : "Рассвет",
     "Sunset" : "Закат",
     "Date" : "Дата",
+    "Perceptible Temperature" : "Воспринимаемая температура",
     "Updating widget…" : "Обновление виджета…",
     "Temperature" : "Температура"
 },

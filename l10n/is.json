@@ -39,6 +39,10 @@
     "Settings" : "Stillingar",
     "Metric" : "Metrakerfi",
     "Click here to get an API key" : "Smelltu hér til að fá API-lykil",
+    "Current Temperature" : "Núverandi hiti",
+    "Feelslike Temperature" : "Hitastig miðað við vindkælingu",
+    "Minimum Temperature" : "Lágmarkshiti",
+    "Maximum Temperature" : "Hámarkshiti",
     "Pressure" : "Loftþrýsingur",
     "Humidity" : "Rakastig",
     "Cloudiness" : "Skýjahula",
@@ -46,6 +50,7 @@
     "Sunrise" : "Sólris",
     "Sunset" : "Sólsetur",
     "Date" : "Dagsetning",
+    "Perceptible Temperature" : "Skynjanlegt hitastig",
     "Updating widget…" : "Uppfæri viðmótshluta…",
     "Temperature" : "Hitastig"
 },"pluralForm" :"nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);"

@@ -41,6 +41,10 @@ OC.L10N.register(
     "Settings" : "הגדרות",
     "Metric" : "מטרי",
     "Click here to get an API key" : "יש ללחוץ כאן לקבלת מפתח API",
+    "Current Temperature" : "הטמפרטורה הנוכחית",
+    "Feelslike Temperature" : "טמפרטורת תחושה",
+    "Minimum Temperature" : "טמפרטורה מזערית",
+    "Maximum Temperature" : "טמפרטורה מרבית",
     "Pressure" : "לחץ",
     "Humidity" : "לחות",
     "Cloudiness" : "עננות",
@@ -48,6 +52,7 @@ OC.L10N.register(
     "Sunrise" : "זריחה",
     "Sunset" : "שקיעה",
     "Date" : "תאריך",
+    "Perceptible Temperature" : "טמפרטורה נתפסת",
     "Updating widget…" : "וידג׳ט מתעדכן…",
     "Temperature" : "טמפרטורה"
 },
