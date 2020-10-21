@@ -1,30 +1,64 @@
 <template>
-	<div v-if="currentCity.forecast.length > 0" class="cityForecastPanel">
+	<div v-if="currentCity.forecast.length > 0" class="contentPanel cityForecastPanel">
 		<table>
 			<thead>
 				<tr>
-					<th>{{ t('weather', 'Date') }}</th>
-					<th>{{ t('weather', 'Temperature') }}</th>
-					<th>{{ t('weather', 'Perceptible Temperature') }}</th>
-					<th>{{ t('weather', 'Minimum Temperature') }}</th>
-					<th>{{ t('weather', 'Maximum Temperature') }}</th>
-					<th>{{ t('weather', 'Weather') }}</th>
-					<th>{{ t('weather', 'Pressure') }}</th>
-					<th>{{ t('weather', 'Humidity') }}</th>
-					<th>{{ t('weather', 'Wind') }}</th>
+					<th class="date">
+						{{ t('weather', 'Date') }}
+					</th>
+					<th class="temp">
+						{{ t('weather', 'Temperature') }}
+					</th>
+					<th class="tempPerception">
+						{{ t('weather', 'Perceptible Temperature') }}
+					</th>
+					<th class="tempMin">
+						{{ t('weather', 'Minimum Temperature') }}
+					</th>
+					<th class="tempMax">
+						{{ t('weather', 'Maximum Temperature') }}
+					</th>
+					<th class="weather">
+						{{ t('weather', 'Weather') }}
+					</th>
+					<th class="pressure">
+						{{ t('weather', 'Pressure') }}
+					</th>
+					<th class="humidity">
+						{{ t('weather', 'Humidity') }}
+					</th>
+					<th class="wind">
+						{{ t('weather', 'Wind') }}
+					</th>
 				</tr>
 			</thead>
 			<tbody>
 				<tr v-for="forecast in currentCity.forecast" :key="forecast.date">
 					<td>{{ forecast.date }}</td>
-					<td>{{ forecast.temperature }}{{ metricRepresentation }}</td>
-					<td>{{ forecast.temperature_feelslike }}{{ metricRepresentation }}</td>
-					<td>{{ forecast.temperature_min }}{{ metricRepresentation }}</td>
-					<td>{{ forecast.temperature_max }}{{ metricRepresentation }}</td>
-					<td>{{ forecast.weather }}</td>
-					<td>{{ forecast.pressure }} hpa</td>
-					<td>{{ forecast.humidity }} %</td>
-					<td>{{ forecast.wind.speed }} m/s - {{ forecast.wind.desc }}</td>
+					<td class="numeric temp">
+						{{ forecast.temperature }}&nbsp;{{ metricRepresentation }}
+					</td>
+					<td class="numeric tempPerception">
+						{{ forecast.temperature_feelslike }}&nbsp;{{ metricRepresentation }}
+					</td>
+					<td class="numeric tempMin">
+						{{ forecast.temperature_min }}&nbsp;{{ metricRepresentation }}
+					</td>
+					<td class="numeric tempMax">
+						{{ forecast.temperature_max }}&nbsp;{{ metricRepresentation }}
+					</td>
+					<td class="weather">
+						{{ forecast.weather }}
+					</td>
+					<td class="numeric pressure">
+						{{ forecast.pressure }} hpa
+					</td>
+					<td class="numeric humidity">
+						{{ forecast.humidity }} %
+					</td>
+					<td class="wind">
+						{{ forecast.wind.speed }}&nbsp;m/s - {{ forecast.wind.desc }}
+					</td>
 				</tr>
 			</tbody>
 		</table>

@@ -121,6 +121,11 @@
 	}
 }
 
+@media (min-width: 1025px) and (max-width: 1100px) {
+	.cityForecastPanel .humidity, .cityForecastPanel .pressure {
+		display: none;
+	}
+}
 @media (min-width: 1025px) and (max-width: 1500px) {
 	.cityForecastPanel .tempPerception, .cityForecastPanel .tempMax {
 		display: none;

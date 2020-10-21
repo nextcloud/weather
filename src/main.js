@@ -33,12 +33,12 @@ import { showSuccess, showError } from '@nextcloud/dialogs'
 import '@nextcloud/dialogs/styles/toast.scss'
 import { getLoggerBuilder } from '@nextcloud/logger'
 
-const logger = getLoggerBuilder()
-    .setApp('weather')
-    .detectUser()
-    .build()
-
 import { windMapper, imageMapper, mapMetric } from './lib'
+
+const logger = getLoggerBuilder()
+	.setApp('weather')
+	.detectUser()
+	.build()
 
 Vue.use(Vuex)
 
@@ -121,7 +121,7 @@ const store = new Vuex.Store({
 		},
 		setCurrentCity(state, currentCityData) {
 			state.currentCity = currentCityData
-		}
+		},
 	},
 	actions: {
 		addCity(context, newCityName) {
@@ -134,7 +134,7 @@ const store = new Vuex.Store({
 					}
 					// otherwise one may send a new API call : context.dispatch('loadCities')
 				})
-				.catch((reason) =>{
+				.catch((reason) => {
 					logger.error('Error adding city', { reason })
 					showError(context.getters.fatalError)
 				})
@@ -173,9 +173,9 @@ const store = new Vuex.Store({
 				generateUrl('/apps/weather/weather/get'),
 				{ params: { name: cityToLoad.name } })
 				.then((response) => {
-					let currentCityData = response.data
-					currentCityData.wind.desc = windMapper(context.state.currentCity.wind.deg)
-					currentCityData.image = imageMapper(context.state.currentCity.weather[0].main)
+					const currentCityData = response.data
+					currentCityData.wind.desc = windMapper(currentCityData.wind.deg)
+					currentCityData.image = imageMapper(currentCityData.weather[0].main)
 
 					context.commit('setCurrentCity', currentCityData)
 					context.commit('setSelected', cityToLoad.id)
@@ -259,7 +259,7 @@ const store = new Vuex.Store({
 				.then((result) => {
 					if (result.data.metric) {
 						context.commit('setMetric', result.data.metric)
-						context.commit('metricRepresentation', mapMetric(mapMetric(result.data.metric)))
+						context.commit('setMetricRepresentation', mapMetric(mapMetric(result.data.metric)))
 					}
 				}).catch((reason) => {
 					logger.error('Error adding city', { reason })
