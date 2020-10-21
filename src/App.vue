@@ -137,26 +137,3 @@ export default {
 	},
 }
 </script>
-
-<style scoped>
-
-.mainContentContainer {
-	padding: 15px;
-	height: calc(100vh - 50px); /* substract header */
-	overflow: auto;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left: 250px;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-attachment: fixed;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	color: #EEE;
-	display: grid;
-}
-
-</style>
