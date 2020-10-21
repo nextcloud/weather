@@ -1,10 +1,10 @@
 <template>
-	<div id="city-forecast-panel">
+	<div v-if="currentCity.forecast.length > 0" class="cityForecastPanel">
 		<table>
 			<thead>
 				<tr>
 					<th>{{ t('weather', 'Date') }}</th>
-					<th>{{ t('weather', 'Current Temperature') }}</th>
+					<th>{{ t('weather', 'Temperature') }}</th>
 					<th>{{ t('weather', 'Perceptible Temperature') }}</th>
 					<th>{{ t('weather', 'Minimum Temperature') }}</th>
 					<th>{{ t('weather', 'Maximum Temperature') }}</th>
@@ -39,3 +39,29 @@ export default {
 	computed: mapState(['currentCity', 'metricRepresentation']),
 }
 </script>
+
+<style scoped>
+th {
+	font-weight: bold;
+}
+
+.cityForecastPanel {
+	color: #ddd;
+	border-radius: 3px;
+	padding: 20px;
+	background-color: rgba(50, 50, 50, 0.5);
+	display: block;
+	backdrop-filter: blur(3px);
+	-webkit-backdrop-filter: blur(3px);
+	font-size: 1.3em;
+	margin-top: 10px;
+}
+
+td, th {
+	padding: 10px;
+}
+
+tr:hover {
+	background-color: var(--color-background-light);
+}
+</style>

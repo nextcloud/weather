@@ -1,13 +1,7 @@
 <template>
-	<div class="cityWeatherPanel">
-		<div class="city-name">
+	<div v-if="!!currentCity.name" class="cityWeatherPanel">
+		<div class="cityName">
 			{{ currentCity.name }}, {{ currentCity.sys.country }}
-			<img v-if="selectedCityId == homeCity" src="home-pick.png">
-			<img
-				v-if="selectedCityId != homeCity"
-				class="home-icon"
-				src="home-nopick.png"
-				@click="setHome(selectedCityId);">
 		</div>
 		<div class="cityCurrentTemp">
 			{{ t("weather", "Current Temperature") }} : {{ currentCity.main.temp
@@ -53,6 +47,8 @@
 <script>
 import { mapState } from 'vuex'
 
+import { imagePath } from '@nextcloud/router'
+
 export default {
 	name: 'CurrentWeather',
 	filters: {
@@ -67,7 +63,56 @@ export default {
 				+ date.getMinutes()
 		},
 	},
+	data() {
+		return {
+			homePick: imagePath('weather', 'home-pick.png'),
+			homeNoPick: imagePath('weather', 'home-nopick.png'),
+		}
+	},
 	computed: mapState(['currentCity', 'homeCity', 'selectedCityId', 'metricRepresentation']),
+	methods: {
+		setHomeCity(cityId) {
+			this.$store.dispatch('setHome', cityId)
+		},
+	},
 }
 
 </script>
+
+<style scoped>
+	.cityWeatherPanel {
+		color: #ddd;
+
+		border-radius: 3px;
+		padding: 20px;
+		background-color: rgba(50, 50, 50, 0.5);
+		display: block;
+
+		backdrop-filter: blur(3px);
+		-webkit-backdrop-filter: blur(3px);
+	}
+
+	.cityName {
+		font-size: 5em;
+		line-height: 1em;
+		margin-bottom: 5px;
+	}
+
+	.cityCurrentPressure,
+	.cityCurrentWind,
+	.cityCurrentHumidity,
+	.cityCurrentWeather,
+	.cityCurrentSunrise,
+	.cityCurrentSunset,
+	.cityCurrentTemp_feelslike,
+	.cityCurrentTemp_min,
+	.cityCurrentTemp_max,
+	.cityCurrentTemp {
+		font-size: 2em;
+		line-height: 1em;
+	}
+
+	.home-icon:hover {
+		cursor: pointer;
+	}
+</style>

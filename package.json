@@ -15,9 +15,14 @@
   },
   "license": "AGPL-3.0-or-later",
   "dependencies": {
+    "@nextcloud/axios": "^1.4.0",
+    "@nextcloud/dialogs": "^3.0.0",
     "@nextcloud/l10n": "^1.4.1",
+    "@nextcloud/router": "^1.2.0",
     "@nextcloud/vue": "^2.6.5",
     "es6-promise": "^4.2.8",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
     "vue": "^2.6.12",
     "vuex": "^3.5.1"
   },
