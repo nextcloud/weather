@@ -31,6 +31,12 @@ import { translate, translatePlural } from '@nextcloud/l10n'
 import App from './App'
 import { showSuccess, showError } from '@nextcloud/dialogs'
 import '@nextcloud/dialogs/styles/toast.scss'
+import { getLoggerBuilder } from '@nextcloud/logger'
+
+const logger = getLoggerBuilder()
+    .setApp('weather')
+    .detectUser()
+    .build()
 
 import { windMapper, imageMapper, mapMetric } from './lib'
 
@@ -91,6 +97,9 @@ const store = new Vuex.Store({
 		setHome(state, cityId) {
 			state.allCities.home = cityId
 		},
+		setSelected(state, cityId) {
+			state.selectedCityId = cityId
+		},
 		unsetSelected(state) {
 			state.currentCity = null
 			state.selectedCityId = 0
@@ -104,6 +113,15 @@ const store = new Vuex.Store({
 		setLoaded(state, isLoaded) {
 			state.loaded = isLoaded
 		},
+		setMetric(state, metric) {
+			state.metric = metric
+		},
+		setMetricRepresentation(state, metricRepresentation) {
+			state.metricRepresentation = metricRepresentation
+		},
+		setCurrentCity(state, currentCityData) {
+			state.currentCity = currentCityData
+		}
 	},
 	actions: {
 		addCity(context, newCityName) {
@@ -114,10 +132,12 @@ const store = new Vuex.Store({
 						// response contains the id, but not the name
 						context.commit('addCity', { name: newCityName, id: response.data.id })
 					}
-					// otherwise one may send a new API call :
-					// context.dispatch('loadCities')
+					// otherwise one may send a new API call : context.dispatch('loadCities')
 				})
-				.catch((reason) => showError(`Cannot add city: ${reason}`))
+				.catch((reason) =>{
+					logger.error('Error adding city', { reason })
+					showError(context.getters.fatalError)
+				})
 		},
 		loadCities(context) {
 			axios.get(generateUrl('/apps/weather/city/getall'))
@@ -142,6 +162,7 @@ const store = new Vuex.Store({
 				})
 				.catch(reason => {
 					showError(context.getters.fatalError)
+					logger.error('Cannot load cities', { reason })
 				})
 		},
 		loadCity(context, cityId) {
@@ -152,12 +173,14 @@ const store = new Vuex.Store({
 				generateUrl('/apps/weather/weather/get'),
 				{ params: { name: cityToLoad.name } })
 				.then((response) => {
-					context.state.currentCity = response.data
-					context.state.currentCity.wind.desc = windMapper(context.state.currentCity.wind.deg)
-					context.state.currentCity.image = imageMapper(context.state.currentCity.weather[0].main)
-					context.state.selectedCityId = cityToLoad.id
+					let currentCityData = response.data
+					currentCityData.wind.desc = windMapper(context.state.currentCity.wind.deg)
+					currentCityData.image = imageMapper(context.state.currentCity.weather[0].main)
+
+					context.commit('setCurrentCity', currentCityData)
+					context.commit('setSelected', cityToLoad.id)
 				})
-				.catch(reason => {
+				.catch((reason) => {
 					showError(`Cannot load city: ${reason}`)
 					if (reason.status === 404) {
 						const error = t('weather', 'No city with this name found.')
@@ -170,12 +193,15 @@ const store = new Vuex.Store({
 							'weather',
 							'Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration')
 						showError(error)
+
 						context.commit('setCityLoadError', error)
 						context.commit('setApiKeyNeeded', true)
 					} else {
 						const error = context.getters.fatalError
 
 						showError(error)
+
+						logger.error('Error getting weather information for city', { reason })
 						context.commit('setCityLoadError', error)
 						context.commit('setApiKeyNeeded', false)
 					}
@@ -184,7 +210,7 @@ const store = new Vuex.Store({
 		},
 		deleteCity(context, cityId) {
 			axios.post(generateUrl('/apps/weather/city/delete'), { id: cityId })
-				.then(response => {
+				.then((response) => {
 					if (response.data != null && !!response.data.deleted) {
 						context.commit('removeCity', cityId)
 						// If current city is the removed city, close it
@@ -203,8 +229,9 @@ const store = new Vuex.Store({
 					} else {
 						alert(t('weather', 'Failed to remove city. Please contact your administrator'))
 					}
-				}).catch(function(r) {
+				}).catch((reason) => {
 					showError(context.getters.fatalError)
+					logger.error('Error deleting city', { reason })
 				})
 		},
 		setHome(context, cityId) {
@@ -216,42 +243,45 @@ const store = new Vuex.Store({
 						showError(t('weather', 'Failed to set home. Please contact your administrator'))
 					}
 				})
-				.catch(reason => {
+				.catch((reason) => {
+					logger.error('Error setting home city', { reason })
 					showError(context.getters.fatalError)
 				})
 		},
 		selectCity(context, cityId) {
 			context.dispatch('loadCity', cityId)
 				.then(() => {
-					context.state.selectedCityId = cityId
+					context.commit('setSelected', cityId)
 				})
 		},
 		loadMetric(context) {
 			axios.get(generateUrl('/apps/weather/settings/metric/get'))
-				.then((r) => {
-					if (r.data.metric) {
-						context.state.metric = r.data.metric
-						context.state.metricRepresentation = mapMetric(r.data.metric)
+				.then((result) => {
+					if (result.data.metric) {
+						context.commit('setMetric', result.data.metric)
+						context.commit('metricRepresentation', mapMetric(mapMetric(result.data.metric)))
 					}
-				}).catch((r) => {
+				}).catch((reason) => {
+					logger.error('Error adding city', { reason })
 					showError(context.getters.fatalError)
 				})
 		},
 		modifyMetric(context, metric) {
 			axios.post(generateUrl('/apps/weather/settings/metric/set'), { metric })
-				.then((r) => {
-					if (r.data != null && !!(r.data.set)) {
-						context.state.metric = metric
-						context.state.metricRepresentation = mapMetric(metric)
+				.then((result) => {
+					if (result.data != null && !!(result.data.set)) {
+						context.commit('setMetric', metric)
+						context.commit('metricRepresentation', mapMetric(metric))
 						context.dispatch('loadCity', context.state.selectedCityId)
 					} else {
 						showError(t('weather', 'Failed to set metric. Please contact your administrator'))
 					}
 				}).catch(
-					(r) => {
-						if (r.status === 404) {
+					(reason) => {
+						if (reason.status === 404) {
 							showError(t('weather', 'This metric is not known.'))
 						} else {
+							logger.error('Error setting metric', { reason })
 							showError(context.getters.fatalError)
 						}
 					})
