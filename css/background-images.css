@@ -1,0 +1,44 @@
+
+.Clear {
+	background-image: url('../img/sun.jpg');
+}
+
+.Clouds {
+	background-image: url('../img/clouds.png');
+}
+
+.Drizzle {
+	background-image: url('../img/drizzle.jpg');
+}
+
+.Sand {
+	background-image: url('../img/sand.jpg');
+}
+
+.Tornado {
+	background-image: url('../img/tornado.jpg');
+}
+
+.Haze, .Mist {
+	background-image: url('../img/mist.jpg');
+}
+
+.Rain {
+	background-image: url('../img/rain.jpg');
+}
+
+.Snow {
+	background-image: url('../img/snow.png');
+}
+
+.Thunderstorm {
+	background-image: url('../img/thunderstorm.jpg');
+}
+
+.Fog {
+	background-image: url('../img/fog.jpg');
+}
+
+.Ash, .Squall, .Dust, .Smoke {
+	background-image: url('../img/todo.png');
+}
