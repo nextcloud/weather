@@ -296,6 +296,9 @@ export default new Vue({
 	el: '#content',
 	created() {
 		this.$store.dispatch('loadCities')
+		setInterval(() => this.$store.dispatch(
+			'loadCity',
+			this.$store.state.selectedCityId || this.$store.state.allCities.home), 300000)
 	},
 	render: h => h(App),
 	store,
