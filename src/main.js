@@ -1,7 +1,7 @@
 /**
- * @copyright Copyright (c) 2018 John Molakvoæ <skjnldsv@protonmail.com>
+ * @copyright Copyright (c) 2020 Balint Erdosi <balint@berdosi.eu>
  *
- * @author John Molakvoæ <skjnldsv@protonmail.com>
+ * @author Balint Erdosi <balint@berdosi.eu>
  *
  * @license GNU AGPL version 3 or any later version
  *
