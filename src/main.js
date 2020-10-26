@@ -259,10 +259,10 @@ const store = new Vuex.Store({
 				.then((result) => {
 					if (result.data.metric) {
 						context.commit('setMetric', result.data.metric)
-						context.commit('setMetricRepresentation', mapMetric(mapMetric(result.data.metric)))
+						context.commit('setMetricRepresentation', mapMetric(result.data.metric))
 					}
 				}).catch((reason) => {
-					logger.error('Error adding city', { reason })
+					logger.error('Error setting metric', { reason })
 					showError(context.getters.fatalError)
 				})
 		},
@@ -271,7 +271,7 @@ const store = new Vuex.Store({
 				.then((result) => {
 					if (result.data != null && !!(result.data.set)) {
 						context.commit('setMetric', metric)
-						context.commit('metricRepresentation', mapMetric(metric))
+						context.commit('setMetricRepresentation', mapMetric(metric))
 						context.dispatch('loadCity', context.state.selectedCityId)
 					} else {
 						showError(t('weather', 'Failed to set metric. Please contact your administrator'))
