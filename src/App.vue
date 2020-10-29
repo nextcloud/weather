@@ -42,7 +42,7 @@
 		</AppNavigation>
 		<AppContent>
 			<div :class="`mainContentContainer ${mappedImage}`">
-				<div v-if="!!cityLoadError" class="errorContainer">
+				<div v-if="!!cityLoadError" class="contentPanel errorContainer">
 					{{ cityLoadError }}
 
 					<a v-if="cityLoadNeedsApiKey" href="http://home.openweathermap.org/users/sign_in">{{ t('weather', 'Click here to get an API key') }}</a>
