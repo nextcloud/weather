@@ -11,7 +11,9 @@ OC.L10N.register(
     "South-West" : "Lounas",
     "West" : "Länsi",
     "North-West" : "Luode",
+    "Failed to get city weather informations. Please contact your administrator" : "Kaupungin säätietojen haku epäonnistui. Ota yhteys ylläpitäjään",
     "No city with this name found." : "Tällä nimellä ei löytynyt kaupunkia.",
+    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "OpenWeatherMap API-avaimesi ei ole kelvollinen. Ota yhteys ylläpitäjään kelvollisen API-keyn asettamiseksi.",
     "Empty city name!" : "Tyhjä kaupungin nimi!",
     "Failed to add city. Please contact your administrator" : "Kaupungin lisääminen epäonnistui. Ota yhteyttä järjestelmänvalvojaan",
     "This city is already registered for your account." : "Tämä kaupunki on jo rekisteröity tilillesi.",
@@ -24,6 +26,7 @@ OC.L10N.register(
     "Saturday" : "Lauantai",
     "Sunday" : "Sunnuntai",
     "Watch the weather directly on your Nextcloud." : "Seuraa säätä suoraan Nextcloudista.",
+    "Please make sure you select cities in the Weather app." : "Valitse kaupungit Weather-sovelluksessa.",
     "Please make sure you select a home city in the Weather app." : "Varmista että sääsovelluksessa on asetettu kotikaupunki.",
     "OpenWeatherMap API Key" : "OpenWeatherMapin API-avain",
     "Save" : "Tallenna",
@@ -47,7 +50,7 @@ OC.L10N.register(
     "Sunset" : "Auringonlasku",
     "Date" : "Päiväys",
     "Perceptible Temperature" : "Aistittava lämpötila",
-    "Updating widget…" : "Päivitetään widgettiä…",
+    "Updating widget…" : "Päivitetään pienoissovellusta…",
     "Temperature" : "Lämpötila"
 },
 "nplurals=2; plural=(n != 1);");
