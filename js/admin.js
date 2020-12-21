@@ -48,6 +48,6 @@
 	}
 })();
 
-$(document).ready(function() {
+window.addEventListener('DOMContentLoaded', function () {
 	OCA.Weather.Admin.initialize();
 });

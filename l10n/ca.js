@@ -15,7 +15,7 @@ OC.L10N.register(
     "North-West" : "Nord-oest",
     "Failed to get city weather informations. Please contact your administrator" : "No s'ha pogut obtenir la informació del temps de la ciutat. Poseu-vos en contacte amb l'administrador.",
     "No city with this name found." : "No s'ha trobat cap ciutat amb aquest nom.",
-    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "La vostra clau de l'API d'OpenWeatherMap no és vàlida. Poseu-vos en contacte amb l'administrador per a configurar una clau vàlida a la secció Paràmetres addicionals a Administració.",
+    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "La vostra clau de l'API d'OpenWeatherMap no és vàlida. Poseu-vos en contacte amb l'administrador per a configurar una clau vàlida a la secció «Paràmetres addicionals» a «Administració».",
     "Empty city name!" : "El nom de la ciutat està buit!",
     "Failed to add city. Please contact your administrator" : "No s'ha pogut afegir la ciutat. Poseu-vos en contacte amb l'administrador.",
     "This city is already registered for your account." : "Ja heu registrat aquesta ciutat en el vostre compte.",
