@@ -20,7 +20,4 @@
     <settings>
         <admin>OCA\Weather\Settings\AdminSettings</admin>
     </settings>
-    <dashboard>
-        <widget>OCA\Weather\Widgets\DefaultWidget</widget>
-    </dashboard>
 </info>
