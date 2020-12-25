@@ -29,8 +29,6 @@ OC.L10N.register(
     "Saturday" : "Сабота",
     "Sunday" : "Недела",
     "Watch the weather directly on your Nextcloud." : "Гледајте ја временската прогноза дирекно во вашата сметка.",
-    "Please make sure you select cities in the Weather app." : "Изберете градови во апликацијата.",
-    "Please make sure you select a home city in the Weather app." : "Поставете домашен град во апликацијата.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API клуч",
     "Save" : "Зачувај",
     "Add a city" : "Додади град",
@@ -52,8 +50,6 @@ OC.L10N.register(
     "Sunrise" : "Изгрејсонце",
     "Sunset" : "Зајдисонце",
     "Date" : "Датум",
-    "Perceptible Temperature" : "Се осеќа",
-    "Updating widget…" : "Ажурирање на  графичката контрола…",
-    "Temperature" : "Температура"
+    "Perceptible Temperature" : "Се осеќа"
 },
 "nplurals=2; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : 1;");

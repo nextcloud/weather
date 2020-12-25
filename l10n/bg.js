@@ -30,7 +30,6 @@ OC.L10N.register(
     "Wind" : "Вятър",
     "Sunrise" : "Изгрев",
     "Sunset" : "Залез",
-    "Date" : "Дата",
-    "Temperature" : "Температура"
+    "Date" : "Дата"
 },
 "nplurals=2; plural=(n != 1);");

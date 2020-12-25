@@ -27,8 +27,6 @@
     "Saturday" : "Lördag",
     "Sunday" : "Söndag",
     "Watch the weather directly on your Nextcloud." : "Visa vädret direkt i din Nextcloud.",
-    "Please make sure you select cities in the Weather app." : "Se till att du väljer städer i appen Weather.",
-    "Please make sure you select a home city in the Weather app." : "Se till att du väljer en hemstad i appen Weather.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API Nyckel",
     "Save" : "Spara",
     "Add a city" : "Lägg till stad",
@@ -50,8 +48,6 @@
     "Sunrise" : "Soluppgång",
     "Sunset" : "Solnedgång",
     "Date" : "Datum",
-    "Perceptible Temperature" : "Märkbar temperatur",
-    "Updating widget…" : "Uppdaterar gränssnittskomponent...",
-    "Temperature" : "Temperatur"
+    "Perceptible Temperature" : "Märkbar temperatur"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

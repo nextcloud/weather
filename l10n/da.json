@@ -43,7 +43,6 @@
     "Wind" : "Vind",
     "Sunrise" : "Solskin",
     "Sunset" : "Solnedgang",
-    "Date" : "Dato",
-    "Temperature" : "Temperatur"
+    "Date" : "Dato"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

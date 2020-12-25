@@ -24,7 +24,6 @@
     "Wind" : "Wind",
     "Sunrise" : "Sunrise",
     "Sunset" : "Sunset",
-    "Date" : "Date",
-    "Temperature" : "Temperature"
+    "Date" : "Date"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

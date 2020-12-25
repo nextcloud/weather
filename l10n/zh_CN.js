@@ -29,8 +29,6 @@ OC.L10N.register(
     "Saturday" : "星期六",
     "Sunday" : "星期日",
     "Watch the weather directly on your Nextcloud." : "直接在 Nextcloud 里面查阅天气",
-    "Please make sure you select cities in the Weather app." : "请确保您在天气图应用中选择了城市。",
-    "Please make sure you select a home city in the Weather app." : "请确保您在天气图应用中选择了一个家所在城市。",
     "OpenWeatherMap API Key" : "开放的天气 API 接口 ID",
     "Save" : "保存",
     "Add a city" : "添加一个城市",
@@ -52,8 +50,6 @@ OC.L10N.register(
     "Sunrise" : "日出",
     "Sunset" : "日落",
     "Date" : "日期",
-    "Perceptible Temperature" : "可感温度",
-    "Updating widget…" : "更新小部件...",
-    "Temperature" : "温度"
+    "Perceptible Temperature" : "可感温度"
 },
 "nplurals=1; plural=0;");

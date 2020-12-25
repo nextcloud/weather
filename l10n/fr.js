@@ -29,8 +29,6 @@ OC.L10N.register(
     "Saturday" : "Samedi",
     "Sunday" : "Dimanche",
     "Watch the weather directly on your Nextcloud." : "Consultez la météo directement dans Nextcloud.",
-    "Please make sure you select cities in the Weather app." : "Veuillez vérifier que vous avez bien sélectionné des villes dans l'application Météo.",
-    "Please make sure you select a home city in the Weather app." : "Veuillez vérifier que vous avez bien sélectionné une ville pour votre domicile dans l'application Météo.",
     "OpenWeatherMap API Key" : "Clé d'API OpenWeatherMap",
     "Save" : "Enregistrer",
     "Add a city" : "Ajouter une ville",
@@ -52,8 +50,6 @@ OC.L10N.register(
     "Sunrise" : "Lever du soleil",
     "Sunset" : "Coucher du soleil",
     "Date" : "Date",
-    "Perceptible Temperature" : "Température ressentie",
-    "Updating widget…" : "Mise à jour du widget …",
-    "Temperature" : "Température"
+    "Perceptible Temperature" : "Température ressentie"
 },
 "nplurals=2; plural=(n > 1);");

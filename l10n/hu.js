@@ -29,8 +29,6 @@ OC.L10N.register(
     "Saturday" : "Szombat",
     "Sunday" : "Vasárnap",
     "Watch the weather directly on your Nextcloud." : "Figyelje az időjárást közvetlenül a Nextcloudjában.",
-    "Please make sure you select cities in the Weather app." : "Győződjön meg róla, hogy választott városokat az Időjárás alkalmazásban.",
-    "Please make sure you select a home city in the Weather app." : "Győződjön meg róla, hogy kiválasztotta a saját városát az Időjárás alkalmazásban.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API-kulcs",
     "Save" : "Mentés",
     "Add a city" : "Város hozzáadása",
@@ -52,8 +50,6 @@ OC.L10N.register(
     "Sunrise" : "Napkelte",
     "Sunset" : "Napnyugta",
     "Date" : "Dátum",
-    "Perceptible Temperature" : "Érezhető hőmérséklet",
-    "Updating widget…" : "Felületi elem frissítése…",
-    "Temperature" : "Hőmérséklet"
+    "Perceptible Temperature" : "Érezhető hőmérséklet"
 },
 "nplurals=2; plural=(n != 1);");

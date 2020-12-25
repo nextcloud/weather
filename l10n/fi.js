@@ -26,8 +26,6 @@ OC.L10N.register(
     "Saturday" : "Lauantai",
     "Sunday" : "Sunnuntai",
     "Watch the weather directly on your Nextcloud." : "Seuraa säätä suoraan Nextcloudista.",
-    "Please make sure you select cities in the Weather app." : "Valitse kaupungit Weather-sovelluksessa.",
-    "Please make sure you select a home city in the Weather app." : "Varmista että sääsovelluksessa on asetettu kotikaupunki.",
     "OpenWeatherMap API Key" : "OpenWeatherMapin API-avain",
     "Save" : "Tallenna",
     "Add a city" : "Lisää kaupunki",
@@ -49,8 +47,6 @@ OC.L10N.register(
     "Sunrise" : "Auringonnousu",
     "Sunset" : "Auringonlasku",
     "Date" : "Päiväys",
-    "Perceptible Temperature" : "Aistittava lämpötila",
-    "Updating widget…" : "Päivitetään pienoissovellusta…",
-    "Temperature" : "Lämpötila"
+    "Perceptible Temperature" : "Aistittava lämpötila"
 },
 "nplurals=2; plural=(n != 1);");

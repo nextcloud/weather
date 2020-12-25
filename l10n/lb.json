@@ -21,7 +21,6 @@
     "Wind" : "Wand",
     "Sunrise" : "Sonnenopgang",
     "Sunset" : "Sonnenënnergang",
-    "Date" : "Date",
-    "Temperature" : "Temperatur"
+    "Date" : "Date"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

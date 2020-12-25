@@ -29,8 +29,6 @@ OC.L10N.register(
     "Saturday" : "Cumartesi",
     "Sunday" : "Pazar",
     "Watch the weather directly on your Nextcloud." : "Hava durumunun Nextcloud üzerinden izlenmesini sağlar.",
-    "Please make sure you select cities in the Weather app." : "Lütfen Hava Durumu uygulamasında illeri seçtiğinizden emin olun.",
-    "Please make sure you select a home city in the Weather app." : "Lütfen Hava Durumu uygulamasında bir ev ili seçtiğinizden emin olun.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API Anahtarı",
     "Save" : "Kaydet",
     "Add a city" : "Bir il ekle",
@@ -52,8 +50,6 @@ OC.L10N.register(
     "Sunrise" : "Gün doğumu",
     "Sunset" : "Gün batımı",
     "Date" : "Tarih",
-    "Perceptible Temperature" : "Hissedilen Sıcaklık",
-    "Updating widget…" : "Pano bileşeni güncelleniyor …",
-    "Temperature" : "Sıcaklık"
+    "Perceptible Temperature" : "Hissedilen Sıcaklık"
 },
 "nplurals=2; plural=(n > 1);");

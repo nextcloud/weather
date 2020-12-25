@@ -29,8 +29,6 @@ OC.L10N.register(
     "Saturday" : "Dissabte",
     "Sunday" : "Diumenge",
     "Watch the weather directly on your Nextcloud." : "Seguiu el temps directament des del vostre Nextcloud.",
-    "Please make sure you select cities in the Weather app." : "Assegureu-vos que hàgiu seleccionat ciutats a l'aplicació Temps.",
-    "Please make sure you select a home city in the Weather app." : "Assegureu-vos que hàgiu seleccionat una ciutat de residència a l'aplicació Temps.",
     "OpenWeatherMap API Key" : "Clau de l'API d'OpenWeatherMap",
     "Save" : "Desa",
     "Add a city" : "Afegeix una ciutat",
@@ -52,8 +50,6 @@ OC.L10N.register(
     "Sunrise" : "Sortida del sol",
     "Sunset" : "Posta de sol",
     "Date" : "Data",
-    "Perceptible Temperature" : "Temperatura perceptible",
-    "Updating widget…" : "S'està actualitzant el giny...",
-    "Temperature" : "Temperatura"
+    "Perceptible Temperature" : "Temperatura perceptible"
 },
 "nplurals=2; plural=(n != 1);");

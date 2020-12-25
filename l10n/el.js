@@ -29,8 +29,6 @@ OC.L10N.register(
     "Saturday" : "Σάββατο",
     "Sunday" : "Κυριακή",
     "Watch the weather directly on your Nextcloud." : "Δείτε άμεσα τον καιρό στο Nextcloud σας",
-    "Please make sure you select cities in the Weather app." : "Παρακαλώ σιγουρευτείτε ότι επιλέξατε πόλεις στην εφαρμογή Καιρού.",
-    "Please make sure you select a home city in the Weather app." : "Παρακαλώ σιγουρευτείτε ότι επιλέξατε την πόλη σας στην εφαρμογή Καιρού.",
     "OpenWeatherMap API Key" : "Κλειδί API του OpenWeatherMap",
     "Save" : "Αποθήκευση",
     "Add a city" : "Προσθέστε μια πόλη",
@@ -52,8 +50,6 @@ OC.L10N.register(
     "Sunrise" : "Ανατολή",
     "Sunset" : "Δύση",
     "Date" : "Ημερομηνία",
-    "Perceptible Temperature" : "Αισθητή Θερμοκρασία",
-    "Updating widget…" : "Ενημέρωση widget…",
-    "Temperature" : "Θερμοκρασία"
+    "Perceptible Temperature" : "Αισθητή Θερμοκρασία"
 },
 "nplurals=2; plural=(n != 1);");

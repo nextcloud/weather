@@ -26,8 +26,6 @@
     "Saturday" : "Субота",
     "Sunday" : "Неділя",
     "Watch the weather directly on your Nextcloud." : "Дивись погоду прямо у твоєму Nextcloud",
-    "Please make sure you select cities in the Weather app." : "Будь ласка, перевірте, чи ви вибрали міста у застосунку Погода.",
-    "Please make sure you select a home city in the Weather app." : "Будь ласка, перевірте, чи ви визначили ваше місто у застосунку Погода.",
     "OpenWeatherMap API Key" : "Ключ OpenWeatherMap API",
     "Save" : "Зберегти",
     "Add a city" : "Додати місто",
@@ -49,8 +47,6 @@
     "Sunrise" : "Світанок",
     "Sunset" : "Захід сонця",
     "Date" : "Дата",
-    "Perceptible Temperature" : "Відчуття",
-    "Updating widget…" : "Оновлення віджета",
-    "Temperature" : "Температура"
+    "Perceptible Temperature" : "Відчуття"
 },"pluralForm" :"nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);"
 }

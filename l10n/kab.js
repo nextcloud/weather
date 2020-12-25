@@ -14,7 +14,6 @@ OC.L10N.register(
     "Cloudiness" : "Asigna",
     "Wind" : "Aḍu",
     "Sunrise" : "Alluy n yiṭij",
-    "Sunset" : "Aɣelluy n yiṭij",
-    "Temperature" : "Lḥamu"
+    "Sunset" : "Aɣelluy n yiṭij"
 },
 "nplurals=2; plural=(n != 1);");

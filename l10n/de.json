@@ -27,8 +27,6 @@
     "Saturday" : "Samstag",
     "Sunday" : "Sonntag",
     "Watch the weather directly on your Nextcloud." : "Sieh den Wetterbericht direkt in Deiner Nextcloud",
-    "Please make sure you select cities in the Weather app." : "Bitte sicherstellen, dass Du Städte in der Wetter-App ausgewählt hast.",
-    "Please make sure you select a home city in the Weather app." : "Bitte sicherstellen, dass Du eine Heimatstadt in der Wetter-App ausgewählt hast.",
     "OpenWeatherMap API Key" : "OpenWeatherMap-API-Schlüssel",
     "Save" : "Speichern",
     "Add a city" : "Eine Stadt hinzufügen",
@@ -50,8 +48,6 @@
     "Sunrise" : "Sonnenaufgang",
     "Sunset" : "Sonnenuntergang",
     "Date" : "Datum",
-    "Perceptible Temperature" : "Gefühlte Temperatur",
-    "Updating widget…" : "Aktualisiere Widget…",
-    "Temperature" : "Temperatur"
+    "Perceptible Temperature" : "Gefühlte Temperatur"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

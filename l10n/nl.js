@@ -29,8 +29,6 @@ OC.L10N.register(
     "Saturday" : "Zaterdag",
     "Sunday" : "Zondag",
     "Watch the weather directly on your Nextcloud." : "Bekijk het weer rechtstreejs op je Nextcloud.",
-    "Please make sure you select cities in the Weather app." : "Zorg ervoor dat je steden selecteert in de Weerapp.",
-    "Please make sure you select a home city in the Weather app." : "Zorg ervoor dat je je eigen stad selecteert in de Weerapp.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API sleutel",
     "Save" : "Opslaan",
     "Add a city" : "Een stad toevoegen",
@@ -52,8 +50,6 @@ OC.L10N.register(
     "Sunrise" : "Zonsopgang",
     "Sunset" : "Zonsondergang",
     "Date" : "Datum",
-    "Perceptible Temperature" : "Gevoelstemperatuur",
-    "Updating widget…" : "Bijwerken widget…",
-    "Temperature" : "Temperatuur"
+    "Perceptible Temperature" : "Gevoelstemperatuur"
 },
 "nplurals=2; plural=(n != 1);");

@@ -29,8 +29,6 @@ OC.L10N.register(
     "Saturday" : "Sestdiena",
     "Sunday" : "Svētdiena",
     "Watch the weather directly on your Nextcloud." : "Redzi laikapstākļus tieši savā Nextcloud.",
-    "Please make sure you select cities in the Weather app." : "Pārliecinieties, ka esat izvēlējies pilsētu Laikapstākļu aplikācijā.",
-    "Please make sure you select a home city in the Weather app." : "Pārliecinieties, ka esat izvēlējies mājas pilsētu Laikapstākļu aplikācijā.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API Atslēga",
     "Save" : "Saglabāt",
     "Add a city" : "Pievienot pilsētu",
@@ -52,8 +50,6 @@ OC.L10N.register(
     "Sunrise" : "Saullēkts",
     "Sunset" : "Saulriets",
     "Date" : "Datums",
-    "Perceptible Temperature" : "Ščiet kā  t°",
-    "Updating widget…" : "Atjaunina logrīku...",
-    "Temperature" : "Temperatūra"
+    "Perceptible Temperature" : "Ščiet kā  t°"
 },
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : 2);");

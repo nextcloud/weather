@@ -29,8 +29,6 @@ OC.L10N.register(
     "Saturday" : "Larunbata",
     "Sunday" : "Igandea",
     "Watch the weather directly on your Nextcloud." : "Ikusi eguraldia zuzenean zure Nextcloudetik.",
-    "Please make sure you select cities in the Weather app." : "Ziurtatu hiriak hautatzen dituzula Eguraldia aplikazioan.",
-    "Please make sure you select a home city in the Weather app." : "Ziurtatu etxeko hiria hautatzen duzula Eguraldia aplikazioan.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API gakoa",
     "Save" : "Gorde",
     "Add a city" : "Gehitu herri bat",
@@ -52,8 +50,6 @@ OC.L10N.register(
     "Sunrise" : "Egunsentia",
     "Sunset" : "Ilunabarra",
     "Date" : "Data",
-    "Perceptible Temperature" : "Tenperatura hautemangarria",
-    "Updating widget…" : "Trepeta eguneratzen…",
-    "Temperature" : "Tenperatura"
+    "Perceptible Temperature" : "Tenperatura hautemangarria"
 },
 "nplurals=2; plural=(n != 1);");

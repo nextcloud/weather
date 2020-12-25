@@ -23,7 +23,6 @@
     "Wind" : "Tuul",
     "Sunrise" : "Päikesetõus",
     "Sunset" : "Päikeseloojang",
-    "Date" : "Kuupäev",
-    "Temperature" : "Temperatuur"
+    "Date" : "Kuupäev"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

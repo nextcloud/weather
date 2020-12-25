@@ -29,8 +29,6 @@ OC.L10N.register(
     "Saturday" : "יום שבת",
     "Sunday" : "יום ראשון",
     "Watch the weather directly on your Nextcloud." : "הצגת מזג האוויר ישירות ב־Nextcloud שלך.",
-    "Please make sure you select cities in the Weather app." : "נא לוודא שבחרת ערים ביישומון מזג האוויר.",
-    "Please make sure you select a home city in the Weather app." : "נא לוודא שבחרת עיר בית ביישומון מזג האוויר.",
     "OpenWeatherMap API Key" : "מפתח API של OpenWeatherMap",
     "Save" : "שמירה",
     "Add a city" : "הוספת עיר",
@@ -52,8 +50,6 @@ OC.L10N.register(
     "Sunrise" : "זריחה",
     "Sunset" : "שקיעה",
     "Date" : "תאריך",
-    "Perceptible Temperature" : "טמפרטורה נתפסת",
-    "Updating widget…" : "וידג׳ט מתעדכן…",
-    "Temperature" : "טמפרטורה"
+    "Perceptible Temperature" : "טמפרטורה נתפסת"
 },
 "nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n == 2 && n % 1 == 0) ? 1: (n % 10 == 0 && n % 1 == 0 && n > 10) ? 2 : 3;");

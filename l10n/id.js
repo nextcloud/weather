@@ -25,7 +25,6 @@ OC.L10N.register(
     "Wind" : "Angin",
     "Sunrise" : "Matahari Terbit",
     "Sunset" : "Matahari terbenam",
-    "Date" : "Date",
-    "Temperature" : "Suhu"
+    "Date" : "Date"
 },
 "nplurals=1; plural=0;");

@@ -23,7 +23,6 @@
     "Wind" : "Vientu",
     "Sunrise" : "Riscar",
     "Sunset" : "Aséu",
-    "Date" : "Date",
-    "Temperature" : "Temperatura"
+    "Date" : "Date"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

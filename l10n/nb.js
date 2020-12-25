@@ -29,8 +29,6 @@ OC.L10N.register(
     "Saturday" : "Lørdag",
     "Sunday" : "Søndag",
     "Watch the weather directly on your Nextcloud." : "Se vær direkte på din Nextcloud.",
-    "Please make sure you select cities in the Weather app." : "Forsikre deg om at du velger byer i Vær-appen.",
-    "Please make sure you select a home city in the Weather app." : "Forsikre deg om at du velger hjembyen i Vær-appen.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API-nøkkel",
     "Save" : "Lagre",
     "Add a city" : "Legg til by",
@@ -52,8 +50,6 @@ OC.L10N.register(
     "Sunrise" : "Soloppgang",
     "Sunset" : "Solnedgang",
     "Date" : "Dato",
-    "Perceptible Temperature" : "Merkbar temperatur",
-    "Updating widget…" : "Oppdaterer widget...",
-    "Temperature" : "Temperatur"
+    "Perceptible Temperature" : "Merkbar temperatur"
 },
 "nplurals=2; plural=(n != 1);");

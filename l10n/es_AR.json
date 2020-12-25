@@ -24,7 +24,6 @@
     "Wind" : "Viento",
     "Sunrise" : "Amanecer",
     "Sunset" : "Puesta de sol",
-    "Date" : "Fecha",
-    "Temperature" : "Temperatura"
+    "Date" : "Fecha"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

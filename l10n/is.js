@@ -29,8 +29,6 @@ OC.L10N.register(
     "Saturday" : "Laugardagur",
     "Sunday" : "Sunnudagur",
     "Watch the weather directly on your Nextcloud." : "Fylgstu með veðrinu á þínu eigin Nextcloud-skýi.",
-    "Please make sure you select cities in the Weather app." : "Gakktu úr skugga um að þú veljir borgir í veðurforritinu.",
-    "Please make sure you select a home city in the Weather app." : "Gakktu úr skugga um að þú veljir heimabæ í veðurforritinu.",
     "OpenWeatherMap API Key" : "API-lykill frá OpenWeatherMap",
     "Save" : "Vista",
     "Add a city" : "Bæta við borg",
@@ -52,8 +50,6 @@ OC.L10N.register(
     "Sunrise" : "Sólris",
     "Sunset" : "Sólsetur",
     "Date" : "Dagsetning",
-    "Perceptible Temperature" : "Skynjanlegt hitastig",
-    "Updating widget…" : "Uppfæri viðmótshluta…",
-    "Temperature" : "Hitastig"
+    "Perceptible Temperature" : "Skynjanlegt hitastig"
 },
 "nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);");

@@ -28,7 +28,6 @@
     "Wind" : "Вятър",
     "Sunrise" : "Изгрев",
     "Sunset" : "Залез",
-    "Date" : "Дата",
-    "Temperature" : "Температура"
+    "Date" : "Дата"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

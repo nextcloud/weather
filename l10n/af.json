@@ -24,7 +24,6 @@
     "Wind" : "Wind",
     "Sunrise" : "Sonsopkoms",
     "Sunset" : "Sondergang",
-    "Date" : "Datum",
-    "Temperature" : "Temperatuur"
+    "Date" : "Datum"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }

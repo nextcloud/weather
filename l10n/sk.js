@@ -29,8 +29,6 @@ OC.L10N.register(
     "Saturday" : "Sobota",
     "Sunday" : "Nedeľa",
     "Watch the weather directly on your Nextcloud." : "Sledujte počasie priamo na Vašom Nextcloud.",
-    "Please make sure you select cities in the Weather app." : "Uistite sa, že ste v aplikácii Počasie vybrali mestá.",
-    "Please make sure you select a home city in the Weather app." : "Uistite sa, že ste v aplikácii Počasie vybrali domovské mesto.",
     "OpenWeatherMap API Key" : "Kľúč API OpenWeatherMap",
     "Save" : "Uložiť",
     "Add a city" : "Pridať mesto",
@@ -52,8 +50,6 @@ OC.L10N.register(
     "Sunrise" : "Východ slnka",
     "Sunset" : "Západ slnka",
     "Date" : "Dátum",
-    "Perceptible Temperature" : "Pocitová teplota",
-    "Updating widget…" : "Aktualizácia miniaplikácie...",
-    "Temperature" : "Teplota"
+    "Perceptible Temperature" : "Pocitová teplota"
 },
 "nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);");

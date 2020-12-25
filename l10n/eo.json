@@ -24,7 +24,6 @@
     "Wind" : "Vento",
     "Sunrise" : "Sunleviĝo",
     "Sunset" : "Sunsubiro",
-    "Date" : "Date",
-    "Temperature" : "Temperaturo"
+    "Date" : "Date"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
