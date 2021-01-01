@@ -20,4 +20,12 @@
     <settings>
         <admin>OCA\Weather\Settings\AdminSettings</admin>
     </settings>
+    <navigations>
+    <navigation>
+        <id>weather</id>
+        <name>Weather</name>
+        <route>weather.city.index</route>
+        <icon>app.svg</icon>
+    </navigation>
+</navigations>
 </info>
