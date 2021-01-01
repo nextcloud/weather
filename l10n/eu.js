@@ -1,7 +1,6 @@
 OC.L10N.register(
     "weather",
     {
-    "Weather" : "Eguraldia",
     "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Errore larria: mesedez egiaztatu zure nextcloud.log eta bidali errore-txosten bat hona: https://github.com/nextcloud/weather/issues",
     "Failed to set metric. Please contact your administrator" : "Huts egin du metrika ezartzean. Jakinarazi zure administratzaileari",
     "This metric is not known." : "Metrika hau ezezaguna da.",
@@ -28,6 +27,7 @@ OC.L10N.register(
     "Friday" : "Ostirala",
     "Saturday" : "Larunbata",
     "Sunday" : "Igandea",
+    "Weather" : "Eguraldia",
     "Watch the weather directly on your Nextcloud." : "Ikusi eguraldia zuzenean zure Nextcloudetik.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API gakoa",
     "Save" : "Gorde",

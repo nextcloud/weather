@@ -1,7 +1,6 @@
 OC.L10N.register(
     "weather",
     {
-    "Weather" : "Temps",
     "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Error fatal: reviseu el fitxer nextcloud.log i envieu un informe del problema a https://github.com/nextcloud/weather/issues",
     "Failed to set metric. Please contact your administrator" : "No s'ha pogut definir la unitat. Poseu-vos en contacte amb l'administrador.",
     "This metric is not known." : "No es coneix aquesta unitat.",
@@ -28,6 +27,7 @@ OC.L10N.register(
     "Friday" : "Divendres",
     "Saturday" : "Dissabte",
     "Sunday" : "Diumenge",
+    "Weather" : "Temps",
     "Watch the weather directly on your Nextcloud." : "Seguiu el temps directament des del vostre Nextcloud.",
     "OpenWeatherMap API Key" : "Clau de l'API d'OpenWeatherMap",
     "Save" : "Desa",

@@ -1,7 +1,6 @@
 OC.L10N.register(
     "weather",
     {
-    "Weather" : "Καιρός",
     "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Ανεπανόρθωτο σφάλμα: παρακαλώ ελέξτε το nextcloud.log και στείλτε την αναφορά σφάλματος εδώ: https://github.com/nextcloud/weather/issues",
     "Failed to set metric. Please contact your administrator" : "Αποτυχία ορισμού μετρικού συστήματος. Επικοινωνήστε με τον διαχειριστή σας",
     "This metric is not known." : "Το μετρικό σύστημα δεν αναγνωρίζεται.",
@@ -28,6 +27,7 @@ OC.L10N.register(
     "Friday" : "Παρασκευή",
     "Saturday" : "Σάββατο",
     "Sunday" : "Κυριακή",
+    "Weather" : "Καιρός",
     "Watch the weather directly on your Nextcloud." : "Δείτε άμεσα τον καιρό στο Nextcloud σας",
     "OpenWeatherMap API Key" : "Κλειδί API του OpenWeatherMap",
     "Save" : "Αποθήκευση",

@@ -1,7 +1,6 @@
 OC.L10N.register(
     "weather",
     {
-    "Weather" : "Laikapstākļi",
     "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Kritiska kļūda: skatiet nextcloud.log failu un sūtiet kļūdu ziņojumu šeit: https://github.com/nextcloud/weather/issues",
     "Failed to set metric. Please contact your administrator" : "Nevar iestatīt mērvienību. Lūdzu sazinieties ar administratoru.",
     "This metric is not known." : "Šī mērvienība ir nezināma.",
@@ -28,6 +27,7 @@ OC.L10N.register(
     "Friday" : "Piektdiena",
     "Saturday" : "Sestdiena",
     "Sunday" : "Svētdiena",
+    "Weather" : "Laikapstākļi",
     "Watch the weather directly on your Nextcloud." : "Redzi laikapstākļus tieši savā Nextcloud.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API Atslēga",
     "Save" : "Saglabāt",

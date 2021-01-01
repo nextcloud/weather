@@ -1,7 +1,6 @@
 OC.L10N.register(
     "weather",
     {
-    "Weather" : "Ilm",
     "Monday" : "Esmaspäev",
     "Tuesday" : "Teisipäev",
     "Wednesday" : "Kolmapäev",
@@ -9,6 +8,7 @@ OC.L10N.register(
     "Friday" : "Reede",
     "Saturday" : "Laupäev",
     "Sunday" : "Pühapäev",
+    "Weather" : "Ilm",
     "OpenWeatherMap API Key" : "OpenWeatherMap API võti",
     "Save" : "Salvesta",
     "Add a city" : "Lisa linn",

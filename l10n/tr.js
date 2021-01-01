@@ -1,7 +1,6 @@
 OC.L10N.register(
     "weather",
     {
-    "Weather" : "Hava Durumu",
     "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Ciddi Sorun: Lütfen nextcloud.log dosyanıza bakarak şuraya bir hata bildirimi yapın:\nhttps://github.com/nextcloud/weather/issues",
     "Failed to set metric. Please contact your administrator" : "Ölçüm ayarlanamadı. Lütfen BT yöneticiniz ile görüşün",
     "This metric is not known." : "Bu ölçüm bilinmiyor.",
@@ -28,6 +27,7 @@ OC.L10N.register(
     "Friday" : "Cuma",
     "Saturday" : "Cumartesi",
     "Sunday" : "Pazar",
+    "Weather" : "Hava Durumu",
     "Watch the weather directly on your Nextcloud." : "Hava durumunun Nextcloud üzerinden izlenmesini sağlar.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API Anahtarı",
     "Save" : "Kaydet",

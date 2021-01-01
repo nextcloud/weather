@@ -1,5 +1,4 @@
 { "translations": {
-    "Weather" : "Clima",
     "Monday" : "Llunes",
     "Tuesday" : "Martes",
     "Wednesday" : "Miércoles",
@@ -7,6 +6,7 @@
     "Friday" : "Vienres",
     "Saturday" : "Sábadu",
     "Sunday" : "Domingu",
+    "Weather" : "Clima",
     "OpenWeatherMap API Key" : "Clave API d'OpenWeatherMap",
     "Save" : "Guardar",
     "Add a city" : "Amiesta una ciudá",

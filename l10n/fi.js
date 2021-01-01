@@ -1,7 +1,6 @@
 OC.L10N.register(
     "weather",
     {
-    "Weather" : "Sää",
     "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Vakava virhe: Tarkista nextcloud.log ja lähetä bugiraportti täällä: https://github.com/nextcloud/weather/issues",
     "North" : "Pohjoinen",
     "North-East" : "Koillinen",
@@ -25,6 +24,7 @@ OC.L10N.register(
     "Friday" : "Perjantai",
     "Saturday" : "Lauantai",
     "Sunday" : "Sunnuntai",
+    "Weather" : "Sää",
     "Watch the weather directly on your Nextcloud." : "Seuraa säätä suoraan Nextcloudista.",
     "OpenWeatherMap API Key" : "OpenWeatherMapin API-avain",
     "Save" : "Tallenna",

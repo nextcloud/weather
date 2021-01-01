@@ -1,5 +1,4 @@
 { "translations": {
-    "Weather" : "آب و هوا",
     "Monday" : "دوشنبه",
     "Tuesday" : "سه شنبه",
     "Wednesday" : "چهارشنبه",
@@ -7,6 +6,7 @@
     "Friday" : "جمعه",
     "Saturday" : "شنبه",
     "Sunday" : "یکشنبه",
+    "Weather" : "آب و هوا",
     "Save" : "ذخیره",
     "Add a city" : "افزودن یک شهر",
     "Add" : "افزودن",

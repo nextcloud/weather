@@ -1,7 +1,6 @@
 OC.L10N.register(
     "weather",
     {
-    "Weather" : "Cuaca",
     "Monday" : "Senin",
     "Tuesday" : "Selasa",
     "Wednesday" : "Rabu",
@@ -9,6 +8,7 @@ OC.L10N.register(
     "Friday" : "Jumat",
     "Saturday" : "Sabtu",
     "Sunday" : "Minggu",
+    "Weather" : "Cuaca",
     "OpenWeatherMap API Key" : "OpenWeatherMap API Key",
     "Save" : "Simpan",
     "Add a city" : "Tambah kota",

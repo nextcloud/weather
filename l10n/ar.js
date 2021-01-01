@@ -1,7 +1,6 @@
 OC.L10N.register(
     "weather",
     {
-    "Weather" : "الطقس",
     "North" : "الشمال",
     "North-East" : "الشمال الشرقي",
     "East" : "الشرق",
@@ -17,6 +16,7 @@ OC.L10N.register(
     "Friday" : "الجمعة",
     "Saturday" : "السبت",
     "Sunday" : "الأحد",
+    "Weather" : "الطقس",
     "OpenWeatherMap API Key" : "مفتاح API لـ OpenWeatherMap",
     "Save" : "حفظ",
     "Add a city" : "أضف مدينة",

@@ -1,7 +1,6 @@
 OC.L10N.register(
     "weather",
     {
-    "Weather" : "Clima",
     "Monday" : "Lunes",
     "Tuesday" : "Martes",
     "Wednesday" : "Miércoles",
@@ -9,6 +8,7 @@ OC.L10N.register(
     "Friday" : "Viernes",
     "Saturday" : "Sábado",
     "Sunday" : "Domingo",
+    "Weather" : "Clima",
     "OpenWeatherMap API Key" : "Llave del API OpenWeatherMap ",
     "Save" : "Guardar",
     "Add a city" : "Agregar una ciudad",

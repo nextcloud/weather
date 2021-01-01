@@ -1,7 +1,6 @@
 OC.L10N.register(
     "weather",
     {
-    "Weather" : "Vær",
     "Monday" : "Måndag",
     "Tuesday" : "Tysdag",
     "Wednesday" : "Onsdag",
@@ -9,6 +8,7 @@ OC.L10N.register(
     "Friday" : "Fredag",
     "Saturday" : "Laurdag",
     "Sunday" : "Søndag",
+    "Weather" : "Vær",
     "Save" : "Lagre",
     "Add a city" : "Legg til ein by",
     "Add city" : "Legg til by",

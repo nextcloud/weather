@@ -1,7 +1,6 @@
 OC.L10N.register(
     "weather",
     {
-    "Weather" : "Vetero",
     "Monday" : "lundo",
     "Tuesday" : "mardo",
     "Wednesday" : "merkredo",
@@ -9,6 +8,7 @@ OC.L10N.register(
     "Friday" : "vendredo",
     "Saturday" : "sabato",
     "Sunday" : "dimanĉo",
+    "Weather" : "Vetero",
     "Watch the weather directly on your Nextcloud." : "Vidu la veteron rekte en via Nextcloud",
     "OpenWeatherMap API Key" : "API-ŝlosilo de „OpenWeatherMap“",
     "Save" : "Konservi",

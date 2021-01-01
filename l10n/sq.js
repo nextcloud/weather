@@ -1,7 +1,6 @@
 OC.L10N.register(
     "weather",
     {
-    "Weather" : "Moti",
     "North" : "Veri ",
     "North-East" : "Veri-Lindje",
     "East" : "Lindje",
@@ -23,6 +22,7 @@ OC.L10N.register(
     "Friday" : "E premte",
     "Saturday" : "E shtunë",
     "Sunday" : "E dielë",
+    "Weather" : "Moti",
     "Watch the weather directly on your Nextcloud." : "Shikoni motin direkt në Nextcloud-in tuaj.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API Key",
     "Save" : "Ruaj",

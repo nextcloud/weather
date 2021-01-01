@@ -1,5 +1,4 @@
 { "translations": {
-    "Weather" : "Vær",
     "Monday" : "Måndag",
     "Tuesday" : "Tysdag",
     "Wednesday" : "Onsdag",
@@ -7,6 +6,7 @@
     "Friday" : "Fredag",
     "Saturday" : "Laurdag",
     "Sunday" : "Søndag",
+    "Weather" : "Vær",
     "Save" : "Lagre",
     "Add a city" : "Legg til ein by",
     "Add city" : "Legg til by",

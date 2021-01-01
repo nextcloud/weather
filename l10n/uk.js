@@ -1,7 +1,6 @@
 OC.L10N.register(
     "weather",
     {
-    "Weather" : "Погода",
     "Failed to set metric. Please contact your administrator" : "Неможливо встановити одиницю виміру. Будь ласка, сконтактуйте з адміністратором.",
     "This metric is not known." : "Невідома одиниця виміру",
     "North" : "Північ",
@@ -27,6 +26,7 @@ OC.L10N.register(
     "Friday" : "П'ятниця",
     "Saturday" : "Субота",
     "Sunday" : "Неділя",
+    "Weather" : "Погода",
     "Watch the weather directly on your Nextcloud." : "Дивись погоду прямо у твоєму Nextcloud",
     "OpenWeatherMap API Key" : "Ключ OpenWeatherMap API",
     "Save" : "Зберегти",

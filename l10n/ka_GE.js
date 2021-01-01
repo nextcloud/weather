@@ -1,7 +1,6 @@
 OC.L10N.register(
     "weather",
     {
-    "Weather" : "ამინდი",
     "Monday" : "ორშაბათი",
     "Tuesday" : "სამშაბათი",
     "Wednesday" : "ოთხშაბათი",
@@ -9,6 +8,7 @@ OC.L10N.register(
     "Friday" : "პარასკევი",
     "Saturday" : "შაბათი",
     "Sunday" : "კვირა",
+    "Weather" : "ამინდი",
     "OpenWeatherMap API Key" : "OpenWeatherMap API გასაღები",
     "Save" : "შენახვა",
     "Add a city" : "ქალაქის დამატება",

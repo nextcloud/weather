@@ -1,5 +1,4 @@
 { "translations": {
-    "Weather" : "আবহাওয়া",
     "Monday" : "সোমবার",
     "Tuesday" : "মঙ্গলবার",
     "Wednesday" : "বুধবার",
@@ -7,6 +6,7 @@
     "Friday" : "শুক্রবার",
     "Saturday" : "শনিবার",
     "Sunday" : "রবিবার",
+    "Weather" : "আবহাওয়া",
     "OpenWeatherMap API Key" : "OpenWeatherMap API Key",
     "Save" : "সংরক্ষণ",
     "Add a city" : "শহর যোগ করুন",

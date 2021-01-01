@@ -1,7 +1,6 @@
 OC.L10N.register(
     "weather",
     {
-    "Weather" : "Veður",
     "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Alvarleg villa: skoðaðu nextcloud.log atvikaskrána og sendu inn villuskýrslu hér: https://github.com/nextcloud/weather/issues",
     "Failed to set metric. Please contact your administrator" : "Mistókst að stilla mælieiningar, endilega hafðu samband við kerfisstjóra",
     "This metric is not known." : "Þessar mælieiningar eru ekki þekktar.",
@@ -28,6 +27,7 @@ OC.L10N.register(
     "Friday" : "Föstudagur",
     "Saturday" : "Laugardagur",
     "Sunday" : "Sunnudagur",
+    "Weather" : "Veður",
     "Watch the weather directly on your Nextcloud." : "Fylgstu með veðrinu á þínu eigin Nextcloud-skýi.",
     "OpenWeatherMap API Key" : "API-lykill frá OpenWeatherMap",
     "Save" : "Vista",

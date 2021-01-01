@@ -1,7 +1,6 @@
 OC.L10N.register(
     "weather",
     {
-    "Weather" : "آب و هوا",
     "Monday" : "دوشنبه",
     "Tuesday" : "سه شنبه",
     "Wednesday" : "چهارشنبه",
@@ -9,6 +8,7 @@ OC.L10N.register(
     "Friday" : "جمعه",
     "Saturday" : "شنبه",
     "Sunday" : "یکشنبه",
+    "Weather" : "آب و هوا",
     "Save" : "ذخیره",
     "Add a city" : "افزودن یک شهر",
     "Add" : "افزودن",

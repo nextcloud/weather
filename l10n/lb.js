@@ -1,7 +1,6 @@
 OC.L10N.register(
     "weather",
     {
-    "Weather" : "Wieder",
     "Monday" : "Méindeg",
     "Tuesday" : "Dënschdeg",
     "Wednesday" : "Mëttwoch",
@@ -9,6 +8,7 @@ OC.L10N.register(
     "Friday" : "Freideg",
     "Saturday" : "Samschdeg",
     "Sunday" : "Sonndeg",
+    "Weather" : "Wieder",
     "Save" : "Späicheren",
     "Add a city" : "Eng Stad derbäimaachen",
     "Add city" : "Stad derbäimaachen",

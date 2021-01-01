@@ -1,7 +1,6 @@
 OC.L10N.register(
     "weather",
     {
-    "Weather" : "Weer",
     "Monday" : "Maandag",
     "Tuesday" : "Dinsdag",
     "Wednesday" : "Woensdag",
@@ -9,6 +8,7 @@ OC.L10N.register(
     "Friday" : "Vrydag",
     "Saturday" : "Saterdag",
     "Sunday" : "Sondag",
+    "Weather" : "Weer",
     "Watch the weather directly on your Nextcloud." : "Sien die weer direk in u Nextcloud.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API-sleutel",
     "Save" : "Bewaar",

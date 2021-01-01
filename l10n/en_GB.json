@@ -1,5 +1,4 @@
 { "translations": {
-    "Weather" : "Weather",
     "Monday" : "Monday",
     "Tuesday" : "Tuesday",
     "Wednesday" : "Wednesday",
@@ -7,6 +6,7 @@
     "Friday" : "Friday",
     "Saturday" : "Saturday",
     "Sunday" : "Sunday",
+    "Weather" : "Weather",
     "Watch the weather directly on your Nextcloud." : "Watch the weather directly on your Nextcloud.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API Key",
     "Save" : "Save",

@@ -1,7 +1,6 @@
 OC.L10N.register(
     "weather",
     {
-    "Weather" : "Vær",
     "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Fatal feil: sjekk Nextcloud loggen og send en bug rapport her: https://github.com/nextcloud/weather/issues",
     "Failed to set metric. Please contact your administrator" : "Kunne ikke angi beregning. Kontakt din administrator.",
     "This metric is not known." : "Denne beregningen er ikke kjent.",
@@ -28,6 +27,7 @@ OC.L10N.register(
     "Friday" : "Fredag",
     "Saturday" : "Lørdag",
     "Sunday" : "Søndag",
+    "Weather" : "Vær",
     "Watch the weather directly on your Nextcloud." : "Se vær direkte på din Nextcloud.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API-nøkkel",
     "Save" : "Lagre",

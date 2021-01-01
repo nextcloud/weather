@@ -1,5 +1,4 @@
 { "translations": {
-    "Weather" : "Wieder",
     "Monday" : "Méindeg",
     "Tuesday" : "Dënschdeg",
     "Wednesday" : "Mëttwoch",
@@ -7,6 +6,7 @@
     "Friday" : "Freideg",
     "Saturday" : "Samschdeg",
     "Sunday" : "Sonndeg",
+    "Weather" : "Wieder",
     "Save" : "Späicheren",
     "Add a city" : "Eng Stad derbäimaachen",
     "Add city" : "Stad derbäimaachen",

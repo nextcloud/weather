@@ -1,7 +1,6 @@
 OC.L10N.register(
     "weather",
     {
-    "Weather" : "天气",
     "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "致命错误：请检查您的nextcloud.log日志并向这里发送一个bug错误报告：https://github.com/nextcloud/weather/issues",
     "Failed to set metric. Please contact your administrator" : "设置指标失败。请联系您的管理员。",
     "This metric is not known." : "这是一个未知指标。",
@@ -28,6 +27,7 @@ OC.L10N.register(
     "Friday" : "星期五",
     "Saturday" : "星期六",
     "Sunday" : "星期日",
+    "Weather" : "天气",
     "Watch the weather directly on your Nextcloud." : "直接在 Nextcloud 里面查阅天气",
     "OpenWeatherMap API Key" : "开放的天气 API 接口 ID",
     "Save" : "保存",

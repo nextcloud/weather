@@ -1,5 +1,4 @@
 { "translations": {
-    "Weather" : "Cuaca",
     "Monday" : "Senin",
     "Tuesday" : "Selasa",
     "Wednesday" : "Rabu",
@@ -7,6 +6,7 @@
     "Friday" : "Jumat",
     "Saturday" : "Sabtu",
     "Sunday" : "Minggu",
+    "Weather" : "Cuaca",
     "OpenWeatherMap API Key" : "OpenWeatherMap API Key",
     "Save" : "Simpan",
     "Add a city" : "Tambah kota",

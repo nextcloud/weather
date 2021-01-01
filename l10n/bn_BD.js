@@ -1,7 +1,6 @@
 OC.L10N.register(
     "weather",
     {
-    "Weather" : "আবহাওয়া",
     "Monday" : "সোমবার",
     "Tuesday" : "মঙ্গলবার",
     "Wednesday" : "বুধবার",
@@ -9,6 +8,7 @@ OC.L10N.register(
     "Friday" : "শুক্রবার",
     "Saturday" : "শনিবার",
     "Sunday" : "রবিবার",
+    "Weather" : "আবহাওয়া",
     "OpenWeatherMap API Key" : "OpenWeatherMap API Key",
     "Save" : "সংরক্ষণ",
     "Add a city" : "শহর যোগ করুন",

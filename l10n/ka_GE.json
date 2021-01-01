@@ -1,5 +1,4 @@
 { "translations": {
-    "Weather" : "ამინდი",
     "Monday" : "ორშაბათი",
     "Tuesday" : "სამშაბათი",
     "Wednesday" : "ოთხშაბათი",
@@ -7,6 +6,7 @@
     "Friday" : "პარასკევი",
     "Saturday" : "შაბათი",
     "Sunday" : "კვირა",
+    "Weather" : "ამინდი",
     "OpenWeatherMap API Key" : "OpenWeatherMap API გასაღები",
     "Save" : "შენახვა",
     "Add a city" : "ქალაქის დამატება",

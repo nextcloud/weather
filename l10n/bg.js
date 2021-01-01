@@ -1,7 +1,6 @@
 OC.L10N.register(
     "weather",
     {
-    "Weather" : "Време",
     "North" : "север",
     "East" : "изток",
     "South" : "юг",
@@ -13,6 +12,7 @@ OC.L10N.register(
     "Friday" : "петък",
     "Saturday" : "събота",
     "Sunday" : "неделя",
+    "Weather" : "Време",
     "Watch the weather directly on your Nextcloud." : "Следете метеорологичните условия от Nextcloud.",
     "OpenWeatherMap API Key" : "OpenWeatherMap API Key",
     "Save" : "Запис",
