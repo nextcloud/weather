@@ -1,5 +1,5 @@
 { "translations": {
-    "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "嚴重錯誤：請檢查您的 nextcloud.log 並到這裡傳送錯誤報告：\nhttps://github.com/nextcloud/weather/issues",
+    "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "嚴重錯誤：請檢查您的 nextcloud。log 並到這裡傳送錯誤報告：\nhttps：//github。com/nextcloud/weather/issues",
     "Failed to set metric. Please contact your administrator" : "設定指標失敗。請聯絡您的管理員",
     "This metric is not known." : "此指標未知。",
     "North" : "北",
