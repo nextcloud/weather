@@ -1,7 +1,7 @@
 OC.L10N.register(
     "weather",
     {
-    "Failed to set metric. Please contact your administrator" : "Неможливо встановити одиницю виміру. Будь ласка, сконтактуйте з адміністратором.",
+    "Failed to set metric. Please contact your administrator" : "Неможливо встановити одиницю виміру. Будь ласка, зверніться до Вашого адміністратора",
     "This metric is not known." : "Невідома одиниця виміру",
     "North" : "Північ",
     "North-East" : "Північний схід",
