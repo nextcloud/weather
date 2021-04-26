@@ -11,6 +11,7 @@
     "West" : "Oeste",
     "North-West" : "Noroeste",
     "No city with this name found." : "Não foi encontrada nenhuma cidade com este nome.",
+    "Empty city name!" : "Sem cidade!",
     "Monday" : "Segunda",
     "Tuesday" : "Terça",
     "Wednesday" : "Quarta",
@@ -30,12 +31,17 @@
     "Settings" : "Definições",
     "Metric" : "Métrica",
     "Click here to get an API key" : "Clique aqui para obter uma chave da API",
+    "Current Temperature" : "Temperatura actual",
+    "Feelslike Temperature" : "Temperatura aparente",
+    "Minimum Temperature" : "Temperatura mínima",
+    "Maximum Temperature" : "Temperatura máxima",
     "Pressure" : "Pressão",
     "Humidity" : "Humidade",
     "Cloudiness" : "Nebulosidade",
     "Wind" : "Vento",
     "Sunrise" : "Nascer do Sol",
     "Sunset" : "Por do Sol",
-    "Date" : "Data"
+    "Date" : "Data",
+    "Perceptible Temperature" : "Temperatura Perceptível"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"
 }
