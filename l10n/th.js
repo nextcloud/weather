@@ -32,6 +32,6 @@ OC.L10N.register(
     "Humidity" : "ความชื้น",
     "Sunrise" : "อาทิตย์ขึ้น",
     "Sunset" : "อาทิตย์ตก",
-    "Date" : "Date"
+    "Date" : "วันที่"
 },
 "nplurals=1; plural=0;");
