@@ -1,6 +1,7 @@
 OC.L10N.register(
     "weather",
     {
+    "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Невиправна помилка: будь ласка, перевірте nextcloud.log і відправьте звіт про помилку сюди: https://github.com/nextcloud/weather/issues",
     "Failed to set metric. Please contact your administrator" : "Неможливо встановити одиницю виміру. Будь ласка, зверніться до Вашого адміністратора",
     "This metric is not known." : "Невідома одиниця виміру",
     "North" : "Північ",
