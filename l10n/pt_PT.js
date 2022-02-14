@@ -15,7 +15,7 @@ OC.L10N.register(
     "Failed to get city weather informations. Please contact your administrator" : "Não foi possível obter a informação de tempo da cidade. Contacte o administrador do sistema",
     "No city with this name found." : "Não foi encontrada nenhuma cidade com este nome.",
     "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "A chave da API OpenWeatherMap é inválida. Contacte o administrador do sistema para configurar uma chave válida nas definições de administração",
-    "Empty city name!" : "Sem cidade!",
+    "Empty city name!" : "O nome da cidade em branco!",
     "Failed to add city. Please contact your administrator" : "Não foi possível adicionar uma cidade. Contacte o administrador do sistema",
     "This city is already registered for your account." : "Esta cidade já está registada na sua conta",
     "Failed to remove city. Please contact your administrator" : "Não foi possível remover a cidade. Contacte o administrador do sistema",
@@ -39,7 +39,7 @@ OC.L10N.register(
     "Settings" : "Definições",
     "Metric" : "Métrica",
     "Click here to get an API key" : "Clique aqui para obter uma chave da API",
-    "Current Temperature" : "Temperatura actual",
+    "Current Temperature" : "Temperatura atual",
     "Feelslike Temperature" : "Temperatura aparente",
     "Minimum Temperature" : "Temperatura mínima",
     "Maximum Temperature" : "Temperatura máxima",
@@ -48,8 +48,8 @@ OC.L10N.register(
     "Cloudiness" : "Nebulosidade",
     "Wind" : "Vento",
     "Sunrise" : "Nascer do Sol",
-    "Sunset" : "Por do Sol",
+    "Sunset" : "Pôr do Sol",
     "Date" : "Data",
-    "Perceptible Temperature" : "Temperatura Perceptível"
+    "Perceptible Temperature" : "Sensação térmica"
 },
 "nplurals=2; plural=(n != 1);");
