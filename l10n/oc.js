@@ -8,6 +8,7 @@ OC.L10N.register(
     "Friday" : "divendres",
     "Saturday" : "dissabte",
     "Sunday" : "dimenge",
+    "Weather" : "Metèo",
     "Save" : "Salvar",
     "Add" : "Apondre",
     "Cancel" : "Anullar",

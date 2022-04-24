@@ -8,6 +8,7 @@ OC.L10N.register(
     "Friday" : "Vineri",
     "Saturday" : "Sâmbătă",
     "Sunday" : "Duminică",
+    "Weather" : "Vreme",
     "Save" : "Salvează",
     "Add" : "Adaugă",
     "Cancel" : "Anulează",

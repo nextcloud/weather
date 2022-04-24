@@ -18,6 +18,7 @@ OC.L10N.register(
     "Friday" : "วันศุกร์",
     "Saturday" : "วันเสาร์",
     "Sunday" : "วันอาทิตย์",
+    "Weather" : "สภาพอากาศ",
     "Save" : "บันทึก",
     "Add a city" : "เพิ่มเมือง",
     "Add city" : "เพิ่มเมือง",
