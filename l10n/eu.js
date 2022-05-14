@@ -19,7 +19,7 @@ OC.L10N.register(
     "Failed to add city. Please contact your administrator" : "Ezin izan da herria gehitu. Jarri harremanetan zure administratzailearekin",
     "This city is already registered for your account." : "Herri hau jada zure kontuan erregistratuta dago.",
     "Failed to remove city. Please contact your administrator" : "Ezin izan da herria kendu. Mesedez, jarri harremanetan zure administratzailearekin",
-    "Failed to set home. Please contact your administrator" : "Ezin izan da etxea ezarri. Mesedez, jarri harremanetan zureadministratzailearekin",
+    "Failed to set home. Please contact your administrator" : "Ezin izan da etxea ezarri. Mesedez, jarri harremanetan zure administratzailearekin",
     "Monday" : "Astelehena",
     "Tuesday" : "Asteartea",
     "Wednesday" : "Asteazkena",
