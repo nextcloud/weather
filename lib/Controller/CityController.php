@@ -136,7 +136,7 @@ class CityController extends IntermediateController {
 			true);
 
 		// If no cod we just return a 502 as the API is not responding properly
-		if (!in_array('cod', $cityDatas)) {
+		if (!array_key_exists('cod', $cityDatas)) {
 			return array("code" => 502, "response" => null);
 		}
 		
