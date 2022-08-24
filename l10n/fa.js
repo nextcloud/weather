@@ -14,6 +14,8 @@ OC.L10N.register(
     "Add" : "افزودن",
     "Cancel" : "لغو",
     "Settings" : "تنظیمات",
+    "Sunrise" : "طلوع آفتاب",
+    "Sunset" : "غروب آفتاب",
     "Date" : "Date"
 },
 "nplurals=2; plural=(n > 1);");
