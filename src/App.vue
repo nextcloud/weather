@@ -14,7 +14,7 @@
 					@click="selectCity(city.id)">
 					<template slot="actions">
 						<ActionButton v-if="allCities.home !== city.id" icon="icon-home" @click="setHomeCity(city.id)">
-							Make Home City
+							{{ t('weather', 'Make Home City') }}
 						</ActionButton>
 						<ActionButton icon="icon-delete" @click="deleteCity(city.id)">
 							Delete
