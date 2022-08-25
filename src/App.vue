@@ -17,7 +17,7 @@
 							{{ t('weather', 'Make Home City') }}
 						</ActionButton>
 						<ActionButton icon="icon-delete" @click="deleteCity(city.id)">
-							Delete
+							{{ t('weather', 'Delete') }}
 						</ActionButton>
 					</template>
 				</AppNavigationItem>
