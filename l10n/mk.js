@@ -14,7 +14,6 @@ OC.L10N.register(
     "North-West" : "Северозапад",
     "Failed to get city weather informations. Please contact your administrator" : "Неуспешно преземање на информациите за временската прогноза. Контактирајте администратор",
     "No city with this name found." : "Не е пронајден град со тоа име.",
-    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "Вашиот OpenWeatherMap API клуч не е валиден. Контактирајте администратор за да постави валиден API клуч",
     "Empty city name!" : "Името на градот е празно!",
     "Failed to add city. Please contact your administrator" : "Неуспешно додавање на град. Контактирајте администратор",
     "This city is already registered for your account." : "Градот е веќе додаден во вашата сметка.",

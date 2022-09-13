@@ -12,7 +12,6 @@
     "North-West" : "北西",
     "Failed to get city weather informations. Please contact your administrator" : "街の天気情報を取得できませんでした。 管理者に連絡してください",
     "No city with this name found." : "この名前の都市は見つかりませんでした。",
-    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "OpenWeatherMap APIキーが無効です。 管理の追加設定で有効なAPIキーを設定するには、管理者に連絡してください。",
     "Empty city name!" : "都市名が空です！",
     "Failed to add city. Please contact your administrator" : "都市を追加できませんでした。 管理者に連絡してください",
     "This city is already registered for your account." : "この都市はすでにあなたのアカウントに登録済です。",

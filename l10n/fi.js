@@ -14,7 +14,6 @@ OC.L10N.register(
     "North-West" : "Luode",
     "Failed to get city weather informations. Please contact your administrator" : "Kaupungin säätietojen haku epäonnistui. Ota yhteys ylläpitäjään",
     "No city with this name found." : "Tällä nimellä ei löytynyt kaupunkia.",
-    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "OpenWeatherMap API-avaimesi ei ole kelvollinen. Ota yhteys ylläpitäjään kelvollisen API-keyn asettamiseksi.",
     "Empty city name!" : "Tyhjä kaupungin nimi!",
     "Failed to add city. Please contact your administrator" : "Kaupungin lisääminen epäonnistui. Ota yhteyttä järjestelmänvalvojaan",
     "This city is already registered for your account." : "Tämä kaupunki on jo rekisteröity tilillesi.",

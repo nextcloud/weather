@@ -14,7 +14,6 @@ OC.L10N.register(
     "North-West" : "Ziemeļrietumi",
     "Failed to get city weather informations. Please contact your administrator" : "Nevarēja iegūt laikapstākļus. Lūdzu sazinieties ar administratoru.",
     "No city with this name found." : "Šāda pilsēta nav atrasta.",
-    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "Jūsu OpenWeatherMap API atslēga ir kļūdaina. Sazinieties ar administratoru lai konfigurētu korektu API atslēgu iestatījumos.",
     "Empty city name!" : "Tukšs pilsētas lauks!",
     "Failed to add city. Please contact your administrator" : "Nevarēja iestatīt pilsētu. Lūdzu sazinieties ar administratoru.",
     "This city is already registered for your account." : "Šī pilsēta jau reģistrēta jūsu kontā.",

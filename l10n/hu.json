@@ -12,7 +12,7 @@
     "North-West" : "Északnyugat",
     "Failed to get city weather informations. Please contact your administrator" : "A város időjárás-információinak lekérése sikertelen. Lépjen kapcsolatba a rendszergazdával.",
     "No city with this name found." : "Nem található ilyen nevű város.",
-    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "Az OpenWeatherMap API kulcs érvénytelen. Lépjen kapcsolatba a rendszergazdával, hogy állítson be érvényes API kulcsot az Adminisztráció – További beállítások menüpontban.",
+    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional settings of the Administration" : "Az OpenWeatherMap API kulcs érvénytelen. Lépjen kapcsolatba a rendszergazdával, hogy állítson be érvényes API kulcsot az Adminisztráció – További beállítások menüpontban.",
     "Empty city name!" : "Üres városnév.",
     "Failed to add city. Please contact your administrator" : "A város hozzáadása sikertelen. Lépjen kapcsolatba a rendszergazdával.",
     "This city is already registered for your account." : "Ez a város már regisztrálva lett a fiókjához.",

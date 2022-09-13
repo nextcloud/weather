@@ -14,7 +14,7 @@ OC.L10N.register(
     "North-West" : "severozápadní",
     "Failed to get city weather informations. Please contact your administrator" : "Nepodařilo se získat údaje o počasí ve vaší obci – obraťte se na správce",
     "No city with this name found." : "Nenalezena žádná obec s takovým názvem.",
-    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "Váš klíč k aplikačnímu programovému rozhraní (API) OpenWeatherMap není platný. Obraťte se na správce, aby v Nastavení → Správa → Další nastavení, zadal platný klíč.",
+    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional settings of the Administration" : "Váš klíč k aplikačnímu programovému rozhraní (API) OpenWeatherMap není platný. Obraťte se na správce, aby v Nastavení → Správa → Další nastavení, zadal platný klíč.",
     "Empty city name!" : "Nevyplněn název obce!",
     "Failed to add city. Please contact your administrator" : "Přidání obce se nezdařilo – obraťte se na správce",
     "This city is already registered for your account." : "Tato obec už je k vašem účtu přidána.",

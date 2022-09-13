@@ -12,7 +12,6 @@
     "North-West" : "Norðvestan",
     "Failed to get city weather informations. Please contact your administrator" : "Mistókst að ná í veðurupplýsingar fyrir borg, endilega hafðu samband við kerfisstjóra",
     "No city with this name found." : "Engin borg með þessu heiti fannst.",
-    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "OpenWeatherMap API-lykillinn er ógildur. Hafðu samband við kerfisstjórann þinn til að setja upp gildan lykil fyrir API-forritsviðmótið í Aukastillingar í kerfisstillingunum",
     "Empty city name!" : "Autt borgarheiti !",
     "Failed to add city. Please contact your administrator" : "Mistókst að bæta við borg, endilega hafðu samband við kerfisstjóra",
     "This city is already registered for your account." : "Þessi borg er nú þegar skráð á aðganginn þinn.",

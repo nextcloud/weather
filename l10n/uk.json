@@ -12,7 +12,7 @@
     "North-West" : "Північний захід",
     "Failed to get city weather informations. Please contact your administrator" : "Неможливо отримати прогноз погоди за містом. Будь ласка, сконтактуйте з адміністратором.",
     "No city with this name found." : "Не знайдено міст з такою назвою.",
-    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "Ваш ключ API у OpenWeatherMap не правильний. Сконтактуйте з вашим адміністратором для налаштування правильного ключа API у Додаткових налаштування меню Адміністрування.",
+    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional settings of the Administration" : "Ваш ключ API OpenWeatherMap недійсний. Зверніться до адміністратора, щоб налаштувати дійсний ключ API в Додаткових налаштуваннях Адміністрування",
     "Empty city name!" : "Не зазначено назва міста!",
     "Failed to add city. Please contact your administrator" : "Неможливо додати місто. Будь ласка, сконтактуйте з адміністратором.",
     "This city is already registered for your account." : "Це місто вже зареєстровано для вашого облікового запису.",

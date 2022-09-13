@@ -14,7 +14,6 @@ OC.L10N.register(
     "North-West" : "Ipar-mendebaldea",
     "Failed to get city weather informations. Please contact your administrator" : "Ezin izan da herriko eguraldiaren informazioa eskuratu. Jarri zure administratzailearekin harremanetan.",
     "No city with this name found." : "Ez da izen hau duen herririk aurkitu.",
-    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "Zure OpenWeatherMap API gakoa baliogabea da. Jarri harremanetan zure administratzailearekin administrazioko ezarpen gehigarrietan baliozko API gako bat konfiguratzeko",
     "Empty city name!" : "Herri izena hutsik!",
     "Failed to add city. Please contact your administrator" : "Ezin izan da herria gehitu. Jarri harremanetan zure administratzailearekin",
     "This city is already registered for your account." : "Herri hau jada zure kontuan erregistratuta dago.",

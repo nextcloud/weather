@@ -14,7 +14,6 @@ OC.L10N.register(
     "North-West" : "Nord-Ovest",
     "Failed to get city weather informations. Please contact your administrator" : "No at fatu a otènnere is informatzione de su tempus in sa tzitade. Cuntata s'amministratzione",
     "No city with this name found." : "Peruna tzitade agatada cun custu nùmene.",
-    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "Sa crae API OpenWeatherMap no est bàlida. Cuntata s'amministratzione pro cunfigurare una crae API bàlida in is Impostatziones additzionales de s'Amministratzione.",
     "Empty city name!" : "Nùmene de sa tzitade bòidu!",
     "Failed to add city. Please contact your administrator" : "No at fatu a agiùnghere sa tzitade. Cuntata s'amministratzione",
     "This city is already registered for your account." : "Custa tzitade est giai registrada in su contu tuo.",

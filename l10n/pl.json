@@ -12,7 +12,7 @@
     "North-West" : "Północny zachód",
     "Failed to get city weather informations. Please contact your administrator" : "Nie udało się uzyskać informacji o pogodzie miasta. Skontaktuj się z administratorem",
     "No city with this name found." : "Nie znaleziono miasta o tej nazwie.",
-    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "Twój klucz API OpenWeatherMap jest nieprawidłowy. Skontaktuj się z administratorem, aby skonfigurować prawidłowy klucz API w ustawieniach dodatkowych administracji",
+    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional settings of the Administration" : "Twój klucz API OpenWeatherMap jest nieprawidłowy. Skontaktuj się z administratorem, aby skonfigurować prawidłowy klucz API w ustawieniach dodatkowych administracji",
     "Empty city name!" : "Pusta nazwa miasta!",
     "Failed to add city. Please contact your administrator" : "Nie można dodać miasta. Skontaktuj się z administratorem",
     "This city is already registered for your account." : "To miasto jest już zarejestrowane na Twoim koncie.",

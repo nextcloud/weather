@@ -14,7 +14,6 @@ OC.L10N.register(
     "North-West" : "Nord-Vest",
     "Failed to get city weather informations. Please contact your administrator" : "Fejl ved indlæsning af byens verjrudsigt. Kontakt venligst din administrator",
     "No city with this name found." : "Ingen by med dette navn fundet.",
-    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "Din OpenWeatherMap API nøgle er ikke gyldig. kontakt din administrator for at tilføje en gyldig API nøgle i Administrationens ekstra indstillinger",
     "Empty city name!" : "Bynavn tomt!",
     "Failed to add city. Please contact your administrator" : "Fejl under tilføjelse af byen. Kontakt venligst din administrator.",
     "This city is already registered for your account." : "Denne by er allerede registreret på din konto.",

@@ -14,7 +14,7 @@ OC.L10N.register(
     "North-West" : "西北",
     "Failed to get city weather informations. Please contact your administrator" : "無法取得城市天氣資訊。請聯絡您的管理員",
     "No city with this name found." : "找不到此名稱的城市。",
-    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "您的 OpenWeatherMap API 金鑰無效。聯絡您的管理員以在管理設定中設定有效的 API 金鑰",
+    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional settings of the Administration" : "您的 OpenWeatherMap API 金鑰無效。聯絡您的管理員以在管理設定中設定有效的 API 金鑰",
     "Empty city name!" : "空白的城市名稱！",
     "Failed to add city. Please contact your administrator" : "新增城市失敗。請聯絡您的管理員",
     "This city is already registered for your account." : "已為您的帳號註冊此城市。",

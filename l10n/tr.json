@@ -12,7 +12,7 @@
     "North-West" : "Kuzey Batı",
     "Failed to get city weather informations. Please contact your administrator" : "İlin hava durumu alınamadı. Lütfen BT yöneticiniz ile görüşün",
     "No city with this name found." : "Bu ada uyan bir il bulunamadı.",
-    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "OpenWeatherMap API anahtarınız geçersiz. BT yöneticiniz ile görüşerek, Yönetici Ek Ayarları bölümünden geçerli bir API anahtarı yapılandırmasını isteyin",
+    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional settings of the Administration" : "OpenWeatherMap API anahtarınız geçersiz. BT yöneticiniz ile görüşerek, yönetim bölümündeki ek ayarları kullanarak geçerli bir API anahtarı yapılandırmasını isteyin",
     "Empty city name!" : "İl adı boş!",
     "Failed to add city. Please contact your administrator" : "İl eklenemedi. Lütfen BT yöneticiniz ile görüşün",
     "This city is already registered for your account." : "Bu il hesabınıza zaten eklenmiş.",

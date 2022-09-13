@@ -9,7 +9,6 @@
     "North-West" : "Veri-Perëndim",
     "Failed to get city weather informations. Please contact your administrator" : "Nuk u mor asnjë informacion rreth motit të qytetit. Ju lutem kontaktoni administratorin tuaj. ",
     "No city with this name found." : "Nuk u gjet asnjë qytet me këtë emër.",
-    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "API juaj i OpenWeatherMap është i pavlefshëm. Kontaktoni administratorin tuaj për të konfiguruar një çelës API të vlefshëm te Cilësime Shtesë në Administrimin tuaj.",
     "Failed to add city. Please contact your administrator" : "Shtimi i qytetit dështoi. Ju lutem kontaktoni administratorin tuaj",
     "This city is already registered for your account." : "Ky qytet është aktualisht i regjistruar per llogarinë tuaj. ",
     "Failed to remove city. Please contact your administrator" : "Fshirja e qytetit dështoi. Ju lutem kontaktoni administratorin tuaj",

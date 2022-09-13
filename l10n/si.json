@@ -10,7 +10,6 @@
     "North-West" : "උතුර-බටහිර",
     "Failed to get city weather informations. Please contact your administrator" : "නගර කාලගුණ තොරතුරු ලබා ගැනීමට අපොහොසත් විය. කරුණාකර ඔබගේ පරිපාලක අමතන්න",
     "No city with this name found." : "මෙම නම සහිත නගරයක් හමු නොවීය.",
-    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "ඔබගේ OpenWeatherMap යෙ.ක්‍ර. අ.මු. (API) යතුර වලංගු නොවේ. පරිපාලකයේ අතිරේක සැකසුම් තුළ වලංගු යෙ.ක්‍ර. අ.මු. යතුරක් වින්‍යාසගත කිරීමට පරිපාලක අමතන්න",
     "Empty city name!" : "නගර නාමය හිස් ය!",
     "Failed to add city. Please contact your administrator" : "නගරය එකතු කිරීමට අසමත් විය. කරුණාකර ඔබගේ පරිපාලක අමතන්න",
     "This city is already registered for your account." : "මෙම නගරය දැනටමත් ඔබගේ ගිණුම සඳහා ලියාපදිංචි වී ඇත.",

@@ -14,7 +14,6 @@ OC.L10N.register(
     "North-West" : "Šiaurės vakarų",
     "Failed to get city weather informations. Please contact your administrator" : "Nepavyko gauti miesto orų informacijos. Susisiekite su savo administratoriumi",
     "No city with this name found." : "Nerasta jokio miesto tokiu pavadinimu.",
-    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "Jūsų OpenWeatherMap API raktas negalioja. Susisiekite su savo administratoriumi, kad administravimo papildomuose nustatymuose sukonfigūruotų galiojantį API raktą.",
     "Empty city name!" : "Tuščias miesto pavadinimas!",
     "Failed to add city. Please contact your administrator" : "Nepavyko pridėti miesto. Susisiekite su savo administratoriumi",
     "This city is already registered for your account." : "Šis miestas jau yra priregistruotas jūsų paskyrai.",

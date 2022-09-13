@@ -12,7 +12,6 @@
     "North-West" : "북서",
     "Failed to get city weather informations. Please contact your administrator" : "도시 날씨 정보를 가져올 수 없습니다. 관리자에게 문의하십시오",
     "No city with this name found." : "해당하는 이름의 도시가 없습니다.",
-    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional Settings of the Administration" : "OpenWeatherMap API 키가 잘못되었습니다. 관리자에게 연락하여 설정 항목의 추가 설정에 올바른 API 키를 입력하십시오.",
     "Empty city name!" : "도시 이름이 비어 있습니다!",
     "Failed to add city. Please contact your administrator" : "도시를 추가할 수 없습니다. 관리자에게 문의하십시오",
     "This city is already registered for your account." : "이 도시가 이미 계정에 등록되어 있습니다.",
