@@ -14,6 +14,7 @@ OC.L10N.register(
     "North-West" : "Βόρειο-Δυτικά",
     "Failed to get city weather informations. Please contact your administrator" : "Αδυναμία λήψης πληροφοριών για τις καιρικές συνθήκες της πόλης. Παρακαλούμε επικοινωνήστε με τον διαχειριστή σας",
     "No city with this name found." : "Δεν βρέθηκε κάποια πόλη με αυτό το όνομα.",
+    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional settings of the Administration" : "Το κλειδί API του OpenWeatherMap είναι άκυρο. Επικοινωνήστε με το διαχειριστή σας για να διαμορφώσετε ένα έγκυρο κλειδί API στις Πρόσθετες Ρυθμίσεις της Διαχείρισης",
     "Empty city name!" : "Κενό όνομα πόλης!",
     "Failed to add city. Please contact your administrator" : "Αδυναμία προσθήκης πόλης. Παρακαλούμε επικοινωνήστε με τον διαχειριστή",
     "This city is already registered for your account." : "Η πόλη υπάρχει ήδη στον λογαριασμό σας.",
