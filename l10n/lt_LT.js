@@ -1,7 +1,7 @@
 OC.L10N.register(
     "weather",
     {
-    "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Kritinė klaida: patikrinkite savo nextcloud.log ir išsiųskite mums pranešimą apie klaidą, apsilankę: https://github.com/nextcloud/weather/issues",
+    "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Lemtinga klaida: patikrinkite savo nextcloud.log ir išsiųskite mums pranešimą apie klaidą, apsilankę: https://github.com/nextcloud/weather/issues",
     "Failed to set metric. Please contact your administrator" : "Nepavyko nustatyti matų sistemos. Susisiekite su savo administratoriumi",
     "This metric is not known." : "Ši matų sistema yra nežinoma.",
     "North" : "Šiaurės",
