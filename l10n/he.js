@@ -14,6 +14,7 @@ OC.L10N.register(
     "North-West" : "צפון-מערב",
     "Failed to get city weather informations. Please contact your administrator" : "קבלת פרטי מזג האוויר של העיר נכשלה. נא ליצור קשר עם הנהלת המערכת",
     "No city with this name found." : "לא נמצאה עיר בשם הזה.",
+    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional settings of the Administration" : "מפתח ה־API שלך ל־OpenWeatherMap הוא שגוי. נא ליצור קשר עם ההנהלה שלך כדי להגדיר מפתח API תקף בהגדרות הנוספות של הניהול",
     "Empty city name!" : "שם העיר ריק!",
     "Failed to add city. Please contact your administrator" : "הוספת העיר נכשלה. נא ליצור קשר עם הנהלת המערכת",
     "This city is already registered for your account." : "העיר הזו כבר נרשמה בחשבונך.",
