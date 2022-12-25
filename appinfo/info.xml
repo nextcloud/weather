@@ -11,7 +11,7 @@
     <screenshot>https://raw.githubusercontent.com/nextcloud/weather/master/screenshots/1.png</screenshot>
     <screenshot>https://raw.githubusercontent.com/nextcloud/weather/master/screenshots/2.png</screenshot>
     <dependencies>
-        <nextcloud min-version="20" max-version="23"/>
+        <nextcloud min-version="22" max-version="25"/>
     </dependencies>
     <website>https://github.com/nextcloud/weather</website>
     <bugs>https://github.com/nextcloud/weather/issues</bugs>
