@@ -2,7 +2,7 @@ OC.L10N.register(
     "weather",
     {
     "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Závažná chyba: prosíme vyhledejte podrobnosti v záznamu událostí (nextcloud.log) a nahlaste ji na: https://github.com/nextcloud/weather/issues",
-    "Failed to set metric. Please contact your administrator" : "Nepodařilo se nastavit metriku. Obraťte se prosím na správce",
+    "Failed to set metric. Please contact your administrator" : "Nepodařilo se nastavit metriku – obraťte se na správce",
     "This metric is not known." : "Tato metrika není známa.",
     "North" : "severní",
     "North-East" : "severovýchodní",
@@ -18,7 +18,7 @@ OC.L10N.register(
     "Empty city name!" : "Nevyplněn název obce!",
     "Failed to add city. Please contact your administrator" : "Přidání obce se nezdařilo – obraťte se na správce",
     "This city is already registered for your account." : "Tato obec už je k vašem účtu přidána.",
-    "Failed to remove city. Please contact your administrator" : "Odstranění obce se nezdařilo. Obraťte se prosím na správce",
+    "Failed to remove city. Please contact your administrator" : "Odstranění obce se nezdařilo – obraťte se na správce",
     "Failed to set home. Please contact your administrator" : "Nastavení domovského místa se nezdařilo – obraťte se na správce",
     "Monday" : "pondělí",
     "Tuesday" : "úterý",
