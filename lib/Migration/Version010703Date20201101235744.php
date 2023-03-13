@@ -62,7 +62,7 @@ class Version010703Date20201101235744 extends SimpleMigrationStep {
 			]);
 			$table->addColumn('value', 'string', [
 				'notnull' => false,
-				'length' => 10240,
+				'length' => 4000,
 			]);
 		}
 		return $schema;
