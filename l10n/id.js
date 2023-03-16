@@ -38,7 +38,7 @@ OC.L10N.register(
     "Cancel" : "Batal",
     "Settings" : "Pengaturan",
     "Metric" : "Metrik",
-    "Click here to get an API key" : "Klik disini untuk mendapatkat kunci API",
+    "Click here to get an API key" : "Klik di sini untuk mendapatkat kunci API",
     "Current Temperature" : "Suhu Saat Ini",
     "Feelslike Temperature" : "Suhu yang Dirasakan",
     "Minimum Temperature" : "Suhu Minimum",
