@@ -2,6 +2,9 @@ OC.L10N.register(
     "weather",
     {
     "Monday" : "Llunes",
+    "Tuesday" : "Martes",
+    "Wednesday" : "Miércoles",
+    "Thursday" : "Xueves",
     "Friday" : "Vienres",
     "Saturday" : "Sábadu",
     "Sunday" : "Domingu",

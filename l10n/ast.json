@@ -1,5 +1,8 @@
 { "translations": {
     "Monday" : "Llunes",
+    "Tuesday" : "Martes",
+    "Wednesday" : "Miércoles",
+    "Thursday" : "Xueves",
     "Friday" : "Vienres",
     "Saturday" : "Sábadu",
     "Sunday" : "Domingu",
