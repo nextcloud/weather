@@ -1,5 +1,5 @@
 { "translations": {
-    "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Produciuse un error fatal: revise o ficheiro nextcloud.log e envíe un informe de fallos a: https://github.com/nextcloud/weather/issues",
+    "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Produciuse un erro fatal: revise o ficheiro nextcloud.log e envíe un informe de fallos a: https://github.com/nextcloud/weather/issues",
     "Failed to set metric. Please contact your administrator" : "Produciuse un fallo ao estabelecer a métrica. Contacte co seu administrador",
     "This metric is not known." : "Esta métrica non é coñecida.",
     "North" : "Norte",
@@ -12,6 +12,7 @@
     "North-West" : "Noroeste",
     "Failed to get city weather informations. Please contact your administrator" : "Produciuse un fallo ao obter información meteorolóxica da cidade. Contacte co seu administrador",
     "No city with this name found." : "Non se atopa unha cidade con este nome.",
+    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional settings of the Administration" : "A súa clave da APi de OpenWeatherMap é incorrecta. Contacte co seu administrador para configurar unha clave de API válida nos Axustes adicionais de Administración",
     "Empty city name!" : "Nome da cidade baleiro!",
     "Failed to add city. Please contact your administrator" : "Produciuse un fallo ao engadir a cidade. Contacte co seu administrador",
     "This city is already registered for your account." : "Esta cidade xa está rexistrada para a súa conta.",
