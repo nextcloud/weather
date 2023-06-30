@@ -14,6 +14,7 @@ OC.L10N.register(
     "North-West" : "Noordwes",
     "Failed to get city weather informations. Please contact your administrator" : "Kon nie stadsweerinligting kry nie. Kontak asb. u administrateur",
     "No city with this name found." : "Geen stad met so ’n naam gevind.",
+    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional settings of the Administration" : "U OpenWeatherMap API-sleutel is ongeldig. Kontak u administrateur om ’n geldige API-sleutel in Bykomende Instellings van die Administrasie op te stel",
     "Empty city name!" : "Leë stadnaam",
     "Failed to add city. Please contact your administrator" : "Kon nie stad toevoeg nie. Kontak asb. u administrateur",
     "This city is already registered for your account." : "Hierdie stad is reeds vir u rekening geregistreer.",
