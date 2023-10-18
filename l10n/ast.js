@@ -8,6 +8,7 @@ OC.L10N.register(
     "Friday" : "Vienres",
     "Saturday" : "Sábadu",
     "Sunday" : "Domingu",
+    "Add" : "Amestar",
     "Settings" : "Configuración",
     "Date" : "Data"
 },
