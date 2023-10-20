@@ -8,6 +8,7 @@ OC.L10N.register(
     "Friday" : "Vienres",
     "Saturday" : "Sábadu",
     "Sunday" : "Domingu",
+    "Weather" : "Clima",
     "Add" : "Amestar",
     "Settings" : "Configuración",
     "Date" : "Data"
