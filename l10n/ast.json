@@ -7,7 +7,9 @@
     "Saturday" : "Sábadu",
     "Sunday" : "Domingu",
     "Weather" : "Clima",
+    "Save" : "Guardar",
     "Add" : "Amestar",
+    "Cancel" : "Encaboxar",
     "Settings" : "Configuración",
     "Date" : "Data"
 },"pluralForm" :"nplurals=2; plural=(n != 1);"

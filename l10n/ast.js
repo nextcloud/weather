@@ -9,7 +9,9 @@ OC.L10N.register(
     "Saturday" : "Sábadu",
     "Sunday" : "Domingu",
     "Weather" : "Clima",
+    "Save" : "Guardar",
     "Add" : "Amestar",
+    "Cancel" : "Encaboxar",
     "Settings" : "Configuración",
     "Date" : "Data"
 },
