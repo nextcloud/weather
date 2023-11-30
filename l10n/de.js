@@ -12,7 +12,7 @@ OC.L10N.register(
     "South-West" : "Südwest",
     "West" : "West",
     "North-West" : "Nordwest",
-    "Failed to get city weather informations. Please contact your administrator" : "Konnte Wetter für diese Stadt nicht abrufen. Bitte kontaktiere deinen Administrator",
+    "Failed to get city weather informations. Please contact your administrator" : "Konnte Wetter für diese Stadt nicht abrufen. Bitte kontaktiere deinen Administrator.",
     "No city with this name found." : "Keine Stadt mit diesem Namen gefunden",
     "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional settings of the Administration" : "Dein OpenWeatherMap-API-Schlüssel ist ungültig. Bitte deinen Administrator, einen gültigen API-Schlüssel unter Einstellungen/Zusätzliche Einstellungen zu konfigurieren",
     "Empty city name!" : "Leerer Städtename!",
