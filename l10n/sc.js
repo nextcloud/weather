@@ -35,7 +35,7 @@ OC.L10N.register(
     "City name" : "Nùmene de sa tzitade",
     "Add" : "Agiunghe",
     "Cancel" : "Annulla",
-    "Settings" : "Impostatziones",
+    "Settings" : "Cunfiguratzione",
     "Metric" : "Mètrica",
     "Click here to get an API key" : "Incarca inoghe pro otènnere una crae API",
     "Current Temperature" : "Temperatura atuale",
