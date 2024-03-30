@@ -1,6 +1,16 @@
 OC.L10N.register(
     "weather",
     {
+    "North" : "Norte",
+    "North-East" : "Noreste",
+    "East" : "Este",
+    "South-East" : "Sureste",
+    "South" : "Sur",
+    "South-West" : "Suroeste",
+    "West" : "Oeste",
+    "North-West" : "Noroeste",
+    "No city with this name found." : "Nun s'atopó nenguna ciudá con esti nome.",
+    "Empty city name!" : "¡El nome de la ciudá ta baleru!",
     "Failed to add city. Please contact your administrator" : "Nun se pue amestar la ciudá. Ponte en contautu cola alministración",
     "Failed to remove city. Please contact your administrator" : "Nun se pue quitar la ciudá. Ponte en contautu cola alministración",
     "Monday" : "Llunes",
@@ -15,6 +25,11 @@ OC.L10N.register(
     "Add" : "Amestar",
     "Cancel" : "Encaboxar",
     "Settings" : "Configuración",
+    "Pressure" : "Presión",
+    "Humidity" : "Humedá",
+    "Wind" : "Aire",
+    "Sunrise" : "Aséu",
+    "Sunset" : "Tapecer",
     "Date" : "Data"
 },
 "nplurals=2; plural=(n != 1);");
