@@ -1,5 +1,5 @@
 { "translations": {
-    "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Kritiska kļūda: skatiet nextcloud.log failu un sūtiet kļūdu ziņojumu šeit: https://github.com/nextcloud/weather/issues",
+    "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Kritiska kļūda: jāpārbauda nextcloud.log datne un jānosūta kļūdu ziņojums šeit: https://github.com/nextcloud/weather/issues",
     "Failed to set metric. Please contact your administrator" : "Nevar iestatīt mērvienību. Lūdzu sazinieties ar administratoru.",
     "This metric is not known." : "Šī mērvienība ir nezināma.",
     "North" : "Ziemeļi",
