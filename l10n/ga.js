@@ -1,6 +1,7 @@
 OC.L10N.register(
     "weather",
     {
+    "Weather" : "Aimsir",
     "Save" : "Sábháil",
     "Add" : "Cuir",
     "Cancel" : "Cealaigh",
