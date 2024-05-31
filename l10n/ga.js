@@ -1,6 +1,13 @@
 OC.L10N.register(
     "weather",
     {
+    "Monday" : "Dé Luain",
+    "Tuesday" : "Dé Máirt",
+    "Wednesday" : "Dé Céadaoin",
+    "Thursday" : "Déardaoin",
+    "Friday" : "Aoine",
+    "Saturday" : "Sathairn",
+    "Sunday" : "Domhnach",
     "Weather" : "Aimsir",
     "Save" : "Sábháil",
     "Add" : "Cuir",
