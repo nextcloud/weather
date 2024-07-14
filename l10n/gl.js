@@ -2,7 +2,7 @@ OC.L10N.register(
     "weather",
     {
     "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Produciuse un erro fatal: revise o ficheiro nextcloud.log e envíe un informe de fallos a: https://github.com/nextcloud/weather/issues",
-    "Failed to set metric. Please contact your administrator" : "Produciuse un fallo ao estabelecer a métrica. Contacte coa administración desta instancia",
+    "Failed to set metric. Please contact your administrator" : "Produciuse un fallo ao definir a métrica. Contacte coa administración desta instancia",
     "This metric is not known." : "Esta métrica non é coñecida.",
     "North" : "Norte",
     "North-East" : "Nordés",
@@ -19,7 +19,7 @@ OC.L10N.register(
     "Failed to add city. Please contact your administrator" : "Produciuse un fallo ao engadir a cidade. Contacte coa administración desta instancia",
     "This city is already registered for your account." : "Esta cidade xa está rexistrada para a súa conta.",
     "Failed to remove city. Please contact your administrator" : "Produciuse un fallo ao retirar a cidade. Contacte coa administración desta instancia",
-    "Failed to set home. Please contact your administrator" : "Produciuse un fallo ao estabelecer o seu domicilio. Contacte coa administración desta instancia",
+    "Failed to set home. Please contact your administrator" : "Produciuse un fallo ao definir o seu domicilio. Contacte coa administración desta instancia",
     "Monday" : "luns",
     "Tuesday" : "martes",
     "Wednesday" : "mércores",
