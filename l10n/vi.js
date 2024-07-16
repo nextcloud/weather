@@ -14,6 +14,7 @@ OC.L10N.register(
     "North-West" : "Tây Bắc",
     "Failed to get city weather informations. Please contact your administrator" : "Không nhận được thông tin thời tiết thành phố. Vui lòng liên hệ với quản trị viên của bạn",
     "No city with this name found." : "Không tìm thấy thành phố nào có tên này.",
+    "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional settings of the Administration" : "Mã khóa API của OpenWeatherMap của bạn không hợp lệ. Liên hệ với người quản trị của bạn để cấu hình lại mã khóa API hợp lệ trong Cài đặt bổ sung của Bộ phận Quản trị.",
     "Empty city name!" : "Tên thành phố trống!",
     "Failed to add city. Please contact your administrator" : "Không thêm được thành phố. Vui lòng liên hệ với quản trị viên của bạn",
     "This city is already registered for your account." : "Thành phố này đã được đăng ký cho tài khoản của bạn.",
@@ -36,12 +37,16 @@ OC.L10N.register(
     "Cancel" : "Hủy bỏ",
     "Settings" : "Thiết lập",
     "Metric" : "Hệ mét",
+    "Click here to get an API key" : "Ấn đây để lấy API",
     "Current Temperature" : "Nhiệt độ hiện tại",
     "Minimum Temperature" : "Nhiệt độ thấp nhất",
     "Maximum Temperature" : "Nhiệt độ cao nhất",
+    "Pressure" : "Áp suất không khí",
+    "Humidity" : "Độ ẩm",
     "Wind" : "Gió",
     "Sunrise" : "Bình minh",
     "Sunset" : "Hoàng hôn",
-    "Date" : "Date"
+    "Date" : "Date",
+    "Perceptible Temperature" : "Nhiệt độ cảm nhận được"
 },
 "nplurals=1; plural=0;");
