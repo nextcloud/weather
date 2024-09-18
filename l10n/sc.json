@@ -1,6 +1,6 @@
 { "translations": {
     "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Errore grave: controlla su nextcloud.log tuo e imbia una signalatzione de errore inoghe: https://github.com/nextcloud/weather/issues",
-    "Failed to set metric. Please contact your administrator" : "No at fatu a impostare sa mètrica. Cuntata s'amministratzione",
+    "Failed to set metric. Please contact your administrator" : "Impossìbile cunfigurare sa mètrica. Cuntata s'amministratzione",
     "This metric is not known." : "Sa mètrica no est connota.",
     "North" : "Nord",
     "North-East" : "Nord-Est",
@@ -16,7 +16,7 @@
     "Failed to add city. Please contact your administrator" : "No at fatu a agiùnghere sa tzitade. Cuntata s'amministratzione",
     "This city is already registered for your account." : "Custa tzitade est giai registrada in su contu tuo.",
     "Failed to remove city. Please contact your administrator" : "No at fatu a nche bogare sa tzitade. Cuntata s'amministratzione",
-    "Failed to set home. Please contact your administrator" : "No at fatu a impostare sa domo. Cuntata s'amministratzione",
+    "Failed to set home. Please contact your administrator" : "Impossìbile cunfigurare comente pàgina printzipale. Cuntata s'amministratzione",
     "Monday" : "Lunis",
     "Tuesday" : "Martis",
     "Wednesday" : "Mércuris",
