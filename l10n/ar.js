@@ -34,7 +34,7 @@ OC.L10N.register(
     "Add a city" : "أضف مدينةً",
     "Add city" : "إضافة مدينةٍ",
     "City name" : "اسم المدينة",
-    "Add" : "أضِف",
+    "Add" : "إضافة ",
     "Cancel" : "إلغاء",
     "Settings" : "الإعدادات",
     "Metric" : "نظام متري",
