@@ -1,7 +1,7 @@
 OC.L10N.register(
     "weather",
     {
-    "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "خطأ فادح: راجع سجل حركات نكست كلاود  nextcloud.log  رجاءً، و أرسل بلاغاً بالخطأ إلى: https://github.com/nextcloud/weather/issues",
+    "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "خطأ فادح: راجع سجل أحداث نكست كلاود  nextcloud.log  رجاءً، و أرسل بلاغاً بالخطأ إلى: https://github.com/nextcloud/weather/issues",
     "Failed to set metric. Please contact your administrator" : "تعذر تعيين المقياس. رجاءً، تواصل مع مشرف نظامك.",
     "This metric is not known." : "المقياس غير معروفٍ",
     "North" : "شمال",
