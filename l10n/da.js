@@ -39,10 +39,10 @@ OC.L10N.register(
     "Settings" : "Indstillinger",
     "Metric" : "Metrisk",
     "Click here to get an API key" : "Klik her for at få en API nøgle",
-    "Current Temperature" : "Nuværende Temperatur",
-    "Feelslike Temperature" : "Føles-som Temperatur",
-    "Minimum Temperature" : "Minimum Temperatur",
-    "Maximum Temperature" : "Maksimum Temperatur",
+    "Current Temperature" : "Nuværende temperatur",
+    "Feelslike Temperature" : "Føles-som temperatur",
+    "Minimum Temperature" : "Minimum temperatur",
+    "Maximum Temperature" : "Maksimum temperatur",
     "Pressure" : "Tryk",
     "Humidity" : "Luftfugtighed",
     "Cloudiness" : "Overskyet",
@@ -50,6 +50,6 @@ OC.L10N.register(
     "Sunrise" : "Solskin",
     "Sunset" : "Solnedgang",
     "Date" : "Dato",
-    "Perceptible Temperature" : "Mærkbar Temperatur"
+    "Perceptible Temperature" : "Mærkbar temperatur"
 },
 "nplurals=2; plural=(n != 1);");
