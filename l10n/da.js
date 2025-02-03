@@ -1,8 +1,8 @@
 OC.L10N.register(
     "weather",
     {
-    "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Fatal fejl: Konsulter venligt din nextcloud.log og opret en bugreport her: https://github.com/nextcloud/weather/issues",
-    "Failed to set metric. Please contact your administrator" : "Fejl under indstilling af parameter. Kontakt venligst din administrator",
+    "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Fatal fejl: Konsulter venligt din nextcloud.log og opret en fejlrapport her: https://github.com/nextcloud/weather/issues",
+    "Failed to set metric. Please contact your administrator" : "Kunne ikke sætte parameter. Kontakt venligst din administrator",
     "This metric is not known." : "Denne parameter er ukendt",
     "North" : "Nord",
     "North-East" : "Nord-Øst",
