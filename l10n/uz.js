@@ -1,6 +1,13 @@
 OC.L10N.register(
     "weather",
     {
+    "Monday" : "Dushanba",
+    "Tuesday" : "Seshanba",
+    "Wednesday" : "Chorshanba",
+    "Thursday" : "Payshanba",
+    "Friday" : "Juma",
+    "Saturday" : "Shanba",
+    "Sunday" : "Yakshanba",
     "Weather" : "Weather",
     "Save" : "Save",
     "Add a city" : "Add a city",
