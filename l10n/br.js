@@ -2,6 +2,9 @@ OC.L10N.register(
     "weather",
     {
     "Monday" : "Lun",
+    "Wednesday" : "Merc'her",
+    "Friday" : "Gwener",
+    "Sunday" : "Sul",
     "Save" : "Enrollañ",
     "Add" : "Ouzhpennañ",
     "Cancel" : "Arrest",
