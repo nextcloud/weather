@@ -7,7 +7,7 @@ OC.L10N.register(
     "Sunday" : "Sul",
     "Save" : "Enrollañ",
     "Add" : "Ouzhpennañ",
-    "Cancel" : "Arrest",
+    "Cancel" : "Nullañ",
     "Settings" : "Arventennoù",
     "Date" : "Deizat"
 },
