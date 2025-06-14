@@ -10,6 +10,8 @@ OC.L10N.register(
     "Sunday" : "Jumapili",
     "Save" : "Hifadhi",
     "Add" : "Ongeza",
-    "Cancel" : "Cancel"
+    "Cancel" : "Cancel",
+    "Settings" : "Mipangilio",
+    "Date" : "Tarehe"
 },
 "nplurals=2; plural=(n != 1);");
