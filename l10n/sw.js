@@ -8,6 +8,7 @@ OC.L10N.register(
     "Friday" : "Ijumaa",
     "Saturday" : "Jumamosi",
     "Sunday" : "Jumapili",
+    "Weather" : "Hali ya hewa",
     "Save" : "Hifadhi",
     "Add" : "Ongeza",
     "Cancel" : "Cancel",
