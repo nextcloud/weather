@@ -38,7 +38,7 @@ OC.L10N.register(
     "Cancel" : "Cancelar",
     "Settings" : "Configuración",
     "Metric" : "Métrico",
-    "Click here to get an API key" : "Pulsa aquí para obtener una llave API",
+    "Click here to get an API key" : "Pulsa aquí para obtener una clave API",
     "Current Temperature" : "Temperatura actual",
     "Feelslike Temperature" : "Temperatura Aparente",
     "Minimum Temperature" : "Temperatura Mínima",
