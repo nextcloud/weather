@@ -8,6 +8,7 @@ OC.L10N.register(
     "Friday" : "Пятніца",
     "Saturday" : "Субота",
     "Sunday" : "Нядзеля",
+    "Weather" : "Надвор'е",
     "Save" : "Захаваць",
     "Add" : "Дадаць",
     "Cancel" : "Скасаваць",
