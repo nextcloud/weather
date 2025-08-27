@@ -17,7 +17,7 @@ OC.L10N.register(
     "Your OpenWeatherMap API key is invalid. Contact your administrator to configure a valid API key in Additional settings of the Administration" : "OpenWeatherMap API atslēga ir nederīga. Jāsazinās ar pārvaldītāju, lai pārvaldīšanas papildu iestatījumos konfigurētu derīgu API atslēgu.",
     "Empty city name!" : "Tukšs pilsētas lauks!",
     "Failed to add city. Please contact your administrator" : "Neizdevās pievienot pilsētu. Lūgums sazināties ar pārvaldītāju.",
-    "This city is already registered for your account." : "Šī pilsēta jau reģistrēta jūsu kontā.",
+    "This city is already registered for your account." : "Šī pilsēta jau ir reģistrēta Tavā kontā.",
     "Failed to remove city. Please contact your administrator" : "Neizdevās noņemt pilsētu. Lūgums sazināties ar pārvaldītāju.",
     "Failed to set home. Please contact your administrator" : "Neizdevās iestatīt sākumu. Lūgums sazināties ar pārvaldītāju.",
     "Monday" : "Pirmdiena",
