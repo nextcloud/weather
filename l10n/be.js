@@ -10,6 +10,7 @@ OC.L10N.register(
     "Sunday" : "Нядзеля",
     "Weather" : "Надвор'е",
     "Save" : "Захаваць",
+    "City name" : "Назва горада",
     "Add" : "Дадаць",
     "Cancel" : "Скасаваць",
     "Settings" : "Налады",
