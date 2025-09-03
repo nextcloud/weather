@@ -1,6 +1,15 @@
 OC.L10N.register(
     "weather",
     {
+    "North" : "Agafa",
+    "South" : "Anẓul",
+    "Monday" : "Arim",
+    "Tuesday" : "Aram",
+    "Wednesday" : "Ahad",
+    "Thursday" : "Amhad",
+    "Friday" : "Sem",
+    "Saturday" : "Sed",
+    "Sunday" : "Acer",
     "Weather" : "Tagnawt",
     "OpenWeatherMap API Key" : "OpenWeatherMap API Key",
     "Save" : "Sekles",
@@ -14,6 +23,7 @@ OC.L10N.register(
     "Cloudiness" : "Asigna",
     "Wind" : "Aḍu",
     "Sunrise" : "Alluy n yiṭij",
-    "Sunset" : "Aɣelluy n yiṭij"
+    "Sunset" : "Aɣelluy n yiṭij",
+    "Date" : "Azemz"
 },
 "nplurals=2; plural=(n != 1);");
