@@ -1,7 +1,7 @@
 { "translations": {
     "Fatal Error: please check your nextcloud.log and send a bug report here: https://github.com/nextcloud/weather/issues" : "Erreur fatale : veuillez vérifier le fichier nextcloud.log et signaler l’anomalie sur https://github.com/nextcloud/weather/issues.",
-    "Failed to set metric. Please contact your administrator" : "Échec lors du réglage de la mesure. Veuillez contacter votre administrateur",
-    "This metric is not known." : "Cette mesure est inconnue.",
+    "Failed to set metric. Please contact your administrator" : "Impossible de définir la métrique. Veuillez contacter votre administrateur",
+    "This metric is not known." : "Cette métrique n'est pas connue.",
     "North" : "Nord",
     "North-East" : "Nord-Est",
     "East" : "Est",
