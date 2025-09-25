@@ -3,6 +3,7 @@ OC.L10N.register(
     {
     "North" : "Agafa",
     "South" : "Anẓul",
+    "Empty city name!" : "Isem n tiɣremt d ilem!",
     "Monday" : "Arim",
     "Tuesday" : "Aram",
     "Wednesday" : "Ahad",
